@@ -1,0 +1,2811 @@
+test,case,trial,seed,t,event,detail
+P-04,R2/det,0,2026111187100,0.0,output,UNKNOWN (power_on)
+P-04,R2/det,0,2026111187100,0.003494,recovery_first_valid,
+P-04,R2/det,0,2026111187100,0.403494,valid_decision,OCCUPIED
+P-04,R2/det,0,2026111187100,0.403494,output,OCCUPIED (decision)
+P-04,R2/rand,1,2026111187101,0.0,output,UNKNOWN (power_on)
+P-04,R2/rand,1,2026111187101,0.003491,recovery_first_valid,
+P-04,R2/rand,1,2026111187101,0.403429,valid_decision,OCCUPIED
+P-04,R2/rand,1,2026111187101,0.403429,output,OCCUPIED (decision)
+P-04,R2/rand,2,2026111187102,0.0,output,UNKNOWN (power_on)
+P-04,R2/rand,2,2026111187102,0.003445,recovery_first_valid,
+P-04,R2/rand,2,2026111187102,0.403487,valid_decision,OCCUPIED
+P-04,R2/rand,2,2026111187102,0.403487,output,OCCUPIED (decision)
+P-04,R2/rand,3,2026111187103,0.0,output,UNKNOWN (power_on)
+P-04,R2/rand,3,2026111187103,0.00362,recovery_first_valid,
+P-04,R2/rand,3,2026111187103,0.40356,valid_decision,OCCUPIED
+P-04,R2/rand,3,2026111187103,0.40356,output,OCCUPIED (decision)
+P-04,R2/rand,4,2026111187104,0.0,output,UNKNOWN (power_on)
+P-04,R2/rand,4,2026111187104,0.003467,recovery_first_valid,
+P-04,R2/rand,4,2026111187104,0.403514,valid_decision,OCCUPIED
+P-04,R2/rand,4,2026111187104,0.403514,output,OCCUPIED (decision)
+P-04,R2/rand,5,2026111187105,0.0,output,UNKNOWN (power_on)
+P-04,R2/rand,5,2026111187105,0.003478,recovery_first_valid,
+P-04,R2/rand,5,2026111187105,0.403464,valid_decision,OCCUPIED
+P-04,R2/rand,5,2026111187105,0.403464,output,OCCUPIED (decision)
+P-04,R2/rand,6,2026111187106,0.0,output,UNKNOWN (power_on)
+P-04,R2/rand,6,2026111187106,0.00348,recovery_first_valid,
+P-04,R2/rand,6,2026111187106,0.403566,valid_decision,OCCUPIED
+P-04,R2/rand,6,2026111187106,0.403566,output,OCCUPIED (decision)
+P-04,R2/rand,7,2026111187107,0.0,output,UNKNOWN (power_on)
+P-04,R2/rand,7,2026111187107,0.003481,recovery_first_valid,
+P-04,R2/rand,7,2026111187107,0.403497,valid_decision,OCCUPIED
+P-04,R2/rand,7,2026111187107,0.403497,output,OCCUPIED (decision)
+P-04,R2/rand,8,2026111187108,0.0,output,UNKNOWN (power_on)
+P-04,R2/rand,8,2026111187108,0.003496,recovery_first_valid,
+P-04,R2/rand,8,2026111187108,0.403492,valid_decision,OCCUPIED
+P-04,R2/rand,8,2026111187108,0.403492,output,OCCUPIED (decision)
+P-04,R2/rand,9,2026111187109,0.0,output,UNKNOWN (power_on)
+P-04,R2/rand,9,2026111187109,0.003405,recovery_first_valid,
+P-04,R2/rand,9,2026111187109,0.403528,valid_decision,OCCUPIED
+P-04,R2/rand,9,2026111187109,0.403528,output,OCCUPIED (decision)
+P-04,R2/rand,10,2026111187110,0.0,output,UNKNOWN (power_on)
+P-04,R2/rand,10,2026111187110,0.00351,recovery_first_valid,
+P-04,R2/rand,10,2026111187110,0.403477,valid_decision,OCCUPIED
+P-04,R2/rand,10,2026111187110,0.403477,output,OCCUPIED (decision)
+P-04,empty/det,0,2026111166500,0.0,output,UNKNOWN (power_on)
+P-04,empty/det,0,2026111166500,0.005824,recovery_first_valid,
+P-04,empty/det,0,2026111166500,0.405824,valid_decision,UNOCCUPIED
+P-04,empty/det,0,2026111166500,0.405824,output,UNOCCUPIED (decision)
+P-04,empty/rand,1,2026111166501,0.0,output,UNKNOWN (power_on)
+P-04,empty/rand,1,2026111166501,0.005748,recovery_first_valid,
+P-04,empty/rand,1,2026111166501,0.405759,valid_decision,UNOCCUPIED
+P-04,empty/rand,1,2026111166501,0.405759,output,UNOCCUPIED (decision)
+P-04,empty/rand,2,2026111166502,0.0,output,UNKNOWN (power_on)
+P-04,empty/rand,2,2026111166502,0.005864,recovery_first_valid,
+P-04,empty/rand,2,2026111166502,0.405947,valid_decision,UNOCCUPIED
+P-04,empty/rand,2,2026111166502,0.405947,output,UNOCCUPIED (decision)
+P-04,empty/rand,3,2026111166503,0.0,output,UNKNOWN (power_on)
+P-04,empty/rand,3,2026111166503,0.005858,recovery_first_valid,
+P-04,empty/rand,3,2026111166503,0.405927,valid_decision,UNOCCUPIED
+P-04,empty/rand,3,2026111166503,0.405927,output,UNOCCUPIED (decision)
+P-04,empty/rand,4,2026111166504,0.0,output,UNKNOWN (power_on)
+P-04,empty/rand,4,2026111166504,0.005898,recovery_first_valid,
+P-04,empty/rand,4,2026111166504,0.40583,valid_decision,UNOCCUPIED
+P-04,empty/rand,4,2026111166504,0.40583,output,UNOCCUPIED (decision)
+P-04,empty/rand,5,2026111166505,0.0,output,UNKNOWN (power_on)
+P-04,empty/rand,5,2026111166505,0.005853,recovery_first_valid,
+P-04,empty/rand,5,2026111166505,0.405843,valid_decision,UNOCCUPIED
+P-04,empty/rand,5,2026111166505,0.405843,output,UNOCCUPIED (decision)
+P-04,empty/rand,6,2026111166506,0.0,output,UNKNOWN (power_on)
+P-04,empty/rand,6,2026111166506,0.00591,recovery_first_valid,
+P-04,empty/rand,6,2026111166506,0.405728,valid_decision,UNOCCUPIED
+P-04,empty/rand,6,2026111166506,0.405728,output,UNOCCUPIED (decision)
+P-04,empty/rand,7,2026111166507,0.0,output,UNKNOWN (power_on)
+P-04,empty/rand,7,2026111166507,0.005883,recovery_first_valid,
+P-04,empty/rand,7,2026111166507,0.405752,valid_decision,UNOCCUPIED
+P-04,empty/rand,7,2026111166507,0.405752,output,UNOCCUPIED (decision)
+P-04,empty/rand,8,2026111166508,0.0,output,UNKNOWN (power_on)
+P-04,empty/rand,8,2026111166508,0.005852,recovery_first_valid,
+P-04,empty/rand,8,2026111166508,0.405822,valid_decision,UNOCCUPIED
+P-04,empty/rand,8,2026111166508,0.405822,output,UNOCCUPIED (decision)
+P-04,empty/rand,9,2026111166509,0.0,output,UNKNOWN (power_on)
+P-04,empty/rand,9,2026111166509,0.005882,recovery_first_valid,
+P-04,empty/rand,9,2026111166509,0.405883,valid_decision,UNOCCUPIED
+P-04,empty/rand,9,2026111166509,0.405883,output,UNOCCUPIED (decision)
+P-04,empty/rand,10,2026111166510,0.0,output,UNKNOWN (power_on)
+P-04,empty/rand,10,2026111166510,0.005866,recovery_first_valid,
+P-04,empty/rand,10,2026111166510,0.405725,valid_decision,UNOCCUPIED
+P-04,empty/rand,10,2026111166510,0.405725,output,UNOCCUPIED (decision)
+P-05,R2-drop4/det,0,2026111142500,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop4/det,0,2026111142500,0.003494,recovery_first_valid,
+P-05,R2-drop4/det,0,2026111142500,0.403494,valid_decision,OCCUPIED
+P-05,R2-drop4/det,0,2026111142500,0.403494,output,OCCUPIED (decision)
+P-05,R2-drop4/rand,1,2026111142501,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop4/rand,1,2026111142501,0.003485,recovery_first_valid,
+P-05,R2-drop4/rand,1,2026111142501,0.40356,valid_decision,OCCUPIED
+P-05,R2-drop4/rand,1,2026111142501,0.40356,output,OCCUPIED (decision)
+P-05,R2-drop4/rand,2,2026111142502,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop4/rand,2,2026111142502,0.003421,recovery_first_valid,
+P-05,R2-drop4/rand,2,2026111142502,0.403511,valid_decision,OCCUPIED
+P-05,R2-drop4/rand,2,2026111142502,0.403511,output,OCCUPIED (decision)
+P-05,R2-drop4/rand,3,2026111142503,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop4/rand,3,2026111142503,0.003417,recovery_first_valid,
+P-05,R2-drop4/rand,3,2026111142503,0.403525,valid_decision,OCCUPIED
+P-05,R2-drop4/rand,3,2026111142503,0.403525,output,OCCUPIED (decision)
+P-05,R2-drop4/rand,4,2026111142504,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop4/rand,4,2026111142504,0.003563,recovery_first_valid,
+P-05,R2-drop4/rand,4,2026111142504,0.403489,valid_decision,OCCUPIED
+P-05,R2-drop4/rand,4,2026111142504,0.403489,output,OCCUPIED (decision)
+P-05,R2-drop4/rand,5,2026111142505,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop4/rand,5,2026111142505,0.003389,recovery_first_valid,
+P-05,R2-drop4/rand,5,2026111142505,0.403377,valid_decision,OCCUPIED
+P-05,R2-drop4/rand,5,2026111142505,0.403377,output,OCCUPIED (decision)
+P-05,R2-drop4/rand,6,2026111142506,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop4/rand,6,2026111142506,0.003584,recovery_first_valid,
+P-05,R2-drop4/rand,6,2026111142506,0.403496,valid_decision,OCCUPIED
+P-05,R2-drop4/rand,6,2026111142506,0.403496,output,OCCUPIED (decision)
+P-05,R2-drop4/rand,7,2026111142507,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop4/rand,7,2026111142507,0.003567,recovery_first_valid,
+P-05,R2-drop4/rand,7,2026111142507,0.403391,valid_decision,OCCUPIED
+P-05,R2-drop4/rand,7,2026111142507,0.403391,output,OCCUPIED (decision)
+P-05,R2-drop4/rand,8,2026111142508,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop4/rand,8,2026111142508,0.003491,recovery_first_valid,
+P-05,R2-drop4/rand,8,2026111142508,0.403469,valid_decision,OCCUPIED
+P-05,R2-drop4/rand,8,2026111142508,0.403469,output,OCCUPIED (decision)
+P-05,R2-drop4/rand,9,2026111142509,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop4/rand,9,2026111142509,0.003425,recovery_first_valid,
+P-05,R2-drop4/rand,9,2026111142509,0.403492,valid_decision,OCCUPIED
+P-05,R2-drop4/rand,9,2026111142509,0.403492,output,OCCUPIED (decision)
+P-05,R2-drop4/rand,10,2026111142510,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop4/rand,10,2026111142510,0.003522,recovery_first_valid,
+P-05,R2-drop4/rand,10,2026111142510,0.4035,valid_decision,OCCUPIED
+P-05,R2-drop4/rand,10,2026111142510,0.4035,output,OCCUPIED (decision)
+P-05,R2-drop5/det,0,2026111172200,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop5/det,0,2026111172200,0.003494,recovery_first_valid,
+P-05,R2-drop5/det,0,2026111172200,0.403494,valid_decision,OCCUPIED
+P-05,R2-drop5/det,0,2026111172200,0.403494,output,OCCUPIED (decision)
+P-05,R2-drop5/det,0,2026111172200,3.43,unknown_entry,no_echo x5
+P-05,R2-drop5/det,0,2026111172200,3.43,output,UNKNOWN (no_echo x5)
+P-05,R2-drop5/det,0,2026111172200,3.503494,recovery_first_valid,
+P-05,R2-drop5/det,0,2026111172200,3.903494,valid_decision,OCCUPIED
+P-05,R2-drop5/det,0,2026111172200,3.903494,output,OCCUPIED (decision)
+P-05,R2-drop5/rand,1,2026111172201,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop5/rand,1,2026111172201,0.00348,recovery_first_valid,
+P-05,R2-drop5/rand,1,2026111172201,0.403502,valid_decision,OCCUPIED
+P-05,R2-drop5/rand,1,2026111172201,0.403502,output,OCCUPIED (decision)
+P-05,R2-drop5/rand,1,2026111172201,3.43,unknown_entry,no_echo x5
+P-05,R2-drop5/rand,1,2026111172201,3.43,output,UNKNOWN (no_echo x5)
+P-05,R2-drop5/rand,1,2026111172201,3.503566,recovery_first_valid,
+P-05,R2-drop5/rand,1,2026111172201,3.903584,valid_decision,OCCUPIED
+P-05,R2-drop5/rand,1,2026111172201,3.903584,output,OCCUPIED (decision)
+P-05,R2-drop5/rand,2,2026111172202,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop5/rand,2,2026111172202,0.003549,recovery_first_valid,
+P-05,R2-drop5/rand,2,2026111172202,0.403426,valid_decision,OCCUPIED
+P-05,R2-drop5/rand,2,2026111172202,0.403426,output,OCCUPIED (decision)
+P-05,R2-drop5/rand,2,2026111172202,3.43,unknown_entry,no_echo x5
+P-05,R2-drop5/rand,2,2026111172202,3.43,output,UNKNOWN (no_echo x5)
+P-05,R2-drop5/rand,2,2026111172202,3.503498,recovery_first_valid,
+P-05,R2-drop5/rand,2,2026111172202,3.903507,valid_decision,OCCUPIED
+P-05,R2-drop5/rand,2,2026111172202,3.903507,output,OCCUPIED (decision)
+P-05,R2-drop5/rand,3,2026111172203,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop5/rand,3,2026111172203,0.003575,recovery_first_valid,
+P-05,R2-drop5/rand,3,2026111172203,0.403445,valid_decision,OCCUPIED
+P-05,R2-drop5/rand,3,2026111172203,0.403445,output,OCCUPIED (decision)
+P-05,R2-drop5/rand,3,2026111172203,3.43,unknown_entry,no_echo x5
+P-05,R2-drop5/rand,3,2026111172203,3.43,output,UNKNOWN (no_echo x5)
+P-05,R2-drop5/rand,3,2026111172203,3.503538,recovery_first_valid,
+P-05,R2-drop5/rand,3,2026111172203,3.903478,valid_decision,OCCUPIED
+P-05,R2-drop5/rand,3,2026111172203,3.903478,output,OCCUPIED (decision)
+P-05,R2-drop5/rand,4,2026111172204,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop5/rand,4,2026111172204,0.003602,recovery_first_valid,
+P-05,R2-drop5/rand,4,2026111172204,0.403452,valid_decision,OCCUPIED
+P-05,R2-drop5/rand,4,2026111172204,0.403452,output,OCCUPIED (decision)
+P-05,R2-drop5/rand,4,2026111172204,3.43,unknown_entry,no_echo x5
+P-05,R2-drop5/rand,4,2026111172204,3.43,output,UNKNOWN (no_echo x5)
+P-05,R2-drop5/rand,4,2026111172204,3.503422,recovery_first_valid,
+P-05,R2-drop5/rand,4,2026111172204,3.903379,valid_decision,OCCUPIED
+P-05,R2-drop5/rand,4,2026111172204,3.903379,output,OCCUPIED (decision)
+P-05,R2-drop5/rand,5,2026111172205,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop5/rand,5,2026111172205,0.003519,recovery_first_valid,
+P-05,R2-drop5/rand,5,2026111172205,0.403438,valid_decision,OCCUPIED
+P-05,R2-drop5/rand,5,2026111172205,0.403438,output,OCCUPIED (decision)
+P-05,R2-drop5/rand,5,2026111172205,3.43,unknown_entry,no_echo x5
+P-05,R2-drop5/rand,5,2026111172205,3.43,output,UNKNOWN (no_echo x5)
+P-05,R2-drop5/rand,5,2026111172205,3.503537,recovery_first_valid,
+P-05,R2-drop5/rand,5,2026111172205,3.903393,valid_decision,OCCUPIED
+P-05,R2-drop5/rand,5,2026111172205,3.903393,output,OCCUPIED (decision)
+P-05,R2-drop5/rand,6,2026111172206,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop5/rand,6,2026111172206,0.003498,recovery_first_valid,
+P-05,R2-drop5/rand,6,2026111172206,0.403535,valid_decision,OCCUPIED
+P-05,R2-drop5/rand,6,2026111172206,0.403535,output,OCCUPIED (decision)
+P-05,R2-drop5/rand,6,2026111172206,3.43,unknown_entry,no_echo x5
+P-05,R2-drop5/rand,6,2026111172206,3.43,output,UNKNOWN (no_echo x5)
+P-05,R2-drop5/rand,6,2026111172206,3.503524,recovery_first_valid,
+P-05,R2-drop5/rand,6,2026111172206,3.903434,valid_decision,OCCUPIED
+P-05,R2-drop5/rand,6,2026111172206,3.903434,output,OCCUPIED (decision)
+P-05,R2-drop5/rand,7,2026111172207,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop5/rand,7,2026111172207,0.003544,recovery_first_valid,
+P-05,R2-drop5/rand,7,2026111172207,0.403447,valid_decision,OCCUPIED
+P-05,R2-drop5/rand,7,2026111172207,0.403447,output,OCCUPIED (decision)
+P-05,R2-drop5/rand,7,2026111172207,3.43,unknown_entry,no_echo x5
+P-05,R2-drop5/rand,7,2026111172207,3.43,output,UNKNOWN (no_echo x5)
+P-05,R2-drop5/rand,7,2026111172207,3.503501,recovery_first_valid,
+P-05,R2-drop5/rand,7,2026111172207,3.903504,valid_decision,OCCUPIED
+P-05,R2-drop5/rand,7,2026111172207,3.903504,output,OCCUPIED (decision)
+P-05,R2-drop5/rand,8,2026111172208,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop5/rand,8,2026111172208,0.003368,recovery_first_valid,
+P-05,R2-drop5/rand,8,2026111172208,0.403454,valid_decision,OCCUPIED
+P-05,R2-drop5/rand,8,2026111172208,0.403454,output,OCCUPIED (decision)
+P-05,R2-drop5/rand,8,2026111172208,3.43,unknown_entry,no_echo x5
+P-05,R2-drop5/rand,8,2026111172208,3.43,output,UNKNOWN (no_echo x5)
+P-05,R2-drop5/rand,8,2026111172208,3.503516,recovery_first_valid,
+P-05,R2-drop5/rand,8,2026111172208,3.903446,valid_decision,OCCUPIED
+P-05,R2-drop5/rand,8,2026111172208,3.903446,output,OCCUPIED (decision)
+P-05,R2-drop5/rand,9,2026111172209,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop5/rand,9,2026111172209,0.003499,recovery_first_valid,
+P-05,R2-drop5/rand,9,2026111172209,0.403445,valid_decision,OCCUPIED
+P-05,R2-drop5/rand,9,2026111172209,0.403445,output,OCCUPIED (decision)
+P-05,R2-drop5/rand,9,2026111172209,3.43,unknown_entry,no_echo x5
+P-05,R2-drop5/rand,9,2026111172209,3.43,output,UNKNOWN (no_echo x5)
+P-05,R2-drop5/rand,9,2026111172209,3.503491,recovery_first_valid,
+P-05,R2-drop5/rand,9,2026111172209,3.903499,valid_decision,OCCUPIED
+P-05,R2-drop5/rand,9,2026111172209,3.903499,output,OCCUPIED (decision)
+P-05,R2-drop5/rand,10,2026111172210,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop5/rand,10,2026111172210,0.003471,recovery_first_valid,
+P-05,R2-drop5/rand,10,2026111172210,0.403504,valid_decision,OCCUPIED
+P-05,R2-drop5/rand,10,2026111172210,0.403504,output,OCCUPIED (decision)
+P-05,R2-drop5/rand,10,2026111172210,3.43,unknown_entry,no_echo x5
+P-05,R2-drop5/rand,10,2026111172210,3.43,output,UNKNOWN (no_echo x5)
+P-05,R2-drop5/rand,10,2026111172210,3.503438,recovery_first_valid,
+P-05,R2-drop5/rand,10,2026111172210,3.903546,valid_decision,OCCUPIED
+P-05,R2-drop5/rand,10,2026111172210,3.903546,output,OCCUPIED (decision)
+P-05,R2-drop6/det,0,2026111182300,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop6/det,0,2026111182300,0.003494,recovery_first_valid,
+P-05,R2-drop6/det,0,2026111182300,0.403494,valid_decision,OCCUPIED
+P-05,R2-drop6/det,0,2026111182300,0.403494,output,OCCUPIED (decision)
+P-05,R2-drop6/det,0,2026111182300,3.43,unknown_entry,no_echo x5
+P-05,R2-drop6/det,0,2026111182300,3.43,output,UNKNOWN (no_echo x5)
+P-05,R2-drop6/det,0,2026111182300,3.603494,recovery_first_valid,
+P-05,R2-drop6/det,0,2026111182300,4.003494,valid_decision,OCCUPIED
+P-05,R2-drop6/det,0,2026111182300,4.003494,output,OCCUPIED (decision)
+P-05,R2-drop6/rand,1,2026111182301,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop6/rand,1,2026111182301,0.003277,recovery_first_valid,
+P-05,R2-drop6/rand,1,2026111182301,0.403515,valid_decision,OCCUPIED
+P-05,R2-drop6/rand,1,2026111182301,0.403515,output,OCCUPIED (decision)
+P-05,R2-drop6/rand,1,2026111182301,3.43,unknown_entry,no_echo x5
+P-05,R2-drop6/rand,1,2026111182301,3.43,output,UNKNOWN (no_echo x5)
+P-05,R2-drop6/rand,1,2026111182301,3.603449,recovery_first_valid,
+P-05,R2-drop6/rand,1,2026111182301,4.003567,valid_decision,OCCUPIED
+P-05,R2-drop6/rand,1,2026111182301,4.003567,output,OCCUPIED (decision)
+P-05,R2-drop6/rand,2,2026111182302,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop6/rand,2,2026111182302,0.003461,recovery_first_valid,
+P-05,R2-drop6/rand,2,2026111182302,0.403474,valid_decision,OCCUPIED
+P-05,R2-drop6/rand,2,2026111182302,0.403474,output,OCCUPIED (decision)
+P-05,R2-drop6/rand,2,2026111182302,3.43,unknown_entry,no_echo x5
+P-05,R2-drop6/rand,2,2026111182302,3.43,output,UNKNOWN (no_echo x5)
+P-05,R2-drop6/rand,2,2026111182302,3.603547,recovery_first_valid,
+P-05,R2-drop6/rand,2,2026111182302,4.003546,valid_decision,OCCUPIED
+P-05,R2-drop6/rand,2,2026111182302,4.003546,output,OCCUPIED (decision)
+P-05,R2-drop6/rand,3,2026111182303,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop6/rand,3,2026111182303,0.003528,recovery_first_valid,
+P-05,R2-drop6/rand,3,2026111182303,0.403414,valid_decision,OCCUPIED
+P-05,R2-drop6/rand,3,2026111182303,0.403414,output,OCCUPIED (decision)
+P-05,R2-drop6/rand,3,2026111182303,3.43,unknown_entry,no_echo x5
+P-05,R2-drop6/rand,3,2026111182303,3.43,output,UNKNOWN (no_echo x5)
+P-05,R2-drop6/rand,3,2026111182303,3.603358,recovery_first_valid,
+P-05,R2-drop6/rand,3,2026111182303,4.003396,valid_decision,OCCUPIED
+P-05,R2-drop6/rand,3,2026111182303,4.003396,output,OCCUPIED (decision)
+P-05,R2-drop6/rand,4,2026111182304,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop6/rand,4,2026111182304,0.00353,recovery_first_valid,
+P-05,R2-drop6/rand,4,2026111182304,0.403425,valid_decision,OCCUPIED
+P-05,R2-drop6/rand,4,2026111182304,0.403425,output,OCCUPIED (decision)
+P-05,R2-drop6/rand,4,2026111182304,3.43,unknown_entry,no_echo x5
+P-05,R2-drop6/rand,4,2026111182304,3.43,output,UNKNOWN (no_echo x5)
+P-05,R2-drop6/rand,4,2026111182304,3.603563,recovery_first_valid,
+P-05,R2-drop6/rand,4,2026111182304,4.003569,valid_decision,OCCUPIED
+P-05,R2-drop6/rand,4,2026111182304,4.003569,output,OCCUPIED (decision)
+P-05,R2-drop6/rand,5,2026111182305,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop6/rand,5,2026111182305,0.003536,recovery_first_valid,
+P-05,R2-drop6/rand,5,2026111182305,0.403428,valid_decision,OCCUPIED
+P-05,R2-drop6/rand,5,2026111182305,0.403428,output,OCCUPIED (decision)
+P-05,R2-drop6/rand,5,2026111182305,3.43,unknown_entry,no_echo x5
+P-05,R2-drop6/rand,5,2026111182305,3.43,output,UNKNOWN (no_echo x5)
+P-05,R2-drop6/rand,5,2026111182305,3.603448,recovery_first_valid,
+P-05,R2-drop6/rand,5,2026111182305,4.003433,valid_decision,OCCUPIED
+P-05,R2-drop6/rand,5,2026111182305,4.003433,output,OCCUPIED (decision)
+P-05,R2-drop6/rand,6,2026111182306,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop6/rand,6,2026111182306,0.003522,recovery_first_valid,
+P-05,R2-drop6/rand,6,2026111182306,0.403457,valid_decision,OCCUPIED
+P-05,R2-drop6/rand,6,2026111182306,0.403457,output,OCCUPIED (decision)
+P-05,R2-drop6/rand,6,2026111182306,3.43,unknown_entry,no_echo x5
+P-05,R2-drop6/rand,6,2026111182306,3.43,output,UNKNOWN (no_echo x5)
+P-05,R2-drop6/rand,6,2026111182306,3.603397,recovery_first_valid,
+P-05,R2-drop6/rand,6,2026111182306,4.003513,valid_decision,OCCUPIED
+P-05,R2-drop6/rand,6,2026111182306,4.003513,output,OCCUPIED (decision)
+P-05,R2-drop6/rand,7,2026111182307,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop6/rand,7,2026111182307,0.003607,recovery_first_valid,
+P-05,R2-drop6/rand,7,2026111182307,0.40353,valid_decision,OCCUPIED
+P-05,R2-drop6/rand,7,2026111182307,0.40353,output,OCCUPIED (decision)
+P-05,R2-drop6/rand,7,2026111182307,3.43,unknown_entry,no_echo x5
+P-05,R2-drop6/rand,7,2026111182307,3.43,output,UNKNOWN (no_echo x5)
+P-05,R2-drop6/rand,7,2026111182307,3.603545,recovery_first_valid,
+P-05,R2-drop6/rand,7,2026111182307,4.003496,valid_decision,OCCUPIED
+P-05,R2-drop6/rand,7,2026111182307,4.003496,output,OCCUPIED (decision)
+P-05,R2-drop6/rand,8,2026111182308,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop6/rand,8,2026111182308,0.003449,recovery_first_valid,
+P-05,R2-drop6/rand,8,2026111182308,0.403467,valid_decision,OCCUPIED
+P-05,R2-drop6/rand,8,2026111182308,0.403467,output,OCCUPIED (decision)
+P-05,R2-drop6/rand,8,2026111182308,3.43,unknown_entry,no_echo x5
+P-05,R2-drop6/rand,8,2026111182308,3.43,output,UNKNOWN (no_echo x5)
+P-05,R2-drop6/rand,8,2026111182308,3.603454,recovery_first_valid,
+P-05,R2-drop6/rand,8,2026111182308,4.003425,valid_decision,OCCUPIED
+P-05,R2-drop6/rand,8,2026111182308,4.003425,output,OCCUPIED (decision)
+P-05,R2-drop6/rand,9,2026111182309,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop6/rand,9,2026111182309,0.003541,recovery_first_valid,
+P-05,R2-drop6/rand,9,2026111182309,0.403499,valid_decision,OCCUPIED
+P-05,R2-drop6/rand,9,2026111182309,0.403499,output,OCCUPIED (decision)
+P-05,R2-drop6/rand,9,2026111182309,3.43,unknown_entry,no_echo x5
+P-05,R2-drop6/rand,9,2026111182309,3.43,output,UNKNOWN (no_echo x5)
+P-05,R2-drop6/rand,9,2026111182309,3.603545,recovery_first_valid,
+P-05,R2-drop6/rand,9,2026111182309,4.003485,valid_decision,OCCUPIED
+P-05,R2-drop6/rand,9,2026111182309,4.003485,output,OCCUPIED (decision)
+P-05,R2-drop6/rand,10,2026111182310,0.0,output,UNKNOWN (power_on)
+P-05,R2-drop6/rand,10,2026111182310,0.003403,recovery_first_valid,
+P-05,R2-drop6/rand,10,2026111182310,0.403403,valid_decision,OCCUPIED
+P-05,R2-drop6/rand,10,2026111182310,0.403403,output,OCCUPIED (decision)
+P-05,R2-drop6/rand,10,2026111182310,3.43,unknown_entry,no_echo x5
+P-05,R2-drop6/rand,10,2026111182310,3.43,output,UNKNOWN (no_echo x5)
+P-05,R2-drop6/rand,10,2026111182310,3.603501,recovery_first_valid,
+P-05,R2-drop6/rand,10,2026111182310,4.003584,valid_decision,OCCUPIED
+P-05,R2-drop6/rand,10,2026111182310,4.003584,output,OCCUPIED (decision)
+P-05,empty-drop4/det,0,2026111139900,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop4/det,0,2026111139900,0.005824,recovery_first_valid,
+P-05,empty-drop4/det,0,2026111139900,0.405824,valid_decision,UNOCCUPIED
+P-05,empty-drop4/det,0,2026111139900,0.405824,output,UNOCCUPIED (decision)
+P-05,empty-drop4/rand,1,2026111139901,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop4/rand,1,2026111139901,0.005856,recovery_first_valid,
+P-05,empty-drop4/rand,1,2026111139901,0.405765,valid_decision,UNOCCUPIED
+P-05,empty-drop4/rand,1,2026111139901,0.405765,output,UNOCCUPIED (decision)
+P-05,empty-drop4/rand,2,2026111139902,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop4/rand,2,2026111139902,0.005813,recovery_first_valid,
+P-05,empty-drop4/rand,2,2026111139902,0.405756,valid_decision,UNOCCUPIED
+P-05,empty-drop4/rand,2,2026111139902,0.405756,output,UNOCCUPIED (decision)
+P-05,empty-drop4/rand,3,2026111139903,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop4/rand,3,2026111139903,0.005868,recovery_first_valid,
+P-05,empty-drop4/rand,3,2026111139903,0.405769,valid_decision,UNOCCUPIED
+P-05,empty-drop4/rand,3,2026111139903,0.405769,output,UNOCCUPIED (decision)
+P-05,empty-drop4/rand,4,2026111139904,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop4/rand,4,2026111139904,0.005721,recovery_first_valid,
+P-05,empty-drop4/rand,4,2026111139904,0.405871,valid_decision,UNOCCUPIED
+P-05,empty-drop4/rand,4,2026111139904,0.405871,output,UNOCCUPIED (decision)
+P-05,empty-drop4/rand,5,2026111139905,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop4/rand,5,2026111139905,0.005754,recovery_first_valid,
+P-05,empty-drop4/rand,5,2026111139905,0.405833,valid_decision,UNOCCUPIED
+P-05,empty-drop4/rand,5,2026111139905,0.405833,output,UNOCCUPIED (decision)
+P-05,empty-drop4/rand,6,2026111139906,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop4/rand,6,2026111139906,0.005859,recovery_first_valid,
+P-05,empty-drop4/rand,6,2026111139906,0.405832,valid_decision,UNOCCUPIED
+P-05,empty-drop4/rand,6,2026111139906,0.405832,output,UNOCCUPIED (decision)
+P-05,empty-drop4/rand,7,2026111139907,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop4/rand,7,2026111139907,0.005939,recovery_first_valid,
+P-05,empty-drop4/rand,7,2026111139907,0.405752,valid_decision,UNOCCUPIED
+P-05,empty-drop4/rand,7,2026111139907,0.405752,output,UNOCCUPIED (decision)
+P-05,empty-drop4/rand,8,2026111139908,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop4/rand,8,2026111139908,0.005733,recovery_first_valid,
+P-05,empty-drop4/rand,8,2026111139908,0.405836,valid_decision,UNOCCUPIED
+P-05,empty-drop4/rand,8,2026111139908,0.405836,output,UNOCCUPIED (decision)
+P-05,empty-drop4/rand,9,2026111139909,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop4/rand,9,2026111139909,0.005784,recovery_first_valid,
+P-05,empty-drop4/rand,9,2026111139909,0.405753,valid_decision,UNOCCUPIED
+P-05,empty-drop4/rand,9,2026111139909,0.405753,output,UNOCCUPIED (decision)
+P-05,empty-drop4/rand,10,2026111139910,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop4/rand,10,2026111139910,0.005796,recovery_first_valid,
+P-05,empty-drop4/rand,10,2026111139910,0.40576,valid_decision,UNOCCUPIED
+P-05,empty-drop4/rand,10,2026111139910,0.40576,output,UNOCCUPIED (decision)
+P-05,empty-drop5/det,0,2026111150600,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop5/det,0,2026111150600,0.005824,recovery_first_valid,
+P-05,empty-drop5/det,0,2026111150600,0.405824,valid_decision,UNOCCUPIED
+P-05,empty-drop5/det,0,2026111150600,0.405824,output,UNOCCUPIED (decision)
+P-05,empty-drop5/det,0,2026111150600,3.43,unknown_entry,no_echo x5
+P-05,empty-drop5/det,0,2026111150600,3.43,output,UNKNOWN (no_echo x5)
+P-05,empty-drop5/det,0,2026111150600,3.505824,recovery_first_valid,
+P-05,empty-drop5/det,0,2026111150600,3.905824,valid_decision,UNOCCUPIED
+P-05,empty-drop5/det,0,2026111150600,3.905824,output,UNOCCUPIED (decision)
+P-05,empty-drop5/rand,1,2026111150601,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop5/rand,1,2026111150601,0.005824,recovery_first_valid,
+P-05,empty-drop5/rand,1,2026111150601,0.405878,valid_decision,UNOCCUPIED
+P-05,empty-drop5/rand,1,2026111150601,0.405878,output,UNOCCUPIED (decision)
+P-05,empty-drop5/rand,1,2026111150601,3.43,unknown_entry,no_echo x5
+P-05,empty-drop5/rand,1,2026111150601,3.43,output,UNKNOWN (no_echo x5)
+P-05,empty-drop5/rand,1,2026111150601,3.505825,recovery_first_valid,
+P-05,empty-drop5/rand,1,2026111150601,3.905792,valid_decision,UNOCCUPIED
+P-05,empty-drop5/rand,1,2026111150601,3.905792,output,UNOCCUPIED (decision)
+P-05,empty-drop5/rand,2,2026111150602,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop5/rand,2,2026111150602,0.005783,recovery_first_valid,
+P-05,empty-drop5/rand,2,2026111150602,0.405833,valid_decision,UNOCCUPIED
+P-05,empty-drop5/rand,2,2026111150602,0.405833,output,UNOCCUPIED (decision)
+P-05,empty-drop5/rand,2,2026111150602,3.43,unknown_entry,no_echo x5
+P-05,empty-drop5/rand,2,2026111150602,3.43,output,UNKNOWN (no_echo x5)
+P-05,empty-drop5/rand,2,2026111150602,3.505849,recovery_first_valid,
+P-05,empty-drop5/rand,2,2026111150602,3.905828,valid_decision,UNOCCUPIED
+P-05,empty-drop5/rand,2,2026111150602,3.905828,output,UNOCCUPIED (decision)
+P-05,empty-drop5/rand,3,2026111150603,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop5/rand,3,2026111150603,0.005842,recovery_first_valid,
+P-05,empty-drop5/rand,3,2026111150603,0.405895,valid_decision,UNOCCUPIED
+P-05,empty-drop5/rand,3,2026111150603,0.405895,output,UNOCCUPIED (decision)
+P-05,empty-drop5/rand,3,2026111150603,3.43,unknown_entry,no_echo x5
+P-05,empty-drop5/rand,3,2026111150603,3.43,output,UNKNOWN (no_echo x5)
+P-05,empty-drop5/rand,3,2026111150603,3.505821,recovery_first_valid,
+P-05,empty-drop5/rand,3,2026111150603,3.905893,valid_decision,UNOCCUPIED
+P-05,empty-drop5/rand,3,2026111150603,3.905893,output,UNOCCUPIED (decision)
+P-05,empty-drop5/rand,4,2026111150604,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop5/rand,4,2026111150604,0.00582,recovery_first_valid,
+P-05,empty-drop5/rand,4,2026111150604,0.405918,valid_decision,UNOCCUPIED
+P-05,empty-drop5/rand,4,2026111150604,0.405918,output,UNOCCUPIED (decision)
+P-05,empty-drop5/rand,4,2026111150604,3.43,unknown_entry,no_echo x5
+P-05,empty-drop5/rand,4,2026111150604,3.43,output,UNKNOWN (no_echo x5)
+P-05,empty-drop5/rand,4,2026111150604,3.505833,recovery_first_valid,
+P-05,empty-drop5/rand,4,2026111150604,3.905897,valid_decision,UNOCCUPIED
+P-05,empty-drop5/rand,4,2026111150604,3.905897,output,UNOCCUPIED (decision)
+P-05,empty-drop5/rand,5,2026111150605,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop5/rand,5,2026111150605,0.00592,recovery_first_valid,
+P-05,empty-drop5/rand,5,2026111150605,0.40584,valid_decision,UNOCCUPIED
+P-05,empty-drop5/rand,5,2026111150605,0.40584,output,UNOCCUPIED (decision)
+P-05,empty-drop5/rand,5,2026111150605,3.43,unknown_entry,no_echo x5
+P-05,empty-drop5/rand,5,2026111150605,3.43,output,UNKNOWN (no_echo x5)
+P-05,empty-drop5/rand,5,2026111150605,3.50579,recovery_first_valid,
+P-05,empty-drop5/rand,5,2026111150605,3.905747,valid_decision,UNOCCUPIED
+P-05,empty-drop5/rand,5,2026111150605,3.905747,output,UNOCCUPIED (decision)
+P-05,empty-drop5/rand,6,2026111150606,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop5/rand,6,2026111150606,0.005903,recovery_first_valid,
+P-05,empty-drop5/rand,6,2026111150606,0.40577,valid_decision,UNOCCUPIED
+P-05,empty-drop5/rand,6,2026111150606,0.40577,output,UNOCCUPIED (decision)
+P-05,empty-drop5/rand,6,2026111150606,3.43,unknown_entry,no_echo x5
+P-05,empty-drop5/rand,6,2026111150606,3.43,output,UNKNOWN (no_echo x5)
+P-05,empty-drop5/rand,6,2026111150606,3.505872,recovery_first_valid,
+P-05,empty-drop5/rand,6,2026111150606,3.905796,valid_decision,UNOCCUPIED
+P-05,empty-drop5/rand,6,2026111150606,3.905796,output,UNOCCUPIED (decision)
+P-05,empty-drop5/rand,7,2026111150607,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop5/rand,7,2026111150607,0.005895,recovery_first_valid,
+P-05,empty-drop5/rand,7,2026111150607,0.40587,valid_decision,UNOCCUPIED
+P-05,empty-drop5/rand,7,2026111150607,0.40587,output,UNOCCUPIED (decision)
+P-05,empty-drop5/rand,7,2026111150607,3.43,unknown_entry,no_echo x5
+P-05,empty-drop5/rand,7,2026111150607,3.43,output,UNKNOWN (no_echo x5)
+P-05,empty-drop5/rand,7,2026111150607,3.50592,recovery_first_valid,
+P-05,empty-drop5/rand,7,2026111150607,3.9058,valid_decision,UNOCCUPIED
+P-05,empty-drop5/rand,7,2026111150607,3.9058,output,UNOCCUPIED (decision)
+P-05,empty-drop5/rand,8,2026111150608,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop5/rand,8,2026111150608,0.005755,recovery_first_valid,
+P-05,empty-drop5/rand,8,2026111150608,0.405774,valid_decision,UNOCCUPIED
+P-05,empty-drop5/rand,8,2026111150608,0.405774,output,UNOCCUPIED (decision)
+P-05,empty-drop5/rand,8,2026111150608,3.43,unknown_entry,no_echo x5
+P-05,empty-drop5/rand,8,2026111150608,3.43,output,UNKNOWN (no_echo x5)
+P-05,empty-drop5/rand,8,2026111150608,3.505783,recovery_first_valid,
+P-05,empty-drop5/rand,8,2026111150608,3.905826,valid_decision,UNOCCUPIED
+P-05,empty-drop5/rand,8,2026111150608,3.905826,output,UNOCCUPIED (decision)
+P-05,empty-drop5/rand,9,2026111150609,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop5/rand,9,2026111150609,0.005811,recovery_first_valid,
+P-05,empty-drop5/rand,9,2026111150609,0.405861,valid_decision,UNOCCUPIED
+P-05,empty-drop5/rand,9,2026111150609,0.405861,output,UNOCCUPIED (decision)
+P-05,empty-drop5/rand,9,2026111150609,3.43,unknown_entry,no_echo x5
+P-05,empty-drop5/rand,9,2026111150609,3.43,output,UNKNOWN (no_echo x5)
+P-05,empty-drop5/rand,9,2026111150609,3.505791,recovery_first_valid,
+P-05,empty-drop5/rand,9,2026111150609,3.905731,valid_decision,UNOCCUPIED
+P-05,empty-drop5/rand,9,2026111150609,3.905731,output,UNOCCUPIED (decision)
+P-05,empty-drop5/rand,10,2026111150610,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop5/rand,10,2026111150610,0.005795,recovery_first_valid,
+P-05,empty-drop5/rand,10,2026111150610,0.405855,valid_decision,UNOCCUPIED
+P-05,empty-drop5/rand,10,2026111150610,0.405855,output,UNOCCUPIED (decision)
+P-05,empty-drop5/rand,10,2026111150610,3.43,unknown_entry,no_echo x5
+P-05,empty-drop5/rand,10,2026111150610,3.43,output,UNKNOWN (no_echo x5)
+P-05,empty-drop5/rand,10,2026111150610,3.505852,recovery_first_valid,
+P-05,empty-drop5/rand,10,2026111150610,3.905827,valid_decision,UNOCCUPIED
+P-05,empty-drop5/rand,10,2026111150610,3.905827,output,UNOCCUPIED (decision)
+P-05,empty-drop6/det,0,2026111100600,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop6/det,0,2026111100600,0.005824,recovery_first_valid,
+P-05,empty-drop6/det,0,2026111100600,0.405824,valid_decision,UNOCCUPIED
+P-05,empty-drop6/det,0,2026111100600,0.405824,output,UNOCCUPIED (decision)
+P-05,empty-drop6/det,0,2026111100600,3.43,unknown_entry,no_echo x5
+P-05,empty-drop6/det,0,2026111100600,3.43,output,UNKNOWN (no_echo x5)
+P-05,empty-drop6/det,0,2026111100600,3.605824,recovery_first_valid,
+P-05,empty-drop6/det,0,2026111100600,4.005824,valid_decision,UNOCCUPIED
+P-05,empty-drop6/det,0,2026111100600,4.005824,output,UNOCCUPIED (decision)
+P-05,empty-drop6/rand,1,2026111100601,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop6/rand,1,2026111100601,0.005856,recovery_first_valid,
+P-05,empty-drop6/rand,1,2026111100601,0.405822,valid_decision,UNOCCUPIED
+P-05,empty-drop6/rand,1,2026111100601,0.405822,output,UNOCCUPIED (decision)
+P-05,empty-drop6/rand,1,2026111100601,3.43,unknown_entry,no_echo x5
+P-05,empty-drop6/rand,1,2026111100601,3.43,output,UNKNOWN (no_echo x5)
+P-05,empty-drop6/rand,1,2026111100601,3.605828,recovery_first_valid,
+P-05,empty-drop6/rand,1,2026111100601,4.005843,valid_decision,UNOCCUPIED
+P-05,empty-drop6/rand,1,2026111100601,4.005843,output,UNOCCUPIED (decision)
+P-05,empty-drop6/rand,2,2026111100602,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop6/rand,2,2026111100602,0.005899,recovery_first_valid,
+P-05,empty-drop6/rand,2,2026111100602,0.405803,valid_decision,UNOCCUPIED
+P-05,empty-drop6/rand,2,2026111100602,0.405803,output,UNOCCUPIED (decision)
+P-05,empty-drop6/rand,2,2026111100602,3.43,unknown_entry,no_echo x5
+P-05,empty-drop6/rand,2,2026111100602,3.43,output,UNKNOWN (no_echo x5)
+P-05,empty-drop6/rand,2,2026111100602,3.605861,recovery_first_valid,
+P-05,empty-drop6/rand,2,2026111100602,4.005808,valid_decision,UNOCCUPIED
+P-05,empty-drop6/rand,2,2026111100602,4.005808,output,UNOCCUPIED (decision)
+P-05,empty-drop6/rand,3,2026111100603,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop6/rand,3,2026111100603,0.005656,recovery_first_valid,
+P-05,empty-drop6/rand,3,2026111100603,0.405857,valid_decision,UNOCCUPIED
+P-05,empty-drop6/rand,3,2026111100603,0.405857,output,UNOCCUPIED (decision)
+P-05,empty-drop6/rand,3,2026111100603,3.43,unknown_entry,no_echo x5
+P-05,empty-drop6/rand,3,2026111100603,3.43,output,UNKNOWN (no_echo x5)
+P-05,empty-drop6/rand,3,2026111100603,3.605787,recovery_first_valid,
+P-05,empty-drop6/rand,3,2026111100603,4.005853,valid_decision,UNOCCUPIED
+P-05,empty-drop6/rand,3,2026111100603,4.005853,output,UNOCCUPIED (decision)
+P-05,empty-drop6/rand,4,2026111100604,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop6/rand,4,2026111100604,0.005838,recovery_first_valid,
+P-05,empty-drop6/rand,4,2026111100604,0.405741,valid_decision,UNOCCUPIED
+P-05,empty-drop6/rand,4,2026111100604,0.405741,output,UNOCCUPIED (decision)
+P-05,empty-drop6/rand,4,2026111100604,3.43,unknown_entry,no_echo x5
+P-05,empty-drop6/rand,4,2026111100604,3.43,output,UNKNOWN (no_echo x5)
+P-05,empty-drop6/rand,4,2026111100604,3.605846,recovery_first_valid,
+P-05,empty-drop6/rand,4,2026111100604,4.005907,valid_decision,UNOCCUPIED
+P-05,empty-drop6/rand,4,2026111100604,4.005907,output,UNOCCUPIED (decision)
+P-05,empty-drop6/rand,5,2026111100605,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop6/rand,5,2026111100605,0.005781,recovery_first_valid,
+P-05,empty-drop6/rand,5,2026111100605,0.405764,valid_decision,UNOCCUPIED
+P-05,empty-drop6/rand,5,2026111100605,0.405764,output,UNOCCUPIED (decision)
+P-05,empty-drop6/rand,5,2026111100605,3.43,unknown_entry,no_echo x5
+P-05,empty-drop6/rand,5,2026111100605,3.43,output,UNKNOWN (no_echo x5)
+P-05,empty-drop6/rand,5,2026111100605,3.605766,recovery_first_valid,
+P-05,empty-drop6/rand,5,2026111100605,4.005822,valid_decision,UNOCCUPIED
+P-05,empty-drop6/rand,5,2026111100605,4.005822,output,UNOCCUPIED (decision)
+P-05,empty-drop6/rand,6,2026111100606,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop6/rand,6,2026111100606,0.005847,recovery_first_valid,
+P-05,empty-drop6/rand,6,2026111100606,0.405783,valid_decision,UNOCCUPIED
+P-05,empty-drop6/rand,6,2026111100606,0.405783,output,UNOCCUPIED (decision)
+P-05,empty-drop6/rand,6,2026111100606,3.43,unknown_entry,no_echo x5
+P-05,empty-drop6/rand,6,2026111100606,3.43,output,UNKNOWN (no_echo x5)
+P-05,empty-drop6/rand,6,2026111100606,3.605875,recovery_first_valid,
+P-05,empty-drop6/rand,6,2026111100606,4.005757,valid_decision,UNOCCUPIED
+P-05,empty-drop6/rand,6,2026111100606,4.005757,output,UNOCCUPIED (decision)
+P-05,empty-drop6/rand,7,2026111100607,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop6/rand,7,2026111100607,0.005831,recovery_first_valid,
+P-05,empty-drop6/rand,7,2026111100607,0.405826,valid_decision,UNOCCUPIED
+P-05,empty-drop6/rand,7,2026111100607,0.405826,output,UNOCCUPIED (decision)
+P-05,empty-drop6/rand,7,2026111100607,3.43,unknown_entry,no_echo x5
+P-05,empty-drop6/rand,7,2026111100607,3.43,output,UNKNOWN (no_echo x5)
+P-05,empty-drop6/rand,7,2026111100607,3.605776,recovery_first_valid,
+P-05,empty-drop6/rand,7,2026111100607,4.005901,valid_decision,UNOCCUPIED
+P-05,empty-drop6/rand,7,2026111100607,4.005901,output,UNOCCUPIED (decision)
+P-05,empty-drop6/rand,8,2026111100608,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop6/rand,8,2026111100608,0.005751,recovery_first_valid,
+P-05,empty-drop6/rand,8,2026111100608,0.405909,valid_decision,UNOCCUPIED
+P-05,empty-drop6/rand,8,2026111100608,0.405909,output,UNOCCUPIED (decision)
+P-05,empty-drop6/rand,8,2026111100608,3.43,unknown_entry,no_echo x5
+P-05,empty-drop6/rand,8,2026111100608,3.43,output,UNKNOWN (no_echo x5)
+P-05,empty-drop6/rand,8,2026111100608,3.605897,recovery_first_valid,
+P-05,empty-drop6/rand,8,2026111100608,4.005749,valid_decision,UNOCCUPIED
+P-05,empty-drop6/rand,8,2026111100608,4.005749,output,UNOCCUPIED (decision)
+P-05,empty-drop6/rand,9,2026111100609,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop6/rand,9,2026111100609,0.005799,recovery_first_valid,
+P-05,empty-drop6/rand,9,2026111100609,0.405868,valid_decision,UNOCCUPIED
+P-05,empty-drop6/rand,9,2026111100609,0.405868,output,UNOCCUPIED (decision)
+P-05,empty-drop6/rand,9,2026111100609,3.43,unknown_entry,no_echo x5
+P-05,empty-drop6/rand,9,2026111100609,3.43,output,UNKNOWN (no_echo x5)
+P-05,empty-drop6/rand,9,2026111100609,3.605848,recovery_first_valid,
+P-05,empty-drop6/rand,9,2026111100609,4.005837,valid_decision,UNOCCUPIED
+P-05,empty-drop6/rand,9,2026111100609,4.005837,output,UNOCCUPIED (decision)
+P-05,empty-drop6/rand,10,2026111100610,0.0,output,UNKNOWN (power_on)
+P-05,empty-drop6/rand,10,2026111100610,0.005789,recovery_first_valid,
+P-05,empty-drop6/rand,10,2026111100610,0.405728,valid_decision,UNOCCUPIED
+P-05,empty-drop6/rand,10,2026111100610,0.405728,output,UNOCCUPIED (decision)
+P-05,empty-drop6/rand,10,2026111100610,3.43,unknown_entry,no_echo x5
+P-05,empty-drop6/rand,10,2026111100610,3.43,output,UNKNOWN (no_echo x5)
+P-05,empty-drop6/rand,10,2026111100610,3.605873,recovery_first_valid,
+P-05,empty-drop6/rand,10,2026111100610,4.005853,valid_decision,UNOCCUPIED
+P-05,empty-drop6/rand,10,2026111100610,4.005853,output,UNOCCUPIED (decision)
+P-06,stall-R2/det,0,2026111182000,0.0,output,UNKNOWN (power_on)
+P-06,stall-R2/det,0,2026111182000,0.003494,recovery_first_valid,
+P-06,stall-R2/det,0,2026111182000,0.403494,valid_decision,OCCUPIED
+P-06,stall-R2/det,0,2026111182000,0.403494,output,OCCUPIED (decision)
+P-06,stall-R2/det,0,2026111182000,4.0,unknown_entry,stale
+P-06,stall-R2/det,0,2026111182000,4.0,output,UNKNOWN (stale)
+P-06,stall-R2/det,0,2026111182000,5.003494,recovery_first_valid,
+P-06,stall-R2/det,0,2026111182000,5.403494,valid_decision,OCCUPIED
+P-06,stall-R2/det,0,2026111182000,5.403494,output,OCCUPIED (decision)
+P-06,stall-R2/rand,1,2026111182001,0.0,output,UNKNOWN (power_on)
+P-06,stall-R2/rand,1,2026111182001,0.003472,recovery_first_valid,
+P-06,stall-R2/rand,1,2026111182001,0.403416,valid_decision,OCCUPIED
+P-06,stall-R2/rand,1,2026111182001,0.403416,output,OCCUPIED (decision)
+P-06,stall-R2/rand,1,2026111182001,4.0,unknown_entry,stale
+P-06,stall-R2/rand,1,2026111182001,4.0,output,UNKNOWN (stale)
+P-06,stall-R2/rand,1,2026111182001,5.003379,recovery_first_valid,
+P-06,stall-R2/rand,1,2026111182001,5.4036,valid_decision,OCCUPIED
+P-06,stall-R2/rand,1,2026111182001,5.4036,output,OCCUPIED (decision)
+P-06,stall-R2/rand,2,2026111182002,0.0,output,UNKNOWN (power_on)
+P-06,stall-R2/rand,2,2026111182002,0.003452,recovery_first_valid,
+P-06,stall-R2/rand,2,2026111182002,0.403512,valid_decision,OCCUPIED
+P-06,stall-R2/rand,2,2026111182002,0.403512,output,OCCUPIED (decision)
+P-06,stall-R2/rand,2,2026111182002,4.0,unknown_entry,stale
+P-06,stall-R2/rand,2,2026111182002,4.0,output,UNKNOWN (stale)
+P-06,stall-R2/rand,2,2026111182002,5.003512,recovery_first_valid,
+P-06,stall-R2/rand,2,2026111182002,5.403468,valid_decision,OCCUPIED
+P-06,stall-R2/rand,2,2026111182002,5.403468,output,OCCUPIED (decision)
+P-06,stall-R2/rand,3,2026111182003,0.0,output,UNKNOWN (power_on)
+P-06,stall-R2/rand,3,2026111182003,0.003555,recovery_first_valid,
+P-06,stall-R2/rand,3,2026111182003,0.403626,valid_decision,OCCUPIED
+P-06,stall-R2/rand,3,2026111182003,0.403626,output,OCCUPIED (decision)
+P-06,stall-R2/rand,3,2026111182003,4.0,unknown_entry,stale
+P-06,stall-R2/rand,3,2026111182003,4.0,output,UNKNOWN (stale)
+P-06,stall-R2/rand,3,2026111182003,5.003438,recovery_first_valid,
+P-06,stall-R2/rand,3,2026111182003,5.403369,valid_decision,OCCUPIED
+P-06,stall-R2/rand,3,2026111182003,5.403369,output,OCCUPIED (decision)
+P-06,stall-R2/rand,4,2026111182004,0.0,output,UNKNOWN (power_on)
+P-06,stall-R2/rand,4,2026111182004,0.003476,recovery_first_valid,
+P-06,stall-R2/rand,4,2026111182004,0.403478,valid_decision,OCCUPIED
+P-06,stall-R2/rand,4,2026111182004,0.403478,output,OCCUPIED (decision)
+P-06,stall-R2/rand,4,2026111182004,4.0,unknown_entry,stale
+P-06,stall-R2/rand,4,2026111182004,4.0,output,UNKNOWN (stale)
+P-06,stall-R2/rand,4,2026111182004,5.003447,recovery_first_valid,
+P-06,stall-R2/rand,4,2026111182004,5.403522,valid_decision,OCCUPIED
+P-06,stall-R2/rand,4,2026111182004,5.403522,output,OCCUPIED (decision)
+P-06,stall-R2/rand,5,2026111182005,0.0,output,UNKNOWN (power_on)
+P-06,stall-R2/rand,5,2026111182005,0.003449,recovery_first_valid,
+P-06,stall-R2/rand,5,2026111182005,0.403505,valid_decision,OCCUPIED
+P-06,stall-R2/rand,5,2026111182005,0.403505,output,OCCUPIED (decision)
+P-06,stall-R2/rand,5,2026111182005,4.0,unknown_entry,stale
+P-06,stall-R2/rand,5,2026111182005,4.0,output,UNKNOWN (stale)
+P-06,stall-R2/rand,5,2026111182005,5.003557,recovery_first_valid,
+P-06,stall-R2/rand,5,2026111182005,5.403486,valid_decision,OCCUPIED
+P-06,stall-R2/rand,5,2026111182005,5.403486,output,OCCUPIED (decision)
+P-06,stall-R2/rand,6,2026111182006,0.0,output,UNKNOWN (power_on)
+P-06,stall-R2/rand,6,2026111182006,0.003442,recovery_first_valid,
+P-06,stall-R2/rand,6,2026111182006,0.403451,valid_decision,OCCUPIED
+P-06,stall-R2/rand,6,2026111182006,0.403451,output,OCCUPIED (decision)
+P-06,stall-R2/rand,6,2026111182006,4.0,unknown_entry,stale
+P-06,stall-R2/rand,6,2026111182006,4.0,output,UNKNOWN (stale)
+P-06,stall-R2/rand,6,2026111182006,5.003448,recovery_first_valid,
+P-06,stall-R2/rand,6,2026111182006,5.403487,valid_decision,OCCUPIED
+P-06,stall-R2/rand,6,2026111182006,5.403487,output,OCCUPIED (decision)
+P-06,stall-R2/rand,7,2026111182007,0.0,output,UNKNOWN (power_on)
+P-06,stall-R2/rand,7,2026111182007,0.00345,recovery_first_valid,
+P-06,stall-R2/rand,7,2026111182007,0.403506,valid_decision,OCCUPIED
+P-06,stall-R2/rand,7,2026111182007,0.403506,output,OCCUPIED (decision)
+P-06,stall-R2/rand,7,2026111182007,4.0,unknown_entry,stale
+P-06,stall-R2/rand,7,2026111182007,4.0,output,UNKNOWN (stale)
+P-06,stall-R2/rand,7,2026111182007,5.003393,recovery_first_valid,
+P-06,stall-R2/rand,7,2026111182007,5.403453,valid_decision,OCCUPIED
+P-06,stall-R2/rand,7,2026111182007,5.403453,output,OCCUPIED (decision)
+P-06,stall-R2/rand,8,2026111182008,0.0,output,UNKNOWN (power_on)
+P-06,stall-R2/rand,8,2026111182008,0.00346,recovery_first_valid,
+P-06,stall-R2/rand,8,2026111182008,0.403511,valid_decision,OCCUPIED
+P-06,stall-R2/rand,8,2026111182008,0.403511,output,OCCUPIED (decision)
+P-06,stall-R2/rand,8,2026111182008,4.0,unknown_entry,stale
+P-06,stall-R2/rand,8,2026111182008,4.0,output,UNKNOWN (stale)
+P-06,stall-R2/rand,8,2026111182008,5.003483,recovery_first_valid,
+P-06,stall-R2/rand,8,2026111182008,5.403512,valid_decision,OCCUPIED
+P-06,stall-R2/rand,8,2026111182008,5.403512,output,OCCUPIED (decision)
+P-06,stall-R2/rand,9,2026111182009,0.0,output,UNKNOWN (power_on)
+P-06,stall-R2/rand,9,2026111182009,0.003432,recovery_first_valid,
+P-06,stall-R2/rand,9,2026111182009,0.403506,valid_decision,OCCUPIED
+P-06,stall-R2/rand,9,2026111182009,0.403506,output,OCCUPIED (decision)
+P-06,stall-R2/rand,9,2026111182009,4.0,unknown_entry,stale
+P-06,stall-R2/rand,9,2026111182009,4.0,output,UNKNOWN (stale)
+P-06,stall-R2/rand,9,2026111182009,5.003495,recovery_first_valid,
+P-06,stall-R2/rand,9,2026111182009,5.403477,valid_decision,OCCUPIED
+P-06,stall-R2/rand,9,2026111182009,5.403477,output,OCCUPIED (decision)
+P-06,stall-R2/rand,10,2026111182010,0.0,output,UNKNOWN (power_on)
+P-06,stall-R2/rand,10,2026111182010,0.003521,recovery_first_valid,
+P-06,stall-R2/rand,10,2026111182010,0.4035,valid_decision,OCCUPIED
+P-06,stall-R2/rand,10,2026111182010,0.4035,output,OCCUPIED (decision)
+P-06,stall-R2/rand,10,2026111182010,4.0,unknown_entry,stale
+P-06,stall-R2/rand,10,2026111182010,4.0,output,UNKNOWN (stale)
+P-06,stall-R2/rand,10,2026111182010,5.003457,recovery_first_valid,
+P-06,stall-R2/rand,10,2026111182010,5.403501,valid_decision,OCCUPIED
+P-06,stall-R2/rand,10,2026111182010,5.403501,output,OCCUPIED (decision)
+P-06,sub-R2-1.0cm-x4/det,0,2026111131800,0.0,output,UNKNOWN (power_on)
+P-06,sub-R2-1.0cm-x4/det,0,2026111131800,0.003494,recovery_first_valid,
+P-06,sub-R2-1.0cm-x4/det,0,2026111131800,0.403494,valid_decision,OCCUPIED
+P-06,sub-R2-1.0cm-x4/det,0,2026111131800,0.403494,output,OCCUPIED (decision)
+P-06,sub-R2-1.0cm-x5/det,0,2026111196000,0.0,output,UNKNOWN (power_on)
+P-06,sub-R2-1.0cm-x5/det,0,2026111196000,0.003494,recovery_first_valid,
+P-06,sub-R2-1.0cm-x5/det,0,2026111196000,0.403494,valid_decision,OCCUPIED
+P-06,sub-R2-1.0cm-x5/det,0,2026111196000,0.403494,output,OCCUPIED (decision)
+P-06,sub-R2-1.0cm-x5/det,0,2026111196000,3.400059,unknown_entry,out_of_range x5
+P-06,sub-R2-1.0cm-x5/det,0,2026111196000,3.400059,output,UNKNOWN (out_of_range x5)
+P-06,sub-R2-1.0cm-x5/det,0,2026111196000,3.503494,recovery_first_valid,
+P-06,sub-R2-1.0cm-x5/det,0,2026111196000,3.903494,valid_decision,OCCUPIED
+P-06,sub-R2-1.0cm-x5/det,0,2026111196000,3.903494,output,OCCUPIED (decision)
+P-06,sub-R2-401.0cm-x4/det,0,2026111114300,0.0,output,UNKNOWN (power_on)
+P-06,sub-R2-401.0cm-x4/det,0,2026111114300,0.003494,recovery_first_valid,
+P-06,sub-R2-401.0cm-x4/det,0,2026111114300,0.403494,valid_decision,OCCUPIED
+P-06,sub-R2-401.0cm-x4/det,0,2026111114300,0.403494,output,OCCUPIED (decision)
+P-06,sub-R2-401.0cm-x5/det,0,2026111183300,0.0,output,UNKNOWN (power_on)
+P-06,sub-R2-401.0cm-x5/det,0,2026111183300,0.003494,recovery_first_valid,
+P-06,sub-R2-401.0cm-x5/det,0,2026111183300,0.403494,valid_decision,OCCUPIED
+P-06,sub-R2-401.0cm-x5/det,0,2026111183300,0.403494,output,OCCUPIED (decision)
+P-06,sub-R2-401.0cm-x5/det,0,2026111183300,3.423588,unknown_entry,out_of_range x5
+P-06,sub-R2-401.0cm-x5/det,0,2026111183300,3.423588,output,UNKNOWN (out_of_range x5)
+P-06,sub-R2-401.0cm-x5/det,0,2026111183300,3.503494,recovery_first_valid,
+P-06,sub-R2-401.0cm-x5/det,0,2026111183300,3.903494,valid_decision,OCCUPIED
+P-06,sub-R2-401.0cm-x5/det,0,2026111183300,3.903494,output,OCCUPIED (decision)
+P-06,sub-empty-1.0cm-x4/det,0,2026111156400,0.0,output,UNKNOWN (power_on)
+P-06,sub-empty-1.0cm-x4/det,0,2026111156400,0.005824,recovery_first_valid,
+P-06,sub-empty-1.0cm-x4/det,0,2026111156400,0.405824,valid_decision,UNOCCUPIED
+P-06,sub-empty-1.0cm-x4/det,0,2026111156400,0.405824,output,UNOCCUPIED (decision)
+P-06,sub-empty-1.0cm-x5/det,0,2026111163600,0.0,output,UNKNOWN (power_on)
+P-06,sub-empty-1.0cm-x5/det,0,2026111163600,0.005824,recovery_first_valid,
+P-06,sub-empty-1.0cm-x5/det,0,2026111163600,0.405824,valid_decision,UNOCCUPIED
+P-06,sub-empty-1.0cm-x5/det,0,2026111163600,0.405824,output,UNOCCUPIED (decision)
+P-06,sub-empty-1.0cm-x5/det,0,2026111163600,3.400059,unknown_entry,out_of_range x5
+P-06,sub-empty-1.0cm-x5/det,0,2026111163600,3.400059,output,UNKNOWN (out_of_range x5)
+P-06,sub-empty-1.0cm-x5/det,0,2026111163600,3.505824,recovery_first_valid,
+P-06,sub-empty-1.0cm-x5/det,0,2026111163600,3.905824,valid_decision,UNOCCUPIED
+P-06,sub-empty-1.0cm-x5/det,0,2026111163600,3.905824,output,UNOCCUPIED (decision)
+P-06,sub-empty-401.0cm-x4/det,0,2026111106900,0.0,output,UNKNOWN (power_on)
+P-06,sub-empty-401.0cm-x4/det,0,2026111106900,0.005824,recovery_first_valid,
+P-06,sub-empty-401.0cm-x4/det,0,2026111106900,0.405824,valid_decision,UNOCCUPIED
+P-06,sub-empty-401.0cm-x4/det,0,2026111106900,0.405824,output,UNOCCUPIED (decision)
+P-06,sub-empty-401.0cm-x5/det,0,2026111176300,0.0,output,UNKNOWN (power_on)
+P-06,sub-empty-401.0cm-x5/det,0,2026111176300,0.005824,recovery_first_valid,
+P-06,sub-empty-401.0cm-x5/det,0,2026111176300,0.405824,valid_decision,UNOCCUPIED
+P-06,sub-empty-401.0cm-x5/det,0,2026111176300,0.405824,output,UNOCCUPIED (decision)
+P-06,sub-empty-401.0cm-x5/det,0,2026111176300,3.423588,unknown_entry,out_of_range x5
+P-06,sub-empty-401.0cm-x5/det,0,2026111176300,3.423588,output,UNKNOWN (out_of_range x5)
+P-06,sub-empty-401.0cm-x5/det,0,2026111176300,3.505824,recovery_first_valid,
+P-06,sub-empty-401.0cm-x5/det,0,2026111176300,3.905824,valid_decision,UNOCCUPIED
+P-06,sub-empty-401.0cm-x5/det,0,2026111176300,3.905824,output,UNOCCUPIED (decision)
+P-01,empty/det,0,2026111134100,0.0,output,UNKNOWN (power_on)
+P-01,empty/det,0,2026111134100,0.005824,recovery_first_valid,
+P-01,empty/det,0,2026111134100,0.405824,valid_decision,UNOCCUPIED
+P-01,empty/det,0,2026111134100,0.405824,output,UNOCCUPIED (decision)
+P-01,empty/rand,1,2026111134101,0.0,output,UNKNOWN (power_on)
+P-01,empty/rand,1,2026111134101,0.005802,recovery_first_valid,
+P-01,empty/rand,1,2026111134101,0.405882,valid_decision,UNOCCUPIED
+P-01,empty/rand,1,2026111134101,0.405882,output,UNOCCUPIED (decision)
+P-01,empty/rand,2,2026111134102,0.0,output,UNKNOWN (power_on)
+P-01,empty/rand,2,2026111134102,0.005816,recovery_first_valid,
+P-01,empty/rand,2,2026111134102,0.405787,valid_decision,UNOCCUPIED
+P-01,empty/rand,2,2026111134102,0.405787,output,UNOCCUPIED (decision)
+P-01,empty/rand,3,2026111134103,0.0,output,UNKNOWN (power_on)
+P-01,empty/rand,3,2026111134103,0.005789,recovery_first_valid,
+P-01,empty/rand,3,2026111134103,0.405734,valid_decision,UNOCCUPIED
+P-01,empty/rand,3,2026111134103,0.405734,output,UNOCCUPIED (decision)
+P-01,empty/rand,4,2026111134104,0.0,output,UNKNOWN (power_on)
+P-01,empty/rand,4,2026111134104,0.005846,recovery_first_valid,
+P-01,empty/rand,4,2026111134104,0.405875,valid_decision,UNOCCUPIED
+P-01,empty/rand,4,2026111134104,0.405875,output,UNOCCUPIED (decision)
+P-01,empty/rand,5,2026111134105,0.0,output,UNKNOWN (power_on)
+P-01,empty/rand,5,2026111134105,0.005834,recovery_first_valid,
+P-01,empty/rand,5,2026111134105,0.405784,valid_decision,UNOCCUPIED
+P-01,empty/rand,5,2026111134105,0.405784,output,UNOCCUPIED (decision)
+P-01,empty/rand,6,2026111134106,0.0,output,UNKNOWN (power_on)
+P-01,empty/rand,6,2026111134106,0.005823,recovery_first_valid,
+P-01,empty/rand,6,2026111134106,0.405887,valid_decision,UNOCCUPIED
+P-01,empty/rand,6,2026111134106,0.405887,output,UNOCCUPIED (decision)
+P-01,empty/rand,7,2026111134107,0.0,output,UNKNOWN (power_on)
+P-01,empty/rand,7,2026111134107,0.005799,recovery_first_valid,
+P-01,empty/rand,7,2026111134107,0.405896,valid_decision,UNOCCUPIED
+P-01,empty/rand,7,2026111134107,0.405896,output,UNOCCUPIED (decision)
+P-01,empty/rand,8,2026111134108,0.0,output,UNKNOWN (power_on)
+P-01,empty/rand,8,2026111134108,0.005834,recovery_first_valid,
+P-01,empty/rand,8,2026111134108,0.405834,valid_decision,UNOCCUPIED
+P-01,empty/rand,8,2026111134108,0.405834,output,UNOCCUPIED (decision)
+P-01,empty/rand,9,2026111134109,0.0,output,UNKNOWN (power_on)
+P-01,empty/rand,9,2026111134109,0.005855,recovery_first_valid,
+P-01,empty/rand,9,2026111134109,0.405841,valid_decision,UNOCCUPIED
+P-01,empty/rand,9,2026111134109,0.405841,output,UNOCCUPIED (decision)
+P-01,empty/rand,10,2026111134110,0.0,output,UNKNOWN (power_on)
+P-01,empty/rand,10,2026111134110,0.005827,recovery_first_valid,
+P-01,empty/rand,10,2026111134110,0.405834,valid_decision,UNOCCUPIED
+P-01,empty/rand,10,2026111134110,0.405834,output,UNOCCUPIED (decision)
+P-01,R1/det,0,2026111102900,0.0,output,UNKNOWN (power_on)
+P-01,R1/det,0,2026111102900,0.004659,recovery_first_valid,
+P-01,R1/det,0,2026111102900,0.404659,valid_decision,OCCUPIED
+P-01,R1/det,0,2026111102900,0.404659,output,OCCUPIED (decision)
+P-01,R1/rand,1,2026111102901,0.0,output,UNKNOWN (power_on)
+P-01,R1/rand,1,2026111102901,0.004713,recovery_first_valid,
+P-01,R1/rand,1,2026111102901,0.404647,valid_decision,OCCUPIED
+P-01,R1/rand,1,2026111102901,0.404647,output,OCCUPIED (decision)
+P-01,R1/rand,2,2026111102902,0.0,output,UNKNOWN (power_on)
+P-01,R1/rand,2,2026111102902,0.004473,recovery_first_valid,
+P-01,R1/rand,2,2026111102902,0.404668,valid_decision,OCCUPIED
+P-01,R1/rand,2,2026111102902,0.404668,output,OCCUPIED (decision)
+P-01,R1/rand,3,2026111102903,0.0,output,UNKNOWN (power_on)
+P-01,R1/rand,3,2026111102903,0.004673,recovery_first_valid,
+P-01,R1/rand,3,2026111102903,0.404781,valid_decision,OCCUPIED
+P-01,R1/rand,3,2026111102903,0.404781,output,OCCUPIED (decision)
+P-01,R1/rand,4,2026111102904,0.0,output,UNKNOWN (power_on)
+P-01,R1/rand,4,2026111102904,0.004596,recovery_first_valid,
+P-01,R1/rand,4,2026111102904,0.404654,valid_decision,OCCUPIED
+P-01,R1/rand,4,2026111102904,0.404654,output,OCCUPIED (decision)
+P-01,R1/rand,5,2026111102905,0.0,output,UNKNOWN (power_on)
+P-01,R1/rand,5,2026111102905,0.004699,recovery_first_valid,
+P-01,R1/rand,5,2026111102905,0.40464,valid_decision,OCCUPIED
+P-01,R1/rand,5,2026111102905,0.40464,output,OCCUPIED (decision)
+P-01,R1/rand,6,2026111102906,0.0,output,UNKNOWN (power_on)
+P-01,R1/rand,6,2026111102906,0.004662,recovery_first_valid,
+P-01,R1/rand,6,2026111102906,0.404595,valid_decision,OCCUPIED
+P-01,R1/rand,6,2026111102906,0.404595,output,OCCUPIED (decision)
+P-01,R1/rand,7,2026111102907,0.0,output,UNKNOWN (power_on)
+P-01,R1/rand,7,2026111102907,0.00456,recovery_first_valid,
+P-01,R1/rand,7,2026111102907,0.404646,valid_decision,OCCUPIED
+P-01,R1/rand,7,2026111102907,0.404646,output,OCCUPIED (decision)
+P-01,R1/rand,8,2026111102908,0.0,output,UNKNOWN (power_on)
+P-01,R1/rand,8,2026111102908,0.004603,recovery_first_valid,
+P-01,R1/rand,8,2026111102908,0.40458,valid_decision,OCCUPIED
+P-01,R1/rand,8,2026111102908,0.40458,output,OCCUPIED (decision)
+P-01,R1/rand,9,2026111102909,0.0,output,UNKNOWN (power_on)
+P-01,R1/rand,9,2026111102909,0.004684,recovery_first_valid,
+P-01,R1/rand,9,2026111102909,0.404593,valid_decision,OCCUPIED
+P-01,R1/rand,9,2026111102909,0.404593,output,OCCUPIED (decision)
+P-01,R1/rand,10,2026111102910,0.0,output,UNKNOWN (power_on)
+P-01,R1/rand,10,2026111102910,0.004661,recovery_first_valid,
+P-01,R1/rand,10,2026111102910,0.404589,valid_decision,OCCUPIED
+P-01,R1/rand,10,2026111102910,0.404589,output,OCCUPIED (decision)
+P-01,R2/det,0,2026111160900,0.0,output,UNKNOWN (power_on)
+P-01,R2/det,0,2026111160900,0.003494,recovery_first_valid,
+P-01,R2/det,0,2026111160900,0.403494,valid_decision,OCCUPIED
+P-01,R2/det,0,2026111160900,0.403494,output,OCCUPIED (decision)
+P-01,R2/rand,1,2026111160901,0.0,output,UNKNOWN (power_on)
+P-01,R2/rand,1,2026111160901,0.003472,recovery_first_valid,
+P-01,R2/rand,1,2026111160901,0.403599,valid_decision,OCCUPIED
+P-01,R2/rand,1,2026111160901,0.403599,output,OCCUPIED (decision)
+P-01,R2/rand,2,2026111160902,0.0,output,UNKNOWN (power_on)
+P-01,R2/rand,2,2026111160902,0.003498,recovery_first_valid,
+P-01,R2/rand,2,2026111160902,0.403456,valid_decision,OCCUPIED
+P-01,R2/rand,2,2026111160902,0.403456,output,OCCUPIED (decision)
+P-01,R2/rand,3,2026111160903,0.0,output,UNKNOWN (power_on)
+P-01,R2/rand,3,2026111160903,0.00356,recovery_first_valid,
+P-01,R2/rand,3,2026111160903,0.403459,valid_decision,OCCUPIED
+P-01,R2/rand,3,2026111160903,0.403459,output,OCCUPIED (decision)
+P-01,R2/rand,4,2026111160904,0.0,output,UNKNOWN (power_on)
+P-01,R2/rand,4,2026111160904,0.003478,recovery_first_valid,
+P-01,R2/rand,4,2026111160904,0.40346,valid_decision,OCCUPIED
+P-01,R2/rand,4,2026111160904,0.40346,output,OCCUPIED (decision)
+P-01,R2/rand,5,2026111160905,0.0,output,UNKNOWN (power_on)
+P-01,R2/rand,5,2026111160905,0.003487,recovery_first_valid,
+P-01,R2/rand,5,2026111160905,0.403459,valid_decision,OCCUPIED
+P-01,R2/rand,5,2026111160905,0.403459,output,OCCUPIED (decision)
+P-01,R2/rand,6,2026111160906,0.0,output,UNKNOWN (power_on)
+P-01,R2/rand,6,2026111160906,0.003416,recovery_first_valid,
+P-01,R2/rand,6,2026111160906,0.403421,valid_decision,OCCUPIED
+P-01,R2/rand,6,2026111160906,0.403421,output,OCCUPIED (decision)
+P-01,R2/rand,7,2026111160907,0.0,output,UNKNOWN (power_on)
+P-01,R2/rand,7,2026111160907,0.003434,recovery_first_valid,
+P-01,R2/rand,7,2026111160907,0.403521,valid_decision,OCCUPIED
+P-01,R2/rand,7,2026111160907,0.403521,output,OCCUPIED (decision)
+P-01,R2/rand,8,2026111160908,0.0,output,UNKNOWN (power_on)
+P-01,R2/rand,8,2026111160908,0.003502,recovery_first_valid,
+P-01,R2/rand,8,2026111160908,0.403463,valid_decision,OCCUPIED
+P-01,R2/rand,8,2026111160908,0.403463,output,OCCUPIED (decision)
+P-01,R2/rand,9,2026111160909,0.0,output,UNKNOWN (power_on)
+P-01,R2/rand,9,2026111160909,0.003397,recovery_first_valid,
+P-01,R2/rand,9,2026111160909,0.403478,valid_decision,OCCUPIED
+P-01,R2/rand,9,2026111160909,0.403478,output,OCCUPIED (decision)
+P-01,R2/rand,10,2026111160910,0.0,output,UNKNOWN (power_on)
+P-01,R2/rand,10,2026111160910,0.003503,recovery_first_valid,
+P-01,R2/rand,10,2026111160910,0.403417,valid_decision,OCCUPIED
+P-01,R2/rand,10,2026111160910,0.403417,output,OCCUPIED (decision)
+P-01,R3/det,0,2026111176200,0.0,output,UNKNOWN (power_on)
+P-01,R3/det,0,2026111176200,0.00233,recovery_first_valid,
+P-01,R3/det,0,2026111176200,0.40233,valid_decision,OCCUPIED
+P-01,R3/det,0,2026111176200,0.40233,output,OCCUPIED (decision)
+P-01,R3/rand,1,2026111176201,0.0,output,UNKNOWN (power_on)
+P-01,R3/rand,1,2026111176201,0.00225,recovery_first_valid,
+P-01,R3/rand,1,2026111176201,0.40224,valid_decision,OCCUPIED
+P-01,R3/rand,1,2026111176201,0.40224,output,OCCUPIED (decision)
+P-01,R3/rand,2,2026111176202,0.0,output,UNKNOWN (power_on)
+P-01,R3/rand,2,2026111176202,0.002235,recovery_first_valid,
+P-01,R3/rand,2,2026111176202,0.402376,valid_decision,OCCUPIED
+P-01,R3/rand,2,2026111176202,0.402376,output,OCCUPIED (decision)
+P-01,R3/rand,3,2026111176203,0.0,output,UNKNOWN (power_on)
+P-01,R3/rand,3,2026111176203,0.00229,recovery_first_valid,
+P-01,R3/rand,3,2026111176203,0.402398,valid_decision,OCCUPIED
+P-01,R3/rand,3,2026111176203,0.402398,output,OCCUPIED (decision)
+P-01,R3/rand,4,2026111176204,0.0,output,UNKNOWN (power_on)
+P-01,R3/rand,4,2026111176204,0.002381,recovery_first_valid,
+P-01,R3/rand,4,2026111176204,0.402336,valid_decision,OCCUPIED
+P-01,R3/rand,4,2026111176204,0.402336,output,OCCUPIED (decision)
+P-01,R3/rand,5,2026111176205,0.0,output,UNKNOWN (power_on)
+P-01,R3/rand,5,2026111176205,0.002252,recovery_first_valid,
+P-01,R3/rand,5,2026111176205,0.402326,valid_decision,OCCUPIED
+P-01,R3/rand,5,2026111176205,0.402326,output,OCCUPIED (decision)
+P-01,R3/rand,6,2026111176206,0.0,output,UNKNOWN (power_on)
+P-01,R3/rand,6,2026111176206,0.002274,recovery_first_valid,
+P-01,R3/rand,6,2026111176206,0.402283,valid_decision,OCCUPIED
+P-01,R3/rand,6,2026111176206,0.402283,output,OCCUPIED (decision)
+P-01,R3/rand,7,2026111176207,0.0,output,UNKNOWN (power_on)
+P-01,R3/rand,7,2026111176207,0.002328,recovery_first_valid,
+P-01,R3/rand,7,2026111176207,0.402304,valid_decision,OCCUPIED
+P-01,R3/rand,7,2026111176207,0.402304,output,OCCUPIED (decision)
+P-01,R3/rand,8,2026111176208,0.0,output,UNKNOWN (power_on)
+P-01,R3/rand,8,2026111176208,0.002321,recovery_first_valid,
+P-01,R3/rand,8,2026111176208,0.402264,valid_decision,OCCUPIED
+P-01,R3/rand,8,2026111176208,0.402264,output,OCCUPIED (decision)
+P-01,R3/rand,9,2026111176209,0.0,output,UNKNOWN (power_on)
+P-01,R3/rand,9,2026111176209,0.002358,recovery_first_valid,
+P-01,R3/rand,9,2026111176209,0.402421,valid_decision,OCCUPIED
+P-01,R3/rand,9,2026111176209,0.402421,output,OCCUPIED (decision)
+P-01,R3/rand,10,2026111176210,0.0,output,UNKNOWN (power_on)
+P-01,R3/rand,10,2026111176210,0.002327,recovery_first_valid,
+P-01,R3/rand,10,2026111176210,0.402282,valid_decision,OCCUPIED
+P-01,R3/rand,10,2026111176210,0.402282,output,OCCUPIED (decision)
+P-02,a-R0/det,0,2026111181300,0.0,output,UNKNOWN (power_on)
+P-02,a-R0/det,0,2026111181300,0.005533,recovery_first_valid,
+P-02,a-R0/det,0,2026111181300,0.405533,valid_decision,UNOCCUPIED
+P-02,a-R0/det,0,2026111181300,0.405533,output,UNOCCUPIED (decision)
+P-02,a-R0/rand,1,2026111181301,0.0,output,UNKNOWN (power_on)
+P-02,a-R0/rand,1,2026111181301,0.00557,recovery_first_valid,
+P-02,a-R0/rand,1,2026111181301,0.405514,valid_decision,UNOCCUPIED
+P-02,a-R0/rand,1,2026111181301,0.405514,output,UNOCCUPIED (decision)
+P-02,a-R0/rand,2,2026111181302,0.0,output,UNKNOWN (power_on)
+P-02,a-R0/rand,2,2026111181302,0.005543,recovery_first_valid,
+P-02,a-R0/rand,2,2026111181302,0.405551,valid_decision,UNOCCUPIED
+P-02,a-R0/rand,2,2026111181302,0.405551,output,UNOCCUPIED (decision)
+P-02,a-R0/rand,3,2026111181303,0.0,output,UNKNOWN (power_on)
+P-02,a-R0/rand,3,2026111181303,0.005562,recovery_first_valid,
+P-02,a-R0/rand,3,2026111181303,0.405623,valid_decision,UNOCCUPIED
+P-02,a-R0/rand,3,2026111181303,0.405623,output,UNOCCUPIED (decision)
+P-02,a-R0/rand,4,2026111181304,0.0,output,UNKNOWN (power_on)
+P-02,a-R0/rand,4,2026111181304,0.005554,recovery_first_valid,
+P-02,a-R0/rand,4,2026111181304,0.405514,valid_decision,UNOCCUPIED
+P-02,a-R0/rand,4,2026111181304,0.405514,output,UNOCCUPIED (decision)
+P-02,a-R0/rand,5,2026111181305,0.0,output,UNKNOWN (power_on)
+P-02,a-R0/rand,5,2026111181305,0.005459,recovery_first_valid,
+P-02,a-R0/rand,5,2026111181305,0.40553,valid_decision,UNOCCUPIED
+P-02,a-R0/rand,5,2026111181305,0.40553,output,UNOCCUPIED (decision)
+P-02,a-R0/rand,6,2026111181306,0.0,output,UNKNOWN (power_on)
+P-02,a-R0/rand,6,2026111181306,0.005559,recovery_first_valid,
+P-02,a-R0/rand,6,2026111181306,0.405559,valid_decision,UNOCCUPIED
+P-02,a-R0/rand,6,2026111181306,0.405559,output,UNOCCUPIED (decision)
+P-02,a-R0/rand,7,2026111181307,0.0,output,UNKNOWN (power_on)
+P-02,a-R0/rand,7,2026111181307,0.005594,recovery_first_valid,
+P-02,a-R0/rand,7,2026111181307,0.405506,valid_decision,UNOCCUPIED
+P-02,a-R0/rand,7,2026111181307,0.405506,output,UNOCCUPIED (decision)
+P-02,a-R0/rand,8,2026111181308,0.0,output,UNKNOWN (power_on)
+P-02,a-R0/rand,8,2026111181308,0.0055,recovery_first_valid,
+P-02,a-R0/rand,8,2026111181308,0.405571,valid_decision,UNOCCUPIED
+P-02,a-R0/rand,8,2026111181308,0.405571,output,UNOCCUPIED (decision)
+P-02,a-R0/rand,9,2026111181309,0.0,output,UNKNOWN (power_on)
+P-02,a-R0/rand,9,2026111181309,0.005543,recovery_first_valid,
+P-02,a-R0/rand,9,2026111181309,0.405651,valid_decision,UNOCCUPIED
+P-02,a-R0/rand,9,2026111181309,0.405651,output,UNOCCUPIED (decision)
+P-02,a-R0/rand,10,2026111181310,0.0,output,UNKNOWN (power_on)
+P-02,a-R0/rand,10,2026111181310,0.005492,recovery_first_valid,
+P-02,a-R0/rand,10,2026111181310,0.405488,valid_decision,UNOCCUPIED
+P-02,a-R0/rand,10,2026111181310,0.405488,output,UNOCCUPIED (decision)
+P-02,b1-R1/cargo,0,2026111164100,0.0,output,UNKNOWN (power_on)
+P-02,b1-R1/cargo,0,2026111164100,0.004659,recovery_first_valid,
+P-02,b1-R1/cargo,0,2026111164100,0.404659,valid_decision,OCCUPIED
+P-02,b1-R1/cargo,0,2026111164100,0.404659,output,OCCUPIED (decision)
+P-02,b1-R1/occupant,0,2026111164100,0.0,output,UNKNOWN (power_on)
+P-02,b1-R1/occupant,0,2026111164100,0.004659,recovery_first_valid,
+P-02,b1-R1/occupant,0,2026111164100,0.404659,valid_decision,OCCUPIED
+P-02,b1-R1/occupant,0,2026111164100,0.404659,output,OCCUPIED (decision)
+P-02,b1-R1/cargo,1,2026111164101,0.0,output,UNKNOWN (power_on)
+P-02,b1-R1/cargo,1,2026111164101,0.004606,recovery_first_valid,
+P-02,b1-R1/cargo,1,2026111164101,0.404626,valid_decision,OCCUPIED
+P-02,b1-R1/cargo,1,2026111164101,0.404626,output,OCCUPIED (decision)
+P-02,b1-R1/occupant,1,2026111164101,0.0,output,UNKNOWN (power_on)
+P-02,b1-R1/occupant,1,2026111164101,0.004606,recovery_first_valid,
+P-02,b1-R1/occupant,1,2026111164101,0.404626,valid_decision,OCCUPIED
+P-02,b1-R1/occupant,1,2026111164101,0.404626,output,OCCUPIED (decision)
+P-02,b1-R1/cargo,2,2026111164102,0.0,output,UNKNOWN (power_on)
+P-02,b1-R1/cargo,2,2026111164102,0.004682,recovery_first_valid,
+P-02,b1-R1/cargo,2,2026111164102,0.404629,valid_decision,OCCUPIED
+P-02,b1-R1/cargo,2,2026111164102,0.404629,output,OCCUPIED (decision)
+P-02,b1-R1/occupant,2,2026111164102,0.0,output,UNKNOWN (power_on)
+P-02,b1-R1/occupant,2,2026111164102,0.004682,recovery_first_valid,
+P-02,b1-R1/occupant,2,2026111164102,0.404629,valid_decision,OCCUPIED
+P-02,b1-R1/occupant,2,2026111164102,0.404629,output,OCCUPIED (decision)
+P-02,b1-R1/cargo,3,2026111164103,0.0,output,UNKNOWN (power_on)
+P-02,b1-R1/cargo,3,2026111164103,0.004718,recovery_first_valid,
+P-02,b1-R1/cargo,3,2026111164103,0.404671,valid_decision,OCCUPIED
+P-02,b1-R1/cargo,3,2026111164103,0.404671,output,OCCUPIED (decision)
+P-02,b1-R1/occupant,3,2026111164103,0.0,output,UNKNOWN (power_on)
+P-02,b1-R1/occupant,3,2026111164103,0.004718,recovery_first_valid,
+P-02,b1-R1/occupant,3,2026111164103,0.404671,valid_decision,OCCUPIED
+P-02,b1-R1/occupant,3,2026111164103,0.404671,output,OCCUPIED (decision)
+P-02,b1-R1/cargo,4,2026111164104,0.0,output,UNKNOWN (power_on)
+P-02,b1-R1/cargo,4,2026111164104,0.004679,recovery_first_valid,
+P-02,b1-R1/cargo,4,2026111164104,0.404586,valid_decision,OCCUPIED
+P-02,b1-R1/cargo,4,2026111164104,0.404586,output,OCCUPIED (decision)
+P-02,b1-R1/occupant,4,2026111164104,0.0,output,UNKNOWN (power_on)
+P-02,b1-R1/occupant,4,2026111164104,0.004679,recovery_first_valid,
+P-02,b1-R1/occupant,4,2026111164104,0.404586,valid_decision,OCCUPIED
+P-02,b1-R1/occupant,4,2026111164104,0.404586,output,OCCUPIED (decision)
+P-02,b1-R1/cargo,5,2026111164105,0.0,output,UNKNOWN (power_on)
+P-02,b1-R1/cargo,5,2026111164105,0.004627,recovery_first_valid,
+P-02,b1-R1/cargo,5,2026111164105,0.404671,valid_decision,OCCUPIED
+P-02,b1-R1/cargo,5,2026111164105,0.404671,output,OCCUPIED (decision)
+P-02,b1-R1/occupant,5,2026111164105,0.0,output,UNKNOWN (power_on)
+P-02,b1-R1/occupant,5,2026111164105,0.004627,recovery_first_valid,
+P-02,b1-R1/occupant,5,2026111164105,0.404671,valid_decision,OCCUPIED
+P-02,b1-R1/occupant,5,2026111164105,0.404671,output,OCCUPIED (decision)
+P-02,b1-R1/cargo,6,2026111164106,0.0,output,UNKNOWN (power_on)
+P-02,b1-R1/cargo,6,2026111164106,0.004639,recovery_first_valid,
+P-02,b1-R1/cargo,6,2026111164106,0.404663,valid_decision,OCCUPIED
+P-02,b1-R1/cargo,6,2026111164106,0.404663,output,OCCUPIED (decision)
+P-02,b1-R1/occupant,6,2026111164106,0.0,output,UNKNOWN (power_on)
+P-02,b1-R1/occupant,6,2026111164106,0.004639,recovery_first_valid,
+P-02,b1-R1/occupant,6,2026111164106,0.404663,valid_decision,OCCUPIED
+P-02,b1-R1/occupant,6,2026111164106,0.404663,output,OCCUPIED (decision)
+P-02,b1-R1/cargo,7,2026111164107,0.0,output,UNKNOWN (power_on)
+P-02,b1-R1/cargo,7,2026111164107,0.004682,recovery_first_valid,
+P-02,b1-R1/cargo,7,2026111164107,0.40469,valid_decision,OCCUPIED
+P-02,b1-R1/cargo,7,2026111164107,0.40469,output,OCCUPIED (decision)
+P-02,b1-R1/occupant,7,2026111164107,0.0,output,UNKNOWN (power_on)
+P-02,b1-R1/occupant,7,2026111164107,0.004682,recovery_first_valid,
+P-02,b1-R1/occupant,7,2026111164107,0.40469,valid_decision,OCCUPIED
+P-02,b1-R1/occupant,7,2026111164107,0.40469,output,OCCUPIED (decision)
+P-02,b1-R1/cargo,8,2026111164108,0.0,output,UNKNOWN (power_on)
+P-02,b1-R1/cargo,8,2026111164108,0.004624,recovery_first_valid,
+P-02,b1-R1/cargo,8,2026111164108,0.404721,valid_decision,OCCUPIED
+P-02,b1-R1/cargo,8,2026111164108,0.404721,output,OCCUPIED (decision)
+P-02,b1-R1/occupant,8,2026111164108,0.0,output,UNKNOWN (power_on)
+P-02,b1-R1/occupant,8,2026111164108,0.004624,recovery_first_valid,
+P-02,b1-R1/occupant,8,2026111164108,0.404721,valid_decision,OCCUPIED
+P-02,b1-R1/occupant,8,2026111164108,0.404721,output,OCCUPIED (decision)
+P-02,b1-R1/cargo,9,2026111164109,0.0,output,UNKNOWN (power_on)
+P-02,b1-R1/cargo,9,2026111164109,0.004583,recovery_first_valid,
+P-02,b1-R1/cargo,9,2026111164109,0.404732,valid_decision,OCCUPIED
+P-02,b1-R1/cargo,9,2026111164109,0.404732,output,OCCUPIED (decision)
+P-02,b1-R1/occupant,9,2026111164109,0.0,output,UNKNOWN (power_on)
+P-02,b1-R1/occupant,9,2026111164109,0.004583,recovery_first_valid,
+P-02,b1-R1/occupant,9,2026111164109,0.404732,valid_decision,OCCUPIED
+P-02,b1-R1/occupant,9,2026111164109,0.404732,output,OCCUPIED (decision)
+P-02,b1-R1/cargo,10,2026111164110,0.0,output,UNKNOWN (power_on)
+P-02,b1-R1/cargo,10,2026111164110,0.004774,recovery_first_valid,
+P-02,b1-R1/cargo,10,2026111164110,0.404723,valid_decision,OCCUPIED
+P-02,b1-R1/cargo,10,2026111164110,0.404723,output,OCCUPIED (decision)
+P-02,b1-R1/occupant,10,2026111164110,0.0,output,UNKNOWN (power_on)
+P-02,b1-R1/occupant,10,2026111164110,0.004774,recovery_first_valid,
+P-02,b1-R1/occupant,10,2026111164110,0.404723,valid_decision,OCCUPIED
+P-02,b1-R1/occupant,10,2026111164110,0.404723,output,OCCUPIED (decision)
+P-02,b1-R2/cargo,0,2026111175200,0.0,output,UNKNOWN (power_on)
+P-02,b1-R2/cargo,0,2026111175200,0.003494,recovery_first_valid,
+P-02,b1-R2/cargo,0,2026111175200,0.403494,valid_decision,OCCUPIED
+P-02,b1-R2/cargo,0,2026111175200,0.403494,output,OCCUPIED (decision)
+P-02,b1-R2/occupant,0,2026111175200,0.0,output,UNKNOWN (power_on)
+P-02,b1-R2/occupant,0,2026111175200,0.003494,recovery_first_valid,
+P-02,b1-R2/occupant,0,2026111175200,0.403494,valid_decision,OCCUPIED
+P-02,b1-R2/occupant,0,2026111175200,0.403494,output,OCCUPIED (decision)
+P-02,b1-R2/cargo,1,2026111175201,0.0,output,UNKNOWN (power_on)
+P-02,b1-R2/cargo,1,2026111175201,0.003532,recovery_first_valid,
+P-02,b1-R2/cargo,1,2026111175201,0.403454,valid_decision,OCCUPIED
+P-02,b1-R2/cargo,1,2026111175201,0.403454,output,OCCUPIED (decision)
+P-02,b1-R2/occupant,1,2026111175201,0.0,output,UNKNOWN (power_on)
+P-02,b1-R2/occupant,1,2026111175201,0.003532,recovery_first_valid,
+P-02,b1-R2/occupant,1,2026111175201,0.403454,valid_decision,OCCUPIED
+P-02,b1-R2/occupant,1,2026111175201,0.403454,output,OCCUPIED (decision)
+P-02,b1-R2/cargo,2,2026111175202,0.0,output,UNKNOWN (power_on)
+P-02,b1-R2/cargo,2,2026111175202,0.003529,recovery_first_valid,
+P-02,b1-R2/cargo,2,2026111175202,0.403444,valid_decision,OCCUPIED
+P-02,b1-R2/cargo,2,2026111175202,0.403444,output,OCCUPIED (decision)
+P-02,b1-R2/occupant,2,2026111175202,0.0,output,UNKNOWN (power_on)
+P-02,b1-R2/occupant,2,2026111175202,0.003529,recovery_first_valid,
+P-02,b1-R2/occupant,2,2026111175202,0.403444,valid_decision,OCCUPIED
+P-02,b1-R2/occupant,2,2026111175202,0.403444,output,OCCUPIED (decision)
+P-02,b1-R2/cargo,3,2026111175203,0.0,output,UNKNOWN (power_on)
+P-02,b1-R2/cargo,3,2026111175203,0.003536,recovery_first_valid,
+P-02,b1-R2/cargo,3,2026111175203,0.403456,valid_decision,OCCUPIED
+P-02,b1-R2/cargo,3,2026111175203,0.403456,output,OCCUPIED (decision)
+P-02,b1-R2/occupant,3,2026111175203,0.0,output,UNKNOWN (power_on)
+P-02,b1-R2/occupant,3,2026111175203,0.003536,recovery_first_valid,
+P-02,b1-R2/occupant,3,2026111175203,0.403456,valid_decision,OCCUPIED
+P-02,b1-R2/occupant,3,2026111175203,0.403456,output,OCCUPIED (decision)
+P-02,b1-R2/cargo,4,2026111175204,0.0,output,UNKNOWN (power_on)
+P-02,b1-R2/cargo,4,2026111175204,0.003496,recovery_first_valid,
+P-02,b1-R2/cargo,4,2026111175204,0.403497,valid_decision,OCCUPIED
+P-02,b1-R2/cargo,4,2026111175204,0.403497,output,OCCUPIED (decision)
+P-02,b1-R2/occupant,4,2026111175204,0.0,output,UNKNOWN (power_on)
+P-02,b1-R2/occupant,4,2026111175204,0.003496,recovery_first_valid,
+P-02,b1-R2/occupant,4,2026111175204,0.403497,valid_decision,OCCUPIED
+P-02,b1-R2/occupant,4,2026111175204,0.403497,output,OCCUPIED (decision)
+P-02,b1-R2/cargo,5,2026111175205,0.0,output,UNKNOWN (power_on)
+P-02,b1-R2/cargo,5,2026111175205,0.003532,recovery_first_valid,
+P-02,b1-R2/cargo,5,2026111175205,0.403458,valid_decision,OCCUPIED
+P-02,b1-R2/cargo,5,2026111175205,0.403458,output,OCCUPIED (decision)
+P-02,b1-R2/occupant,5,2026111175205,0.0,output,UNKNOWN (power_on)
+P-02,b1-R2/occupant,5,2026111175205,0.003532,recovery_first_valid,
+P-02,b1-R2/occupant,5,2026111175205,0.403458,valid_decision,OCCUPIED
+P-02,b1-R2/occupant,5,2026111175205,0.403458,output,OCCUPIED (decision)
+P-02,b1-R2/cargo,6,2026111175206,0.0,output,UNKNOWN (power_on)
+P-02,b1-R2/cargo,6,2026111175206,0.003494,recovery_first_valid,
+P-02,b1-R2/cargo,6,2026111175206,0.403543,valid_decision,OCCUPIED
+P-02,b1-R2/cargo,6,2026111175206,0.403543,output,OCCUPIED (decision)
+P-02,b1-R2/occupant,6,2026111175206,0.0,output,UNKNOWN (power_on)
+P-02,b1-R2/occupant,6,2026111175206,0.003494,recovery_first_valid,
+P-02,b1-R2/occupant,6,2026111175206,0.403543,valid_decision,OCCUPIED
+P-02,b1-R2/occupant,6,2026111175206,0.403543,output,OCCUPIED (decision)
+P-02,b1-R2/cargo,7,2026111175207,0.0,output,UNKNOWN (power_on)
+P-02,b1-R2/cargo,7,2026111175207,0.003476,recovery_first_valid,
+P-02,b1-R2/cargo,7,2026111175207,0.403477,valid_decision,OCCUPIED
+P-02,b1-R2/cargo,7,2026111175207,0.403477,output,OCCUPIED (decision)
+P-02,b1-R2/occupant,7,2026111175207,0.0,output,UNKNOWN (power_on)
+P-02,b1-R2/occupant,7,2026111175207,0.003476,recovery_first_valid,
+P-02,b1-R2/occupant,7,2026111175207,0.403477,valid_decision,OCCUPIED
+P-02,b1-R2/occupant,7,2026111175207,0.403477,output,OCCUPIED (decision)
+P-02,b1-R2/cargo,8,2026111175208,0.0,output,UNKNOWN (power_on)
+P-02,b1-R2/cargo,8,2026111175208,0.003442,recovery_first_valid,
+P-02,b1-R2/cargo,8,2026111175208,0.403538,valid_decision,OCCUPIED
+P-02,b1-R2/cargo,8,2026111175208,0.403538,output,OCCUPIED (decision)
+P-02,b1-R2/occupant,8,2026111175208,0.0,output,UNKNOWN (power_on)
+P-02,b1-R2/occupant,8,2026111175208,0.003442,recovery_first_valid,
+P-02,b1-R2/occupant,8,2026111175208,0.403538,valid_decision,OCCUPIED
+P-02,b1-R2/occupant,8,2026111175208,0.403538,output,OCCUPIED (decision)
+P-02,b1-R2/cargo,9,2026111175209,0.0,output,UNKNOWN (power_on)
+P-02,b1-R2/cargo,9,2026111175209,0.003502,recovery_first_valid,
+P-02,b1-R2/cargo,9,2026111175209,0.40358,valid_decision,OCCUPIED
+P-02,b1-R2/cargo,9,2026111175209,0.40358,output,OCCUPIED (decision)
+P-02,b1-R2/occupant,9,2026111175209,0.0,output,UNKNOWN (power_on)
+P-02,b1-R2/occupant,9,2026111175209,0.003502,recovery_first_valid,
+P-02,b1-R2/occupant,9,2026111175209,0.40358,valid_decision,OCCUPIED
+P-02,b1-R2/occupant,9,2026111175209,0.40358,output,OCCUPIED (decision)
+P-02,b1-R2/cargo,10,2026111175210,0.0,output,UNKNOWN (power_on)
+P-02,b1-R2/cargo,10,2026111175210,0.003454,recovery_first_valid,
+P-02,b1-R2/cargo,10,2026111175210,0.403415,valid_decision,OCCUPIED
+P-02,b1-R2/cargo,10,2026111175210,0.403415,output,OCCUPIED (decision)
+P-02,b1-R2/occupant,10,2026111175210,0.0,output,UNKNOWN (power_on)
+P-02,b1-R2/occupant,10,2026111175210,0.003454,recovery_first_valid,
+P-02,b1-R2/occupant,10,2026111175210,0.403415,valid_decision,OCCUPIED
+P-02,b1-R2/occupant,10,2026111175210,0.403415,output,OCCUPIED (decision)
+P-02,b2/cargo,0,2026111196600,0.0,output,UNKNOWN (power_on)
+P-02,b2/cargo,0,2026111196600,0.004659,recovery_first_valid,
+P-02,b2/cargo,0,2026111196600,0.404659,valid_decision,OCCUPIED
+P-02,b2/cargo,0,2026111196600,0.404659,output,OCCUPIED (decision)
+P-02,b2/occupant-motion,0,2026111196600,0.0,output,UNKNOWN (power_on)
+P-02,b2/occupant-motion,0,2026111196600,0.004659,recovery_first_valid,
+P-02,b2/occupant-motion,0,2026111196600,0.404625,valid_decision,OCCUPIED
+P-02,b2/occupant-motion,0,2026111196600,0.404625,output,OCCUPIED (decision)
+P-02,b2/cargo,1,2026111196601,0.0,output,UNKNOWN (power_on)
+P-02,b2/cargo,1,2026111196601,0.004721,recovery_first_valid,
+P-02,b2/cargo,1,2026111196601,0.404703,valid_decision,OCCUPIED
+P-02,b2/cargo,1,2026111196601,0.404703,output,OCCUPIED (decision)
+P-02,b2/occupant-motion,1,2026111196601,0.0,output,UNKNOWN (power_on)
+P-02,b2/occupant-motion,1,2026111196601,0.004721,recovery_first_valid,
+P-02,b2/occupant-motion,1,2026111196601,0.404669,valid_decision,OCCUPIED
+P-02,b2/occupant-motion,1,2026111196601,0.404669,output,OCCUPIED (decision)
+P-02,b2/cargo,2,2026111196602,0.0,output,UNKNOWN (power_on)
+P-02,b2/cargo,2,2026111196602,0.00464,recovery_first_valid,
+P-02,b2/cargo,2,2026111196602,0.404652,valid_decision,OCCUPIED
+P-02,b2/cargo,2,2026111196602,0.404652,output,OCCUPIED (decision)
+P-02,b2/occupant-motion,2,2026111196602,0.0,output,UNKNOWN (power_on)
+P-02,b2/occupant-motion,2,2026111196602,0.00464,recovery_first_valid,
+P-02,b2/occupant-motion,2,2026111196602,0.404618,valid_decision,OCCUPIED
+P-02,b2/occupant-motion,2,2026111196602,0.404618,output,OCCUPIED (decision)
+P-02,b2/cargo,3,2026111196603,0.0,output,UNKNOWN (power_on)
+P-02,b2/cargo,3,2026111196603,0.00455,recovery_first_valid,
+P-02,b2/cargo,3,2026111196603,0.404664,valid_decision,OCCUPIED
+P-02,b2/cargo,3,2026111196603,0.404664,output,OCCUPIED (decision)
+P-02,b2/occupant-motion,3,2026111196603,0.0,output,UNKNOWN (power_on)
+P-02,b2/occupant-motion,3,2026111196603,0.00455,recovery_first_valid,
+P-02,b2/occupant-motion,3,2026111196603,0.40463,valid_decision,OCCUPIED
+P-02,b2/occupant-motion,3,2026111196603,0.40463,output,OCCUPIED (decision)
+P-02,b2/cargo,4,2026111196604,0.0,output,UNKNOWN (power_on)
+P-02,b2/cargo,4,2026111196604,0.004711,recovery_first_valid,
+P-02,b2/cargo,4,2026111196604,0.404562,valid_decision,OCCUPIED
+P-02,b2/cargo,4,2026111196604,0.404562,output,OCCUPIED (decision)
+P-02,b2/occupant-motion,4,2026111196604,0.0,output,UNKNOWN (power_on)
+P-02,b2/occupant-motion,4,2026111196604,0.004711,recovery_first_valid,
+P-02,b2/occupant-motion,4,2026111196604,0.404527,valid_decision,OCCUPIED
+P-02,b2/occupant-motion,4,2026111196604,0.404527,output,OCCUPIED (decision)
+P-02,b2/cargo,5,2026111196605,0.0,output,UNKNOWN (power_on)
+P-02,b2/cargo,5,2026111196605,0.004596,recovery_first_valid,
+P-02,b2/cargo,5,2026111196605,0.404618,valid_decision,OCCUPIED
+P-02,b2/cargo,5,2026111196605,0.404618,output,OCCUPIED (decision)
+P-02,b2/occupant-motion,5,2026111196605,0.0,output,UNKNOWN (power_on)
+P-02,b2/occupant-motion,5,2026111196605,0.004596,recovery_first_valid,
+P-02,b2/occupant-motion,5,2026111196605,0.404583,valid_decision,OCCUPIED
+P-02,b2/occupant-motion,5,2026111196605,0.404583,output,OCCUPIED (decision)
+P-02,b2/cargo,6,2026111196606,0.0,output,UNKNOWN (power_on)
+P-02,b2/cargo,6,2026111196606,0.00474,recovery_first_valid,
+P-02,b2/cargo,6,2026111196606,0.404721,valid_decision,OCCUPIED
+P-02,b2/cargo,6,2026111196606,0.404721,output,OCCUPIED (decision)
+P-02,b2/occupant-motion,6,2026111196606,0.0,output,UNKNOWN (power_on)
+P-02,b2/occupant-motion,6,2026111196606,0.00474,recovery_first_valid,
+P-02,b2/occupant-motion,6,2026111196606,0.404687,valid_decision,OCCUPIED
+P-02,b2/occupant-motion,6,2026111196606,0.404687,output,OCCUPIED (decision)
+P-02,b2/cargo,7,2026111196607,0.0,output,UNKNOWN (power_on)
+P-02,b2/cargo,7,2026111196607,0.004693,recovery_first_valid,
+P-02,b2/cargo,7,2026111196607,0.404658,valid_decision,OCCUPIED
+P-02,b2/cargo,7,2026111196607,0.404658,output,OCCUPIED (decision)
+P-02,b2/occupant-motion,7,2026111196607,0.0,output,UNKNOWN (power_on)
+P-02,b2/occupant-motion,7,2026111196607,0.004693,recovery_first_valid,
+P-02,b2/occupant-motion,7,2026111196607,0.404624,valid_decision,OCCUPIED
+P-02,b2/occupant-motion,7,2026111196607,0.404624,output,OCCUPIED (decision)
+P-02,b2/cargo,8,2026111196608,0.0,output,UNKNOWN (power_on)
+P-02,b2/cargo,8,2026111196608,0.004741,recovery_first_valid,
+P-02,b2/cargo,8,2026111196608,0.404585,valid_decision,OCCUPIED
+P-02,b2/cargo,8,2026111196608,0.404585,output,OCCUPIED (decision)
+P-02,b2/occupant-motion,8,2026111196608,0.0,output,UNKNOWN (power_on)
+P-02,b2/occupant-motion,8,2026111196608,0.004741,recovery_first_valid,
+P-02,b2/occupant-motion,8,2026111196608,0.404551,valid_decision,OCCUPIED
+P-02,b2/occupant-motion,8,2026111196608,0.404551,output,OCCUPIED (decision)
+P-02,b2/cargo,9,2026111196609,0.0,output,UNKNOWN (power_on)
+P-02,b2/cargo,9,2026111196609,0.004624,recovery_first_valid,
+P-02,b2/cargo,9,2026111196609,0.40471,valid_decision,OCCUPIED
+P-02,b2/cargo,9,2026111196609,0.40471,output,OCCUPIED (decision)
+P-02,b2/occupant-motion,9,2026111196609,0.0,output,UNKNOWN (power_on)
+P-02,b2/occupant-motion,9,2026111196609,0.004624,recovery_first_valid,
+P-02,b2/occupant-motion,9,2026111196609,0.404676,valid_decision,OCCUPIED
+P-02,b2/occupant-motion,9,2026111196609,0.404676,output,OCCUPIED (decision)
+P-02,b2/cargo,10,2026111196610,0.0,output,UNKNOWN (power_on)
+P-02,b2/cargo,10,2026111196610,0.004715,recovery_first_valid,
+P-02,b2/cargo,10,2026111196610,0.404661,valid_decision,OCCUPIED
+P-02,b2/cargo,10,2026111196610,0.404661,output,OCCUPIED (decision)
+P-02,b2/occupant-motion,10,2026111196610,0.0,output,UNKNOWN (power_on)
+P-02,b2/occupant-motion,10,2026111196610,0.004715,recovery_first_valid,
+P-02,b2/occupant-motion,10,2026111196610,0.404627,valid_decision,OCCUPIED
+P-02,b2/occupant-motion,10,2026111196610,0.404627,output,OCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.0/det,0,2026111192300,0.0,output,UNKNOWN (power_on)
+P-07,착석(빈 좌석→R1)-Tdb0.0/det,0,2026111192300,0.005824,recovery_first_valid,
+P-07,착석(빈 좌석→R1)-Tdb0.0/det,0,2026111192300,0.405824,valid_decision,UNOCCUPIED
+P-07,착석(빈 좌석→R1)-Tdb0.0/det,0,2026111192300,0.405824,output,UNOCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.0/det,0,2026111192300,5.204659,output,OCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,1,2026111192301,0.0,output,UNKNOWN (power_on)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,1,2026111192301,0.005716,recovery_first_valid,
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,1,2026111192301,0.40582,valid_decision,UNOCCUPIED
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,1,2026111192301,0.40582,output,UNOCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,1,2026111192301,5.304661,output,OCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,2,2026111192302,0.0,output,UNKNOWN (power_on)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,2,2026111192302,0.005817,recovery_first_valid,
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,2,2026111192302,0.40579,valid_decision,UNOCCUPIED
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,2,2026111192302,0.40579,output,UNOCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,2,2026111192302,5.30474,output,OCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,3,2026111192303,0.0,output,UNKNOWN (power_on)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,3,2026111192303,0.005871,recovery_first_valid,
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,3,2026111192303,0.405863,valid_decision,UNOCCUPIED
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,3,2026111192303,0.405863,output,UNOCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,3,2026111192303,5.304675,output,OCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,4,2026111192304,0.0,output,UNKNOWN (power_on)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,4,2026111192304,0.005874,recovery_first_valid,
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,4,2026111192304,0.40583,valid_decision,UNOCCUPIED
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,4,2026111192304,0.40583,output,UNOCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,4,2026111192304,5.304642,output,OCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,5,2026111192305,0.0,output,UNKNOWN (power_on)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,5,2026111192305,0.005812,recovery_first_valid,
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,5,2026111192305,0.405868,valid_decision,UNOCCUPIED
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,5,2026111192305,0.405868,output,UNOCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,5,2026111192305,5.304588,output,OCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,6,2026111192306,0.0,output,UNKNOWN (power_on)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,6,2026111192306,0.005817,recovery_first_valid,
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,6,2026111192306,0.405829,valid_decision,UNOCCUPIED
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,6,2026111192306,0.405829,output,UNOCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,6,2026111192306,5.304799,output,OCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,7,2026111192307,0.0,output,UNKNOWN (power_on)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,7,2026111192307,0.005774,recovery_first_valid,
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,7,2026111192307,0.405832,valid_decision,UNOCCUPIED
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,7,2026111192307,0.405832,output,UNOCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,7,2026111192307,5.304729,output,OCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,8,2026111192308,0.0,output,UNKNOWN (power_on)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,8,2026111192308,0.005802,recovery_first_valid,
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,8,2026111192308,0.40579,valid_decision,UNOCCUPIED
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,8,2026111192308,0.40579,output,UNOCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,8,2026111192308,5.304561,output,OCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,9,2026111192309,0.0,output,UNKNOWN (power_on)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,9,2026111192309,0.005818,recovery_first_valid,
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,9,2026111192309,0.405897,valid_decision,UNOCCUPIED
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,9,2026111192309,0.405897,output,UNOCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,9,2026111192309,5.304701,output,OCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,10,2026111192310,0.0,output,UNKNOWN (power_on)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,10,2026111192310,0.005838,recovery_first_valid,
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,10,2026111192310,0.405835,valid_decision,UNOCCUPIED
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,10,2026111192310,0.405835,output,UNOCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.0/rand,10,2026111192310,5.304728,output,OCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.0/det,0,2026111116800,0.0,output,UNKNOWN (power_on)
+P-07,이석(R1→빈 좌석)-Tdb0.0/det,0,2026111116800,0.004659,recovery_first_valid,
+P-07,이석(R1→빈 좌석)-Tdb0.0/det,0,2026111116800,0.404659,valid_decision,OCCUPIED
+P-07,이석(R1→빈 좌석)-Tdb0.0/det,0,2026111116800,0.404659,output,OCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.0/det,0,2026111116800,5.205824,output,UNOCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,1,2026111116801,0.0,output,UNKNOWN (power_on)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,1,2026111116801,0.00465,recovery_first_valid,
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,1,2026111116801,0.404664,valid_decision,OCCUPIED
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,1,2026111116801,0.404664,output,OCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,1,2026111116801,5.305839,output,UNOCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,2,2026111116802,0.0,output,UNKNOWN (power_on)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,2,2026111116802,0.004739,recovery_first_valid,
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,2,2026111116802,0.404664,valid_decision,OCCUPIED
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,2,2026111116802,0.404664,output,OCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,2,2026111116802,5.305782,output,UNOCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,3,2026111116803,0.0,output,UNKNOWN (power_on)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,3,2026111116803,0.004637,recovery_first_valid,
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,3,2026111116803,0.404695,valid_decision,OCCUPIED
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,3,2026111116803,0.404695,output,OCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,3,2026111116803,5.3057,output,UNOCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,4,2026111116804,0.0,output,UNKNOWN (power_on)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,4,2026111116804,0.004746,recovery_first_valid,
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,4,2026111116804,0.40468,valid_decision,OCCUPIED
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,4,2026111116804,0.40468,output,OCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,4,2026111116804,5.305891,output,UNOCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,5,2026111116805,0.0,output,UNKNOWN (power_on)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,5,2026111116805,0.00461,recovery_first_valid,
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,5,2026111116805,0.404611,valid_decision,OCCUPIED
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,5,2026111116805,0.404611,output,OCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,5,2026111116805,5.305922,output,UNOCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,6,2026111116806,0.0,output,UNKNOWN (power_on)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,6,2026111116806,0.004576,recovery_first_valid,
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,6,2026111116806,0.404688,valid_decision,OCCUPIED
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,6,2026111116806,0.404688,output,OCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,6,2026111116806,5.30592,output,UNOCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,7,2026111116807,0.0,output,UNKNOWN (power_on)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,7,2026111116807,0.004822,recovery_first_valid,
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,7,2026111116807,0.404587,valid_decision,OCCUPIED
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,7,2026111116807,0.404587,output,OCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,7,2026111116807,5.305807,output,UNOCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,8,2026111116808,0.0,output,UNKNOWN (power_on)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,8,2026111116808,0.004665,recovery_first_valid,
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,8,2026111116808,0.404658,valid_decision,OCCUPIED
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,8,2026111116808,0.404658,output,OCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,8,2026111116808,5.305811,output,UNOCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,9,2026111116809,0.0,output,UNKNOWN (power_on)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,9,2026111116809,0.004744,recovery_first_valid,
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,9,2026111116809,0.404658,valid_decision,OCCUPIED
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,9,2026111116809,0.404658,output,OCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,9,2026111116809,5.305884,output,UNOCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,10,2026111116810,0.0,output,UNKNOWN (power_on)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,10,2026111116810,0.004646,recovery_first_valid,
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,10,2026111116810,0.404594,valid_decision,OCCUPIED
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,10,2026111116810,0.404594,output,OCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.0/rand,10,2026111116810,5.305732,output,UNOCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.5/det,0,2026111175900,0.0,output,UNKNOWN (power_on)
+P-07,착석(빈 좌석→R1)-Tdb0.5/det,0,2026111175900,0.005824,recovery_first_valid,
+P-07,착석(빈 좌석→R1)-Tdb0.5/det,0,2026111175900,0.905824,valid_decision,UNOCCUPIED
+P-07,착석(빈 좌석→R1)-Tdb0.5/det,0,2026111175900,0.905824,output,UNOCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.5/det,0,2026111175900,5.704659,output,OCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,1,2026111175901,0.0,output,UNKNOWN (power_on)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,1,2026111175901,0.005756,recovery_first_valid,
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,1,2026111175901,1.005852,valid_decision,UNOCCUPIED
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,1,2026111175901,1.005852,output,UNOCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,1,2026111175901,5.904716,output,OCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,2,2026111175902,0.0,output,UNKNOWN (power_on)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,2,2026111175902,0.005819,recovery_first_valid,
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,2,2026111175902,1.005851,valid_decision,UNOCCUPIED
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,2,2026111175902,1.005851,output,UNOCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,2,2026111175902,5.804646,output,OCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,3,2026111175903,0.0,output,UNKNOWN (power_on)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,3,2026111175903,0.005833,recovery_first_valid,
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,3,2026111175903,0.90589,valid_decision,UNOCCUPIED
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,3,2026111175903,0.90589,output,UNOCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,3,2026111175903,5.904659,output,OCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,4,2026111175904,0.0,output,UNKNOWN (power_on)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,4,2026111175904,0.005831,recovery_first_valid,
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,4,2026111175904,1.005769,valid_decision,UNOCCUPIED
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,4,2026111175904,1.005769,output,UNOCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,4,2026111175904,5.80469,output,OCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,5,2026111175905,0.0,output,UNKNOWN (power_on)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,5,2026111175905,0.005712,recovery_first_valid,
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,5,2026111175905,1.005822,valid_decision,UNOCCUPIED
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,5,2026111175905,1.005822,output,UNOCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,5,2026111175905,5.80477,output,OCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,6,2026111175906,0.0,output,UNKNOWN (power_on)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,6,2026111175906,0.005916,recovery_first_valid,
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,6,2026111175906,1.0059,valid_decision,UNOCCUPIED
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,6,2026111175906,1.0059,output,UNOCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,6,2026111175906,5.804707,output,OCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,7,2026111175907,0.0,output,UNKNOWN (power_on)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,7,2026111175907,0.005817,recovery_first_valid,
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,7,2026111175907,0.905786,valid_decision,UNOCCUPIED
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,7,2026111175907,0.905786,output,UNOCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,7,2026111175907,5.904704,output,OCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,8,2026111175908,0.0,output,UNKNOWN (power_on)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,8,2026111175908,0.005733,recovery_first_valid,
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,8,2026111175908,1.005803,valid_decision,UNOCCUPIED
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,8,2026111175908,1.005803,output,UNOCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,8,2026111175908,5.904691,output,OCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,9,2026111175909,0.0,output,UNKNOWN (power_on)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,9,2026111175909,0.005868,recovery_first_valid,
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,9,2026111175909,0.905849,valid_decision,UNOCCUPIED
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,9,2026111175909,0.905849,output,UNOCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,9,2026111175909,5.804648,output,OCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,10,2026111175910,0.0,output,UNKNOWN (power_on)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,10,2026111175910,0.005895,recovery_first_valid,
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,10,2026111175910,0.905861,valid_decision,UNOCCUPIED
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,10,2026111175910,0.905861,output,UNOCCUPIED (decision)
+P-07,착석(빈 좌석→R1)-Tdb0.5/rand,10,2026111175910,5.804696,output,OCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.5/det,0,2026111136200,0.0,output,UNKNOWN (power_on)
+P-07,이석(R1→빈 좌석)-Tdb0.5/det,0,2026111136200,0.004659,recovery_first_valid,
+P-07,이석(R1→빈 좌석)-Tdb0.5/det,0,2026111136200,0.904659,valid_decision,OCCUPIED
+P-07,이석(R1→빈 좌석)-Tdb0.5/det,0,2026111136200,0.904659,output,OCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.5/det,0,2026111136200,5.705824,output,UNOCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,1,2026111136201,0.0,output,UNKNOWN (power_on)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,1,2026111136201,0.004678,recovery_first_valid,
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,1,2026111136201,1.004691,valid_decision,OCCUPIED
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,1,2026111136201,1.004691,output,OCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,1,2026111136201,5.805833,output,UNOCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,2,2026111136202,0.0,output,UNKNOWN (power_on)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,2,2026111136202,0.004636,recovery_first_valid,
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,2,2026111136202,0.90469,valid_decision,OCCUPIED
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,2,2026111136202,0.90469,output,OCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,2,2026111136202,5.805812,output,UNOCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,3,2026111136203,0.0,output,UNKNOWN (power_on)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,3,2026111136203,0.004689,recovery_first_valid,
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,3,2026111136203,0.904723,valid_decision,OCCUPIED
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,3,2026111136203,0.904723,output,OCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,3,2026111136203,5.905804,output,UNOCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,4,2026111136204,0.0,output,UNKNOWN (power_on)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,4,2026111136204,0.004698,recovery_first_valid,
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,4,2026111136204,1.004768,valid_decision,OCCUPIED
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,4,2026111136204,1.004768,output,OCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,4,2026111136204,5.80583,output,UNOCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,5,2026111136205,0.0,output,UNKNOWN (power_on)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,5,2026111136205,0.004714,recovery_first_valid,
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,5,2026111136205,1.004612,valid_decision,OCCUPIED
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,5,2026111136205,1.004612,output,OCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,5,2026111136205,5.905744,output,UNOCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,6,2026111136206,0.0,output,UNKNOWN (power_on)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,6,2026111136206,0.004695,recovery_first_valid,
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,6,2026111136206,1.004598,valid_decision,OCCUPIED
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,6,2026111136206,1.004598,output,OCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,6,2026111136206,5.905832,output,UNOCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,7,2026111136207,0.0,output,UNKNOWN (power_on)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,7,2026111136207,0.004656,recovery_first_valid,
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,7,2026111136207,0.904696,valid_decision,OCCUPIED
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,7,2026111136207,0.904696,output,OCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,7,2026111136207,5.905841,output,UNOCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,8,2026111136208,0.0,output,UNKNOWN (power_on)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,8,2026111136208,0.004769,recovery_first_valid,
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,8,2026111136208,1.004641,valid_decision,OCCUPIED
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,8,2026111136208,1.004641,output,OCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,8,2026111136208,5.905906,output,UNOCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,9,2026111136209,0.0,output,UNKNOWN (power_on)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,9,2026111136209,0.004681,recovery_first_valid,
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,9,2026111136209,1.00462,valid_decision,OCCUPIED
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,9,2026111136209,1.00462,output,OCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,9,2026111136209,5.805856,output,UNOCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,10,2026111136210,0.0,output,UNKNOWN (power_on)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,10,2026111136210,0.004647,recovery_first_valid,
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,10,2026111136210,1.004744,valid_decision,OCCUPIED
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,10,2026111136210,1.004744,output,OCCUPIED (decision)
+P-07,이석(R1→빈 좌석)-Tdb0.5/rand,10,2026111136210,5.805867,output,UNOCCUPIED (decision)
+P-08,S01-R1,1,2026111165901,0.0,output,UNKNOWN (power_on)
+P-08,S01-R1,1,2026111165901,0.004785,recovery_first_valid,
+P-08,S01-R1,1,2026111165901,0.404809,valid_decision,OCCUPIED
+P-08,S01-R1,1,2026111165901,0.404809,output,OCCUPIED (decision)
+P-08,S01-R1,2,2026111165902,0.0,output,UNKNOWN (power_on)
+P-08,S01-R1,2,2026111165902,0.004862,recovery_first_valid,
+P-08,S01-R1,2,2026111165902,0.404825,valid_decision,OCCUPIED
+P-08,S01-R1,2,2026111165902,0.404825,output,OCCUPIED (decision)
+P-08,S01-R1,3,2026111165903,0.0,output,UNKNOWN (power_on)
+P-08,S01-R1,3,2026111165903,0.004803,recovery_first_valid,
+P-08,S01-R1,3,2026111165903,0.404829,valid_decision,OCCUPIED
+P-08,S01-R1,3,2026111165903,0.404829,output,OCCUPIED (decision)
+P-08,S01-R1,4,2026111165904,0.0,output,UNKNOWN (power_on)
+P-08,S01-R1,4,2026111165904,0.004735,recovery_first_valid,
+P-08,S01-R1,4,2026111165904,0.404977,valid_decision,OCCUPIED
+P-08,S01-R1,4,2026111165904,0.404977,output,OCCUPIED (decision)
+P-08,S01-R1,5,2026111165905,0.0,output,UNKNOWN (power_on)
+P-08,S01-R1,5,2026111165905,0.00493,recovery_first_valid,
+P-08,S01-R1,5,2026111165905,0.404851,valid_decision,OCCUPIED
+P-08,S01-R1,5,2026111165905,0.404851,output,OCCUPIED (decision)
+P-08,S01-R1,6,2026111165906,0.0,output,UNKNOWN (power_on)
+P-08,S01-R1,6,2026111165906,0.00481,recovery_first_valid,
+P-08,S01-R1,6,2026111165906,0.404836,valid_decision,OCCUPIED
+P-08,S01-R1,6,2026111165906,0.404836,output,OCCUPIED (decision)
+P-08,S01-R1,7,2026111165907,0.0,output,UNKNOWN (power_on)
+P-08,S01-R1,7,2026111165907,0.004808,recovery_first_valid,
+P-08,S01-R1,7,2026111165907,0.404766,valid_decision,OCCUPIED
+P-08,S01-R1,7,2026111165907,0.404766,output,OCCUPIED (decision)
+P-08,S01-R1,8,2026111165908,0.0,output,UNKNOWN (power_on)
+P-08,S01-R1,8,2026111165908,0.004768,recovery_first_valid,
+P-08,S01-R1,8,2026111165908,0.40474,valid_decision,OCCUPIED
+P-08,S01-R1,8,2026111165908,0.40474,output,OCCUPIED (decision)
+P-08,S01-R1,9,2026111165909,0.0,output,UNKNOWN (power_on)
+P-08,S01-R1,9,2026111165909,0.004855,recovery_first_valid,
+P-08,S01-R1,9,2026111165909,0.404858,valid_decision,OCCUPIED
+P-08,S01-R1,9,2026111165909,0.404858,output,OCCUPIED (decision)
+P-08,S01-R1,10,2026111165910,0.0,output,UNKNOWN (power_on)
+P-08,S01-R1,10,2026111165910,0.004911,recovery_first_valid,
+P-08,S01-R1,10,2026111165910,0.404986,valid_decision,OCCUPIED
+P-08,S01-R1,10,2026111165910,0.404986,output,OCCUPIED (decision)
+P-08,S01-empty,1,2026111144301,0.0,output,UNKNOWN (power_on)
+P-08,S01-empty,1,2026111144301,0.006016,recovery_first_valid,
+P-08,S01-empty,1,2026111144301,0.405948,valid_decision,UNOCCUPIED
+P-08,S01-empty,1,2026111144301,0.405948,output,UNOCCUPIED (decision)
+P-08,S01-empty,2,2026111144302,0.0,output,UNKNOWN (power_on)
+P-08,S01-empty,2,2026111144302,0.006165,recovery_first_valid,
+P-08,S01-empty,2,2026111144302,0.406174,valid_decision,UNOCCUPIED
+P-08,S01-empty,2,2026111144302,0.406174,output,UNOCCUPIED (decision)
+P-08,S01-empty,3,2026111144303,0.0,output,UNKNOWN (power_on)
+P-08,S01-empty,3,2026111144303,0.006051,recovery_first_valid,
+P-08,S01-empty,3,2026111144303,0.406009,valid_decision,UNOCCUPIED
+P-08,S01-empty,3,2026111144303,0.406009,output,UNOCCUPIED (decision)
+P-08,S01-empty,4,2026111144304,0.0,output,UNKNOWN (power_on)
+P-08,S01-empty,4,2026111144304,0.005958,recovery_first_valid,
+P-08,S01-empty,4,2026111144304,0.405938,valid_decision,UNOCCUPIED
+P-08,S01-empty,4,2026111144304,0.405938,output,UNOCCUPIED (decision)
+P-08,S01-empty,5,2026111144305,0.0,output,UNKNOWN (power_on)
+P-08,S01-empty,5,2026111144305,0.006012,recovery_first_valid,
+P-08,S01-empty,5,2026111144305,0.406109,valid_decision,UNOCCUPIED
+P-08,S01-empty,5,2026111144305,0.406109,output,UNOCCUPIED (decision)
+P-08,S01-empty,6,2026111144306,0.0,output,UNKNOWN (power_on)
+P-08,S01-empty,6,2026111144306,0.006054,recovery_first_valid,
+P-08,S01-empty,6,2026111144306,0.405992,valid_decision,UNOCCUPIED
+P-08,S01-empty,6,2026111144306,0.405992,output,UNOCCUPIED (decision)
+P-08,S01-empty,7,2026111144307,0.0,output,UNKNOWN (power_on)
+P-08,S01-empty,7,2026111144307,0.006079,recovery_first_valid,
+P-08,S01-empty,7,2026111144307,0.40599,valid_decision,UNOCCUPIED
+P-08,S01-empty,7,2026111144307,0.40599,output,UNOCCUPIED (decision)
+P-08,S01-empty,8,2026111144308,0.0,output,UNKNOWN (power_on)
+P-08,S01-empty,8,2026111144308,0.006057,recovery_first_valid,
+P-08,S01-empty,8,2026111144308,0.406023,valid_decision,UNOCCUPIED
+P-08,S01-empty,8,2026111144308,0.406023,output,UNOCCUPIED (decision)
+P-08,S01-empty,9,2026111144309,0.0,output,UNKNOWN (power_on)
+P-08,S01-empty,9,2026111144309,0.00599,recovery_first_valid,
+P-08,S01-empty,9,2026111144309,0.406037,valid_decision,UNOCCUPIED
+P-08,S01-empty,9,2026111144309,0.406037,output,UNOCCUPIED (decision)
+P-08,S01-empty,10,2026111144310,0.0,output,UNKNOWN (power_on)
+P-08,S01-empty,10,2026111144310,0.006056,recovery_first_valid,
+P-08,S01-empty,10,2026111144310,0.405998,valid_decision,UNOCCUPIED
+P-08,S01-empty,10,2026111144310,0.405998,output,UNOCCUPIED (decision)
+P-08,S02-R1,1,2026111197901,0.0,output,UNKNOWN (power_on)
+P-08,S02-R1,1,2026111197901,0.004864,recovery_first_valid,
+P-08,S02-R1,1,2026111197901,0.404808,valid_decision,OCCUPIED
+P-08,S02-R1,1,2026111197901,0.404808,output,OCCUPIED (decision)
+P-08,S02-R1,2,2026111197902,0.0,output,UNKNOWN (power_on)
+P-08,S02-R1,2,2026111197902,0.004917,recovery_first_valid,
+P-08,S02-R1,2,2026111197902,0.404772,valid_decision,OCCUPIED
+P-08,S02-R1,2,2026111197902,0.404772,output,OCCUPIED (decision)
+P-08,S02-R1,3,2026111197903,0.0,output,UNKNOWN (power_on)
+P-08,S02-R1,3,2026111197903,0.004727,recovery_first_valid,
+P-08,S02-R1,3,2026111197903,0.404727,valid_decision,OCCUPIED
+P-08,S02-R1,3,2026111197903,0.404727,output,OCCUPIED (decision)
+P-08,S02-R1,4,2026111197904,0.0,output,UNKNOWN (power_on)
+P-08,S02-R1,4,2026111197904,0.004834,recovery_first_valid,
+P-08,S02-R1,4,2026111197904,0.404794,valid_decision,OCCUPIED
+P-08,S02-R1,4,2026111197904,0.404794,output,OCCUPIED (decision)
+P-08,S02-R1,5,2026111197905,0.0,output,UNKNOWN (power_on)
+P-08,S02-R1,5,2026111197905,0.004886,recovery_first_valid,
+P-08,S02-R1,5,2026111197905,0.404903,valid_decision,OCCUPIED
+P-08,S02-R1,5,2026111197905,0.404903,output,OCCUPIED (decision)
+P-08,S02-R1,6,2026111197906,0.0,output,UNKNOWN (power_on)
+P-08,S02-R1,6,2026111197906,0.004769,recovery_first_valid,
+P-08,S02-R1,6,2026111197906,0.404882,valid_decision,OCCUPIED
+P-08,S02-R1,6,2026111197906,0.404882,output,OCCUPIED (decision)
+P-08,S02-R1,7,2026111197907,0.0,output,UNKNOWN (power_on)
+P-08,S02-R1,7,2026111197907,0.004847,recovery_first_valid,
+P-08,S02-R1,7,2026111197907,0.40482,valid_decision,OCCUPIED
+P-08,S02-R1,7,2026111197907,0.40482,output,OCCUPIED (decision)
+P-08,S02-R1,8,2026111197908,0.0,output,UNKNOWN (power_on)
+P-08,S02-R1,8,2026111197908,0.004805,recovery_first_valid,
+P-08,S02-R1,8,2026111197908,0.404866,valid_decision,OCCUPIED
+P-08,S02-R1,8,2026111197908,0.404866,output,OCCUPIED (decision)
+P-08,S02-R1,9,2026111197909,0.0,output,UNKNOWN (power_on)
+P-08,S02-R1,9,2026111197909,0.004937,recovery_first_valid,
+P-08,S02-R1,9,2026111197909,0.404753,valid_decision,OCCUPIED
+P-08,S02-R1,9,2026111197909,0.404753,output,OCCUPIED (decision)
+P-08,S02-R1,10,2026111197910,0.0,output,UNKNOWN (power_on)
+P-08,S02-R1,10,2026111197910,0.004995,recovery_first_valid,
+P-08,S02-R1,10,2026111197910,0.404847,valid_decision,OCCUPIED
+P-08,S02-R1,10,2026111197910,0.404847,output,OCCUPIED (decision)
+P-08,S02-empty,1,2026111174701,0.0,output,UNKNOWN (power_on)
+P-08,S02-empty,1,2026111174701,0.006049,recovery_first_valid,
+P-08,S02-empty,1,2026111174701,0.406077,valid_decision,UNOCCUPIED
+P-08,S02-empty,1,2026111174701,0.406077,output,UNOCCUPIED (decision)
+P-08,S02-empty,2,2026111174702,0.0,output,UNKNOWN (power_on)
+P-08,S02-empty,2,2026111174702,0.00607,recovery_first_valid,
+P-08,S02-empty,2,2026111174702,0.406087,valid_decision,UNOCCUPIED
+P-08,S02-empty,2,2026111174702,0.406087,output,UNOCCUPIED (decision)
+P-08,S02-empty,3,2026111174703,0.0,output,UNKNOWN (power_on)
+P-08,S02-empty,3,2026111174703,0.0061,recovery_first_valid,
+P-08,S02-empty,3,2026111174703,0.405974,valid_decision,UNOCCUPIED
+P-08,S02-empty,3,2026111174703,0.405974,output,UNOCCUPIED (decision)
+P-08,S02-empty,4,2026111174704,0.0,output,UNKNOWN (power_on)
+P-08,S02-empty,4,2026111174704,0.006065,recovery_first_valid,
+P-08,S02-empty,4,2026111174704,0.406045,valid_decision,UNOCCUPIED
+P-08,S02-empty,4,2026111174704,0.406045,output,UNOCCUPIED (decision)
+P-08,S02-empty,5,2026111174705,0.0,output,UNKNOWN (power_on)
+P-08,S02-empty,5,2026111174705,0.006061,recovery_first_valid,
+P-08,S02-empty,5,2026111174705,0.406097,valid_decision,UNOCCUPIED
+P-08,S02-empty,5,2026111174705,0.406097,output,UNOCCUPIED (decision)
+P-08,S02-empty,6,2026111174706,0.0,output,UNKNOWN (power_on)
+P-08,S02-empty,6,2026111174706,0.00596,recovery_first_valid,
+P-08,S02-empty,6,2026111174706,0.406109,valid_decision,UNOCCUPIED
+P-08,S02-empty,6,2026111174706,0.406109,output,UNOCCUPIED (decision)
+P-08,S02-empty,7,2026111174707,0.0,output,UNKNOWN (power_on)
+P-08,S02-empty,7,2026111174707,0.005962,recovery_first_valid,
+P-08,S02-empty,7,2026111174707,0.406041,valid_decision,UNOCCUPIED
+P-08,S02-empty,7,2026111174707,0.406041,output,UNOCCUPIED (decision)
+P-08,S02-empty,8,2026111174708,0.0,output,UNKNOWN (power_on)
+P-08,S02-empty,8,2026111174708,0.006025,recovery_first_valid,
+P-08,S02-empty,8,2026111174708,0.406014,valid_decision,UNOCCUPIED
+P-08,S02-empty,8,2026111174708,0.406014,output,UNOCCUPIED (decision)
+P-08,S02-empty,9,2026111174709,0.0,output,UNKNOWN (power_on)
+P-08,S02-empty,9,2026111174709,0.006045,recovery_first_valid,
+P-08,S02-empty,9,2026111174709,0.406052,valid_decision,UNOCCUPIED
+P-08,S02-empty,9,2026111174709,0.406052,output,UNOCCUPIED (decision)
+P-08,S02-empty,10,2026111174710,0.0,output,UNKNOWN (power_on)
+P-08,S02-empty,10,2026111174710,0.005961,recovery_first_valid,
+P-08,S02-empty,10,2026111174710,0.405965,valid_decision,UNOCCUPIED
+P-08,S02-empty,10,2026111174710,0.405965,output,UNOCCUPIED (decision)
+P-08,S03-R1,1,2026111133301,0.0,output,UNKNOWN (power_on)
+P-08,S03-R1,1,2026111133301,0.004656,recovery_first_valid,
+P-08,S03-R1,1,2026111133301,0.404634,valid_decision,OCCUPIED
+P-08,S03-R1,1,2026111133301,0.404634,output,OCCUPIED (decision)
+P-08,S03-R1,2,2026111133302,0.0,output,UNKNOWN (power_on)
+P-08,S03-R1,2,2026111133302,0.004663,recovery_first_valid,
+P-08,S03-R1,2,2026111133302,0.404684,valid_decision,OCCUPIED
+P-08,S03-R1,2,2026111133302,0.404684,output,OCCUPIED (decision)
+P-08,S03-R1,3,2026111133303,0.0,output,UNKNOWN (power_on)
+P-08,S03-R1,3,2026111133303,0.004623,recovery_first_valid,
+P-08,S03-R1,3,2026111133303,0.404651,valid_decision,OCCUPIED
+P-08,S03-R1,3,2026111133303,0.404651,output,OCCUPIED (decision)
+P-08,S03-R1,4,2026111133304,0.0,output,UNKNOWN (power_on)
+P-08,S03-R1,4,2026111133304,0.004672,recovery_first_valid,
+P-08,S03-R1,4,2026111133304,0.404662,valid_decision,OCCUPIED
+P-08,S03-R1,4,2026111133304,0.404662,output,OCCUPIED (decision)
+P-08,S03-R1,5,2026111133305,0.0,output,UNKNOWN (power_on)
+P-08,S03-R1,5,2026111133305,0.00458,recovery_first_valid,
+P-08,S03-R1,5,2026111133305,0.404631,valid_decision,OCCUPIED
+P-08,S03-R1,5,2026111133305,0.404631,output,OCCUPIED (decision)
+P-08,S03-R1,6,2026111133306,0.0,output,UNKNOWN (power_on)
+P-08,S03-R1,6,2026111133306,0.004691,recovery_first_valid,
+P-08,S03-R1,6,2026111133306,0.40469,valid_decision,OCCUPIED
+P-08,S03-R1,6,2026111133306,0.40469,output,OCCUPIED (decision)
+P-08,S03-R1,7,2026111133307,0.0,output,UNKNOWN (power_on)
+P-08,S03-R1,7,2026111133307,0.004556,recovery_first_valid,
+P-08,S03-R1,7,2026111133307,0.404672,valid_decision,OCCUPIED
+P-08,S03-R1,7,2026111133307,0.404672,output,OCCUPIED (decision)
+P-08,S03-R1,8,2026111133308,0.0,output,UNKNOWN (power_on)
+P-08,S03-R1,8,2026111133308,0.004657,recovery_first_valid,
+P-08,S03-R1,8,2026111133308,0.404574,valid_decision,OCCUPIED
+P-08,S03-R1,8,2026111133308,0.404574,output,OCCUPIED (decision)
+P-08,S03-R1,9,2026111133309,0.0,output,UNKNOWN (power_on)
+P-08,S03-R1,9,2026111133309,0.004608,recovery_first_valid,
+P-08,S03-R1,9,2026111133309,0.404724,valid_decision,OCCUPIED
+P-08,S03-R1,9,2026111133309,0.404724,output,OCCUPIED (decision)
+P-08,S03-R1,10,2026111133310,0.0,output,UNKNOWN (power_on)
+P-08,S03-R1,10,2026111133310,0.004682,recovery_first_valid,
+P-08,S03-R1,10,2026111133310,0.404676,valid_decision,OCCUPIED
+P-08,S03-R1,10,2026111133310,0.404676,output,OCCUPIED (decision)
+P-08,S03-empty,1,2026111167401,0.0,output,UNKNOWN (power_on)
+P-08,S03-empty,1,2026111167401,0.005769,recovery_first_valid,
+P-08,S03-empty,1,2026111167401,0.40575,valid_decision,UNOCCUPIED
+P-08,S03-empty,1,2026111167401,0.40575,output,UNOCCUPIED (decision)
+P-08,S03-empty,2,2026111167402,0.0,output,UNKNOWN (power_on)
+P-08,S03-empty,2,2026111167402,0.005869,recovery_first_valid,
+P-08,S03-empty,2,2026111167402,0.405759,valid_decision,UNOCCUPIED
+P-08,S03-empty,2,2026111167402,0.405759,output,UNOCCUPIED (decision)
+P-08,S03-empty,3,2026111167403,0.0,output,UNKNOWN (power_on)
+P-08,S03-empty,3,2026111167403,0.005911,recovery_first_valid,
+P-08,S03-empty,3,2026111167403,0.405845,valid_decision,UNOCCUPIED
+P-08,S03-empty,3,2026111167403,0.405845,output,UNOCCUPIED (decision)
+P-08,S03-empty,4,2026111167404,0.0,output,UNKNOWN (power_on)
+P-08,S03-empty,4,2026111167404,0.005829,recovery_first_valid,
+P-08,S03-empty,4,2026111167404,0.405799,valid_decision,UNOCCUPIED
+P-08,S03-empty,4,2026111167404,0.405799,output,UNOCCUPIED (decision)
+P-08,S03-empty,5,2026111167405,0.0,output,UNKNOWN (power_on)
+P-08,S03-empty,5,2026111167405,0.005788,recovery_first_valid,
+P-08,S03-empty,5,2026111167405,0.405665,valid_decision,UNOCCUPIED
+P-08,S03-empty,5,2026111167405,0.405665,output,UNOCCUPIED (decision)
+P-08,S03-empty,6,2026111167406,0.0,output,UNKNOWN (power_on)
+P-08,S03-empty,6,2026111167406,0.005837,recovery_first_valid,
+P-08,S03-empty,6,2026111167406,0.406004,valid_decision,UNOCCUPIED
+P-08,S03-empty,6,2026111167406,0.406004,output,UNOCCUPIED (decision)
+P-08,S03-empty,7,2026111167407,0.0,output,UNKNOWN (power_on)
+P-08,S03-empty,7,2026111167407,0.005824,recovery_first_valid,
+P-08,S03-empty,7,2026111167407,0.405855,valid_decision,UNOCCUPIED
+P-08,S03-empty,7,2026111167407,0.405855,output,UNOCCUPIED (decision)
+P-08,S03-empty,8,2026111167408,0.0,output,UNKNOWN (power_on)
+P-08,S03-empty,8,2026111167408,0.005734,recovery_first_valid,
+P-08,S03-empty,8,2026111167408,0.405788,valid_decision,UNOCCUPIED
+P-08,S03-empty,8,2026111167408,0.405788,output,UNOCCUPIED (decision)
+P-08,S03-empty,9,2026111167409,0.0,output,UNKNOWN (power_on)
+P-08,S03-empty,9,2026111167409,0.005826,recovery_first_valid,
+P-08,S03-empty,9,2026111167409,0.405724,valid_decision,UNOCCUPIED
+P-08,S03-empty,9,2026111167409,0.405724,output,UNOCCUPIED (decision)
+P-08,S03-empty,10,2026111167410,0.0,output,UNKNOWN (power_on)
+P-08,S03-empty,10,2026111167410,0.005787,recovery_first_valid,
+P-08,S03-empty,10,2026111167410,0.405863,valid_decision,UNOCCUPIED
+P-08,S03-empty,10,2026111167410,0.405863,output,UNOCCUPIED (decision)
+P-08,S04-R1,1,2026111100501,0.0,output,UNKNOWN (power_on)
+P-08,S04-R1,1,2026111100501,0.004669,recovery_first_valid,
+P-08,S04-R1,1,2026111100501,0.404651,valid_decision,OCCUPIED
+P-08,S04-R1,1,2026111100501,0.404651,output,OCCUPIED (decision)
+P-08,S04-R1,2,2026111100502,0.0,output,UNKNOWN (power_on)
+P-08,S04-R1,2,2026111100502,0.004547,recovery_first_valid,
+P-08,S04-R1,2,2026111100502,0.404707,valid_decision,OCCUPIED
+P-08,S04-R1,2,2026111100502,0.404707,output,OCCUPIED (decision)
+P-08,S04-R1,3,2026111100503,0.0,output,UNKNOWN (power_on)
+P-08,S04-R1,3,2026111100503,0.004783,recovery_first_valid,
+P-08,S04-R1,3,2026111100503,0.404562,valid_decision,OCCUPIED
+P-08,S04-R1,3,2026111100503,0.404562,output,OCCUPIED (decision)
+P-08,S04-R1,4,2026111100504,0.0,output,UNKNOWN (power_on)
+P-08,S04-R1,4,2026111100504,0.00461,recovery_first_valid,
+P-08,S04-R1,4,2026111100504,0.404577,valid_decision,OCCUPIED
+P-08,S04-R1,4,2026111100504,0.404577,output,OCCUPIED (decision)
+P-08,S04-R1,5,2026111100505,0.0,output,UNKNOWN (power_on)
+P-08,S04-R1,5,2026111100505,0.004633,recovery_first_valid,
+P-08,S04-R1,5,2026111100505,0.404763,valid_decision,OCCUPIED
+P-08,S04-R1,5,2026111100505,0.404763,output,OCCUPIED (decision)
+P-08,S04-R1,6,2026111100506,0.0,output,UNKNOWN (power_on)
+P-08,S04-R1,6,2026111100506,0.00459,recovery_first_valid,
+P-08,S04-R1,6,2026111100506,0.404669,valid_decision,OCCUPIED
+P-08,S04-R1,6,2026111100506,0.404669,output,OCCUPIED (decision)
+P-08,S04-R1,7,2026111100507,0.0,output,UNKNOWN (power_on)
+P-08,S04-R1,7,2026111100507,0.004701,recovery_first_valid,
+P-08,S04-R1,7,2026111100507,0.404579,valid_decision,OCCUPIED
+P-08,S04-R1,7,2026111100507,0.404579,output,OCCUPIED (decision)
+P-08,S04-R1,8,2026111100508,0.0,output,UNKNOWN (power_on)
+P-08,S04-R1,8,2026111100508,0.004761,recovery_first_valid,
+P-08,S04-R1,8,2026111100508,0.404542,valid_decision,OCCUPIED
+P-08,S04-R1,8,2026111100508,0.404542,output,OCCUPIED (decision)
+P-08,S04-R1,9,2026111100509,0.0,output,UNKNOWN (power_on)
+P-08,S04-R1,9,2026111100509,0.004566,recovery_first_valid,
+P-08,S04-R1,9,2026111100509,0.404571,valid_decision,OCCUPIED
+P-08,S04-R1,9,2026111100509,0.404571,output,OCCUPIED (decision)
+P-08,S04-R1,10,2026111100510,0.0,output,UNKNOWN (power_on)
+P-08,S04-R1,10,2026111100510,0.004677,recovery_first_valid,
+P-08,S04-R1,10,2026111100510,0.404627,valid_decision,OCCUPIED
+P-08,S04-R1,10,2026111100510,0.404627,output,OCCUPIED (decision)
+P-08,S04-empty,1,2026111108901,0.0,output,UNKNOWN (power_on)
+P-08,S04-empty,1,2026111108901,0.005735,recovery_first_valid,
+P-08,S04-empty,1,2026111108901,0.405803,valid_decision,UNOCCUPIED
+P-08,S04-empty,1,2026111108901,0.405803,output,UNOCCUPIED (decision)
+P-08,S04-empty,2,2026111108902,0.0,output,UNKNOWN (power_on)
+P-08,S04-empty,2,2026111108902,0.005773,recovery_first_valid,
+P-08,S04-empty,2,2026111108902,0.405721,valid_decision,UNOCCUPIED
+P-08,S04-empty,2,2026111108902,0.405721,output,UNOCCUPIED (decision)
+P-08,S04-empty,3,2026111108903,0.0,output,UNKNOWN (power_on)
+P-08,S04-empty,3,2026111108903,0.005835,recovery_first_valid,
+P-08,S04-empty,3,2026111108903,0.405924,valid_decision,UNOCCUPIED
+P-08,S04-empty,3,2026111108903,0.405924,output,UNOCCUPIED (decision)
+P-08,S04-empty,4,2026111108904,0.0,output,UNKNOWN (power_on)
+P-08,S04-empty,4,2026111108904,0.005766,recovery_first_valid,
+P-08,S04-empty,4,2026111108904,0.405757,valid_decision,UNOCCUPIED
+P-08,S04-empty,4,2026111108904,0.405757,output,UNOCCUPIED (decision)
+P-08,S04-empty,5,2026111108905,0.0,output,UNKNOWN (power_on)
+P-08,S04-empty,5,2026111108905,0.00577,recovery_first_valid,
+P-08,S04-empty,5,2026111108905,0.405792,valid_decision,UNOCCUPIED
+P-08,S04-empty,5,2026111108905,0.405792,output,UNOCCUPIED (decision)
+P-08,S04-empty,6,2026111108906,0.0,output,UNKNOWN (power_on)
+P-08,S04-empty,6,2026111108906,0.00585,recovery_first_valid,
+P-08,S04-empty,6,2026111108906,0.405841,valid_decision,UNOCCUPIED
+P-08,S04-empty,6,2026111108906,0.405841,output,UNOCCUPIED (decision)
+P-08,S04-empty,7,2026111108907,0.0,output,UNKNOWN (power_on)
+P-08,S04-empty,7,2026111108907,0.00588,recovery_first_valid,
+P-08,S04-empty,7,2026111108907,0.405951,valid_decision,UNOCCUPIED
+P-08,S04-empty,7,2026111108907,0.405951,output,UNOCCUPIED (decision)
+P-08,S04-empty,8,2026111108908,0.0,output,UNKNOWN (power_on)
+P-08,S04-empty,8,2026111108908,0.005793,recovery_first_valid,
+P-08,S04-empty,8,2026111108908,0.405818,valid_decision,UNOCCUPIED
+P-08,S04-empty,8,2026111108908,0.405818,output,UNOCCUPIED (decision)
+P-08,S04-empty,9,2026111108909,0.0,output,UNKNOWN (power_on)
+P-08,S04-empty,9,2026111108909,0.005909,recovery_first_valid,
+P-08,S04-empty,9,2026111108909,0.405819,valid_decision,UNOCCUPIED
+P-08,S04-empty,9,2026111108909,0.405819,output,UNOCCUPIED (decision)
+P-08,S04-empty,10,2026111108910,0.0,output,UNKNOWN (power_on)
+P-08,S04-empty,10,2026111108910,0.005809,recovery_first_valid,
+P-08,S04-empty,10,2026111108910,0.405773,valid_decision,UNOCCUPIED
+P-08,S04-empty,10,2026111108910,0.405773,output,UNOCCUPIED (decision)
+P-08,S05-R1,1,2026111156401,0.0,output,UNKNOWN (power_on)
+P-08,S05-R1,1,2026111156401,0.004381,recovery_first_valid,
+P-08,S05-R1,1,2026111156401,0.404388,valid_decision,OCCUPIED
+P-08,S05-R1,1,2026111156401,0.404388,output,OCCUPIED (decision)
+P-08,S05-R1,2,2026111156402,0.0,output,UNKNOWN (power_on)
+P-08,S05-R1,2,2026111156402,0.004396,recovery_first_valid,
+P-08,S05-R1,2,2026111156402,0.404489,valid_decision,OCCUPIED
+P-08,S05-R1,2,2026111156402,0.404489,output,OCCUPIED (decision)
+P-08,S05-R1,3,2026111156403,0.0,output,UNKNOWN (power_on)
+P-08,S05-R1,3,2026111156403,0.004578,recovery_first_valid,
+P-08,S05-R1,3,2026111156403,0.404552,valid_decision,OCCUPIED
+P-08,S05-R1,3,2026111156403,0.404552,output,OCCUPIED (decision)
+P-08,S05-R1,4,2026111156404,0.0,output,UNKNOWN (power_on)
+P-08,S05-R1,4,2026111156404,0.00448,recovery_first_valid,
+P-08,S05-R1,4,2026111156404,0.404333,valid_decision,OCCUPIED
+P-08,S05-R1,4,2026111156404,0.404333,output,OCCUPIED (decision)
+P-08,S05-R1,5,2026111156405,0.0,output,UNKNOWN (power_on)
+P-08,S05-R1,5,2026111156405,0.00443,recovery_first_valid,
+P-08,S05-R1,5,2026111156405,0.404413,valid_decision,OCCUPIED
+P-08,S05-R1,5,2026111156405,0.404413,output,OCCUPIED (decision)
+P-08,S05-R1,6,2026111156406,0.0,output,UNKNOWN (power_on)
+P-08,S05-R1,6,2026111156406,0.004438,recovery_first_valid,
+P-08,S05-R1,6,2026111156406,0.404478,valid_decision,OCCUPIED
+P-08,S05-R1,6,2026111156406,0.404478,output,OCCUPIED (decision)
+P-08,S05-R1,7,2026111156407,0.0,output,UNKNOWN (power_on)
+P-08,S05-R1,7,2026111156407,0.004449,recovery_first_valid,
+P-08,S05-R1,7,2026111156407,0.40446,valid_decision,OCCUPIED
+P-08,S05-R1,7,2026111156407,0.40446,output,OCCUPIED (decision)
+P-08,S05-R1,8,2026111156408,0.0,output,UNKNOWN (power_on)
+P-08,S05-R1,8,2026111156408,0.004438,recovery_first_valid,
+P-08,S05-R1,8,2026111156408,0.404418,valid_decision,OCCUPIED
+P-08,S05-R1,8,2026111156408,0.404418,output,OCCUPIED (decision)
+P-08,S05-R1,9,2026111156409,0.0,output,UNKNOWN (power_on)
+P-08,S05-R1,9,2026111156409,0.004448,recovery_first_valid,
+P-08,S05-R1,9,2026111156409,0.404388,valid_decision,OCCUPIED
+P-08,S05-R1,9,2026111156409,0.404388,output,OCCUPIED (decision)
+P-08,S05-R1,10,2026111156410,0.0,output,UNKNOWN (power_on)
+P-08,S05-R1,10,2026111156410,0.004459,recovery_first_valid,
+P-08,S05-R1,10,2026111156410,0.404341,valid_decision,OCCUPIED
+P-08,S05-R1,10,2026111156410,0.404341,output,OCCUPIED (decision)
+P-08,S05-empty,1,2026111123901,0.0,output,UNKNOWN (power_on)
+P-08,S05-empty,1,2026111123901,0.005617,recovery_first_valid,
+P-08,S05-empty,1,2026111123901,0.405582,valid_decision,UNOCCUPIED
+P-08,S05-empty,1,2026111123901,0.405582,output,UNOCCUPIED (decision)
+P-08,S05-empty,2,2026111123902,0.0,output,UNKNOWN (power_on)
+P-08,S05-empty,2,2026111123902,0.005574,recovery_first_valid,
+P-08,S05-empty,2,2026111123902,0.405469,valid_decision,UNOCCUPIED
+P-08,S05-empty,2,2026111123902,0.405469,output,UNOCCUPIED (decision)
+P-08,S05-empty,3,2026111123903,0.0,output,UNKNOWN (power_on)
+P-08,S05-empty,3,2026111123903,0.005452,recovery_first_valid,
+P-08,S05-empty,3,2026111123903,0.405543,valid_decision,UNOCCUPIED
+P-08,S05-empty,3,2026111123903,0.405543,output,UNOCCUPIED (decision)
+P-08,S05-empty,4,2026111123904,0.0,output,UNKNOWN (power_on)
+P-08,S05-empty,4,2026111123904,0.005597,recovery_first_valid,
+P-08,S05-empty,4,2026111123904,0.405553,valid_decision,UNOCCUPIED
+P-08,S05-empty,4,2026111123904,0.405553,output,UNOCCUPIED (decision)
+P-08,S05-empty,5,2026111123905,0.0,output,UNKNOWN (power_on)
+P-08,S05-empty,5,2026111123905,0.005497,recovery_first_valid,
+P-08,S05-empty,5,2026111123905,0.405536,valid_decision,UNOCCUPIED
+P-08,S05-empty,5,2026111123905,0.405536,output,UNOCCUPIED (decision)
+P-08,S05-empty,6,2026111123906,0.0,output,UNKNOWN (power_on)
+P-08,S05-empty,6,2026111123906,0.00546,recovery_first_valid,
+P-08,S05-empty,6,2026111123906,0.405632,valid_decision,UNOCCUPIED
+P-08,S05-empty,6,2026111123906,0.405632,output,UNOCCUPIED (decision)
+P-08,S05-empty,7,2026111123907,0.0,output,UNKNOWN (power_on)
+P-08,S05-empty,7,2026111123907,0.005546,recovery_first_valid,
+P-08,S05-empty,7,2026111123907,0.405452,valid_decision,UNOCCUPIED
+P-08,S05-empty,7,2026111123907,0.405452,output,UNOCCUPIED (decision)
+P-08,S05-empty,8,2026111123908,0.0,output,UNKNOWN (power_on)
+P-08,S05-empty,8,2026111123908,0.005621,recovery_first_valid,
+P-08,S05-empty,8,2026111123908,0.405482,valid_decision,UNOCCUPIED
+P-08,S05-empty,8,2026111123908,0.405482,output,UNOCCUPIED (decision)
+P-08,S05-empty,9,2026111123909,0.0,output,UNKNOWN (power_on)
+P-08,S05-empty,9,2026111123909,0.005533,recovery_first_valid,
+P-08,S05-empty,9,2026111123909,0.405453,valid_decision,UNOCCUPIED
+P-08,S05-empty,9,2026111123909,0.405453,output,UNOCCUPIED (decision)
+P-08,S05-empty,10,2026111123910,0.0,output,UNKNOWN (power_on)
+P-08,S05-empty,10,2026111123910,0.005546,recovery_first_valid,
+P-08,S05-empty,10,2026111123910,0.405487,valid_decision,UNOCCUPIED
+P-08,S05-empty,10,2026111123910,0.405487,output,UNOCCUPIED (decision)
+P-08,S06-R1,1,2026111181601,0.0,output,UNKNOWN (power_on)
+P-08,S06-R1,1,2026111181601,0.004318,recovery_first_valid,
+P-08,S06-R1,1,2026111181601,0.404432,valid_decision,OCCUPIED
+P-08,S06-R1,1,2026111181601,0.404432,output,OCCUPIED (decision)
+P-08,S06-R1,2,2026111181602,0.0,output,UNKNOWN (power_on)
+P-08,S06-R1,2,2026111181602,0.004467,recovery_first_valid,
+P-08,S06-R1,2,2026111181602,0.404504,valid_decision,OCCUPIED
+P-08,S06-R1,2,2026111181602,0.404504,output,OCCUPIED (decision)
+P-08,S06-R1,3,2026111181603,0.0,output,UNKNOWN (power_on)
+P-08,S06-R1,3,2026111181603,0.004415,recovery_first_valid,
+P-08,S06-R1,3,2026111181603,0.404311,valid_decision,OCCUPIED
+P-08,S06-R1,3,2026111181603,0.404311,output,OCCUPIED (decision)
+P-08,S06-R1,4,2026111181604,0.0,output,UNKNOWN (power_on)
+P-08,S06-R1,4,2026111181604,0.004425,recovery_first_valid,
+P-08,S06-R1,4,2026111181604,0.404503,valid_decision,OCCUPIED
+P-08,S06-R1,4,2026111181604,0.404503,output,OCCUPIED (decision)
+P-08,S06-R1,5,2026111181605,0.0,output,UNKNOWN (power_on)
+P-08,S06-R1,5,2026111181605,0.004501,recovery_first_valid,
+P-08,S06-R1,5,2026111181605,0.404428,valid_decision,OCCUPIED
+P-08,S06-R1,5,2026111181605,0.404428,output,OCCUPIED (decision)
+P-08,S06-R1,6,2026111181606,0.0,output,UNKNOWN (power_on)
+P-08,S06-R1,6,2026111181606,0.004343,recovery_first_valid,
+P-08,S06-R1,6,2026111181606,0.404398,valid_decision,OCCUPIED
+P-08,S06-R1,6,2026111181606,0.404398,output,OCCUPIED (decision)
+P-08,S06-R1,7,2026111181607,0.0,output,UNKNOWN (power_on)
+P-08,S06-R1,7,2026111181607,0.004473,recovery_first_valid,
+P-08,S06-R1,7,2026111181607,0.404506,valid_decision,OCCUPIED
+P-08,S06-R1,7,2026111181607,0.404506,output,OCCUPIED (decision)
+P-08,S06-R1,8,2026111181608,0.0,output,UNKNOWN (power_on)
+P-08,S06-R1,8,2026111181608,0.004377,recovery_first_valid,
+P-08,S06-R1,8,2026111181608,0.404403,valid_decision,OCCUPIED
+P-08,S06-R1,8,2026111181608,0.404403,output,OCCUPIED (decision)
+P-08,S06-R1,9,2026111181609,0.0,output,UNKNOWN (power_on)
+P-08,S06-R1,9,2026111181609,0.004329,recovery_first_valid,
+P-08,S06-R1,9,2026111181609,0.404448,valid_decision,OCCUPIED
+P-08,S06-R1,9,2026111181609,0.404448,output,OCCUPIED (decision)
+P-08,S06-R1,10,2026111181610,0.0,output,UNKNOWN (power_on)
+P-08,S06-R1,10,2026111181610,0.004404,recovery_first_valid,
+P-08,S06-R1,10,2026111181610,0.404418,valid_decision,OCCUPIED
+P-08,S06-R1,10,2026111181610,0.404418,output,OCCUPIED (decision)
+P-08,S06-empty,1,2026111100001,0.0,output,UNKNOWN (power_on)
+P-08,S06-empty,1,2026111100001,0.00565,recovery_first_valid,
+P-08,S06-empty,1,2026111100001,0.405516,valid_decision,UNOCCUPIED
+P-08,S06-empty,1,2026111100001,0.405516,output,UNOCCUPIED (decision)
+P-08,S06-empty,2,2026111100002,0.0,output,UNKNOWN (power_on)
+P-08,S06-empty,2,2026111100002,0.005604,recovery_first_valid,
+P-08,S06-empty,2,2026111100002,0.405477,valid_decision,UNOCCUPIED
+P-08,S06-empty,2,2026111100002,0.405477,output,UNOCCUPIED (decision)
+P-08,S06-empty,3,2026111100003,0.0,output,UNKNOWN (power_on)
+P-08,S06-empty,3,2026111100003,0.005546,recovery_first_valid,
+P-08,S06-empty,3,2026111100003,0.405551,valid_decision,UNOCCUPIED
+P-08,S06-empty,3,2026111100003,0.405551,output,UNOCCUPIED (decision)
+P-08,S06-empty,4,2026111100004,0.0,output,UNKNOWN (power_on)
+P-08,S06-empty,4,2026111100004,0.005574,recovery_first_valid,
+P-08,S06-empty,4,2026111100004,0.405416,valid_decision,UNOCCUPIED
+P-08,S06-empty,4,2026111100004,0.405416,output,UNOCCUPIED (decision)
+P-08,S06-empty,5,2026111100005,0.0,output,UNKNOWN (power_on)
+P-08,S06-empty,5,2026111100005,0.005431,recovery_first_valid,
+P-08,S06-empty,5,2026111100005,0.405486,valid_decision,UNOCCUPIED
+P-08,S06-empty,5,2026111100005,0.405486,output,UNOCCUPIED (decision)
+P-08,S06-empty,6,2026111100006,0.0,output,UNKNOWN (power_on)
+P-08,S06-empty,6,2026111100006,0.005441,recovery_first_valid,
+P-08,S06-empty,6,2026111100006,0.405576,valid_decision,UNOCCUPIED
+P-08,S06-empty,6,2026111100006,0.405576,output,UNOCCUPIED (decision)
+P-08,S06-empty,7,2026111100007,0.0,output,UNKNOWN (power_on)
+P-08,S06-empty,7,2026111100007,0.005587,recovery_first_valid,
+P-08,S06-empty,7,2026111100007,0.405481,valid_decision,UNOCCUPIED
+P-08,S06-empty,7,2026111100007,0.405481,output,UNOCCUPIED (decision)
+P-08,S06-empty,8,2026111100008,0.0,output,UNKNOWN (power_on)
+P-08,S06-empty,8,2026111100008,0.005484,recovery_first_valid,
+P-08,S06-empty,8,2026111100008,0.405499,valid_decision,UNOCCUPIED
+P-08,S06-empty,8,2026111100008,0.405499,output,UNOCCUPIED (decision)
+P-08,S06-empty,9,2026111100009,0.0,output,UNKNOWN (power_on)
+P-08,S06-empty,9,2026111100009,0.005577,recovery_first_valid,
+P-08,S06-empty,9,2026111100009,0.405497,valid_decision,UNOCCUPIED
+P-08,S06-empty,9,2026111100009,0.405497,output,UNOCCUPIED (decision)
+P-08,S06-empty,10,2026111100010,0.0,output,UNKNOWN (power_on)
+P-08,S06-empty,10,2026111100010,0.00558,recovery_first_valid,
+P-08,S06-empty,10,2026111100010,0.405491,valid_decision,UNOCCUPIED
+P-08,S06-empty,10,2026111100010,0.405491,output,UNOCCUPIED (decision)
+P-08,S07-R1,1,2026111161801,0.0,output,UNKNOWN (power_on)
+P-08,S07-R1,1,2026111161801,0.004711,recovery_first_valid,
+P-08,S07-R1,1,2026111161801,0.404642,valid_decision,OCCUPIED
+P-08,S07-R1,1,2026111161801,0.404642,output,OCCUPIED (decision)
+P-08,S07-R1,2,2026111161802,0.0,output,UNKNOWN (power_on)
+P-08,S07-R1,2,2026111161802,0.00467,recovery_first_valid,
+P-08,S07-R1,2,2026111161802,0.404658,valid_decision,OCCUPIED
+P-08,S07-R1,2,2026111161802,0.404658,output,OCCUPIED (decision)
+P-08,S07-R1,3,2026111161803,0.0,output,UNKNOWN (power_on)
+P-08,S07-R1,3,2026111161803,0.004674,recovery_first_valid,
+P-08,S07-R1,3,2026111161803,0.404669,valid_decision,OCCUPIED
+P-08,S07-R1,3,2026111161803,0.404669,output,OCCUPIED (decision)
+P-08,S07-R1,4,2026111161804,0.0,output,UNKNOWN (power_on)
+P-08,S07-R1,4,2026111161804,0.004654,recovery_first_valid,
+P-08,S07-R1,4,2026111161804,0.4047,valid_decision,OCCUPIED
+P-08,S07-R1,4,2026111161804,0.4047,output,OCCUPIED (decision)
+P-08,S07-R1,5,2026111161805,0.0,output,UNKNOWN (power_on)
+P-08,S07-R1,5,2026111161805,0.00466,recovery_first_valid,
+P-08,S07-R1,5,2026111161805,0.40463,valid_decision,OCCUPIED
+P-08,S07-R1,5,2026111161805,0.40463,output,OCCUPIED (decision)
+P-08,S07-R1,6,2026111161806,0.0,output,UNKNOWN (power_on)
+P-08,S07-R1,6,2026111161806,0.004614,recovery_first_valid,
+P-08,S07-R1,6,2026111161806,0.404714,valid_decision,OCCUPIED
+P-08,S07-R1,6,2026111161806,0.404714,output,OCCUPIED (decision)
+P-08,S07-R1,7,2026111161807,0.0,output,UNKNOWN (power_on)
+P-08,S07-R1,7,2026111161807,0.004689,recovery_first_valid,
+P-08,S07-R1,7,2026111161807,0.404655,valid_decision,OCCUPIED
+P-08,S07-R1,7,2026111161807,0.404655,output,OCCUPIED (decision)
+P-08,S07-R1,8,2026111161808,0.0,output,UNKNOWN (power_on)
+P-08,S07-R1,8,2026111161808,0.004654,recovery_first_valid,
+P-08,S07-R1,8,2026111161808,0.40463,valid_decision,OCCUPIED
+P-08,S07-R1,8,2026111161808,0.40463,output,OCCUPIED (decision)
+P-08,S07-R1,9,2026111161809,0.0,output,UNKNOWN (power_on)
+P-08,S07-R1,9,2026111161809,0.004659,recovery_first_valid,
+P-08,S07-R1,9,2026111161809,0.404667,valid_decision,OCCUPIED
+P-08,S07-R1,9,2026111161809,0.404667,output,OCCUPIED (decision)
+P-08,S07-R1,10,2026111161810,0.0,output,UNKNOWN (power_on)
+P-08,S07-R1,10,2026111161810,0.004646,recovery_first_valid,
+P-08,S07-R1,10,2026111161810,0.404612,valid_decision,OCCUPIED
+P-08,S07-R1,10,2026111161810,0.404612,output,OCCUPIED (decision)
+P-08,S07-empty,1,2026111132701,0.0,output,UNKNOWN (power_on)
+P-08,S07-empty,1,2026111132701,0.005874,recovery_first_valid,
+P-08,S07-empty,1,2026111132701,0.405825,valid_decision,UNOCCUPIED
+P-08,S07-empty,1,2026111132701,0.405825,output,UNOCCUPIED (decision)
+P-08,S07-empty,2,2026111132702,0.0,output,UNKNOWN (power_on)
+P-08,S07-empty,2,2026111132702,0.005829,recovery_first_valid,
+P-08,S07-empty,2,2026111132702,0.40584,valid_decision,UNOCCUPIED
+P-08,S07-empty,2,2026111132702,0.40584,output,UNOCCUPIED (decision)
+P-08,S07-empty,3,2026111132703,0.0,output,UNKNOWN (power_on)
+P-08,S07-empty,3,2026111132703,0.005819,recovery_first_valid,
+P-08,S07-empty,3,2026111132703,0.405831,valid_decision,UNOCCUPIED
+P-08,S07-empty,3,2026111132703,0.405831,output,UNOCCUPIED (decision)
+P-08,S07-empty,4,2026111132704,0.0,output,UNKNOWN (power_on)
+P-08,S07-empty,4,2026111132704,0.005834,recovery_first_valid,
+P-08,S07-empty,4,2026111132704,0.405885,valid_decision,UNOCCUPIED
+P-08,S07-empty,4,2026111132704,0.405885,output,UNOCCUPIED (decision)
+P-08,S07-empty,5,2026111132705,0.0,output,UNKNOWN (power_on)
+P-08,S07-empty,5,2026111132705,0.005779,recovery_first_valid,
+P-08,S07-empty,5,2026111132705,0.405788,valid_decision,UNOCCUPIED
+P-08,S07-empty,5,2026111132705,0.405788,output,UNOCCUPIED (decision)
+P-08,S07-empty,6,2026111132706,0.0,output,UNKNOWN (power_on)
+P-08,S07-empty,6,2026111132706,0.00585,recovery_first_valid,
+P-08,S07-empty,6,2026111132706,0.405841,valid_decision,UNOCCUPIED
+P-08,S07-empty,6,2026111132706,0.405841,output,UNOCCUPIED (decision)
+P-08,S07-empty,7,2026111132707,0.0,output,UNKNOWN (power_on)
+P-08,S07-empty,7,2026111132707,0.005812,recovery_first_valid,
+P-08,S07-empty,7,2026111132707,0.405828,valid_decision,UNOCCUPIED
+P-08,S07-empty,7,2026111132707,0.405828,output,UNOCCUPIED (decision)
+P-08,S07-empty,8,2026111132708,0.0,output,UNKNOWN (power_on)
+P-08,S07-empty,8,2026111132708,0.005824,recovery_first_valid,
+P-08,S07-empty,8,2026111132708,0.405765,valid_decision,UNOCCUPIED
+P-08,S07-empty,8,2026111132708,0.405765,output,UNOCCUPIED (decision)
+P-08,S07-empty,9,2026111132709,0.0,output,UNKNOWN (power_on)
+P-08,S07-empty,9,2026111132709,0.005803,recovery_first_valid,
+P-08,S07-empty,9,2026111132709,0.40577,valid_decision,UNOCCUPIED
+P-08,S07-empty,9,2026111132709,0.40577,output,UNOCCUPIED (decision)
+P-08,S07-empty,10,2026111132710,0.0,output,UNKNOWN (power_on)
+P-08,S07-empty,10,2026111132710,0.005812,recovery_first_valid,
+P-08,S07-empty,10,2026111132710,0.405768,valid_decision,UNOCCUPIED
+P-08,S07-empty,10,2026111132710,0.405768,output,UNOCCUPIED (decision)
+P-08,S08-R1,1,2026111109101,0.0,output,UNKNOWN (power_on)
+P-08,S08-R1,1,2026111109101,0.004744,recovery_first_valid,
+P-08,S08-R1,1,2026111109101,0.40462,valid_decision,OCCUPIED
+P-08,S08-R1,1,2026111109101,0.40462,output,OCCUPIED (decision)
+P-08,S08-R1,2,2026111109102,0.0,output,UNKNOWN (power_on)
+P-08,S08-R1,2,2026111109102,0.004504,recovery_first_valid,
+P-08,S08-R1,2,2026111109102,0.404507,valid_decision,OCCUPIED
+P-08,S08-R1,2,2026111109102,0.404507,output,OCCUPIED (decision)
+P-08,S08-R1,3,2026111109103,0.0,output,UNKNOWN (power_on)
+P-08,S08-R1,3,2026111109103,0.004819,recovery_first_valid,
+P-08,S08-R1,3,2026111109103,0.404704,valid_decision,OCCUPIED
+P-08,S08-R1,3,2026111109103,0.404704,output,OCCUPIED (decision)
+P-08,S08-R1,4,2026111109104,0.0,output,UNKNOWN (power_on)
+P-08,S08-R1,4,2026111109104,0.004364,recovery_first_valid,
+P-08,S08-R1,4,2026111109104,0.404749,valid_decision,OCCUPIED
+P-08,S08-R1,4,2026111109104,0.404749,output,OCCUPIED (decision)
+P-08,S08-R1,5,2026111109105,0.0,output,UNKNOWN (power_on)
+P-08,S08-R1,5,2026111109105,0.004733,recovery_first_valid,
+P-08,S08-R1,5,2026111109105,0.404697,valid_decision,OCCUPIED
+P-08,S08-R1,5,2026111109105,0.404697,output,OCCUPIED (decision)
+P-08,S08-R1,6,2026111109106,0.0,output,UNKNOWN (power_on)
+P-08,S08-R1,6,2026111109106,0.004604,recovery_first_valid,
+P-08,S08-R1,6,2026111109106,0.404765,valid_decision,OCCUPIED
+P-08,S08-R1,6,2026111109106,0.404765,output,OCCUPIED (decision)
+P-08,S08-R1,7,2026111109107,0.0,output,UNKNOWN (power_on)
+P-08,S08-R1,7,2026111109107,0.004497,recovery_first_valid,
+P-08,S08-R1,7,2026111109107,0.404517,valid_decision,OCCUPIED
+P-08,S08-R1,7,2026111109107,0.404517,output,OCCUPIED (decision)
+P-08,S08-R1,8,2026111109108,0.0,output,UNKNOWN (power_on)
+P-08,S08-R1,8,2026111109108,0.004655,recovery_first_valid,
+P-08,S08-R1,8,2026111109108,0.404794,valid_decision,OCCUPIED
+P-08,S08-R1,8,2026111109108,0.404794,output,OCCUPIED (decision)
+P-08,S08-R1,9,2026111109109,0.0,output,UNKNOWN (power_on)
+P-08,S08-R1,9,2026111109109,0.004664,recovery_first_valid,
+P-08,S08-R1,9,2026111109109,0.404699,valid_decision,OCCUPIED
+P-08,S08-R1,9,2026111109109,0.404699,output,OCCUPIED (decision)
+P-08,S08-R1,10,2026111109110,0.0,output,UNKNOWN (power_on)
+P-08,S08-R1,10,2026111109110,0.004522,recovery_first_valid,
+P-08,S08-R1,10,2026111109110,0.404703,valid_decision,OCCUPIED
+P-08,S08-R1,10,2026111109110,0.404703,output,OCCUPIED (decision)
+P-08,S08-empty,1,2026111142601,0.0,output,UNKNOWN (power_on)
+P-08,S08-empty,1,2026111142601,0.005822,recovery_first_valid,
+P-08,S08-empty,1,2026111142601,0.40596,valid_decision,UNOCCUPIED
+P-08,S08-empty,1,2026111142601,0.40596,output,UNOCCUPIED (decision)
+P-08,S08-empty,2,2026111142602,0.0,output,UNKNOWN (power_on)
+P-08,S08-empty,2,2026111142602,0.005639,recovery_first_valid,
+P-08,S08-empty,2,2026111142602,0.405751,valid_decision,UNOCCUPIED
+P-08,S08-empty,2,2026111142602,0.405751,output,UNOCCUPIED (decision)
+P-08,S08-empty,3,2026111142603,0.0,output,UNKNOWN (power_on)
+P-08,S08-empty,3,2026111142603,0.005874,recovery_first_valid,
+P-08,S08-empty,3,2026111142603,0.40568,valid_decision,UNOCCUPIED
+P-08,S08-empty,3,2026111142603,0.40568,output,UNOCCUPIED (decision)
+P-08,S08-empty,4,2026111142604,0.0,output,UNKNOWN (power_on)
+P-08,S08-empty,4,2026111142604,0.005898,recovery_first_valid,
+P-08,S08-empty,4,2026111142604,0.406065,valid_decision,UNOCCUPIED
+P-08,S08-empty,4,2026111142604,0.406065,output,UNOCCUPIED (decision)
+P-08,S08-empty,5,2026111142605,0.0,output,UNKNOWN (power_on)
+P-08,S08-empty,5,2026111142605,0.005689,recovery_first_valid,
+P-08,S08-empty,5,2026111142605,0.405541,valid_decision,UNOCCUPIED
+P-08,S08-empty,5,2026111142605,0.405541,output,UNOCCUPIED (decision)
+P-08,S08-empty,6,2026111142606,0.0,output,UNKNOWN (power_on)
+P-08,S08-empty,6,2026111142606,0.005627,recovery_first_valid,
+P-08,S08-empty,6,2026111142606,0.405912,valid_decision,UNOCCUPIED
+P-08,S08-empty,6,2026111142606,0.405912,output,UNOCCUPIED (decision)
+P-08,S08-empty,7,2026111142607,0.0,output,UNKNOWN (power_on)
+P-08,S08-empty,7,2026111142607,0.005665,recovery_first_valid,
+P-08,S08-empty,7,2026111142607,0.405882,valid_decision,UNOCCUPIED
+P-08,S08-empty,7,2026111142607,0.405882,output,UNOCCUPIED (decision)
+P-08,S08-empty,8,2026111142608,0.0,output,UNKNOWN (power_on)
+P-08,S08-empty,8,2026111142608,0.005998,recovery_first_valid,
+P-08,S08-empty,8,2026111142608,0.406058,valid_decision,UNOCCUPIED
+P-08,S08-empty,8,2026111142608,0.406058,output,UNOCCUPIED (decision)
+P-08,S08-empty,9,2026111142609,0.0,output,UNKNOWN (power_on)
+P-08,S08-empty,9,2026111142609,0.005729,recovery_first_valid,
+P-08,S08-empty,9,2026111142609,0.405826,valid_decision,UNOCCUPIED
+P-08,S08-empty,9,2026111142609,0.405826,output,UNOCCUPIED (decision)
+P-08,S08-empty,10,2026111142610,0.0,output,UNKNOWN (power_on)
+P-08,S08-empty,10,2026111142610,0.005859,recovery_first_valid,
+P-08,S08-empty,10,2026111142610,0.405805,valid_decision,UNOCCUPIED
+P-08,S08-empty,10,2026111142610,0.405805,output,UNOCCUPIED (decision)
+P-08,S09-R1,1,2026111179201,0.0,output,UNKNOWN (power_on)
+P-08,S09-R1,1,2026111179201,0.104631,recovery_first_valid,
+P-08,S09-R1,1,2026111179201,0.23,recovery_reset,no_echo
+P-08,S09-R1,1,2026111179201,0.404663,recovery_first_valid,
+P-08,S09-R1,1,2026111179201,0.804579,valid_decision,OCCUPIED
+P-08,S09-R1,1,2026111179201,0.804579,output,OCCUPIED (decision)
+P-08,S09-R1,2,2026111179202,0.0,output,UNKNOWN (power_on)
+P-08,S09-R1,2,2026111179202,0.004656,recovery_first_valid,
+P-08,S09-R1,2,2026111179202,0.13,recovery_reset,no_echo
+P-08,S09-R1,2,2026111179202,0.204629,recovery_first_valid,
+P-08,S09-R1,2,2026111179202,0.604739,valid_decision,OCCUPIED
+P-08,S09-R1,2,2026111179202,0.604739,output,OCCUPIED (decision)
+P-08,S09-R1,3,2026111179203,0.0,output,UNKNOWN (power_on)
+P-08,S09-R1,3,2026111179203,0.004691,recovery_first_valid,
+P-08,S09-R1,3,2026111179203,0.43,recovery_reset,no_echo
+P-08,S09-R1,3,2026111179203,0.504657,recovery_first_valid,
+P-08,S09-R1,3,2026111179203,0.93,recovery_reset,no_echo
+P-08,S09-R1,3,2026111179203,1.004594,recovery_first_valid,
+P-08,S09-R1,3,2026111179203,1.43,recovery_reset,no_echo
+P-08,S09-R1,3,2026111179203,1.504577,recovery_first_valid,
+P-08,S09-R1,3,2026111179203,1.904633,valid_decision,OCCUPIED
+P-08,S09-R1,3,2026111179203,1.904633,output,OCCUPIED (decision)
+P-08,S09-R1,4,2026111179204,0.0,output,UNKNOWN (power_on)
+P-08,S09-R1,4,2026111179204,0.004693,recovery_first_valid,
+P-08,S09-R1,4,2026111179204,0.404795,valid_decision,OCCUPIED
+P-08,S09-R1,4,2026111179204,0.404795,output,OCCUPIED (decision)
+P-08,S09-R1,5,2026111179205,0.0,output,UNKNOWN (power_on)
+P-08,S09-R1,5,2026111179205,0.004617,recovery_first_valid,
+P-08,S09-R1,5,2026111179205,0.23,recovery_reset,no_echo
+P-08,S09-R1,5,2026111179205,0.304643,recovery_first_valid,
+P-08,S09-R1,5,2026111179205,0.43,recovery_reset,no_echo
+P-08,S09-R1,5,2026111179205,0.50466,recovery_first_valid,
+P-08,S09-R1,5,2026111179205,0.904689,valid_decision,OCCUPIED
+P-08,S09-R1,5,2026111179205,0.904689,output,OCCUPIED (decision)
+P-08,S09-R1,6,2026111179206,0.0,output,UNKNOWN (power_on)
+P-08,S09-R1,6,2026111179206,0.00475,recovery_first_valid,
+P-08,S09-R1,6,2026111179206,0.404698,valid_decision,OCCUPIED
+P-08,S09-R1,6,2026111179206,0.404698,output,OCCUPIED (decision)
+P-08,S09-R1,7,2026111179207,0.0,output,UNKNOWN (power_on)
+P-08,S09-R1,7,2026111179207,0.104617,recovery_first_valid,
+P-08,S09-R1,7,2026111179207,0.504621,valid_decision,OCCUPIED
+P-08,S09-R1,7,2026111179207,0.504621,output,OCCUPIED (decision)
+P-08,S09-R1,8,2026111179208,0.0,output,UNKNOWN (power_on)
+P-08,S09-R1,8,2026111179208,0.004596,recovery_first_valid,
+P-08,S09-R1,8,2026111179208,0.43,recovery_reset,no_echo
+P-08,S09-R1,8,2026111179208,0.504777,recovery_first_valid,
+P-08,S09-R1,8,2026111179208,0.83,recovery_reset,no_echo
+P-08,S09-R1,8,2026111179208,0.904668,recovery_first_valid,
+P-08,S09-R1,8,2026111179208,1.33,recovery_reset,no_echo
+P-08,S09-R1,8,2026111179208,1.404703,recovery_first_valid,
+P-08,S09-R1,8,2026111179208,1.804652,valid_decision,OCCUPIED
+P-08,S09-R1,8,2026111179208,1.804652,output,OCCUPIED (decision)
+P-08,S09-R1,9,2026111179209,0.0,output,UNKNOWN (power_on)
+P-08,S09-R1,9,2026111179209,0.004635,recovery_first_valid,
+P-08,S09-R1,9,2026111179209,0.404735,valid_decision,OCCUPIED
+P-08,S09-R1,9,2026111179209,0.404735,output,OCCUPIED (decision)
+P-08,S09-R1,10,2026111179210,0.0,output,UNKNOWN (power_on)
+P-08,S09-R1,10,2026111179210,0.004789,recovery_first_valid,
+P-08,S09-R1,10,2026111179210,0.43,recovery_reset,no_echo
+P-08,S09-R1,10,2026111179210,0.504634,recovery_first_valid,
+P-08,S09-R1,10,2026111179210,0.904654,valid_decision,OCCUPIED
+P-08,S09-R1,10,2026111179210,0.904654,output,OCCUPIED (decision)
+P-08,S09-empty,1,2026111159201,0.0,output,UNKNOWN (power_on)
+P-08,S09-empty,1,2026111159201,0.105828,recovery_first_valid,
+P-08,S09-empty,1,2026111159201,0.505773,valid_decision,UNOCCUPIED
+P-08,S09-empty,1,2026111159201,0.505773,output,UNOCCUPIED (decision)
+P-08,S09-empty,2,2026111159202,0.0,output,UNKNOWN (power_on)
+P-08,S09-empty,2,2026111159202,0.0059,recovery_first_valid,
+P-08,S09-empty,2,2026111159202,0.13,recovery_reset,no_echo
+P-08,S09-empty,2,2026111159202,0.205837,recovery_first_valid,
+P-08,S09-empty,2,2026111159202,0.605844,valid_decision,UNOCCUPIED
+P-08,S09-empty,2,2026111159202,0.605844,output,UNOCCUPIED (decision)
+P-08,S09-empty,3,2026111159203,0.0,output,UNKNOWN (power_on)
+P-08,S09-empty,3,2026111159203,0.005857,recovery_first_valid,
+P-08,S09-empty,3,2026111159203,0.40586,valid_decision,UNOCCUPIED
+P-08,S09-empty,3,2026111159203,0.40586,output,UNOCCUPIED (decision)
+P-08,S09-empty,4,2026111159204,0.0,output,UNKNOWN (power_on)
+P-08,S09-empty,4,2026111159204,0.005976,recovery_first_valid,
+P-08,S09-empty,4,2026111159204,0.405889,valid_decision,UNOCCUPIED
+P-08,S09-empty,4,2026111159204,0.405889,output,UNOCCUPIED (decision)
+P-08,S09-empty,5,2026111159205,0.0,output,UNKNOWN (power_on)
+P-08,S09-empty,5,2026111159205,0.005734,recovery_first_valid,
+P-08,S09-empty,5,2026111159205,0.405904,valid_decision,UNOCCUPIED
+P-08,S09-empty,5,2026111159205,0.405904,output,UNOCCUPIED (decision)
+P-08,S09-empty,6,2026111159206,0.0,output,UNKNOWN (power_on)
+P-08,S09-empty,6,2026111159206,0.005899,recovery_first_valid,
+P-08,S09-empty,6,2026111159206,0.405911,valid_decision,UNOCCUPIED
+P-08,S09-empty,6,2026111159206,0.405911,output,UNOCCUPIED (decision)
+P-08,S09-empty,7,2026111159207,0.0,output,UNKNOWN (power_on)
+P-08,S09-empty,7,2026111159207,0.005744,recovery_first_valid,
+P-08,S09-empty,7,2026111159207,0.33,recovery_reset,no_echo
+P-08,S09-empty,7,2026111159207,0.40591,recovery_first_valid,
+P-08,S09-empty,7,2026111159207,0.805835,valid_decision,UNOCCUPIED
+P-08,S09-empty,7,2026111159207,0.805835,output,UNOCCUPIED (decision)
+P-08,S09-empty,8,2026111159208,0.0,output,UNKNOWN (power_on)
+P-08,S09-empty,8,2026111159208,0.005807,recovery_first_valid,
+P-08,S09-empty,8,2026111159208,0.23,recovery_reset,no_echo
+P-08,S09-empty,8,2026111159208,0.305805,recovery_first_valid,
+P-08,S09-empty,8,2026111159208,0.705978,valid_decision,UNOCCUPIED
+P-08,S09-empty,8,2026111159208,0.705978,output,UNOCCUPIED (decision)
+P-08,S09-empty,9,2026111159209,0.0,output,UNKNOWN (power_on)
+P-08,S09-empty,9,2026111159209,0.005879,recovery_first_valid,
+P-08,S09-empty,9,2026111159209,0.13,recovery_reset,no_echo
+P-08,S09-empty,9,2026111159209,0.205903,recovery_first_valid,
+P-08,S09-empty,9,2026111159209,0.33,recovery_reset,no_echo
+P-08,S09-empty,9,2026111159209,0.405852,recovery_first_valid,
+P-08,S09-empty,9,2026111159209,0.805893,valid_decision,UNOCCUPIED
+P-08,S09-empty,9,2026111159209,0.805893,output,UNOCCUPIED (decision)
+P-08,S09-empty,10,2026111159210,0.0,output,UNKNOWN (power_on)
+P-08,S09-empty,10,2026111159210,0.005872,recovery_first_valid,
+P-08,S09-empty,10,2026111159210,0.405846,valid_decision,UNOCCUPIED
+P-08,S09-empty,10,2026111159210,0.405846,output,UNOCCUPIED (decision)
+P-08,S10-R1,1,2026111183901,0.0,output,UNKNOWN (power_on)
+P-08,S10-R1,1,2026111183901,0.404739,recovery_first_valid,
+P-08,S10-R1,1,2026111183901,0.63,recovery_reset,no_echo
+P-08,S10-R1,1,2026111183901,0.704637,recovery_first_valid,
+P-08,S10-R1,1,2026111183901,0.83,recovery_reset,no_echo
+P-08,S10-R1,1,2026111183901,0.904666,recovery_first_valid,
+P-08,S10-R1,1,2026111183901,1.03,recovery_reset,no_echo
+P-08,S10-R1,1,2026111183901,1.104688,recovery_first_valid,
+P-08,S10-R1,1,2026111183901,1.33,recovery_reset,no_echo
+P-08,S10-R1,1,2026111183901,1.404606,recovery_first_valid,
+P-08,S10-R1,1,2026111183901,1.53,recovery_reset,no_echo
+P-08,S10-R1,1,2026111183901,1.604671,recovery_first_valid,
+P-08,S10-R1,1,2026111183901,1.73,recovery_reset,no_echo
+P-08,S10-R1,1,2026111183901,2.204681,recovery_first_valid,
+P-08,S10-R1,1,2026111183901,2.43,recovery_reset,no_echo
+P-08,S10-R1,1,2026111183901,2.504712,recovery_first_valid,
+P-08,S10-R1,1,2026111183901,2.63,recovery_reset,no_echo
+P-08,S10-R1,1,2026111183901,2.804654,recovery_first_valid,
+P-08,S10-R1,1,2026111183901,3.23,recovery_reset,no_echo
+P-08,S10-R1,1,2026111183901,3.304663,recovery_first_valid,
+P-08,S10-R1,1,2026111183901,3.53,recovery_reset,no_echo
+P-08,S10-R1,1,2026111183901,3.604629,recovery_first_valid,
+P-08,S10-R1,1,2026111183901,3.73,recovery_reset,no_echo
+P-08,S10-R1,1,2026111183901,3.804589,recovery_first_valid,
+P-08,S10-R1,1,2026111183901,4.204676,valid_decision,OCCUPIED
+P-08,S10-R1,1,2026111183901,4.204676,output,OCCUPIED (decision)
+P-08,S10-R1,2,2026111183902,0.0,output,UNKNOWN (power_on)
+P-08,S10-R1,2,2026111183902,0.004726,recovery_first_valid,
+P-08,S10-R1,2,2026111183902,0.13,recovery_reset,no_echo
+P-08,S10-R1,2,2026111183902,0.204556,recovery_first_valid,
+P-08,S10-R1,2,2026111183902,0.63,recovery_reset,no_echo
+P-08,S10-R1,2,2026111183902,0.704566,recovery_first_valid,
+P-08,S10-R1,2,2026111183902,1.03,recovery_reset,no_echo
+P-08,S10-R1,2,2026111183902,1.104574,recovery_first_valid,
+P-08,S10-R1,2,2026111183902,1.43,recovery_reset,no_echo
+P-08,S10-R1,2,2026111183902,1.604622,recovery_first_valid,
+P-08,S10-R1,2,2026111183902,2.004754,valid_decision,OCCUPIED
+P-08,S10-R1,2,2026111183902,2.004754,output,OCCUPIED (decision)
+P-08,S10-R1,3,2026111183903,0.0,output,UNKNOWN (power_on)
+P-08,S10-R1,3,2026111183903,0.004657,recovery_first_valid,
+P-08,S10-R1,3,2026111183903,0.23,recovery_reset,no_echo
+P-08,S10-R1,3,2026111183903,0.304595,recovery_first_valid,
+P-08,S10-R1,3,2026111183903,0.53,recovery_reset,no_echo
+P-08,S10-R1,3,2026111183903,0.604508,recovery_first_valid,
+P-08,S10-R1,3,2026111183903,1.004653,valid_decision,OCCUPIED
+P-08,S10-R1,3,2026111183903,1.004653,output,OCCUPIED (decision)
+P-08,S10-R1,4,2026111183904,0.0,output,UNKNOWN (power_on)
+P-08,S10-R1,4,2026111183904,0.004609,recovery_first_valid,
+P-08,S10-R1,4,2026111183904,0.13,recovery_reset,no_echo
+P-08,S10-R1,4,2026111183904,0.304666,recovery_first_valid,
+P-08,S10-R1,4,2026111183904,0.43,recovery_reset,no_echo
+P-08,S10-R1,4,2026111183904,0.504701,recovery_first_valid,
+P-08,S10-R1,4,2026111183904,0.63,recovery_reset,no_echo
+P-08,S10-R1,4,2026111183904,0.704681,recovery_first_valid,
+P-08,S10-R1,4,2026111183904,0.83,recovery_reset,no_echo
+P-08,S10-R1,4,2026111183904,1.204604,recovery_first_valid,
+P-08,S10-R1,4,2026111183904,1.63,recovery_reset,no_echo
+P-08,S10-R1,4,2026111183904,1.804562,recovery_first_valid,
+P-08,S10-R1,4,2026111183904,1.93,recovery_reset,no_echo
+P-08,S10-R1,4,2026111183904,2.004784,recovery_first_valid,
+P-08,S10-R1,4,2026111183904,2.404611,valid_decision,OCCUPIED
+P-08,S10-R1,4,2026111183904,2.404611,output,OCCUPIED (decision)
+P-08,S10-R1,5,2026111183905,0.0,output,UNKNOWN (power_on)
+P-08,S10-R1,5,2026111183905,0.004712,recovery_first_valid,
+P-08,S10-R1,5,2026111183905,0.43,recovery_reset,no_echo
+P-08,S10-R1,5,2026111183905,0.504743,recovery_first_valid,
+P-08,S10-R1,5,2026111183905,0.63,recovery_reset,no_echo
+P-08,S10-R1,5,2026111183905,0.704705,recovery_first_valid,
+P-08,S10-R1,5,2026111183905,0.83,recovery_reset,no_echo
+P-08,S10-R1,5,2026111183905,0.904573,recovery_first_valid,
+P-08,S10-R1,5,2026111183905,1.23,recovery_reset,no_echo
+P-08,S10-R1,5,2026111183905,1.304583,recovery_first_valid,
+P-08,S10-R1,5,2026111183905,1.73,recovery_reset,no_echo
+P-08,S10-R1,5,2026111183905,1.804585,recovery_first_valid,
+P-08,S10-R1,5,2026111183905,1.93,recovery_reset,no_echo
+P-08,S10-R1,5,2026111183905,2.004713,recovery_first_valid,
+P-08,S10-R1,5,2026111183905,2.13,recovery_reset,no_echo
+P-08,S10-R1,5,2026111183905,2.204598,recovery_first_valid,
+P-08,S10-R1,5,2026111183905,2.604503,valid_decision,OCCUPIED
+P-08,S10-R1,5,2026111183905,2.604503,output,OCCUPIED (decision)
+P-08,S10-R1,6,2026111183906,0.0,output,UNKNOWN (power_on)
+P-08,S10-R1,6,2026111183906,0.004662,recovery_first_valid,
+P-08,S10-R1,6,2026111183906,0.13,recovery_reset,no_echo
+P-08,S10-R1,6,2026111183906,0.204666,recovery_first_valid,
+P-08,S10-R1,6,2026111183906,0.33,recovery_reset,no_echo
+P-08,S10-R1,6,2026111183906,0.404725,recovery_first_valid,
+P-08,S10-R1,6,2026111183906,0.804605,valid_decision,OCCUPIED
+P-08,S10-R1,6,2026111183906,0.804605,output,OCCUPIED (decision)
+P-08,S10-R1,7,2026111183907,0.0,output,UNKNOWN (power_on)
+P-08,S10-R1,7,2026111183907,0.104612,recovery_first_valid,
+P-08,S10-R1,7,2026111183907,0.23,recovery_reset,no_echo
+P-08,S10-R1,7,2026111183907,0.304729,recovery_first_valid,
+P-08,S10-R1,7,2026111183907,0.43,recovery_reset,no_echo
+P-08,S10-R1,7,2026111183907,0.604646,recovery_first_valid,
+P-08,S10-R1,7,2026111183907,0.83,recovery_reset,no_echo
+P-08,S10-R1,7,2026111183907,0.904685,recovery_first_valid,
+P-08,S10-R1,7,2026111183907,1.33,recovery_reset,no_echo
+P-08,S10-R1,7,2026111183907,1.504683,recovery_first_valid,
+P-08,S10-R1,7,2026111183907,1.904649,valid_decision,OCCUPIED
+P-08,S10-R1,7,2026111183907,1.904649,output,OCCUPIED (decision)
+P-08,S10-R1,7,2026111183907,2.53,unknown_entry,no_echo x5
+P-08,S10-R1,7,2026111183907,2.53,output,UNKNOWN (no_echo x5)
+P-08,S10-R1,7,2026111183907,2.604632,recovery_first_valid,
+P-08,S10-R1,7,2026111183907,2.83,recovery_reset,no_echo
+P-08,S10-R1,7,2026111183907,3.004601,recovery_first_valid,
+P-08,S10-R1,7,2026111183907,3.33,recovery_reset,no_echo
+P-08,S10-R1,7,2026111183907,3.404556,recovery_first_valid,
+P-08,S10-R1,7,2026111183907,3.83,recovery_reset,no_echo
+P-08,S10-R1,7,2026111183907,3.904546,recovery_first_valid,
+P-08,S10-R1,7,2026111183907,4.13,recovery_reset,no_echo
+P-08,S10-R1,7,2026111183907,4.404675,recovery_first_valid,
+P-08,S10-R1,7,2026111183907,4.63,recovery_reset,no_echo
+P-08,S10-R1,7,2026111183907,4.704687,recovery_first_valid,
+P-08,S10-R1,7,2026111183907,4.83,recovery_reset,no_echo
+P-08,S10-R1,7,2026111183907,4.90461,recovery_first_valid,
+P-08,S10-R1,8,2026111183908,0.0,output,UNKNOWN (power_on)
+P-08,S10-R1,8,2026111183908,0.2047,recovery_first_valid,
+P-08,S10-R1,8,2026111183908,0.604739,valid_decision,OCCUPIED
+P-08,S10-R1,8,2026111183908,0.604739,output,OCCUPIED (decision)
+P-08,S10-R1,9,2026111183909,0.0,output,UNKNOWN (power_on)
+P-08,S10-R1,9,2026111183909,0.104673,recovery_first_valid,
+P-08,S10-R1,9,2026111183909,0.504663,valid_decision,OCCUPIED
+P-08,S10-R1,9,2026111183909,0.504663,output,OCCUPIED (decision)
+P-08,S10-R1,10,2026111183910,0.0,output,UNKNOWN (power_on)
+P-08,S10-R1,10,2026111183910,0.104568,recovery_first_valid,
+P-08,S10-R1,10,2026111183910,0.504636,valid_decision,OCCUPIED
+P-08,S10-R1,10,2026111183910,0.504636,output,OCCUPIED (decision)
+P-08,S10-empty,1,2026111183101,0.0,output,UNKNOWN (power_on)
+P-08,S10-empty,1,2026111183101,0.005894,recovery_first_valid,
+P-08,S10-empty,1,2026111183101,0.23,recovery_reset,no_echo
+P-08,S10-empty,1,2026111183101,0.505841,recovery_first_valid,
+P-08,S10-empty,1,2026111183101,0.63,recovery_reset,no_echo
+P-08,S10-empty,1,2026111183101,0.805838,recovery_first_valid,
+P-08,S10-empty,1,2026111183101,1.205754,valid_decision,UNOCCUPIED
+P-08,S10-empty,1,2026111183101,1.205754,output,UNOCCUPIED (decision)
+P-08,S10-empty,2,2026111183102,0.0,output,UNKNOWN (power_on)
+P-08,S10-empty,2,2026111183102,0.105767,recovery_first_valid,
+P-08,S10-empty,2,2026111183102,0.53,recovery_reset,no_echo
+P-08,S10-empty,2,2026111183102,0.60582,recovery_first_valid,
+P-08,S10-empty,2,2026111183102,0.83,recovery_reset,no_echo
+P-08,S10-empty,2,2026111183102,0.905988,recovery_first_valid,
+P-08,S10-empty,2,2026111183102,1.305821,valid_decision,UNOCCUPIED
+P-08,S10-empty,2,2026111183102,1.305821,output,UNOCCUPIED (decision)
+P-08,S10-empty,3,2026111183103,0.0,output,UNKNOWN (power_on)
+P-08,S10-empty,3,2026111183103,0.205797,recovery_first_valid,
+P-08,S10-empty,3,2026111183103,0.63,recovery_reset,no_echo
+P-08,S10-empty,3,2026111183103,0.705774,recovery_first_valid,
+P-08,S10-empty,3,2026111183103,0.83,recovery_reset,no_echo
+P-08,S10-empty,3,2026111183103,0.905876,recovery_first_valid,
+P-08,S10-empty,3,2026111183103,1.13,recovery_reset,no_echo
+P-08,S10-empty,3,2026111183103,1.205789,recovery_first_valid,
+P-08,S10-empty,3,2026111183103,1.33,recovery_reset,no_echo
+P-08,S10-empty,3,2026111183103,1.405834,recovery_first_valid,
+P-08,S10-empty,3,2026111183103,1.805782,valid_decision,UNOCCUPIED
+P-08,S10-empty,3,2026111183103,1.805782,output,UNOCCUPIED (decision)
+P-08,S10-empty,4,2026111183104,0.0,output,UNKNOWN (power_on)
+P-08,S10-empty,4,2026111183104,0.005768,recovery_first_valid,
+P-08,S10-empty,4,2026111183104,0.43,recovery_reset,no_echo
+P-08,S10-empty,4,2026111183104,0.505774,recovery_first_valid,
+P-08,S10-empty,4,2026111183104,0.63,recovery_reset,no_echo
+P-08,S10-empty,4,2026111183104,0.905758,recovery_first_valid,
+P-08,S10-empty,4,2026111183104,1.03,recovery_reset,no_echo
+P-08,S10-empty,4,2026111183104,1.105848,recovery_first_valid,
+P-08,S10-empty,4,2026111183104,1.505839,valid_decision,UNOCCUPIED
+P-08,S10-empty,4,2026111183104,1.505839,output,UNOCCUPIED (decision)
+P-08,S10-empty,5,2026111183105,0.0,output,UNKNOWN (power_on)
+P-08,S10-empty,5,2026111183105,0.005905,recovery_first_valid,
+P-08,S10-empty,5,2026111183105,0.13,recovery_reset,no_echo
+P-08,S10-empty,5,2026111183105,0.205871,recovery_first_valid,
+P-08,S10-empty,5,2026111183105,0.63,recovery_reset,no_echo
+P-08,S10-empty,5,2026111183105,0.705825,recovery_first_valid,
+P-08,S10-empty,5,2026111183105,0.93,recovery_reset,no_echo
+P-08,S10-empty,5,2026111183105,1.005742,recovery_first_valid,
+P-08,S10-empty,5,2026111183105,1.43,recovery_reset,no_echo
+P-08,S10-empty,5,2026111183105,1.505862,recovery_first_valid,
+P-08,S10-empty,5,2026111183105,1.73,recovery_reset,no_echo
+P-08,S10-empty,5,2026111183105,1.905822,recovery_first_valid,
+P-08,S10-empty,5,2026111183105,2.03,recovery_reset,no_echo
+P-08,S10-empty,5,2026111183105,2.105764,recovery_first_valid,
+P-08,S10-empty,5,2026111183105,2.505682,valid_decision,UNOCCUPIED
+P-08,S10-empty,5,2026111183105,2.505682,output,UNOCCUPIED (decision)
+P-08,S10-empty,6,2026111183106,0.0,output,UNKNOWN (power_on)
+P-08,S10-empty,6,2026111183106,0.105784,recovery_first_valid,
+P-08,S10-empty,6,2026111183106,0.505834,valid_decision,UNOCCUPIED
+P-08,S10-empty,6,2026111183106,0.505834,output,UNOCCUPIED (decision)
+P-08,S10-empty,7,2026111183107,0.0,output,UNKNOWN (power_on)
+P-08,S10-empty,7,2026111183107,0.105827,recovery_first_valid,
+P-08,S10-empty,7,2026111183107,0.23,recovery_reset,no_echo
+P-08,S10-empty,7,2026111183107,0.305804,recovery_first_valid,
+P-08,S10-empty,7,2026111183107,0.705772,valid_decision,UNOCCUPIED
+P-08,S10-empty,7,2026111183107,0.705772,output,UNOCCUPIED (decision)
+P-08,S10-empty,8,2026111183108,0.0,output,UNKNOWN (power_on)
+P-08,S10-empty,8,2026111183108,0.005871,recovery_first_valid,
+P-08,S10-empty,8,2026111183108,0.33,recovery_reset,no_echo
+P-08,S10-empty,8,2026111183108,0.405801,recovery_first_valid,
+P-08,S10-empty,8,2026111183108,0.73,recovery_reset,no_echo
+P-08,S10-empty,8,2026111183108,0.805751,recovery_first_valid,
+P-08,S10-empty,8,2026111183108,1.13,recovery_reset,no_echo
+P-08,S10-empty,8,2026111183108,1.505836,recovery_first_valid,
+P-08,S10-empty,8,2026111183108,1.73,recovery_reset,no_echo
+P-08,S10-empty,8,2026111183108,1.80589,recovery_first_valid,
+P-08,S10-empty,8,2026111183108,2.03,recovery_reset,no_echo
+P-08,S10-empty,8,2026111183108,2.10586,recovery_first_valid,
+P-08,S10-empty,8,2026111183108,2.43,recovery_reset,no_echo
+P-08,S10-empty,8,2026111183108,2.605934,recovery_first_valid,
+P-08,S10-empty,8,2026111183108,3.005768,valid_decision,UNOCCUPIED
+P-08,S10-empty,8,2026111183108,3.005768,output,UNOCCUPIED (decision)
+P-08,S10-empty,9,2026111183109,0.0,output,UNKNOWN (power_on)
+P-08,S10-empty,9,2026111183109,0.005802,recovery_first_valid,
+P-08,S10-empty,9,2026111183109,0.23,recovery_reset,no_echo
+P-08,S10-empty,9,2026111183109,0.30585,recovery_first_valid,
+P-08,S10-empty,9,2026111183109,0.43,recovery_reset,no_echo
+P-08,S10-empty,9,2026111183109,0.505839,recovery_first_valid,
+P-08,S10-empty,9,2026111183109,0.905873,valid_decision,UNOCCUPIED
+P-08,S10-empty,9,2026111183109,0.905873,output,UNOCCUPIED (decision)
+P-08,S10-empty,10,2026111183110,0.0,output,UNKNOWN (power_on)
+P-08,S10-empty,10,2026111183110,0.005845,recovery_first_valid,
+P-08,S10-empty,10,2026111183110,0.33,recovery_reset,no_echo
+P-08,S10-empty,10,2026111183110,0.50595,recovery_first_valid,
+P-08,S10-empty,10,2026111183110,0.83,recovery_reset,no_echo
+P-08,S10-empty,10,2026111183110,0.905755,recovery_first_valid,
+P-08,S10-empty,10,2026111183110,1.03,recovery_reset,no_echo
+P-08,S10-empty,10,2026111183110,1.105827,recovery_first_valid,
+P-08,S10-empty,10,2026111183110,1.33,recovery_reset,no_echo
+P-08,S10-empty,10,2026111183110,1.405838,recovery_first_valid,
+P-08,S10-empty,10,2026111183110,1.805886,valid_decision,UNOCCUPIED
+P-08,S10-empty,10,2026111183110,1.805886,output,UNOCCUPIED (decision)
+P-08,S11-R1,1,2026111139701,0.0,output,UNKNOWN (power_on)
+P-08,S11-R1,1,2026111139701,0.004684,recovery_first_valid,
+P-08,S11-R1,1,2026111139701,0.33,recovery_reset,no_echo
+P-08,S11-R1,1,2026111139701,0.504666,recovery_first_valid,
+P-08,S11-R1,1,2026111139701,0.63,recovery_reset,no_echo
+P-08,S11-R1,1,2026111139701,0.804597,recovery_first_valid,
+P-08,S11-R1,1,2026111139701,0.93,recovery_reset,no_echo
+P-08,S11-R1,1,2026111139701,1.404633,recovery_first_valid,
+P-08,S11-R1,1,2026111139701,1.53,recovery_reset,no_echo
+P-08,S11-R1,1,2026111139701,1.604581,recovery_first_valid,
+P-08,S11-R1,1,2026111139701,1.73,recovery_reset,no_echo
+P-08,S11-R1,1,2026111139701,1.804606,recovery_first_valid,
+P-08,S11-R1,1,2026111139701,1.93,recovery_reset,no_echo
+P-08,S11-R1,1,2026111139701,2.004701,recovery_first_valid,
+P-08,S11-R1,1,2026111139701,2.13,recovery_reset,no_echo
+P-08,S11-R1,1,2026111139701,2.20465,recovery_first_valid,
+P-08,S11-R1,1,2026111139701,2.33,recovery_reset,no_echo
+P-08,S11-R1,1,2026111139701,3.004636,recovery_first_valid,
+P-08,S11-R1,1,2026111139701,3.33,recovery_reset,no_echo
+P-08,S11-R1,1,2026111139701,3.404683,recovery_first_valid,
+P-08,S11-R1,1,2026111139701,3.63,recovery_reset,no_echo
+P-08,S11-R1,1,2026111139701,3.804654,recovery_first_valid,
+P-08,S11-R1,1,2026111139701,3.93,recovery_reset,no_echo
+P-08,S11-R1,1,2026111139701,4.004637,recovery_first_valid,
+P-08,S11-R1,1,2026111139701,4.13,recovery_reset,no_echo
+P-08,S11-R1,1,2026111139701,4.20468,recovery_first_valid,
+P-08,S11-R1,1,2026111139701,4.43,recovery_reset,no_echo
+P-08,S11-R1,1,2026111139701,4.604634,recovery_first_valid,
+P-08,S11-R1,1,2026111139701,4.73,recovery_reset,no_echo
+P-08,S11-R1,1,2026111139701,5.004775,recovery_first_valid,
+P-08,S11-R1,2,2026111139702,0.0,output,UNKNOWN (power_on)
+P-08,S11-R1,2,2026111139702,0.204669,recovery_first_valid,
+P-08,S11-R1,2,2026111139702,0.33,recovery_reset,no_echo
+P-08,S11-R1,2,2026111139702,0.404701,recovery_first_valid,
+P-08,S11-R1,2,2026111139702,0.73,recovery_reset,no_echo
+P-08,S11-R1,2,2026111139702,0.904552,recovery_first_valid,
+P-08,S11-R1,2,2026111139702,1.03,recovery_reset,no_echo
+P-08,S11-R1,2,2026111139702,1.104653,recovery_first_valid,
+P-08,S11-R1,2,2026111139702,1.43,recovery_reset,no_echo
+P-08,S11-R1,2,2026111139702,1.704598,recovery_first_valid,
+P-08,S11-R1,2,2026111139702,1.83,recovery_reset,no_echo
+P-08,S11-R1,2,2026111139702,2.004649,recovery_first_valid,
+P-08,S11-R1,2,2026111139702,2.33,recovery_reset,no_echo
+P-08,S11-R1,2,2026111139702,2.704736,recovery_first_valid,
+P-08,S11-R1,2,2026111139702,2.83,recovery_reset,no_echo
+P-08,S11-R1,2,2026111139702,3.004575,recovery_first_valid,
+P-08,S11-R1,2,2026111139702,3.13,recovery_reset,no_echo
+P-08,S11-R1,2,2026111139702,3.904666,recovery_first_valid,
+P-08,S11-R1,2,2026111139702,4.03,recovery_reset,no_echo
+P-08,S11-R1,2,2026111139702,4.104528,recovery_first_valid,
+P-08,S11-R1,2,2026111139702,4.23,recovery_reset,no_echo
+P-08,S11-R1,2,2026111139702,4.304726,recovery_first_valid,
+P-08,S11-R1,2,2026111139702,4.53,recovery_reset,no_echo
+P-08,S11-R1,2,2026111139702,4.604666,recovery_first_valid,
+P-08,S11-R1,2,2026111139702,4.73,recovery_reset,no_echo
+P-08,S11-R1,2,2026111139702,4.804716,recovery_first_valid,
+P-08,S11-R1,2,2026111139702,5.03,recovery_reset,no_echo
+P-08,S11-R1,3,2026111139703,0.0,output,UNKNOWN (power_on)
+P-08,S11-R1,3,2026111139703,0.104722,recovery_first_valid,
+P-08,S11-R1,3,2026111139703,0.23,recovery_reset,no_echo
+P-08,S11-R1,3,2026111139703,0.304688,recovery_first_valid,
+P-08,S11-R1,3,2026111139703,0.43,recovery_reset,no_echo
+P-08,S11-R1,3,2026111139703,0.504619,recovery_first_valid,
+P-08,S11-R1,3,2026111139703,0.83,recovery_reset,no_echo
+P-08,S11-R1,3,2026111139703,0.904721,recovery_first_valid,
+P-08,S11-R1,3,2026111139703,1.33,recovery_reset,no_echo
+P-08,S11-R1,3,2026111139703,1.404651,recovery_first_valid,
+P-08,S11-R1,3,2026111139703,1.53,recovery_reset,no_echo
+P-08,S11-R1,3,2026111139703,1.604773,recovery_first_valid,
+P-08,S11-R1,3,2026111139703,1.73,recovery_reset,no_echo
+P-08,S11-R1,3,2026111139703,2.00472,recovery_first_valid,
+P-08,S11-R1,3,2026111139703,2.404683,valid_decision,OCCUPIED
+P-08,S11-R1,3,2026111139703,2.404683,output,OCCUPIED (decision)
+P-08,S11-R1,4,2026111139704,0.0,output,UNKNOWN (power_on)
+P-08,S11-R1,4,2026111139704,0.104612,recovery_first_valid,
+P-08,S11-R1,4,2026111139704,0.23,recovery_reset,no_echo
+P-08,S11-R1,4,2026111139704,0.404484,recovery_first_valid,
+P-08,S11-R1,4,2026111139704,0.83,recovery_reset,no_echo
+P-08,S11-R1,4,2026111139704,0.904554,recovery_first_valid,
+P-08,S11-R1,4,2026111139704,1.03,recovery_reset,no_echo
+P-08,S11-R1,4,2026111139704,1.104558,recovery_first_valid,
+P-08,S11-R1,4,2026111139704,1.23,recovery_reset,no_echo
+P-08,S11-R1,4,2026111139704,1.304531,recovery_first_valid,
+P-08,S11-R1,4,2026111139704,1.43,recovery_reset,no_echo
+P-08,S11-R1,4,2026111139704,1.604726,recovery_first_valid,
+P-08,S11-R1,4,2026111139704,1.93,recovery_reset,no_echo
+P-08,S11-R1,4,2026111139704,2.004624,recovery_first_valid,
+P-08,S11-R1,4,2026111139704,2.13,recovery_reset,no_echo
+P-08,S11-R1,4,2026111139704,2.30466,recovery_first_valid,
+P-08,S11-R1,4,2026111139704,2.43,recovery_reset,no_echo
+P-08,S11-R1,4,2026111139704,2.604663,recovery_first_valid,
+P-08,S11-R1,4,2026111139704,2.73,recovery_reset,no_echo
+P-08,S11-R1,4,2026111139704,2.904683,recovery_first_valid,
+P-08,S11-R1,4,2026111139704,3.13,recovery_reset,no_echo
+P-08,S11-R1,4,2026111139704,3.204648,recovery_first_valid,
+P-08,S11-R1,4,2026111139704,3.63,recovery_reset,no_echo
+P-08,S11-R1,4,2026111139704,4.004636,recovery_first_valid,
+P-08,S11-R1,4,2026111139704,4.13,recovery_reset,no_echo
+P-08,S11-R1,4,2026111139704,4.30468,recovery_first_valid,
+P-08,S11-R1,4,2026111139704,4.43,recovery_reset,no_echo
+P-08,S11-R1,4,2026111139704,4.604605,recovery_first_valid,
+P-08,S11-R1,4,2026111139704,4.83,recovery_reset,no_echo
+P-08,S11-R1,5,2026111139705,0.0,output,UNKNOWN (power_on)
+P-08,S11-R1,5,2026111139705,0.104689,recovery_first_valid,
+P-08,S11-R1,5,2026111139705,0.33,recovery_reset,no_echo
+P-08,S11-R1,5,2026111139705,0.50478,recovery_first_valid,
+P-08,S11-R1,5,2026111139705,0.93,recovery_reset,no_echo
+P-08,S11-R1,5,2026111139705,1.204536,recovery_first_valid,
+P-08,S11-R1,5,2026111139705,1.33,recovery_reset,no_echo
+P-08,S11-R1,5,2026111139705,1.404693,recovery_first_valid,
+P-08,S11-R1,5,2026111139705,1.73,recovery_reset,no_echo
+P-08,S11-R1,5,2026111139705,1.804557,recovery_first_valid,
+P-08,S11-R1,5,2026111139705,2.204729,valid_decision,OCCUPIED
+P-08,S11-R1,5,2026111139705,2.204729,output,OCCUPIED (decision)
+P-08,S11-R1,6,2026111139706,0.0,output,UNKNOWN (power_on)
+P-08,S11-R1,6,2026111139706,0.004698,recovery_first_valid,
+P-08,S11-R1,6,2026111139706,0.404753,valid_decision,OCCUPIED
+P-08,S11-R1,6,2026111139706,0.404753,output,OCCUPIED (decision)
+P-08,S11-R1,7,2026111139707,0.0,output,UNKNOWN (power_on)
+P-08,S11-R1,7,2026111139707,0.004683,recovery_first_valid,
+P-08,S11-R1,7,2026111139707,0.23,recovery_reset,no_echo
+P-08,S11-R1,7,2026111139707,0.404615,recovery_first_valid,
+P-08,S11-R1,7,2026111139707,0.73,recovery_reset,no_echo
+P-08,S11-R1,7,2026111139707,0.804686,recovery_first_valid,
+P-08,S11-R1,7,2026111139707,0.93,recovery_reset,no_echo
+P-08,S11-R1,7,2026111139707,1.104691,recovery_first_valid,
+P-08,S11-R1,7,2026111139707,1.33,recovery_reset,no_echo
+P-08,S11-R1,7,2026111139707,1.50468,recovery_first_valid,
+P-08,S11-R1,7,2026111139707,1.63,recovery_reset,no_echo
+P-08,S11-R1,7,2026111139707,2.304632,recovery_first_valid,
+P-08,S11-R1,7,2026111139707,2.63,recovery_reset,no_echo
+P-08,S11-R1,7,2026111139707,2.704739,recovery_first_valid,
+P-08,S11-R1,7,2026111139707,3.104684,valid_decision,OCCUPIED
+P-08,S11-R1,7,2026111139707,3.104684,output,OCCUPIED (decision)
+P-08,S11-R1,7,2026111139707,3.73,unknown_entry,no_echo x5
+P-08,S11-R1,7,2026111139707,3.73,output,UNKNOWN (no_echo x5)
+P-08,S11-R1,7,2026111139707,4.104637,recovery_first_valid,
+P-08,S11-R1,7,2026111139707,4.43,recovery_reset,no_echo
+P-08,S11-R1,7,2026111139707,4.704662,recovery_first_valid,
+P-08,S11-R1,8,2026111139708,0.0,output,UNKNOWN (power_on)
+P-08,S11-R1,8,2026111139708,0.004634,recovery_first_valid,
+P-08,S11-R1,8,2026111139708,0.13,recovery_reset,no_echo
+P-08,S11-R1,8,2026111139708,0.704554,recovery_first_valid,
+P-08,S11-R1,8,2026111139708,1.13,recovery_reset,no_echo
+P-08,S11-R1,8,2026111139708,1.204619,recovery_first_valid,
+P-08,S11-R1,8,2026111139708,1.43,recovery_reset,no_echo
+P-08,S11-R1,8,2026111139708,1.504665,recovery_first_valid,
+P-08,S11-R1,8,2026111139708,1.73,recovery_reset,no_echo
+P-08,S11-R1,8,2026111139708,1.904714,recovery_first_valid,
+P-08,S11-R1,8,2026111139708,2.33,recovery_reset,no_echo
+P-08,S11-R1,8,2026111139708,2.504651,recovery_first_valid,
+P-08,S11-R1,8,2026111139708,2.73,recovery_reset,no_echo
+P-08,S11-R1,8,2026111139708,2.904737,recovery_first_valid,
+P-08,S11-R1,8,2026111139708,3.03,recovery_reset,no_echo
+P-08,S11-R1,8,2026111139708,3.404577,recovery_first_valid,
+P-08,S11-R1,8,2026111139708,3.804563,valid_decision,OCCUPIED
+P-08,S11-R1,8,2026111139708,3.804563,output,OCCUPIED (decision)
+P-08,S11-R1,9,2026111139709,0.0,output,UNKNOWN (power_on)
+P-08,S11-R1,9,2026111139709,0.004626,recovery_first_valid,
+P-08,S11-R1,9,2026111139709,0.33,recovery_reset,no_echo
+P-08,S11-R1,9,2026111139709,0.704672,recovery_first_valid,
+P-08,S11-R1,9,2026111139709,1.104718,valid_decision,OCCUPIED
+P-08,S11-R1,9,2026111139709,1.104718,output,OCCUPIED (decision)
+P-08,S11-R1,9,2026111139709,4.53,unknown_entry,no_echo x5
+P-08,S11-R1,9,2026111139709,4.53,output,UNKNOWN (no_echo x5)
+P-08,S11-R1,9,2026111139709,4.604603,recovery_first_valid,
+P-08,S11-R1,9,2026111139709,4.73,recovery_reset,no_echo
+P-08,S11-R1,10,2026111139710,0.0,output,UNKNOWN (power_on)
+P-08,S11-R1,10,2026111139710,0.104589,recovery_first_valid,
+P-08,S11-R1,10,2026111139710,0.33,recovery_reset,no_echo
+P-08,S11-R1,10,2026111139710,1.104676,recovery_first_valid,
+P-08,S11-R1,10,2026111139710,1.53,recovery_reset,no_echo
+P-08,S11-R1,10,2026111139710,1.704631,recovery_first_valid,
+P-08,S11-R1,10,2026111139710,1.83,recovery_reset,no_echo
+P-08,S11-R1,10,2026111139710,2.104614,recovery_first_valid,
+P-08,S11-R1,10,2026111139710,2.23,recovery_reset,no_echo
+P-08,S11-R1,10,2026111139710,2.604617,recovery_first_valid,
+P-08,S11-R1,10,2026111139710,2.83,recovery_reset,no_echo
+P-08,S11-R1,10,2026111139710,3.204469,recovery_first_valid,
+P-08,S11-R1,10,2026111139710,3.43,recovery_reset,no_echo
+P-08,S11-R1,10,2026111139710,3.504574,recovery_first_valid,
+P-08,S11-R1,10,2026111139710,3.63,recovery_reset,no_echo
+P-08,S11-R1,10,2026111139710,3.804726,recovery_first_valid,
+P-08,S11-R1,10,2026111139710,4.03,recovery_reset,no_echo
+P-08,S11-R1,10,2026111139710,4.104754,recovery_first_valid,
+P-08,S11-R1,10,2026111139710,4.23,recovery_reset,no_echo
+P-08,S11-R1,10,2026111139710,4.404788,recovery_first_valid,
+P-08,S11-R1,10,2026111139710,4.63,recovery_reset,no_echo
+P-08,S11-R1,10,2026111139710,4.904569,recovery_first_valid,
+P-08,S11-empty,1,2026111173201,0.0,output,UNKNOWN (power_on)
+P-08,S11-empty,1,2026111173201,0.005793,recovery_first_valid,
+P-08,S11-empty,1,2026111173201,0.13,recovery_reset,no_echo
+P-08,S11-empty,1,2026111173201,0.30581,recovery_first_valid,
+P-08,S11-empty,1,2026111173201,0.43,recovery_reset,no_echo
+P-08,S11-empty,1,2026111173201,0.605787,recovery_first_valid,
+P-08,S11-empty,1,2026111173201,0.73,recovery_reset,no_echo
+P-08,S11-empty,1,2026111173201,0.905864,recovery_first_valid,
+P-08,S11-empty,1,2026111173201,1.13,recovery_reset,no_echo
+P-08,S11-empty,1,2026111173201,1.405656,recovery_first_valid,
+P-08,S11-empty,1,2026111173201,1.53,recovery_reset,no_echo
+P-08,S11-empty,1,2026111173201,1.705857,recovery_first_valid,
+P-08,S11-empty,1,2026111173201,1.93,recovery_reset,no_echo
+P-08,S11-empty,1,2026111173201,2.105901,recovery_first_valid,
+P-08,S11-empty,1,2026111173201,2.33,recovery_reset,no_echo
+P-08,S11-empty,1,2026111173201,2.605862,recovery_first_valid,
+P-08,S11-empty,1,2026111173201,2.83,recovery_reset,no_echo
+P-08,S11-empty,1,2026111173201,3.005847,recovery_first_valid,
+P-08,S11-empty,1,2026111173201,3.13,recovery_reset,no_echo
+P-08,S11-empty,1,2026111173201,3.205933,recovery_first_valid,
+P-08,S11-empty,1,2026111173201,3.53,recovery_reset,no_echo
+P-08,S11-empty,1,2026111173201,3.705922,recovery_first_valid,
+P-08,S11-empty,1,2026111173201,4.105829,valid_decision,UNOCCUPIED
+P-08,S11-empty,1,2026111173201,4.105829,output,UNOCCUPIED (decision)
+P-08,S11-empty,2,2026111173202,0.0,output,UNKNOWN (power_on)
+P-08,S11-empty,2,2026111173202,0.105848,recovery_first_valid,
+P-08,S11-empty,2,2026111173202,0.53,recovery_reset,no_echo
+P-08,S11-empty,2,2026111173202,0.905906,recovery_first_valid,
+P-08,S11-empty,2,2026111173202,1.33,recovery_reset,no_echo
+P-08,S11-empty,2,2026111173202,1.405846,recovery_first_valid,
+P-08,S11-empty,2,2026111173202,1.53,recovery_reset,no_echo
+P-08,S11-empty,2,2026111173202,1.705828,recovery_first_valid,
+P-08,S11-empty,2,2026111173202,2.105829,valid_decision,UNOCCUPIED
+P-08,S11-empty,2,2026111173202,2.105829,output,UNOCCUPIED (decision)
+P-08,S11-empty,2,2026111173202,4.63,unknown_entry,no_echo x5
+P-08,S11-empty,2,2026111173202,4.63,output,UNKNOWN (no_echo x5)
+P-08,S11-empty,2,2026111173202,4.705823,recovery_first_valid,
+P-08,S11-empty,2,2026111173202,4.83,recovery_reset,no_echo
+P-08,S11-empty,3,2026111173203,0.0,output,UNKNOWN (power_on)
+P-08,S11-empty,3,2026111173203,0.105842,recovery_first_valid,
+P-08,S11-empty,3,2026111173203,0.23,recovery_reset,no_echo
+P-08,S11-empty,3,2026111173203,0.4058,recovery_first_valid,
+P-08,S11-empty,3,2026111173203,0.53,recovery_reset,no_echo
+P-08,S11-empty,3,2026111173203,0.705839,recovery_first_valid,
+P-08,S11-empty,3,2026111173203,1.03,recovery_reset,no_echo
+P-08,S11-empty,3,2026111173203,1.105827,recovery_first_valid,
+P-08,S11-empty,3,2026111173203,1.505736,valid_decision,UNOCCUPIED
+P-08,S11-empty,3,2026111173203,1.505736,output,UNOCCUPIED (decision)
+P-08,S11-empty,4,2026111173204,0.0,output,UNKNOWN (power_on)
+P-08,S11-empty,4,2026111173204,0.105752,recovery_first_valid,
+P-08,S11-empty,4,2026111173204,0.23,recovery_reset,no_echo
+P-08,S11-empty,4,2026111173204,0.305813,recovery_first_valid,
+P-08,S11-empty,4,2026111173204,0.73,recovery_reset,no_echo
+P-08,S11-empty,4,2026111173204,0.905759,recovery_first_valid,
+P-08,S11-empty,4,2026111173204,1.03,recovery_reset,no_echo
+P-08,S11-empty,4,2026111173204,1.3058,recovery_first_valid,
+P-08,S11-empty,4,2026111173204,1.73,recovery_reset,no_echo
+P-08,S11-empty,4,2026111173204,1.805832,recovery_first_valid,
+P-08,S11-empty,4,2026111173204,1.93,recovery_reset,no_echo
+P-08,S11-empty,4,2026111173204,2.005784,recovery_first_valid,
+P-08,S11-empty,4,2026111173204,2.13,recovery_reset,no_echo
+P-08,S11-empty,4,2026111173204,2.205773,recovery_first_valid,
+P-08,S11-empty,4,2026111173204,2.605915,valid_decision,UNOCCUPIED
+P-08,S11-empty,4,2026111173204,2.605915,output,UNOCCUPIED (decision)
+P-08,S11-empty,5,2026111173205,0.0,output,UNKNOWN (power_on)
+P-08,S11-empty,5,2026111173205,0.005924,recovery_first_valid,
+P-08,S11-empty,5,2026111173205,0.13,recovery_reset,no_echo
+P-08,S11-empty,5,2026111173205,0.305778,recovery_first_valid,
+P-08,S11-empty,5,2026111173205,0.43,recovery_reset,no_echo
+P-08,S11-empty,5,2026111173205,0.505732,recovery_first_valid,
+P-08,S11-empty,5,2026111173205,0.63,recovery_reset,no_echo
+P-08,S11-empty,5,2026111173205,0.705806,recovery_first_valid,
+P-08,S11-empty,5,2026111173205,0.83,recovery_reset,no_echo
+P-08,S11-empty,5,2026111173205,1.005859,recovery_first_valid,
+P-08,S11-empty,5,2026111173205,1.13,recovery_reset,no_echo
+P-08,S11-empty,5,2026111173205,1.705775,recovery_first_valid,
+P-08,S11-empty,5,2026111173205,1.93,recovery_reset,no_echo
+P-08,S11-empty,5,2026111173205,2.005865,recovery_first_valid,
+P-08,S11-empty,5,2026111173205,2.23,recovery_reset,no_echo
+P-08,S11-empty,5,2026111173205,2.305748,recovery_first_valid,
+P-08,S11-empty,5,2026111173205,2.43,recovery_reset,no_echo
+P-08,S11-empty,5,2026111173205,2.705878,recovery_first_valid,
+P-08,S11-empty,5,2026111173205,2.83,recovery_reset,no_echo
+P-08,S11-empty,5,2026111173205,3.005833,recovery_first_valid,
+P-08,S11-empty,5,2026111173205,3.13,recovery_reset,no_echo
+P-08,S11-empty,5,2026111173205,3.205837,recovery_first_valid,
+P-08,S11-empty,5,2026111173205,3.33,recovery_reset,no_echo
+P-08,S11-empty,5,2026111173205,3.405735,recovery_first_valid,
+P-08,S11-empty,5,2026111173205,3.63,recovery_reset,no_echo
+P-08,S11-empty,5,2026111173205,3.705833,recovery_first_valid,
+P-08,S11-empty,5,2026111173205,3.93,recovery_reset,no_echo
+P-08,S11-empty,5,2026111173205,4.205751,recovery_first_valid,
+P-08,S11-empty,5,2026111173205,4.33,recovery_reset,no_echo
+P-08,S11-empty,5,2026111173205,4.405787,recovery_first_valid,
+P-08,S11-empty,5,2026111173205,4.63,recovery_reset,no_echo
+P-08,S11-empty,5,2026111173205,4.705746,recovery_first_valid,
+P-08,S11-empty,5,2026111173205,4.93,recovery_reset,no_echo
+P-08,S11-empty,6,2026111173206,0.0,output,UNKNOWN (power_on)
+P-08,S11-empty,6,2026111173206,0.205872,recovery_first_valid,
+P-08,S11-empty,6,2026111173206,0.43,recovery_reset,no_echo
+P-08,S11-empty,6,2026111173206,0.60587,recovery_first_valid,
+P-08,S11-empty,6,2026111173206,0.73,recovery_reset,no_echo
+P-08,S11-empty,6,2026111173206,0.90582,recovery_first_valid,
+P-08,S11-empty,6,2026111173206,1.03,recovery_reset,no_echo
+P-08,S11-empty,6,2026111173206,1.105747,recovery_first_valid,
+P-08,S11-empty,6,2026111173206,1.23,recovery_reset,no_echo
+P-08,S11-empty,6,2026111173206,1.305793,recovery_first_valid,
+P-08,S11-empty,6,2026111173206,1.43,recovery_reset,no_echo
+P-08,S11-empty,6,2026111173206,1.605847,recovery_first_valid,
+P-08,S11-empty,6,2026111173206,1.73,recovery_reset,no_echo
+P-08,S11-empty,6,2026111173206,2.005848,recovery_first_valid,
+P-08,S11-empty,6,2026111173206,2.23,recovery_reset,no_echo
+P-08,S11-empty,6,2026111173206,2.305834,recovery_first_valid,
+P-08,S11-empty,6,2026111173206,2.705841,valid_decision,UNOCCUPIED
+P-08,S11-empty,6,2026111173206,2.705841,output,UNOCCUPIED (decision)
+P-08,S11-empty,6,2026111173206,3.33,unknown_entry,no_echo x5
+P-08,S11-empty,6,2026111173206,3.33,output,UNKNOWN (no_echo x5)
+P-08,S11-empty,6,2026111173206,3.405835,recovery_first_valid,
+P-08,S11-empty,6,2026111173206,3.73,recovery_reset,no_echo
+P-08,S11-empty,6,2026111173206,4.005735,recovery_first_valid,
+P-08,S11-empty,6,2026111173206,4.13,recovery_reset,no_echo
+P-08,S11-empty,6,2026111173206,4.205862,recovery_first_valid,
+P-08,S11-empty,6,2026111173206,4.33,recovery_reset,no_echo
+P-08,S11-empty,6,2026111173206,4.405848,recovery_first_valid,
+P-08,S11-empty,6,2026111173206,4.53,recovery_reset,no_echo
+P-08,S11-empty,6,2026111173206,4.805821,recovery_first_valid,
+P-08,S11-empty,6,2026111173206,4.93,recovery_reset,no_echo
+P-08,S11-empty,7,2026111173207,0.0,output,UNKNOWN (power_on)
+P-08,S11-empty,7,2026111173207,0.105809,recovery_first_valid,
+P-08,S11-empty,7,2026111173207,0.23,recovery_reset,no_echo
+P-08,S11-empty,7,2026111173207,0.405882,recovery_first_valid,
+P-08,S11-empty,7,2026111173207,0.73,recovery_reset,no_echo
+P-08,S11-empty,7,2026111173207,0.805759,recovery_first_valid,
+P-08,S11-empty,7,2026111173207,1.13,recovery_reset,no_echo
+P-08,S11-empty,7,2026111173207,1.205671,recovery_first_valid,
+P-08,S11-empty,7,2026111173207,1.63,recovery_reset,no_echo
+P-08,S11-empty,7,2026111173207,1.705777,recovery_first_valid,
+P-08,S11-empty,7,2026111173207,1.83,recovery_reset,no_echo
+P-08,S11-empty,7,2026111173207,1.905747,recovery_first_valid,
+P-08,S11-empty,7,2026111173207,2.13,recovery_reset,no_echo
+P-08,S11-empty,7,2026111173207,2.205757,recovery_first_valid,
+P-08,S11-empty,7,2026111173207,2.43,recovery_reset,no_echo
+P-08,S11-empty,7,2026111173207,2.505831,recovery_first_valid,
+P-08,S11-empty,7,2026111173207,2.63,recovery_reset,no_echo
+P-08,S11-empty,7,2026111173207,2.705863,recovery_first_valid,
+P-08,S11-empty,7,2026111173207,2.93,recovery_reset,no_echo
+P-08,S11-empty,7,2026111173207,3.205878,recovery_first_valid,
+P-08,S11-empty,7,2026111173207,3.605873,valid_decision,UNOCCUPIED
+P-08,S11-empty,7,2026111173207,3.605873,output,UNOCCUPIED (decision)
+P-08,S11-empty,7,2026111173207,4.33,unknown_entry,no_echo x5
+P-08,S11-empty,7,2026111173207,4.33,output,UNKNOWN (no_echo x5)
+P-08,S11-empty,7,2026111173207,4.405763,recovery_first_valid,
+P-08,S11-empty,7,2026111173207,4.53,recovery_reset,no_echo
+P-08,S11-empty,7,2026111173207,4.605814,recovery_first_valid,
+P-08,S11-empty,7,2026111173207,4.73,recovery_reset,no_echo
+P-08,S11-empty,7,2026111173207,4.805801,recovery_first_valid,
+P-08,S11-empty,7,2026111173207,5.03,recovery_reset,no_echo
+P-08,S11-empty,8,2026111173208,0.0,output,UNKNOWN (power_on)
+P-08,S11-empty,8,2026111173208,0.005856,recovery_first_valid,
+P-08,S11-empty,8,2026111173208,0.405784,valid_decision,UNOCCUPIED
+P-08,S11-empty,8,2026111173208,0.405784,output,UNOCCUPIED (decision)
+P-08,S11-empty,9,2026111173209,0.0,output,UNKNOWN (power_on)
+P-08,S11-empty,9,2026111173209,0.005858,recovery_first_valid,
+P-08,S11-empty,9,2026111173209,0.13,recovery_reset,no_echo
+P-08,S11-empty,9,2026111173209,0.205884,recovery_first_valid,
+P-08,S11-empty,9,2026111173209,0.63,recovery_reset,no_echo
+P-08,S11-empty,9,2026111173209,0.705806,recovery_first_valid,
+P-08,S11-empty,9,2026111173209,0.83,recovery_reset,no_echo
+P-08,S11-empty,9,2026111173209,1.005819,recovery_first_valid,
+P-08,S11-empty,9,2026111173209,1.13,recovery_reset,no_echo
+P-08,S11-empty,9,2026111173209,1.205797,recovery_first_valid,
+P-08,S11-empty,9,2026111173209,1.33,recovery_reset,no_echo
+P-08,S11-empty,9,2026111173209,1.405844,recovery_first_valid,
+P-08,S11-empty,9,2026111173209,1.53,recovery_reset,no_echo
+P-08,S11-empty,9,2026111173209,2.205808,recovery_first_valid,
+P-08,S11-empty,9,2026111173209,2.43,recovery_reset,no_echo
+P-08,S11-empty,9,2026111173209,2.505834,recovery_first_valid,
+P-08,S11-empty,9,2026111173209,2.73,recovery_reset,no_echo
+P-08,S11-empty,9,2026111173209,2.805772,recovery_first_valid,
+P-08,S11-empty,9,2026111173209,3.03,recovery_reset,no_echo
+P-08,S11-empty,9,2026111173209,3.305874,recovery_first_valid,
+P-08,S11-empty,9,2026111173209,3.43,recovery_reset,no_echo
+P-08,S11-empty,9,2026111173209,3.605804,recovery_first_valid,
+P-08,S11-empty,9,2026111173209,3.73,recovery_reset,no_echo
+P-08,S11-empty,9,2026111173209,3.905867,recovery_first_valid,
+P-08,S11-empty,9,2026111173209,4.03,recovery_reset,no_echo
+P-08,S11-empty,9,2026111173209,4.105732,recovery_first_valid,
+P-08,S11-empty,9,2026111173209,4.23,recovery_reset,no_echo
+P-08,S11-empty,9,2026111173209,4.705895,recovery_first_valid,
+P-08,S11-empty,10,2026111173210,0.0,output,UNKNOWN (power_on)
+P-08,S11-empty,10,2026111173210,0.105829,recovery_first_valid,
+P-08,S11-empty,10,2026111173210,0.23,recovery_reset,no_echo
+P-08,S11-empty,10,2026111173210,0.405764,recovery_first_valid,
+P-08,S11-empty,10,2026111173210,0.73,recovery_reset,no_echo
+P-08,S11-empty,10,2026111173210,1.205858,recovery_first_valid,
+P-08,S11-empty,10,2026111173210,1.33,recovery_reset,no_echo
+P-08,S11-empty,10,2026111173210,1.905848,recovery_first_valid,
+P-08,S11-empty,10,2026111173210,2.03,recovery_reset,no_echo
+P-08,S11-empty,10,2026111173210,2.205833,recovery_first_valid,
+P-08,S11-empty,10,2026111173210,2.53,recovery_reset,no_echo
+P-08,S11-empty,10,2026111173210,2.605817,recovery_first_valid,
+P-08,S11-empty,10,2026111173210,2.73,recovery_reset,no_echo
+P-08,S11-empty,10,2026111173210,2.805829,recovery_first_valid,
+P-08,S11-empty,10,2026111173210,3.03,recovery_reset,no_echo
+P-08,S11-empty,10,2026111173210,3.205929,recovery_first_valid,
+P-08,S11-empty,10,2026111173210,3.53,recovery_reset,no_echo
+P-08,S11-empty,10,2026111173210,3.705871,recovery_first_valid,
+P-08,S11-empty,10,2026111173210,3.83,recovery_reset,no_echo
+P-08,S11-empty,10,2026111173210,4.005874,recovery_first_valid,
+P-08,S11-empty,10,2026111173210,4.13,recovery_reset,no_echo
+P-08,S11-empty,10,2026111173210,4.20582,recovery_first_valid,
+P-08,S11-empty,10,2026111173210,4.33,recovery_reset,no_echo
+P-08,S11-empty,10,2026111173210,4.805798,recovery_first_valid,
+P-08,S11-empty,10,2026111173210,4.93,recovery_reset,no_echo
+P-08,S11-empty,10,2026111173210,5.005778,recovery_first_valid,

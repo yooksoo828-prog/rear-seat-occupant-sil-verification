@@ -1,0 +1,27 @@
+group,cond_id,T_C,temp_comp,sigma_cm,p_loss,target,truth,OCC,UNOCC,UNKNOWN,trials_with_unknown_entry,trials_no_valid_by_t_eval,delta_noiseless_cm
+①온도·보정,S01,0.0,False,1.0,0.0,R1,OCCUPIED,10,0,0,0,0,17.92
+①온도·보정,S01,0.0,False,1.0,0.0,empty,UNOCCUPIED,0,10,0,0,0,-2.6
+①온도·보정,S02,0.0,True,1.0,0.0,R1,OCCUPIED,10,0,0,0,0,20.0
+①온도·보정,S02,0.0,True,1.0,0.0,empty,UNOCCUPIED,0,10,0,0,0,0.0
+①온도·보정,S03,20.0,False,1.0,0.0,R1,OCCUPIED,10,0,0,0,0,20.79
+①온도·보정,S03,20.0,False,1.0,0.0,empty,UNOCCUPIED,0,10,0,0,0,0.99
+①온도·보정,S04,20.0,True,1.0,0.0,R1,OCCUPIED,10,0,0,0,0,20.0
+①온도·보정,S04,20.0,True,1.0,0.0,empty,UNOCCUPIED,0,10,0,0,0,0.0
+①온도·보정,S05,50.0,False,1.0,0.0,R1,OCCUPIED,10,0,0,0,0,24.74
+①온도·보정,S05,50.0,False,1.0,0.0,empty,UNOCCUPIED,0,10,0,0,0,5.92
+①온도·보정,S06,50.0,True,1.0,0.0,R1,OCCUPIED,10,0,0,0,0,20.0
+①온도·보정,S06,50.0,True,1.0,0.0,empty,UNOCCUPIED,0,10,0,0,0,0.0
+②잡음,S07,20.0,False,0.5,0.0,R1,OCCUPIED,10,0,0,0,0,20.79
+②잡음,S07,20.0,False,0.5,0.0,empty,UNOCCUPIED,0,10,0,0,0,0.99
+②잡음,S03,20.0,False,1.0,0.0,R1,OCCUPIED,10,0,0,0,0,20.79
+②잡음,S03,20.0,False,1.0,0.0,empty,UNOCCUPIED,0,10,0,0,0,0.99
+②잡음,S08,20.0,False,2.0,0.0,R1,OCCUPIED,10,0,0,0,0,20.79
+②잡음,S08,20.0,False,2.0,0.0,empty,UNOCCUPIED,0,10,0,0,0,0.99
+③반사 손실,S03,20.0,False,1.0,0.0,R1,OCCUPIED,10,0,0,0,0,20.79
+③반사 손실,S03,20.0,False,1.0,0.0,empty,UNOCCUPIED,0,10,0,0,0,0.99
+③반사 손실,S09,20.0,False,1.0,0.1,R1,OCCUPIED,10,0,0,0,0,20.79
+③반사 손실,S09,20.0,False,1.0,0.1,empty,UNOCCUPIED,0,10,0,0,0,0.99
+③반사 손실,S10,20.0,False,1.0,0.3,R1,OCCUPIED,8,0,2,1,1,20.79
+③반사 손실,S10,20.0,False,1.0,0.3,empty,UNOCCUPIED,0,9,1,0,1,0.99
+③반사 손실,S11,20.0,False,1.0,0.5,R1,OCCUPIED,4,0,6,2,6,20.79
+③반사 손실,S11,20.0,False,1.0,0.5,empty,UNOCCUPIED,0,5,5,3,5,0.99

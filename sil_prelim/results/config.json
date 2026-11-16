@@ -1,0 +1,50 @@
+{
+  "config": {
+    "geometry": {
+      "H_s_cm": 100.0,
+      "R0_cm": 5.0,
+      "R1_cm": 20.0,
+      "R2_cm": 40.0,
+      "R3_cm": 60.0
+    },
+    "sensor": {
+      "c_formula": "331.4 + 0.6*T (m/s)",
+      "T_air_C": 20.0,
+      "sigma_cm": 1.0,
+      "p_loss": 0.0,
+      "bias_cm": 0.0,
+      "period_s": 0.1,
+      "T_to_s": 0.03
+    },
+    "detector": {
+      "d_empty_cm": 100.0,
+      "delta_on_cm": 10.0,
+      "delta_off_cm": 5.0,
+      "k": 5,
+      "M": 5,
+      "T_stale_s": 1.0,
+      "T_db_s": 0.0,
+      "valid_min_cm": 2.0,
+      "valid_max_cm": 400.0,
+      "c_fixed_mps": 340.0,
+      "temp_comp": false,
+      "delta_mid_cm": 7.5
+    },
+    "evaluation": {
+      "t_eval_s": 3.0,
+      "T_first_s": 1.0,
+      "T_recover_s": 1.0,
+      "hold_s": 1.0,
+      "response_limit_s": 3.0,
+      "temp_input_err_C": 2.0,
+      "n_random": 10,
+      "base_seed": 20261111
+    }
+  },
+  "environment": {
+    "python": "3.13.18",
+    "numpy": "2.5.3",
+    "rng": "numpy.random.PCG64 via SeedSequence(seed).spawn",
+    "seed_rule": "(base_seed*1000 + crc32(test/case) % 997)*100 + trial"
+  }
+}

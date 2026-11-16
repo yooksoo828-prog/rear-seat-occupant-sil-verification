@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# OS
+.DS_Store
+
+# 대용량 압축 원시 측정 로그(trial_samples.csv.gz)는 추적하지 않음.
+# run_main.py 로 재생성 가능하며, 요약·추적성·검증·보고서 파일은 모두 추적함.
+*.csv.gz
