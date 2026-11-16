@@ -1,0 +1,243 @@
+{
+  "stage": "main",
+  "config": {
+    "_설명": "본시험 기준선 v1.0. 2026-11-11 사용자 결정 D1~D8을 그대로 기록함. 이 파일이 run_main.py main의 입력이며, 코드 값과 일치하는지 실행 전에 확인함(baseline_verification.csv). 결과를 본 뒤 값을 바꾸지 않음.",
+    "version": "v1.0",
+    "confirmed": true,
+    "docs": {
+      "시험 설계": "11.2절, 12절",
+      "SIL 설계·결과": "5.5절, 6절",
+      "요구사항": "시스템·소프트웨어 요구사항 명세서"
+    },
+    "geometry": {
+      "H_s_cm": 100.0,
+      "_state": "확정(D1): 가상 반사면 기준. H_s 100 cm, 빈 좌석 0 cm, R0/R1/R2/R3 = 5/20/40/60 cm. 더미·인체·가방 치수가 아님",
+      "R0_cm": 5.0,
+      "R1_cm": 20.0,
+      "R2_cm": 40.0,
+      "R3_cm": 60.0,
+      "_R_state": "확정(D1): 프로젝트 가정 반사면(가상 반사면)",
+      "empty_seat_h_cm": 0.0
+    },
+    "objects": {
+      "_state": "D1: O-A/O-B/O-C/O-S 원 조건은 미실행. TC-02a=R1, TC-02b=R2, TC-03=R3는 '가상 반사면 대체 조건'으로 표시",
+      "O-A": {
+        "label": "R1(가상 반사면 대체 조건, O-A 원 조건 미실행)",
+        "h_cm": 20.0,
+        "source": "D1 가상 반사면"
+      },
+      "O-B": {
+        "label": "R2(가상 반사면 대체 조건, O-B 원 조건 미실행)",
+        "h_cm": 40.0,
+        "source": "D1 가상 반사면"
+      },
+      "O-C": {
+        "label": "R3(가상 반사면 대체 조건, O-C 원 조건 미실행)",
+        "h_cm": 60.0,
+        "source": "D1 가상 반사면"
+      },
+      "R1": {
+        "label": "R1(가상 반사면)",
+        "h_cm": 20.0,
+        "source": "D1 가상 반사면"
+      },
+      "O-S": null,
+      "original_conditions_not_run": [
+        "O-A",
+        "O-B",
+        "O-C",
+        "O-S"
+      ]
+    },
+    "tc_objects": {
+      "_state": "확정(D1): 점유 대상 R1. TC-14는 R1 점유와 빈 좌석을 각각 시험. TC-04b 비교 점유 대상 R1. TC-11은 빈 좌석·R2·R0",
+      "TC-05": "R1",
+      "TC-06": "R1",
+      "TC-08a": "R1",
+      "TC-09": "R1",
+      "TC-10": "R1",
+      "TC-13a": "R1",
+      "TC-14": "R1",
+      "TC-15": "R1",
+      "cargo_top_equals": "R1"
+    },
+    "seating_position_distribution": "없음: 센서 바로 아래 한 점의 높이만 모델링함(착석 위치 분포는 SIL 모델에 없음, 후속 검토)",
+    "motion_assumption": {
+      "amp_cm": 1.0,
+      "hz": 0.25,
+      "waveform": "h(t) = h_R1 + amp * sin(2*pi*hz*t), 위상 0, 점유 대상에만 적용(화물은 정지)",
+      "_state": "확정(D7): 예비시험 P-02(b-2)의 값과 패턴. sil_prelim/run_prelim.py의 amp, hz = 1.0, 0.25와 같음. 근거 없는 가정"
+    },
+    "environment": {
+      "T_base_C": 20.0,
+      "temp_comp_base": false,
+      "temp_input_err_C": 2.0,
+      "_state": "확정(D3): 별도 온도 조건이 없는 시험은 20 °C·보정 없음. TC-11은 0·20·50 °C에서 보정 유·무. 보정의 요구사항 채택은 본시험 이후 검토. 온도 입력 오차 U(-2,+2) °C는 가정"
+    },
+    "detector": {
+      "d_empty_cm": 100.0,
+      "_d_empty_state": "확정(D4): 100 cm 고정. 초기 빈 좌석 실측 보정은 후속 검토",
+      "delta_on_cm": 10.0,
+      "delta_off_cm": 5.0,
+      "k": 5,
+      "M": 5,
+      "T_stale_s": 1.0,
+      "T_db_s": 0.5,
+      "db_basis": "req",
+      "_Tdb_state": "확정(D2): T_db 0.5 s, 후보 유지 시간은 측정 요청 시각 기준(db_basis=req). 실제 판정 시각은 결과 수신·처리 시각으로 기록하고 최초 판정·복구 기한과 응답 시간은 그 시각으로 확인",
+      "valid_min_cm": 2.0,
+      "valid_max_cm": 400.0,
+      "c_fixed_mps": 340.0,
+      "_state": "임계값·k·M·T_stale은 구현 설정(예비), 대상 확정 후 점검(12절)"
+    },
+    "sensor": {
+      "period_s": 0.1,
+      "T_to_s": 0.03,
+      "sigma_cm": 1.0,
+      "p_loss": 0.0,
+      "bias_cm": 0.0,
+      "_state": "기준 수준은 시험 설계 8절 명시(프로젝트 가정). 주기·T_to는 구현 설정(예비)"
+    },
+    "sensitivity_levels": {
+      "sigma_cm": [
+        1.0,
+        0.5,
+        2.0
+      ],
+      "p_loss": [
+        0.0,
+        0.1,
+        0.3,
+        0.5
+      ],
+      "bias_cm": [
+        0.0,
+        2.0,
+        5.0
+      ],
+      "tilt_deg": [
+        0,
+        15,
+        30,
+        45
+      ],
+      "tilt_p_loss": [
+        0.0,
+        0.3,
+        0.7,
+        1.0
+      ],
+      "TC05_combination": "단일 요인(D7): 시험 설계 8.2절의 p_loss {0.1, 0.3, 0.5}와 편향 b {+2, +5} cm를 한 요인씩 변경",
+      "TC07c_targets": [
+        [
+          "빈 좌석",
+          "empty",
+          0.0
+        ],
+        [
+          "R0",
+          "cargo",
+          5.0
+        ],
+        [
+          "R1",
+          "occupant",
+          20.0
+        ]
+      ],
+      "TC05a_vs_05b": "두꺼운 옷(05a)과 담요(05b)에 같은 입력 모델을 씀(D7). 두 재질을 따로 검증한 것으로 집계하지 않음",
+      "_state": "D7: TC-07c는 Δ_on·Δ_off를 동시에 ±50%로 바꾼 조합(5/2.5, 10/5, 15/7.5 cm)을 빈 좌석·R0·R1에 적용",
+      "TC07c_threshold_pairs": [
+        [
+          "−50%",
+          5.0,
+          2.5
+        ],
+        [
+          "기준",
+          10.0,
+          5.0
+        ],
+        [
+          "+50%",
+          15.0,
+          7.5
+        ]
+      ]
+    },
+    "evaluation": {
+      "t_eval_s": 3.0,
+      "T_first_s": 1.0,
+      "T_recover_s": 1.0,
+      "hold_s": 1.0,
+      "response_limit_s": 3.0,
+      "event_phase": "t_gt = 5.0 + U(0, 0.1) s (예비시험 방식 승계)",
+      "_state": "구현 설정(예비)값을 그대로 확정(D1~D8에 별도 변경 없음)"
+    },
+    "repetitions": {
+      "TC-01": 300,
+      "TC-02": 300,
+      "TC-03": 300,
+      "TC-04": 300,
+      "TC-05_base": 300,
+      "TC-05_level": 60,
+      "TC-06_level": 60,
+      "TC-07c_level": 60,
+      "TC-08": 60,
+      "TC-09": 60,
+      "TC-10": 60,
+      "TC-13_noisy": 60,
+      "TC-11": "빈 좌석 300(TC-01), R2 300(TC-02b 대응), R0 300(TC-04a), 온도·보정 구성별 각각. 대상을 합쳐 집계하지 않음",
+      "_state": "확정(D5): TC-01·TC-04 조건별 300회. TC-11은 연결된 대상 시험의 반복 수를 따름. 다른 시험은 시험 설계 11.2절"
+    },
+    "targets": {
+      "miss_rate": 0.01,
+      "false_alarm_rate": 0.05,
+      "unknown_rate": 0.01,
+      "response_s": 3.0,
+      "flips": 0,
+      "_state": "확정(D6): 기존 목표 유지. 같은 거리의 가방 조건에도 합격 기준 유지"
+    },
+    "stats": {
+      "confidence": 0.95,
+      "method": "단측 정확 이항(9.4절)",
+      "_state": "프로젝트 선택, 문서 명시"
+    },
+    "seed": {
+      "base_seed": 20261111,
+      "rule": "seed = base_seed * 2**64 + crc32('<TC>/<조건>') * 2**20 + 시행 번호 (본시험 접두 없음)",
+      "_state": "구현 선택"
+    },
+    "decided": {
+      "date": "2026-11-11",
+      "by": "사용자(김윤수)",
+      "note": "D1~D8 결정 내용을 아래 decisions에 원문 요지로 기록"
+    },
+    "decisions": {
+      "D1": "가상 반사면 기준. H_s 100, 빈 좌석 0, R0~R3 5/20/40/60. TC-02a=R1, 02b=R2, 03=R3('가상 반사면 대체 조건' 표시), O-A/O-B/O-C 원 조건 미실행. TC-05·06·08a·09·10·13a·15 점유 대상 R1, TC-14 R1 점유·빈 좌석, TC-04b 비교 점유 R1, TC-11 빈 좌석·R2·R0, TC-12 미실행",
+      "D2": "T_db 0.5 s, db_basis=req. 판정 시각은 수신·처리 시각, 요청·수신 시각 모두 로그",
+      "D3": "기준 20 °C·보정 없음. TC-11 0·20·50 °C 보정 유·무 나란히. 50 °C R0 오검출도 그대로 기록. 보정 채택 여부는 본시험 후. TC-11 커버 조건 표시, SR-09 전체 충족 선언 금지",
+      "D4": "d_empty 100 cm 고정",
+      "D5": "TC-01·TC-04 각 300회, TC-11 빈 좌석·R2·R0 각 300회(온도·보정 구성별), 대상 합산 집계 금지, 나머지는 11.2절",
+      "D6": "미검출 1%, 오검출 5%, 응답 3 s와 정답 유지, 뒤집힘 0회, 미확정 1% 유지",
+      "D7": "TC-04b-2 예비시험 P-02 움직임(1 cm, 0.25 Hz), TC-05 한 요인씩, 05a·05b 동일 모델 분리 집계 금지, TC-07c 빈 좌석·R0·R1 ±50%",
+      "D8": "TC-08 t=0 전원 인가 SIL 모델. 차량 시동·센서 전원 관계는 후속 검토"
+    },
+    "follow_up_items": [
+      "온도 보정의 요구사항 채택",
+      "초기 빈 좌석 실측 보정(d_empty)",
+      "O-A/O-B/O-C/O-S 대상 치수 확보",
+      "차량 시동과 센서 전원의 관계",
+      "착석 위치 분포"
+    ],
+    "_baseline_file": "baseline_v1.0.json",
+    "_baseline_sha256": "79f21ce910853ee7358d97c031a7553258a9fb2151bdcdaca17db3c1ea205f6d",
+    "_command": "python3 run_main.py main"
+  },
+  "environment": {
+    "python": "3.13.18",
+    "numpy": "2.5.3",
+    "rng": "numpy.random.PCG64 via SeedSequence(seed).spawn",
+    "seed_rule": "seed = base_seed * 2**64 + crc32('<접두>/<TC>/<조건>') * 2**20 + 시행 번호"
+  }
+}

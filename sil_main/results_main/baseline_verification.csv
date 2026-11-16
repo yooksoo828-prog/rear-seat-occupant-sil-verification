@@ -1,0 +1,88 @@
+항목,기준선 v1.0,코드 값,코드 위치,일치
+geometry.H_s_cm,100.0,100.0,cfg.geometry,일치
+geometry.R0_cm,5.0,5.0,cfg.geometry,일치
+geometry.R1_cm,20.0,20.0,cfg.geometry,일치
+geometry.R2_cm,40.0,40.0,cfg.geometry,일치
+geometry.R3_cm,60.0,60.0,cfg.geometry,일치
+빈 좌석 높이,0.0,0.0,"시나리오 static(kind='empty', h=0.0)",일치
+objects.O-A.h_cm,20.0,20.0,Runner.objects,일치
+objects.O-B.h_cm,40.0,40.0,Runner.objects,일치
+objects.O-C.h_cm,60.0,60.0,Runner.objects,일치
+objects.R1.h_cm,20.0,20.0,Runner.objects,일치
+O-A = R1(TC-02a),20.0,20.0,TC-02a 입력,일치
+"O-B = R2(TC-02b, TC-11)",40.0,40.0,TC-02b·TC-11 입력,일치
+O-C = R3(TC-03),60.0,60.0,TC-03 입력,일치
+원 조건 O-S,,,TC-12 미실행,일치
+tc_objects.TC-05,R1,R1,Runner.tc05_object,일치
+  TC-05의 반사면 높이,20.0,20.0,Runner.objects[R1],일치
+tc_objects.TC-06,R1,R1,Runner.tc06_object,일치
+  TC-06의 반사면 높이,20.0,20.0,Runner.objects[R1],일치
+tc_objects.TC-08a,R1,R1,Runner.tc08_object,일치
+  TC-08a의 반사면 높이,20.0,20.0,Runner.objects[R1],일치
+tc_objects.TC-09,R1,R1,Runner.tc09_object,일치
+  TC-09의 반사면 높이,20.0,20.0,Runner.objects[R1],일치
+tc_objects.TC-10,R1,R1,Runner.tc10_object,일치
+  TC-10의 반사면 높이,20.0,20.0,Runner.objects[R1],일치
+tc_objects.TC-13a,R1,R1,Runner.tc13_object,일치
+  TC-13a의 반사면 높이,20.0,20.0,Runner.objects[R1],일치
+tc_objects.TC-14,R1,R1,Runner.tc14_object,일치
+  TC-14의 반사면 높이,20.0,20.0,Runner.objects[R1],일치
+tc_objects.TC-15,R1,R1,Runner.tc15_object,일치
+  TC-15의 반사면 높이,20.0,20.0,Runner.objects[R1],일치
+tc_objects.cargo_top_equals,R1,R1,Runner.cargo_top_equals,일치
+  cargo_top_equals의 반사면 높이,20.0,20.0,Runner.objects[R1],일치
+detector.d_empty_cm,100.0,100.0,cfg.detector,일치
+detector.T_db_s,0.5,0.5,cfg.detector,일치
+detector.db_basis,req,req,cfg.detector,일치
+detector.delta_on_cm,10.0,10.0,cfg.detector,일치
+detector.delta_off_cm,5.0,5.0,cfg.detector,일치
+detector.k,5,5,cfg.detector,일치
+detector.M,5,5,cfg.detector,일치
+detector.T_stale_s,1.0,1.0,cfg.detector,일치
+detector.valid_min_cm,2.0,2.0,cfg.detector,일치
+detector.valid_max_cm,400.0,400.0,cfg.detector,일치
+detector.c_fixed_mps,340.0,340.0,cfg.detector,일치
+초기 구간 기준 delta_mid_cm,7.5,7.5,cfg.detector.delta_mid_cm(계산값),일치
+sensor.sigma_cm,1.0,1.0,cfg.sensor,일치
+sensor.p_loss,0.0,0.0,cfg.sensor,일치
+sensor.bias_cm,0.0,0.0,cfg.sensor,일치
+sensor.period_s,0.1,0.1,cfg.sensor,일치
+sensor.T_to_s,0.03,0.03,cfg.sensor,일치
+evaluation.t_eval_s,3.0,3.0,cfg.evaluation,일치
+evaluation.T_first_s,1.0,1.0,cfg.evaluation,일치
+evaluation.T_recover_s,1.0,1.0,cfg.evaluation,일치
+evaluation.hold_s,1.0,1.0,cfg.evaluation,일치
+evaluation.response_limit_s,3.0,3.0,cfg.evaluation,일치
+environment.temp_input_err_C,2.0,2.0,cfg.evaluation,일치
+environment.T_base_C,20.0,20.0,Runner.T_base,일치
+environment.temp_comp_base,False,False,Runner.comp_base,일치
+seed.base_seed,20261111,20261111,cfg.evaluation.base_seed,일치
+repetitions.TC-01,300,300,Runner.reps,일치
+repetitions.TC-02,300,300,Runner.reps,일치
+repetitions.TC-03,300,300,Runner.reps,일치
+repetitions.TC-04,300,300,Runner.reps,일치
+repetitions.TC-05_base,300,300,Runner.reps,일치
+repetitions.TC-05_level,60,60,Runner.reps,일치
+repetitions.TC-06_level,60,60,Runner.reps,일치
+repetitions.TC-07c_level,60,60,Runner.reps,일치
+repetitions.TC-08,60,60,Runner.reps,일치
+repetitions.TC-09,60,60,Runner.reps,일치
+repetitions.TC-10,60,60,Runner.reps,일치
+repetitions.TC-13_noisy,60,60,Runner.reps,일치
+targets.miss_rate,0.01,0.01,Runner.targets,일치
+targets.false_alarm_rate,0.05,0.05,Runner.targets,일치
+targets.unknown_rate,0.01,0.01,Runner.targets,일치
+targets.response_s,3.0,3.0,Runner.targets,일치
+targets.flips,0,0,Runner.targets,일치
+TC-04b-2 진폭(cm) = 예비시험 P-02,1.0,1.0,sil_prelim/run_prelim.py,일치
+TC-04b-2 주파수(Hz) = 예비시험 P-02,0.25,0.25,sil_prelim/run_prelim.py,일치
+TC-04b-2 진폭·주파수가 시험 함수에 전달됨,"(1.0, 0.25)","(1.0, 0.25)","E.tc04(R, mot)",일치
+sensitivity_levels.sigma_cm,"[1.0, 0.5, 2.0]","[1.0, 0.5, 2.0]",E.tc05/06 입력,일치
+sensitivity_levels.p_loss,"[0.0, 0.1, 0.3, 0.5]","[0.0, 0.1, 0.3, 0.5]",E.tc05/06 입력,일치
+sensitivity_levels.bias_cm,"[0.0, 2.0, 5.0]","[0.0, 2.0, 5.0]",E.tc05/06 입력,일치
+sensitivity_levels.tilt_deg,"[0, 15, 30, 45]","[0, 15, 30, 45]",E.tc05/06 입력,일치
+sensitivity_levels.tilt_p_loss,"[0.0, 0.3, 0.7, 1.0]","[0.0, 0.3, 0.7, 1.0]",E.tc05/06 입력,일치
+TC-07c 대상,"[['빈 좌석', 'empty', 0.0], ['R0', 'cargo', 5.0], ['R1', 'occupant', 20.0]]","[['빈 좌석', 'empty', 0.0], ['R0', 'cargo', 5.0], ['R1', 'occupant', 20.0]]",E.tc07c 입력,일치
+TC-07c 임계값 조합,"[['−50%', 5.0, 2.5], ['기준', 10.0, 5.0], ['+50%', 15.0, 7.5]]","[['−50%', 5.0, 2.5], ['기준', 10.0, 5.0], ['+50%', 15.0, 7.5]]",E.tc07c 입력,일치
+동작 확인: 잡음 없는 R1 최초 유효 판정 시각,0.900–0.915 s(요청 기준 T_db 0.5 s),0.904659,run_trial(db_basis=req),일치
+T_db 시간 기준 동작,req,req,Detector.decide: tb = t_req,일치
