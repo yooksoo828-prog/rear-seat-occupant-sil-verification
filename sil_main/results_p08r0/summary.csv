@@ -1,0 +1,7 @@
+stage,tc,cond_id,condition,sr,kind,metric,n,k,observed,upper95,target,status,expected,actual,surface,note
+additional,P-08-R0,R0-T0-nocomp,"R0 낮은 화물, T=0°C, 보정 무",SR-04/09,record,기록,10,,,,,기록(합격 판정 없음),기록(정답 UNOCCUPIED),"잡음 없는 계산 Δ 2.53 cm, 잡음 없는 시행 출력 UNOCCUPIED; 무작위 10회: OCC 0, UNOCC 10, UNK 0",R0(가정),추가 시험. 합격 판정 없음
+additional,P-08-R0,R0-T20-nocomp,"R0 낮은 화물, T=20°C, 보정 무",SR-04/09,record,기록,10,,,,,기록(합격 판정 없음),기록(정답 UNOCCUPIED),"잡음 없는 계산 Δ 5.94 cm, 잡음 없는 시행 출력 UNOCCUPIED; 무작위 10회: OCC 0, UNOCC 10, UNK 0",R0(가정),추가 시험. 합격 판정 없음
+additional,P-08-R0,R0-T50-nocomp,"R0 낮은 화물, T=50°C, 보정 무",SR-04/09,record,기록,10,,,,,기록(합격 판정 없음),기록(정답 UNOCCUPIED),"잡음 없는 계산 Δ 10.63 cm, 잡음 없는 시행 출력 OCCUPIED; 무작위 10회: OCC 10, UNOCC 0, UNK 0",R0(가정),추가 시험. 합격 판정 없음
+additional,P-08-R0,R0-T0-comp,"R0 낮은 화물, T=0°C, 보정 유",SR-04/09,record,기록,10,,,,,기록(합격 판정 없음),기록(정답 UNOCCUPIED),"잡음 없는 계산 Δ 5.00 cm, 잡음 없는 시행 출력 UNOCCUPIED; 무작위 10회: OCC 0, UNOCC 10, UNK 0",R0(가정),추가 시험. 합격 판정 없음. 온도 입력 오차 ±2 °C는 가정
+additional,P-08-R0,R0-T20-comp,"R0 낮은 화물, T=20°C, 보정 유",SR-04/09,record,기록,10,,,,,기록(합격 판정 없음),기록(정답 UNOCCUPIED),"잡음 없는 계산 Δ 5.00 cm, 잡음 없는 시행 출력 UNOCCUPIED; 무작위 10회: OCC 0, UNOCC 10, UNK 0",R0(가정),추가 시험. 합격 판정 없음. 온도 입력 오차 ±2 °C는 가정
+additional,P-08-R0,R0-T50-comp,"R0 낮은 화물, T=50°C, 보정 유",SR-04/09,record,기록,10,,,,,기록(합격 판정 없음),기록(정답 UNOCCUPIED),"잡음 없는 계산 Δ 5.00 cm, 잡음 없는 시행 출력 UNOCCUPIED; 무작위 10회: OCC 0, UNOCC 10, UNK 0",R0(가정),추가 시험. 합격 판정 없음. 온도 입력 오차 ±2 °C는 가정

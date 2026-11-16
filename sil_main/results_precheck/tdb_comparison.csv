@@ -1,0 +1,109 @@
+T_db 후보,TC,조건,"상태(점검, 판정 아님)",기대,실제
+Tdb0,TC-07,07a,점검 · 일치,UNOCCUPIED,UNOCCUPIED
+Tdb0,TC-07,07a,점검 · 일치,OCCUPIED,OCCUPIED
+Tdb0,TC-07,07a,점검 · 일치,OCCUPIED,OCCUPIED
+Tdb0.5-req,TC-07,07a,점검 · 일치,UNOCCUPIED,UNOCCUPIED
+Tdb0.5-req,TC-07,07a,점검 · 일치,OCCUPIED,OCCUPIED
+Tdb0.5-req,TC-07,07a,점검 · 일치,OCCUPIED,OCCUPIED
+Tdb0.5-rx,TC-07,07a,점검 · 일치,UNOCCUPIED,UNOCCUPIED
+Tdb0.5-rx,TC-07,07a,점검 · 일치,OCCUPIED,OCCUPIED
+Tdb0.5-rx,TC-07,07a,점검 · 일치,OCCUPIED,OCCUPIED
+Tdb0,TC-07,07b,점검 · 일치,OCCUPIED,OCCUPIED
+Tdb0,TC-07,07b,점검 · 일치,UNOCCUPIED,UNOCCUPIED
+Tdb0,TC-07,07b,점검 · 일치,UNOCCUPIED,UNOCCUPIED
+Tdb0.5-req,TC-07,07b,점검 · 일치,OCCUPIED,OCCUPIED
+Tdb0.5-req,TC-07,07b,점검 · 일치,UNOCCUPIED,UNOCCUPIED
+Tdb0.5-req,TC-07,07b,점검 · 일치,UNOCCUPIED,UNOCCUPIED
+Tdb0.5-rx,TC-07,07b,점검 · 일치,OCCUPIED,OCCUPIED
+Tdb0.5-rx,TC-07,07b,점검 · 일치,UNOCCUPIED,UNOCCUPIED
+Tdb0.5-rx,TC-07,07b,점검 · 일치,UNOCCUPIED,UNOCCUPIED
+Tdb0,TC-07,07d,점검 · 일치,UNOCCUPIED,UNOCCUPIED
+Tdb0,TC-07,07d,점검 · 일치,OCCUPIED,OCCUPIED
+Tdb0,TC-07,07d,점검 · 일치,OCCUPIED,OCCUPIED
+Tdb0.5-req,TC-07,07d,점검 · 일치,UNOCCUPIED,UNOCCUPIED
+Tdb0.5-req,TC-07,07d,점검 · 일치,OCCUPIED,OCCUPIED
+Tdb0.5-req,TC-07,07d,점검 · 일치,OCCUPIED,OCCUPIED
+Tdb0.5-rx,TC-07,07d,점검 · 일치,UNOCCUPIED,UNOCCUPIED
+Tdb0.5-rx,TC-07,07d,점검 · 일치,OCCUPIED,OCCUPIED
+Tdb0.5-rx,TC-07,07d,점검 · 일치,OCCUPIED,OCCUPIED
+Tdb0,TC-07,seq,점검 · 일치,UNOCCUPIED → OCCUPIED → OCCUPIED → UNOCCUPIED,UNOCCUPIED → OCCUPIED → OCCUPIED → UNOCCUPIED
+Tdb0.5-req,TC-07,seq,점검 · 일치,UNOCCUPIED → OCCUPIED → OCCUPIED → UNOCCUPIED,UNOCCUPIED → OCCUPIED → OCCUPIED → UNOCCUPIED
+Tdb0.5-rx,TC-07,seq,점검 · 일치,UNOCCUPIED → OCCUPIED → OCCUPIED → UNOCCUPIED,UNOCCUPIED → OCCUPIED → OCCUPIED → UNOCCUPIED
+Tdb0,TC-08,08a,점검 · 기준 충족(전 시행),모든 시행에서 최초 유효 판정 ≤ T_first이고 정답,미충족 0/10; 최초 유효 판정(수신·처리 시각) 0.405–0.405 s
+Tdb0.5-req,TC-08,08a,점검 · 기준 충족(전 시행),모든 시행에서 최초 유효 판정 ≤ T_first이고 정답,미충족 0/10; 최초 유효 판정(수신·처리 시각) 0.905–0.905 s
+Tdb0.5-rx,TC-08,08a,점검 · 불합격,모든 시행에서 최초 유효 판정 ≤ T_first이고 정답,미충족 3/10; 최초 유효 판정(수신·처리 시각) 0.905–1.005 s
+Tdb0,TC-08,08b,점검 · 기준 충족(전 시행),모든 시행에서 최초 유효 판정 ≤ T_first이고 정답,미충족 0/10; 최초 유효 판정(수신·처리 시각) 0.406–0.406 s
+Tdb0.5-req,TC-08,08b,점검 · 기준 충족(전 시행),모든 시행에서 최초 유효 판정 ≤ T_first이고 정답,미충족 0/10; 최초 유효 판정(수신·처리 시각) 0.906–0.906 s
+Tdb0.5-rx,TC-08,08b,점검 · 불합격,모든 시행에서 최초 유효 판정 ≤ T_first이고 정답,미충족 7/10; 최초 유효 판정(수신·처리 시각) 0.906–1.006 s
+Tdb0,TC-09,09a,점검 · 기준 충족(전 시행),"모든 시행의 응답 시간 ≤ 3초(기한 초과 0회, 분모 포함)",미충족 0/10; 응답 0.207–0.304 s
+Tdb0.5-req,TC-09,09a,점검 · 기준 충족(전 시행),"모든 시행의 응답 시간 ≤ 3초(기한 초과 0회, 분모 포함)",미충족 0/10; 응답 0.713–0.797 s
+Tdb0.5-rx,TC-09,09a,점검 · 기준 충족(전 시행),"모든 시행의 응답 시간 ≤ 3초(기한 초과 0회, 분모 포함)",미충족 0/10; 응답 0.708–0.900 s
+Tdb0,TC-09,09b,점검 · 기준 충족(전 시행),"모든 시행의 응답 시간 ≤ 3초(기한 초과 0회, 분모 포함)",미충족 0/10; 응답 0.206–0.293 s
+Tdb0.5-req,TC-09,09b,점검 · 기준 충족(전 시행),"모든 시행의 응답 시간 ≤ 3초(기한 초과 0회, 분모 포함)",미충족 0/10; 응답 0.710–0.782 s
+Tdb0.5-rx,TC-09,09b,점검 · 기준 충족(전 시행),"모든 시행의 응답 시간 ≤ 3초(기한 초과 0회, 분모 포함)",미충족 0/10; 응답 0.713–0.902 s
+Tdb0,TC-10,hold60,점검 · 기준 충족(전 시행),유지 구간 뒤집힘 0회(모든 시행),"미충족 0/3; 전제(점유 확정) 불충족 0, 뒤집힘 합계 0"
+Tdb0.5-req,TC-10,hold60,점검 · 기준 충족(전 시행),유지 구간 뒤집힘 0회(모든 시행),"미충족 0/3; 전제(점유 확정) 불충족 0, 뒤집힘 합계 0"
+Tdb0.5-rx,TC-10,hold60,점검 · 기준 충족(전 시행),유지 구간 뒤집힘 0회(모든 시행),"미충족 0/3; 전제(점유 확정) 불충족 0, 뒤집힘 합계 0"
+Tdb0,TC-13,13a-drop4-det,점검 · 일치,"이전 상태 유지(UNKNOWN 없음), 점유에서 UNOCCUPIED 없음",일치; 복구 없음
+Tdb0.5-req,TC-13,13a-drop4-det,점검 · 일치,"이전 상태 유지(UNKNOWN 없음), 점유에서 UNOCCUPIED 없음",일치; 복구 없음
+Tdb0.5-rx,TC-13,13a-drop4-det,점검 · 일치,"이전 상태 유지(UNKNOWN 없음), 점유에서 UNOCCUPIED 없음",일치; 복구 없음
+Tdb0,TC-13,13a-drop4-noisy,점검 · 기준 충족(전 시행),"이전 상태 유지(UNKNOWN 없음), 점유에서 UNOCCUPIED 없음",미충족 0/10; 복구 없음
+Tdb0.5-req,TC-13,13a-drop4-noisy,점검 · 기준 충족(전 시행),"이전 상태 유지(UNKNOWN 없음), 점유에서 UNOCCUPIED 없음",미충족 0/10; 복구 없음
+Tdb0.5-rx,TC-13,13a-drop4-noisy,점검 · 기준 충족(전 시행),"이전 상태 유지(UNKNOWN 없음), 점유에서 UNOCCUPIED 없음",미충족 0/10; 복구 없음
+Tdb0,TC-13,13a-drop5-det,점검 · 일치,"UNKNOWN 후 복구 ≤ 1 s, 정답 복귀, 점유에서 UNOCCUPIED 없음",일치; 복구 0.400–0.400 s
+Tdb0.5-req,TC-13,13a-drop5-det,점검 · 일치,"UNKNOWN 후 복구 ≤ 1 s, 정답 복귀, 점유에서 UNOCCUPIED 없음",일치; 복구 0.900–0.900 s
+Tdb0.5-rx,TC-13,13a-drop5-det,점검 · 일치,"UNKNOWN 후 복구 ≤ 1 s, 정답 복귀, 점유에서 UNOCCUPIED 없음",일치; 복구 0.900–0.900 s
+Tdb0,TC-13,13a-drop5-noisy,점검 · 기준 충족(전 시행),"UNKNOWN 후 복구 ≤ 1 s, 정답 복귀, 점유에서 UNOCCUPIED 없음",미충족 0/10; 복구 0.400–0.400 s
+Tdb0.5-req,TC-13,13a-drop5-noisy,점검 · 기준 충족(전 시행),"UNKNOWN 후 복구 ≤ 1 s, 정답 복귀, 점유에서 UNOCCUPIED 없음",미충족 0/10; 복구 0.900–0.900 s
+Tdb0.5-rx,TC-13,13a-drop5-noisy,점검 · 불합격,"UNKNOWN 후 복구 ≤ 1 s, 정답 복귀, 점유에서 UNOCCUPIED 없음",미충족 1/10; 복구 0.900–1.000 s
+Tdb0,TC-13,13a-drop6-det,점검 · 일치,"UNKNOWN 후 복구 ≤ 1 s, 정답 복귀, 점유에서 UNOCCUPIED 없음",일치; 복구 0.400–0.400 s
+Tdb0.5-req,TC-13,13a-drop6-det,점검 · 일치,"UNKNOWN 후 복구 ≤ 1 s, 정답 복귀, 점유에서 UNOCCUPIED 없음",일치; 복구 0.900–0.900 s
+Tdb0.5-rx,TC-13,13a-drop6-det,점검 · 일치,"UNKNOWN 후 복구 ≤ 1 s, 정답 복귀, 점유에서 UNOCCUPIED 없음",일치; 복구 0.900–0.900 s
+Tdb0,TC-13,13a-drop6-noisy,점검 · 기준 충족(전 시행),"UNKNOWN 후 복구 ≤ 1 s, 정답 복귀, 점유에서 UNOCCUPIED 없음",미충족 0/10; 복구 0.400–0.400 s
+Tdb0.5-req,TC-13,13a-drop6-noisy,점검 · 기준 충족(전 시행),"UNKNOWN 후 복구 ≤ 1 s, 정답 복귀, 점유에서 UNOCCUPIED 없음",미충족 0/10; 복구 0.900–0.900 s
+Tdb0.5-rx,TC-13,13a-drop6-noisy,점검 · 불합격,"UNKNOWN 후 복구 ≤ 1 s, 정답 복귀, 점유에서 UNOCCUPIED 없음",미충족 2/10; 복구 0.900–1.000 s
+Tdb0,TC-13,13b-drop4-det,점검 · 일치,이전 상태 유지(UNKNOWN 없음),일치; 복구 없음
+Tdb0.5-req,TC-13,13b-drop4-det,점검 · 일치,이전 상태 유지(UNKNOWN 없음),일치; 복구 없음
+Tdb0.5-rx,TC-13,13b-drop4-det,점검 · 일치,이전 상태 유지(UNKNOWN 없음),일치; 복구 없음
+Tdb0,TC-13,13b-drop4-noisy,점검 · 기준 충족(전 시행),이전 상태 유지(UNKNOWN 없음),미충족 0/10; 복구 없음
+Tdb0.5-req,TC-13,13b-drop4-noisy,점검 · 기준 충족(전 시행),이전 상태 유지(UNKNOWN 없음),미충족 0/10; 복구 없음
+Tdb0.5-rx,TC-13,13b-drop4-noisy,점검 · 기준 충족(전 시행),이전 상태 유지(UNKNOWN 없음),미충족 0/10; 복구 없음
+Tdb0,TC-13,13b-drop5-det,점검 · 일치,"UNKNOWN 후 복구 ≤ 1 s, 정답 복귀",일치; 복구 0.400–0.400 s
+Tdb0.5-req,TC-13,13b-drop5-det,점검 · 일치,"UNKNOWN 후 복구 ≤ 1 s, 정답 복귀",일치; 복구 0.900–0.900 s
+Tdb0.5-rx,TC-13,13b-drop5-det,점검 · 일치,"UNKNOWN 후 복구 ≤ 1 s, 정답 복귀",일치; 복구 0.900–0.900 s
+Tdb0,TC-13,13b-drop5-noisy,점검 · 기준 충족(전 시행),"UNKNOWN 후 복구 ≤ 1 s, 정답 복귀",미충족 0/10; 복구 0.400–0.400 s
+Tdb0.5-req,TC-13,13b-drop5-noisy,점검 · 기준 충족(전 시행),"UNKNOWN 후 복구 ≤ 1 s, 정답 복귀",미충족 0/10; 복구 0.900–0.900 s
+Tdb0.5-rx,TC-13,13b-drop5-noisy,점검 · 기준 충족(전 시행),"UNKNOWN 후 복구 ≤ 1 s, 정답 복귀",미충족 0/10; 복구 0.900–1.000 s
+Tdb0,TC-13,13b-drop6-det,점검 · 일치,"UNKNOWN 후 복구 ≤ 1 s, 정답 복귀",일치; 복구 0.400–0.400 s
+Tdb0.5-req,TC-13,13b-drop6-det,점검 · 일치,"UNKNOWN 후 복구 ≤ 1 s, 정답 복귀",일치; 복구 0.900–0.900 s
+Tdb0.5-rx,TC-13,13b-drop6-det,점검 · 일치,"UNKNOWN 후 복구 ≤ 1 s, 정답 복귀",일치; 복구 0.900–0.900 s
+Tdb0,TC-13,13b-drop6-noisy,점검 · 기준 충족(전 시행),"UNKNOWN 후 복구 ≤ 1 s, 정답 복귀",미충족 0/10; 복구 0.400–0.400 s
+Tdb0.5-req,TC-13,13b-drop6-noisy,점검 · 기준 충족(전 시행),"UNKNOWN 후 복구 ≤ 1 s, 정답 복귀",미충족 0/10; 복구 0.900–0.900 s
+Tdb0.5-rx,TC-13,13b-drop6-noisy,점검 · 불합격,"UNKNOWN 후 복구 ≤ 1 s, 정답 복귀",미충족 1/10; 복구 0.900–1.000 s
+Tdb0,TC-14,empty-1cm-x4,점검 · 일치,"무효 처리, 상태 유지(UNKNOWN 없음)","무효 4/4, UNKNOWN 없음, 최종 UNOCCUPIED"
+Tdb0.5-req,TC-14,empty-1cm-x4,점검 · 일치,"무효 처리, 상태 유지(UNKNOWN 없음)","무효 4/4, UNKNOWN 없음, 최종 UNOCCUPIED"
+Tdb0.5-rx,TC-14,empty-1cm-x4,점검 · 일치,"무효 처리, 상태 유지(UNKNOWN 없음)","무효 4/4, UNKNOWN 없음, 최종 UNOCCUPIED"
+Tdb0,TC-14,empty-1cm-x5,점검 · 일치,"무효 처리, M회 이상 → UNKNOWN 후 복구","무효 5/5, UNKNOWN 진입, 최종 UNOCCUPIED"
+Tdb0.5-req,TC-14,empty-1cm-x5,점검 · 일치,"무효 처리, M회 이상 → UNKNOWN 후 복구","무효 5/5, UNKNOWN 진입, 최종 UNOCCUPIED"
+Tdb0.5-rx,TC-14,empty-1cm-x5,점검 · 일치,"무효 처리, M회 이상 → UNKNOWN 후 복구","무효 5/5, UNKNOWN 진입, 최종 UNOCCUPIED"
+Tdb0,TC-14,empty-401cm-x4,점검 · 일치,"무효 처리, 상태 유지(UNKNOWN 없음)","무효 4/4, UNKNOWN 없음, 최종 UNOCCUPIED"
+Tdb0.5-req,TC-14,empty-401cm-x4,점검 · 일치,"무효 처리, 상태 유지(UNKNOWN 없음)","무효 4/4, UNKNOWN 없음, 최종 UNOCCUPIED"
+Tdb0.5-rx,TC-14,empty-401cm-x4,점검 · 일치,"무효 처리, 상태 유지(UNKNOWN 없음)","무효 4/4, UNKNOWN 없음, 최종 UNOCCUPIED"
+Tdb0,TC-14,empty-401cm-x5,점검 · 일치,"무효 처리, M회 이상 → UNKNOWN 후 복구","무효 5/5, UNKNOWN 진입, 최종 UNOCCUPIED"
+Tdb0.5-req,TC-14,empty-401cm-x5,점검 · 일치,"무효 처리, M회 이상 → UNKNOWN 후 복구","무효 5/5, UNKNOWN 진입, 최종 UNOCCUPIED"
+Tdb0.5-rx,TC-14,empty-401cm-x5,점검 · 일치,"무효 처리, M회 이상 → UNKNOWN 후 복구","무효 5/5, UNKNOWN 진입, 최종 UNOCCUPIED"
+Tdb0,TC-14,occ-1cm-x4,점검 · 일치,"무효 처리, 상태 유지(UNKNOWN 없음)","무효 4/4, UNKNOWN 없음, 최종 OCCUPIED"
+Tdb0.5-req,TC-14,occ-1cm-x4,점검 · 일치,"무효 처리, 상태 유지(UNKNOWN 없음)","무효 4/4, UNKNOWN 없음, 최종 OCCUPIED"
+Tdb0.5-rx,TC-14,occ-1cm-x4,점검 · 일치,"무효 처리, 상태 유지(UNKNOWN 없음)","무효 4/4, UNKNOWN 없음, 최종 OCCUPIED"
+Tdb0,TC-14,occ-1cm-x5,점검 · 일치,"무효 처리, M회 이상 → UNKNOWN 후 복구","무효 5/5, UNKNOWN 진입, 최종 OCCUPIED"
+Tdb0.5-req,TC-14,occ-1cm-x5,점검 · 일치,"무효 처리, M회 이상 → UNKNOWN 후 복구","무효 5/5, UNKNOWN 진입, 최종 OCCUPIED"
+Tdb0.5-rx,TC-14,occ-1cm-x5,점검 · 일치,"무효 처리, M회 이상 → UNKNOWN 후 복구","무효 5/5, UNKNOWN 진입, 최종 OCCUPIED"
+Tdb0,TC-14,occ-401cm-x4,점검 · 일치,"무효 처리, 상태 유지(UNKNOWN 없음)","무효 4/4, UNKNOWN 없음, 최종 OCCUPIED"
+Tdb0.5-req,TC-14,occ-401cm-x4,점검 · 일치,"무효 처리, 상태 유지(UNKNOWN 없음)","무효 4/4, UNKNOWN 없음, 최종 OCCUPIED"
+Tdb0.5-rx,TC-14,occ-401cm-x4,점검 · 일치,"무효 처리, 상태 유지(UNKNOWN 없음)","무효 4/4, UNKNOWN 없음, 최종 OCCUPIED"
+Tdb0,TC-14,occ-401cm-x5,점검 · 일치,"무효 처리, M회 이상 → UNKNOWN 후 복구","무효 5/5, UNKNOWN 진입, 최종 OCCUPIED"
+Tdb0.5-req,TC-14,occ-401cm-x5,점검 · 일치,"무효 처리, M회 이상 → UNKNOWN 후 복구","무효 5/5, UNKNOWN 진입, 최종 OCCUPIED"
+Tdb0.5-rx,TC-14,occ-401cm-x5,점검 · 일치,"무효 처리, M회 이상 → UNKNOWN 후 복구","무효 5/5, UNKNOWN 진입, 최종 OCCUPIED"
+Tdb0,TC-15,stall2s-det,점검 · 일치,"마지막 유효 샘플부터 ≤ 1.1 s에 UNKNOWN, 복구 첫 유효 샘플부터 ≤ 1 s","UNKNOWN 전환 1.095–1.095 s(기한 1.1), 복구 0.400–0.400 s(기한 1)"
+Tdb0.5-req,TC-15,stall2s-det,점검 · 일치,"마지막 유효 샘플부터 ≤ 1.1 s에 UNKNOWN, 복구 첫 유효 샘플부터 ≤ 1 s","UNKNOWN 전환 1.095–1.095 s(기한 1.1), 복구 0.900–0.900 s(기한 1)"
+Tdb0.5-rx,TC-15,stall2s-det,점검 · 일치,"마지막 유효 샘플부터 ≤ 1.1 s에 UNKNOWN, 복구 첫 유효 샘플부터 ≤ 1 s","UNKNOWN 전환 1.095–1.095 s(기한 1.1), 복구 0.900–0.900 s(기한 1)"

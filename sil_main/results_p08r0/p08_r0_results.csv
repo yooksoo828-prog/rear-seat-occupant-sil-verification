@@ -1,0 +1,7 @@
+stage,T_C,temp_comp,truth,delta_calc_noiseless_cm,delta_sim_noiseless_cm,T_input_noiseless_run_C,noiseless_output_at_t_eval,random_n,random_OCC,random_UNOCC,random_UNKNOWN,delta_on_cm,delta_mid_cm,calc_exceeds_delta_on,calc_exceeds_delta_mid
+additional,0.0,False,UNOCCUPIED,2.535,2.535,,UNOCCUPIED,10,0,10,0,10.0,7.5,False,False
+additional,20.0,False,UNOCCUPIED,5.941,5.941,,UNOCCUPIED,10,0,10,0,10.0,7.5,False,False
+additional,50.0,False,UNOCCUPIED,10.625,10.625,,OCCUPIED,10,10,0,0,10.0,7.5,True,True
+additional,0.0,True,UNOCCUPIED,5.0,5.056,-0.327,UNOCCUPIED,10,0,10,0,10.0,7.5,False,False
+additional,20.0,True,UNOCCUPIED,5.0,4.874,20.756,UNOCCUPIED,10,0,10,0,10.0,7.5,False,False
+additional,50.0,True,UNOCCUPIED,5.0,5.021,49.865,UNOCCUPIED,10,0,10,0,10.0,7.5,False,False

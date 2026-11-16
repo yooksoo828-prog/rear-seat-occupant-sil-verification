@@ -1,0 +1,28 @@
+stage,tc,cond_id,condition,sr,kind,metric,n,k,observed,upper95,target,status,expected,actual,surface,note
+main,TC-01,TC-01,빈 좌석 오검출,"SR-03, SR-14",notrun,,,,,,,미실행,,,,"기준선 v1.0 미확정(결정 D2, D3, D4, D5, D6). 본시험 실행·합격 판정은 기준선 확정 뒤에 수행함. 확정 전 점검은 results_precheck 참조"
+main,TC-02,TC-02a,O-A 최소 크기 대상 감지,"SR-01, SR-02, SR-14",notrun,,,,,,,미실행,,,,"기준선 v1.0 미확정(결정 D1, D3, D4, D6). 본시험 실행·합격 판정은 기준선 확정 뒤에 수행함. 확정 전 점검은 results_precheck 참조"
+main,TC-02,TC-02b,O-B 최소 크기 대상 감지,"SR-01, SR-02, SR-14",notrun,,,,,,,미실행,,,,"기준선 v1.0 미확정(결정 D1, D3, D4, D6). 본시험 실행·합격 판정은 기준선 확정 뒤에 수행함. 확정 전 점검은 results_precheck 참조"
+main,TC-03,TC-03,O-C 큰 체형 감지,"SR-01, SR-02, SR-14",notrun,,,,,,,미실행,,,,"기준선 v1.0 미확정(결정 D1, D3, D4, D6). 본시험 실행·합격 판정은 기준선 확정 뒤에 수행함. 확정 전 점검은 results_precheck 참조"
+main,TC-04,TC-04a,낮은 화물 오검출,"SR-04, SR-14",notrun,,,,,,,미실행,,,,"기준선 v1.0 미확정(결정 D3, D4, D5, D6). 본시험 실행·합격 판정은 기준선 확정 뒤에 수행함. 확정 전 점검은 results_precheck 참조"
+main,TC-04,TC-04b-1,점유 대상과 같은 정지 거리 이력의 화물,"SR-04, SR-14",notrun,,,,,,,미실행,,,,"기준선 v1.0 미확정(결정 D1, D4, D5, D6). 본시험 실행·합격 판정은 기준선 확정 뒤에 수행함. 확정 전 점검은 results_precheck 참조"
+main,TC-04,TC-04b-2,점유 대상에만 움직임 가정,"SR-04, SR-14",notrun,,,,,,,미실행,,,,"기준선 v1.0 미확정(결정 D1, D4, D5, D6, D7). 본시험 실행·합격 판정은 기준선 확정 뒤에 수행함. 확정 전 점검은 results_precheck 참조"
+main,TC-05,TC-05,흡음 표면(옷·담요) 감지,"SR-01, SR-02, SR-10, SR-14",notrun,,,,,,,미실행,,,,"기준선 v1.0 미확정(결정 D1, D4, D6, D7). 본시험 실행·합격 판정은 기준선 확정 뒤에 수행함. 확정 전 점검은 results_precheck 참조"
+main,TC-06,TC-06,상체 기울임 60초 유지,"SR-01, SR-08",notrun,,,,,,,미실행,,,,"기준선 v1.0 미확정(결정 D1, D2, D4, D6). 본시험 실행·합격 판정은 기준선 확정 뒤에 수행함. 확정 전 점검은 results_precheck 참조"
+main,TC-07,TC-07a,임계값 경계 UNOCCUPIED 시작,SR-05,notrun,,,,,,,미실행,,,,"기준선 v1.0 미확정(결정 D2, D6). 본시험 실행·합격 판정은 기준선 확정 뒤에 수행함. 확정 전 점검은 results_precheck 참조"
+main,TC-07,TC-07b,임계값 경계 OCCUPIED 시작,SR-05,notrun,,,,,,,미실행,,,,"기준선 v1.0 미확정(결정 D2, D6). 본시험 실행·합격 판정은 기준선 확정 뒤에 수행함. 확정 전 점검은 results_precheck 참조"
+main,TC-07,TC-07c,임계값 ±50% 민감도,SR-05,notrun,,,,,,,미실행,,,,"기준선 v1.0 미확정(결정 D2, D7). 본시험 실행·합격 판정은 기준선 확정 뒤에 수행함. 확정 전 점검은 results_precheck 참조"
+main,TC-07,TC-07d,초기 구간 판정,SR-05,notrun,,,,,,,미실행,,,,"기준선 v1.0 미확정(결정 D2, D6). 본시험 실행·합격 판정은 기준선 확정 뒤에 수행함. 확정 전 점검은 results_precheck 참조"
+main,TC-08,TC-08a,착석 상태 전원 인가,"SR-07(a), SR-13",notrun,,,,,,,미실행,,,,"기준선 v1.0 미확정(결정 D1, D2, D6, D8). 본시험 실행·합격 판정은 기준선 확정 뒤에 수행함. 확정 전 점검은 results_precheck 참조"
+main,TC-08,TC-08b,빈 좌석 전원 인가,"SR-07(a), SR-13",notrun,,,,,,,미실행,,,,"기준선 v1.0 미확정(결정 D2, D6, D8). 본시험 실행·합격 판정은 기준선 확정 뒤에 수행함. 확정 전 점검은 results_precheck 참조"
+main,TC-09,TC-09a,착석 사건 응답,SR-07(b),notrun,,,,,,,미실행,,,,"기준선 v1.0 미확정(결정 D1, D2, D6, D7). 본시험 실행·합격 판정은 기준선 확정 뒤에 수행함. 확정 전 점검은 results_precheck 참조"
+main,TC-09,TC-09b,이석 사건 응답,SR-07(b),notrun,,,,,,,미실행,,,,"기준선 v1.0 미확정(결정 D1, D2, D6, D7). 본시험 실행·합격 판정은 기준선 확정 뒤에 수행함. 확정 전 점검은 results_precheck 참조"
+main,TC-10,TC-10,장시간 점유 유지,SR-08,notrun,,,,,,,미실행,,,,"기준선 v1.0 미확정(결정 D1, D2, D4, D6). 본시험 실행·합격 판정은 기준선 확정 뒤에 수행함. 확정 전 점검은 results_precheck 참조"
+main,TC-11,TC-11a,"온도 영향, 보정 없음",SR-09,notrun,,,,,,,미실행,,,,"기준선 v1.0 미확정(결정 D1, D3, D4, D5, D6). 본시험 실행·합격 판정은 기준선 확정 뒤에 수행함. 확정 전 점검은 results_precheck 참조"
+main,TC-11,TC-11b,"온도 영향, 보정 있음",SR-09,notrun,,,,,,,미실행,,,,"기준선 v1.0 미확정(결정 D1, D3, D4, D5, D6). 본시험 실행·합격 판정은 기준선 확정 뒤에 수행함. 확정 전 점검은 results_precheck 참조"
+main,TC-12,TC-12,소형 대상 기록(참고),없음(참고),notrun,,,,,,,미실행,,,,기준선 v1.0 미확정(결정 D1). 본시험 실행·합격 판정은 기준선 확정 뒤에 수행함. 확정 전 점검은 results_precheck 참조
+main,TC-13,TC-13a,점유 상태 에코 연속 제거와 복구,"SR-10, SR-13",notrun,,,,,,,미실행,,,,"기준선 v1.0 미확정(결정 D1, D2, D6). 본시험 실행·합격 판정은 기준선 확정 뒤에 수행함. 확정 전 점검은 results_precheck 참조"
+main,TC-13,TC-13b,빈 좌석 에코 연속 제거와 복구,"SR-10, SR-13",notrun,,,,,,,미실행,,,,"기준선 v1.0 미확정(결정 D2, D6). 본시험 실행·합격 판정은 기준선 확정 뒤에 수행함. 확정 전 점검은 results_precheck 참조"
+main,TC-14,TC-14,범위 밖 거리 치환,SR-11,notrun,,,,,,,미실행,,,,"기준선 v1.0 미확정(결정 D1, D2, D6). 본시험 실행·합격 판정은 기준선 확정 뒤에 수행함. 확정 전 점검은 results_precheck 참조"
+main,TC-15,TC-15,갱신 중단과 복구,"SR-12, SR-13",notrun,,,,,,,미실행,,,,"기준선 v1.0 미확정(결정 D1, D2, D6). 본시험 실행·합격 판정은 기준선 확정 뒤에 수행함. 확정 전 점검은 results_precheck 참조"
+main,TC-16,TC-16a,측정 주기 설정값 검사,SR-06,notrun,,,,,,,미실행,,,,기준선 v1.0 미확정(측정 주기 100 ms는 구현 설정(예비)). 본시험 실행·합격 판정은 기준선 확정 뒤에 수행함. 확정 전 점검은 results_precheck 참조
+main,TC-16,TC-16b,측정 요청 로그 간격 분석,SR-06,notrun,,,,,,,미실행,,,,기준선 v1.0 미확정(결정 D1). 본시험 실행·합격 판정은 기준선 확정 뒤에 수행함. 확정 전 점검은 results_precheck 참조

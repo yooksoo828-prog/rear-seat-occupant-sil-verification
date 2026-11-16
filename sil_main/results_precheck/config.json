@@ -1,0 +1,196 @@
+{
+  "stage": "precheck",
+  "config": {
+    "_설명": "본시험 기준선 초안. confirmed가 false이면 run_main.py main은 모든 TC를 '미실행'으로 기록하고 끝남. 값을 확정하면 이 파일을 baseline_v1.0.json으로 복사하고, null을 채운 뒤 confirmed를 true로 바꿈. 값 옆의 _state는 문서 12절 기준 현재 상태임.",
+    "version": "draft-0.1",
+    "confirmed": false,
+    "docs": {
+      "시험 설계": "11.2절, 12절",
+      "SIL 설계·결과": "5.5절, 6절",
+      "요구사항": "시스템·소프트웨어 요구사항 명세서"
+    },
+    "geometry": {
+      "H_s_cm": 100.0,
+      "_state": "구현 설정(예비), 12절 미확정",
+      "R0_cm": 5.0,
+      "R1_cm": 20.0,
+      "R2_cm": 40.0,
+      "R3_cm": 60.0,
+      "_R_state": "프로젝트 가정(더미·인체·가방 치수 아님)"
+    },
+    "objects": {
+      "_state": "12절 TBR. 확정 전에는 O-A/O-B/O-C/O-S 입력을 적용하지 않음",
+      "O-A": null,
+      "O-B": null,
+      "O-C": null,
+      "O-S": null,
+      "cargo_top_equals": null,
+      "_설명": "값은 {\"label\": 이름, \"h_cm\": 방석 위 반사면 높이, \"source\": 근거}. cargo_top_equals는 TC-04b의 화물 윗면 높이를 맞출 대상 이름"
+    },
+    "tc_objects": {
+      "_state": "각 TC에 쓸 대상(objects의 이름). 시험 설계 11.2절에는 TC-02·03 외에는 대상이 적혀 있지 않음. cargo_top_equals는 TC-04b의 화물 윗면을 맞출 대상",
+      "TC-05": null,
+      "TC-06": null,
+      "TC-08a": null,
+      "TC-09": null,
+      "TC-10": null,
+      "TC-13a": null,
+      "TC-14": null,
+      "TC-15": null,
+      "cargo_top_equals": null
+    },
+    "seating_position_distribution": null,
+    "motion_assumption": {
+      "amp_cm": null,
+      "hz": null,
+      "_state": "TC-04b-2 입력 미정. 예비시험은 1 cm, 0.25 Hz(프로젝트 가정)를 썼음"
+    },
+    "environment": {
+      "T_base_C": 20.0,
+      "temp_comp_base": false,
+      "temp_input_err_C": 2.0,
+      "_state": "TC-01~10의 기준 온도·보정 구성 미정, 보정의 요구사항 여부 미정(12절)"
+    },
+    "detector": {
+      "d_empty_cm": 100.0,
+      "_d_empty_state": "100 cm(H_s 그대로)와 초기 보정 측정값 중 선택 미정",
+      "delta_on_cm": 10.0,
+      "delta_off_cm": 5.0,
+      "k": 5,
+      "M": 5,
+      "T_stale_s": 1.0,
+      "T_db_s": 0.0,
+      "db_basis": "rx",
+      "_Tdb_state": "0 s 또는 0.5 s, 시간 기준(수신/요청) 미정",
+      "valid_min_cm": 2.0,
+      "valid_max_cm": 400.0,
+      "c_fixed_mps": 340.0,
+      "_state": "임계값·k·M·T_stale은 구현 설정(예비), 대상 확정 후 점검(12절)"
+    },
+    "sensor": {
+      "period_s": 0.1,
+      "T_to_s": 0.03,
+      "sigma_cm": 1.0,
+      "p_loss": 0.0,
+      "bias_cm": 0.0,
+      "_state": "기준 수준은 시험 설계 8절 명시(프로젝트 가정). 주기·T_to는 구현 설정(예비)"
+    },
+    "sensitivity_levels": {
+      "sigma_cm": [
+        1.0,
+        0.5,
+        2.0
+      ],
+      "p_loss": [
+        0.0,
+        0.1,
+        0.3,
+        0.5
+      ],
+      "bias_cm": [
+        0.0,
+        2.0,
+        5.0
+      ],
+      "tilt_deg": [
+        0,
+        15,
+        30,
+        45
+      ],
+      "tilt_p_loss": [
+        0.0,
+        0.3,
+        0.7,
+        1.0
+      ],
+      "TC05_combination": null,
+      "TC07c_targets": null,
+      "TC05a_vs_05b": null,
+      "_state": "수준 값은 8절 명시. 수준의 조합 방식, TC-07c 대상, TC-05a·05b 구분은 문서에 없음"
+    },
+    "evaluation": {
+      "t_eval_s": 3.0,
+      "T_first_s": 1.0,
+      "T_recover_s": 1.0,
+      "hold_s": 1.0,
+      "response_limit_s": 3.0,
+      "event_phase": "t_gt = 5.0 + U(0, 0.1) s (예비시험 방식 승계)",
+      "_state": "구현 설정(예비)"
+    },
+    "repetitions": {
+      "TC-01": 60,
+      "TC-02": 300,
+      "TC-03": 300,
+      "TC-04": 60,
+      "TC-05_base": 300,
+      "TC-05_level": 60,
+      "TC-06_level": 60,
+      "TC-07c_level": 60,
+      "TC-08": 60,
+      "TC-09": 60,
+      "TC-10": 60,
+      "TC-13_noisy": 60,
+      "TC-11": "대상 시험과 같은 횟수",
+      "_state": "11.2절 계획값. TC-01·TC-04는 60회 계획이나 SR-14 통계 확인 여부를 12절에서 결정(300 이상이면 통계 확인 가능)"
+    },
+    "targets": {
+      "miss_rate": 0.01,
+      "false_alarm_rate": 0.05,
+      "unknown_rate": 0.01,
+      "response_s": 3.0,
+      "flips": 0,
+      "_state": "잠정. 12절: 예비시험 후 유지 여부를 결정하고 본시험 전에 고정"
+    },
+    "stats": {
+      "confidence": 0.95,
+      "method": "단측 정확 이항(9.4절)",
+      "_state": "프로젝트 선택, 문서 명시"
+    },
+    "seed": {
+      "base_seed": 20261111,
+      "rule": "seed = base_seed * 2**64 + crc32('<접두>/<TC>/<조건>') * 2**20 + 시행 번호",
+      "_state": "구현 선택"
+    },
+    "_precheck_note": "사전점검용 임시 입력. 기준선 아님. 대상은 가정 반사면 R1~R3 대체",
+    "_precheck_objects": {
+      "O-A": {
+        "label": "R1(가정, O-A 대체 점검용)",
+        "h_cm": 20.0
+      },
+      "O-B": {
+        "label": "R2(가정, O-B 대체 점검용)",
+        "h_cm": 40.0
+      },
+      "O-C": {
+        "label": "R3(가정, O-C 대체 점검용)",
+        "h_cm": 60.0
+      }
+    },
+    "_variants": [
+      [
+        "Tdb0",
+        0.0,
+        "rx"
+      ],
+      [
+        "Tdb0.5-rx",
+        0.5,
+        "rx"
+      ],
+      [
+        "Tdb0.5-req",
+        0.5,
+        "req"
+      ]
+    ],
+    "_precheck_n": 10,
+    "_precheck_n_long": 3
+  },
+  "environment": {
+    "python": "3.13.18",
+    "numpy": "2.5.3",
+    "rng": "numpy.random.PCG64 via SeedSequence(seed).spawn",
+    "seed_rule": "seed = base_seed * 2**64 + crc32('<접두>/<TC>/<조건>') * 2**20 + 시행 번호"
+  }
+}
