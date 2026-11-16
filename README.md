@@ -88,7 +88,24 @@ python3 build_iso29119_report.py
 
 CI(`.github/workflows/verify.yml`)는 `main` 브랜치에 push·pull request 할 때마다 Python 3.11에서 `selftest.py`를 실행한다.
 
-## 5. 저장소 구성
+## 5. 제출물 (`deliverables/`)
+
+기말고사 제출용 문서이며, `sil_main/results_main/`의 검증된 결과와 감사 보고서를 요약해 자동 생성한다(원본 결과 파일은 읽기만 하고 수정하지 않음).
+
+| 파일 | 내용 |
+|---|---|
+| [후석탑승자감지_SIL검증_최종보고서_v1.0.docx](deliverables/후석탑승자감지_SIL검증_최종보고서_v1.0.docx) | 국문 최종보고서(Word, 약 10페이지): 표지·1~5장. 152행·87행 전체 표는 감사 보고서 링크로 대체 |
+| [후석탑승자감지_SIL검증_발표자료_v1.0.pptx](deliverables/후석탑승자감지_SIL검증_발표자료_v1.0.pptx) | 5~10분 발표용 9슬라이드(16:9), 슬라이드별 발표자 노트 포함 |
+| [build_deliverables.py](deliverables/build_deliverables.py) | 위 두 파일 생성 스크립트 |
+
+```bash
+pip install python-docx python-pptx
+python deliverables/build_deliverables.py       # 저장소 루트에서 실행. 수치가 결과 파일과 다르면 중단
+```
+
+표지의 `학번 / 성명` 칸은 비워 두었으므로 제출 전에 직접 기입한다. 발표자료 8번 슬라이드의 스크린샷 영역에는 GitHub Actions·Issues 화면을 붙여 넣는다.
+
+## 6. 저장소 구성
 
 | 경로 | 내용 |
 |---|---|
@@ -97,4 +114,5 @@ CI(`.github/workflows/verify.yml`)는 `main` 브랜치에 push·pull request 할
 | `sil_main/baseline/` | `baseline_v1.0.json`(확정), `baseline_draft.json`(확정 전 초안, 보존용) |
 | `sil_main/results_main/` | 본시험 결과(기준선 v1.0) + 통합 감사 보고서 |
 | `sil_main/results_status_before_baseline/`, `results_precheck/`, `results_p08r0/` | 기준선 확정 전 기록·사전점검·추가 시험. **본시험 집계에 포함하지 않음** |
+| `deliverables/` | 기말 제출물(Word 보고서, PowerPoint 발표자료)과 생성 스크립트 |
 | `.github/workflows/verify.yml` | CI: `selftest.py` |
