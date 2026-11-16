@@ -94,12 +94,13 @@ CI(`.github/workflows/verify.yml`)는 `main` 브랜치에 push·pull request 할
 
 | 파일 | 내용 |
 |---|---|
-| [후석탑승자감지_SIL검증_최종보고서_v1.0.docx](deliverables/후석탑승자감지_SIL검증_최종보고서_v1.0.docx) | 국문 최종보고서(Word, 약 10페이지): 표지·1~5장. 152행·87행 전체 표는 감사 보고서 링크로 대체 |
-| [후석탑승자감지_SIL검증_발표자료_v1.0.pptx](deliverables/후석탑승자감지_SIL검증_발표자료_v1.0.pptx) | 5~10분 발표용 9슬라이드(16:9), 슬라이드별 발표자 노트 포함 |
-| [build_deliverables.py](deliverables/build_deliverables.py) | 위 두 파일 생성 스크립트 |
+| [후석탑승자감지_SIL검증_최종보고서_v1.0.docx](deliverables/후석탑승자감지_SIL검증_최종보고서_v1.0.docx) | 국문 최종보고서(Word, 11페이지): 표지·1~5장, 그림 3종·콜아웃·머리글/바닥글. 152행·87행 전체 표는 감사 보고서 링크로 대체 |
+| [후석탑승자감지_SIL검증_발표자료_v1.0.pptx](deliverables/후석탑승자감지_SIL검증_발표자료_v1.0.pptx) | 5~10분 발표용 9슬라이드(16:9), KPI 카드·그림 포함, 슬라이드별 발표자 노트 포함 |
+| [assets/](deliverables/assets/) | 300 DPI 그림: `fig1_sil_architecture.png`(3단 SIL 구조), `fig2_overall_results.png`(152행 판정 분포), `fig3_tc11_temp_comp.png`(TC-11 온도 보정 효과) |
+| [build_deliverables.py](deliverables/build_deliverables.py) | 그림·Word·PowerPoint 생성 스크립트 |
 
 ```bash
-pip install python-docx python-pptx
+pip install python-docx python-pptx matplotlib     # 그림의 한글 표시에는 Windows의 Malgun Gothic 폰트가 필요
 python deliverables/build_deliverables.py       # 저장소 루트에서 실행. 수치가 결과 파일과 다르면 중단
 ```
 

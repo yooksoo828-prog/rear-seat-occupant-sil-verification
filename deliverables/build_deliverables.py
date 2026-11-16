@@ -24,7 +24,7 @@ from pathlib import Path
 from docx import Document
 from docx.enum.section import WD_ORIENT  # noqa: F401
 from docx.enum.table import WD_ALIGN_VERTICAL, WD_TABLE_ALIGNMENT
-from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK
+from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK, WD_TAB_ALIGNMENT
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Cm, Pt, RGBColor
@@ -45,7 +45,7 @@ DOCX_OUT = HERE / "후석탑승자감지_SIL검증_최종보고서_v1.0.docx"
 PPTX_OUT = HERE / "후석탑승자감지_SIL검증_발표자료_v1.0.pptx"
 
 FONT = "맑은 고딕"
-NAVY, SLATE, LIGHT, PALE, GRID = "1B365D", "4A6FA5", "EEF2F8", "F6F8FB", "BFC8D6"
+NAVY, SLATE, LIGHT, PALE, GRID = "1B365D", "4A6FA5", "EEF2F8", "F4F6F9", "BFC8D6"
 RED, GREEN, AMBER, GRAY = "B03A48", "2E7D5B", "B7791F", "5B6577"
 
 REPO = "https://github.com/yooksoo828-prog/rear-seat-occupant-sil-verification"
@@ -153,6 +153,136 @@ assert abs(C50 - 361.4) < 1e-9 and abs(DELTA_R0 - 10.63) < 0.005
 # ==============================================================================================
 # Word
 # ==============================================================================================
+# ==============================================================================================
+# 시각화 (matplotlib, 300 DPI)
+# ==============================================================================================
+ASSETS = HERE / "assets"
+FIG1 = ASSETS / "fig1_sil_architecture.png"
+FIG2 = ASSETS / "fig2_overall_results.png"
+FIG3 = ASSETS / "fig3_tc11_temp_comp.png"
+FIG_DPI = 300
+
+
+def make_figures(d):
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+    from matplotlib import font_manager as fm
+    from matplotlib.patches import Circle, FancyArrowPatch, FancyBboxPatch
+
+    fm.findfont("Malgun Gothic", fallback_to_default=False)      # 폰트가 없으면 여기서 중단(한글 깨짐 방지)
+    plt.rcParams["font.family"] = "Malgun Gothic"
+    plt.rcParams["axes.unicode_minus"] = False
+    ASSETS.mkdir(exist_ok=True)
+    c = {k: "#" + v for k, v in dict(NAVY=NAVY, SLATE=SLATE, LIGHT=LIGHT, GRID=GRID, GREEN=GREEN, RED=RED, AMBER=AMBER, GRAY=GRAY).items()}
+    cnt = d["cnt"]
+
+    # ------------------------------------------------------------ 그림 1: 3단 SIL 파이프라인
+    fig, ax = plt.subplots(figsize=(7.5, 3.0))
+    ax.set_xlim(0, 100)
+    ax.set_ylim(0, 40)
+    ax.axis("off")
+    stages = [
+        (2, "1", "초음파 물리·환경 모델", ["• 반사면 R0~R3", "  (5/20/40/60 cm)", "• 온도 0·20·50 °C", "• 노이즈·손실·편향", "• 음속 c(T) 모델"]),
+        (36, "2", "신호처리·판정 SW", ["• 신호처리·거리 환산", "• 중앙값 필터 (M=5)", "• 점유 판정·히스테리시스", "  Δon 10 / Δoff 5 cm", "• 디바운스 0.5 s"]),
+        (70, "3", "독립 검증 하네스", ["• SHA-256 해시 고정", "• 87개 상수 대조", "  (87/87 일치)", "• CRC32 시드", "  9,855개 재현"]),
+    ]
+    for x, n, head, lines in stages:
+        ax.add_patch(FancyBboxPatch((x, 4.5), 28, 26, boxstyle="round,pad=0,rounding_size=1.2", fc=c["LIGHT"], ec=c["GRID"], lw=1))
+        ax.add_patch(FancyBboxPatch((x, 30.5), 28, 7.5, boxstyle="round,pad=0,rounding_size=1.2", fc=c["NAVY"], ec=c["NAVY"], lw=1))
+        ax.add_patch(Circle((x + 3.0, 34.25), 2.2, fc=c["SLATE"], ec="white", lw=1.2))
+        ax.text(x + 3.0, 34.25, n, color="white", ha="center", va="center", fontsize=9, fontweight="bold")
+        ax.text(x + 16.8, 34.25, head, color="white", ha="center", va="center", fontsize=8.0, fontweight="bold")
+        for i, ln in enumerate(lines):
+            ax.text(x + 2.2, 27.4 - i * 4.55, ln, color="#1F2937", ha="left", va="center", fontsize=8.3)
+    for x0 in (30.6, 64.6):
+        ax.add_patch(FancyArrowPatch((x0, 20), (x0 + 5.0, 20), arrowstyle="-|>", mutation_scale=16, color=c["SLATE"], lw=2.4))
+    ax.text(50, 1.4, "TC-01~16 시나리오 → OCCUPIED / UNOCCUPIED / UNKNOWN 판정 → 정답 대조 · 단측 95% 통계 판정",
+            ha="center", va="center", fontsize=7.6, color=c["GRAY"])
+    fig.savefig(FIG1, dpi=FIG_DPI, bbox_inches="tight", pad_inches=0.06, facecolor="white")
+    plt.close(fig)
+
+    # ------------------------------------------------------------ 그림 2: 152개 결과 행 판정 분포
+    cats = [("목표 충족(통계 확인)", "목표 충족(통계 확인)", "#2E7D5B"), ("일치", "일치", "#4C9A77"), ("기준 충족(전 시행)", "기준 충족(전 시행)", "#7BB89B"),
+            ("기록(합격 판정 없음)", "기록(합격 판정 없음)", "#8A94A6"), ("가정 기반 민감도 기록", "가정 기반 민감도 기록", "#B4BDCB"),
+            ("미실행", "미실행", "#B7791F"), ("불합격", "불합격", "#B03A48")]
+    vals = [cnt[k] for k, _, _ in cats]
+    assert sum(vals) == 152
+    fig = plt.figure(figsize=(7.5, 3.9))
+    axd = fig.add_axes([0.0, 0.17, 0.36, 0.76])
+    groups = [("판정 충족", sum(vals[:3]), "#2E7D5B"), ("기록·민감도(판정 없음)", vals[3] + vals[4], "#8A94A6"), ("미실행", vals[5], "#B7791F"), ("불합격", vals[6], "#B03A48")]
+    axd.pie([g[1] for g in groups], colors=[g[2] for g in groups], startangle=90, counterclock=False,
+            wedgeprops=dict(width=0.36, edgecolor="white", linewidth=1.6))
+    axd.text(0, 0.06, "152", ha="center", va="center", fontsize=21, fontweight="bold", color=c["NAVY"])
+    axd.text(0, -0.28, "시험 결과 행", ha="center", va="center", fontsize=8, color=c["GRAY"])
+    axd.set_aspect("equal")
+    handles = [plt.Rectangle((0, 0), 1, 1, fc=g[2]) for g in groups]
+    fig.legend(handles, [f"{g[0]} {g[1]}건 ({g[1] / 152 * 100:.1f}%)" for g in groups], loc="lower left", bbox_to_anchor=(0.0, 0.0),
+               ncol=2, fontsize=6.9, frameon=False, handlelength=1.0, columnspacing=0.8, labelspacing=0.3)
+    axb = fig.add_axes([0.60, 0.09, 0.38, 0.80])
+    ypos = list(range(len(cats)))[::-1]
+    axb.barh(ypos, vals, color=[x[2] for x in cats], height=0.64)
+    axb.set_yticks(ypos)
+    axb.set_yticklabels([x[0] for x in cats], fontsize=8.2, color="#1F2937")
+    axb.set_xlim(0, 82)
+    for y, v in zip(ypos, vals):
+        axb.text(v + 1.2, y, f"{v}건 ({v / 152 * 100:.1f}%)", va="center", fontsize=8.2, fontweight="bold", color="#1F2937")
+    for s in ("top", "right", "bottom"):
+        axb.spines[s].set_visible(False)
+    axb.spines["left"].set_color("#BFC8D6")
+    axb.tick_params(axis="x", bottom=False, labelbottom=False)
+    axb.tick_params(axis="y", length=0)
+    fig.text(0.60, 0.955, "상태별 결과 행 수 (152행)", fontsize=9.2, fontweight="bold", color=c["NAVY"])
+    fig.text(0.0, 0.955, "판정 구분", fontsize=9.2, fontweight="bold", color=c["NAVY"])
+    fig.savefig(FIG2, dpi=FIG_DPI, bbox_inches="tight", pad_inches=0.06, facecolor="white")
+    plt.close(fig)
+
+    # ------------------------------------------------------------ 그림 3: TC-11 R0 오검출률(온도 × 보정)
+    temps = [0, 20, 50]
+    no = [float(d["r0"][t]["보정 없음 관측"]) * 100 for t in temps]
+    yes = [float(d["r0"][t]["보정 있음 관측"]) * 100 for t in temps]
+    kn_no = [d["r0"][t]["보정 없음 k/n"] for t in temps]
+    kn_yes = [d["r0"][t]["보정 있음 k/n"] for t in temps]
+    assert no == [0.0, 0.0, 100.0] and yes == [0.0, 0.0, 0.0]
+    fig, ax = plt.subplots(figsize=(7.5, 4.0))
+    xs = list(range(3))
+    w = 0.34
+    ax.bar([x - w / 2 - 0.01 for x in xs], no, w, color=c["RED"], label="온도 보정 미적용", zorder=3)
+    ax.bar([x + w / 2 + 0.01 for x in xs], yes, w, color=c["GREEN"], label="온도 보정 적용", zorder=3)
+    for x, v, kn in zip(xs, no, kn_no):
+        ax.text(x - w / 2 - 0.01, max(v, 0) + (2.5 if v > 5 else 9), f"{v:g}%\n({kn})", ha="center", va="bottom", fontsize=8.6, fontweight="bold", color=c["RED"])
+    for x, v, kn in zip(xs, yes, kn_yes):
+        ax.text(x + w / 2 + 0.01, max(v, 0) + (2.5 if v > 5 else 9), f"{v:g}%\n({kn})", ha="center", va="bottom", fontsize=8.6, fontweight="bold", color=c["GREEN"])
+    ax.axhline(5, color=c["NAVY"], ls="--", lw=1.6, zorder=4)
+    ax.text(2.56, 8, "합격 기준 5%", ha="left", va="bottom", fontsize=8.6, fontweight="bold", color=c["NAVY"])
+    ax.text(2.0, 128, "오검출 100% → 0%", ha="center", va="center", fontsize=9.8, fontweight="bold", color=c["NAVY"],
+            bbox=dict(boxstyle="round,pad=0.35", fc="#EEF2F8", ec=c["NAVY"], lw=1.1))
+    ax.set_xticks(xs)
+    ax.set_xticklabels([f"{t} °C" + ("\n(고온)" if t == 50 else "") for t in temps], fontsize=9.5)
+    ax.set_ylim(0, 140)
+    ax.set_xlim(-0.55, 3.2)
+    ax.set_ylabel("오검출률 (%)", fontsize=9.5)
+    ax.set_yticks([0, 20, 40, 60, 80, 100])
+    ax.tick_params(axis="y", labelsize=8.5)
+    ax.grid(axis="y", color="#E3E8F0", lw=0.8, zorder=0)
+    for s in ("top", "right"):
+        ax.spines[s].set_visible(False)
+    ax.spines["left"].set_color("#BFC8D6")
+    ax.spines["bottom"].set_color("#BFC8D6")
+    ax.legend(loc="upper left", fontsize=8.6, frameon=False)
+    ax.set_title("TC-11 낮은 화물 R0 오검출률: 온도 × 온도 보정 (각 300회)", fontsize=10, fontweight="bold", color=c["NAVY"], loc="left", pad=10)
+    fig.savefig(FIG3, dpi=FIG_DPI, bbox_inches="tight", pad_inches=0.08, facecolor="white")
+    plt.close(fig)
+
+
+def fig_ratio(path):
+    import struct
+    with open(path, "rb") as f:
+        head = f.read(24)
+    w, h = struct.unpack(">II", head[16:24])
+    return w, h
+
+
 def rgb(h):
     return RGBColor.from_string(h)
 
@@ -415,6 +545,25 @@ def fix_xml_order(doc):
             reorder(ppr, PPR_ORDER)
 
 
+def para_border(p, side, color, sz):
+    pPr = p._p.get_or_add_pPr()
+    bd = OxmlElement("w:pBdr")
+    e = OxmlElement(f"w:{side}")
+    for k, v in (("val", "single"), ("sz", str(sz)), ("space", "4"), ("color", color)):
+        e.set(qn(f"w:{k}"), v)
+    bd.append(e)
+    pPr.append(bd)
+
+
+def add_figure(doc, path, text, width_cm=16.0):
+    p = doc.add_paragraph()
+    para_fmt(p, 6, 2, 1.0, WD_ALIGN_PARAGRAPH.CENTER, keep_next=True)
+    p.add_run().add_picture(str(path), width=Cm(width_cm))
+    c = doc.add_paragraph()
+    para_fmt(c, 2, 10, 1.15, WD_ALIGN_PARAGRAPH.CENTER)
+    set_font(c.add_run(text), 9, False, GRAY)
+
+
 def build_docx(d, date):
     doc = Document()
     sec = doc.sections[0]
@@ -424,17 +573,22 @@ def build_docx(d, date):
     sec.different_first_page_header_footer = True
     for name, size, bold in (("Normal", 10, False), ("Heading 1", 17, True), ("Heading 2", 12, True), ("List Bullet", 10, False)):
         style_font(doc.styles[name], size, bold, NAVY if name.startswith("Heading") else None)
+    for name in ("Heading 1", "Heading 2"):
+        doc.styles[name].paragraph_format.keep_with_next = True
     # 머리글·바닥글(표지 제외)
     hp = sec.header.paragraphs[0]
-    para_fmt(hp, 0, 0, 1.0, WD_ALIGN_PARAGRAPH.RIGHT)
-    set_font(hp.add_run("후석 탑승자 감지 SIL 검증 최종보고서  |  v1.0-baseline"), 8.5, False, GRAY)
+    para_fmt(hp, 0, 0, 1.0, WD_ALIGN_PARAGRAPH.LEFT)
+    set_font(hp.add_run(TITLE), 8.5, True, NAVY)
+    para_border(hp, "bottom", SLATE, 8)
     fp = sec.footer.paragraphs[0]
-    para_fmt(fp, 0, 0, 1.0, WD_ALIGN_PARAGRAPH.CENTER)
-    set_font(fp.add_run("- "), 8.5, False, GRAY)
+    para_fmt(fp, 0, 0, 1.0, WD_ALIGN_PARAGRAPH.LEFT)
+    fp.paragraph_format.tab_stops.add_tab_stop(Cm(17.0), WD_TAB_ALIGNMENT.RIGHT)
+    set_font(fp.add_run("기준선 v1.0-baseline  |  ISO/IEC/IEEE 29119-3"), 8.5, True, NAVY)
+    set_font(fp.add_run("\t페이지 "), 8.5, False, GRAY)
     add_field(fp, "PAGE")
     set_font(fp.add_run(" / "), 8.5, False, GRAY)
     add_field(fp, "NUMPAGES")
-    set_font(fp.add_run(" -"), 8.5, False, GRAY)
+    para_border(fp, "top", SLATE, 6)
 
     cnt = d["cnt"]
     # ------------------------------------------------------------------ 표지
@@ -486,39 +640,8 @@ def build_docx(d, date):
         "① 판정 결과가 통계적으로 목표(미검출 1%, 오검출 5%)를 만족하는가?   ② 같은 입력으로 같은 결과를 다시 얻을 수 있는가?   "
         "③ 모든 요구사항(SR)이 시험(TC)과 결과로 추적되는가?"])
     h2(doc, "1.2 SIL 3단 파이프라인")
-    t = doc.add_table(rows=2, cols=5)
-    t.alignment = WD_TABLE_ALIGNMENT.CENTER
-    t.autofit = False
-    wd = [4.9, 0.9, 5.3, 0.9, 5.0]
-    heads = ["① 센서 물리·환경 모델", None, "② 신호처리·판정 로직", None, "③ 독립 검증 하네스"]
-    bodies = ["초음파 ToF 거리 생성\n음속 c(T) = 331.4 + 0.6T\n잡음·손실·편향·온도\n(sil/sensor_model.py 외)",
-              None,
-              "중앙값 필터(M = 5)\n히스테리시스 10 / 5 cm\n디바운스 0.5 s, 이상 시 UNKNOWN\n(sil/detector.py)",
-              None,
-              "TC-01~16, 정답 신호\n단측 95% 통계 판정\n기준선 대조, 로그 기록\n(main_lib/, run_main.py)"]
-    for i in range(5):
-        for r_i in (0, 1):
-            c = t.rows[r_i].cells[i]
-            c.width = Cm(wd[i])
-            c.vertical_alignment = WD_ALIGN_VERTICAL.CENTER
-            if i % 2 == 1:
-                cell_borders(c, "FFFFFF", 4, val="nil")
-                if r_i == 1:
-                    write(c, "▶", 16, True, SLATE, WD_ALIGN_PARAGRAPH.CENTER)
-            else:
-                cell_borders(c, NAVY if r_i == 0 else GRID)
-                cell_margins(c, 80, 80, 100, 100)
-                if r_i == 0:
-                    shade(c, NAVY)
-                    write(c, heads[i], 10, True, "FFFFFF", WD_ALIGN_PARAGRAPH.CENTER)
-                else:
-                    shade(c, LIGHT)
-                    c.vertical_alignment = WD_ALIGN_VERTICAL.TOP
-                    lines = bodies[i].split("\n")
-                    write(c, lines[0], 9)
-                    for ln in lines[1:]:
-                        write(c, ln, 9, False, GRAY if ln.startswith("(") else None, first=False)
-    caption(doc, "그림 1. SIL 3단 파이프라인. ③은 판정 알고리즘(②)과 분리된 정답·합격 판정 코드로 구성해 검증의 독립성을 확보했다.")
+    add_figure(doc, FIG1, "그림 1. SIL 3단 검증 파이프라인: 물리·환경 모델 → 신호처리·판정 SW → 독립 검증 하네스 (③은 ②와 분리된 정답·합격 판정 코드로 독립성 확보)", 15.5)
+    body(doc, "구현 위치: ① sil/sensor_model.py·scenario.py·config.py  ② sil/detector.py  ③ main_lib/(engine·stats·decisions), run_main.py, selftest.py", 9, 6)
     table(doc, ["구분", "기준선 v1.0 설정값"], [
         ["센서 모델", "잡음 σ 1.0 cm, 측정 주기 0.1 s, 타임아웃 0.03 s, 손실률 0, 편향 0 (기준 수준)"],
         ["판정 로직", "필터 M = 5, Δ_on 10 cm / Δ_off 5 cm, T_db 0.5 s(요청 시각 기준), T_stale 1 s"],
@@ -551,7 +674,9 @@ def build_docx(d, date):
         ["③ 결정론적 시드", "seed = base_seed·2^64 + crc32('TC/조건')·2^20 + 시행 번호 (base_seed 20261111)", "9,855개 시행 시드 전부 재계산 일치"],
     ], [2.8, 9.7, 4.5], 9, ["c", "l", "l"], bold_first=True)
     spacer(doc, 4)
-    callout(doc, "SHA-256 (baseline_v1.0.json)", [d["sha"]], size=9)
+    callout(doc, "기준선 무결성 원칙", [
+        "결과를 본 뒤에는 기준선·합격 목표·시행 수를 바꾸지 않는다. 변경이 필요하면 사유와 전후를 기록하고 baseline 버전을 올린다.",
+        "SHA-256 (baseline_v1.0.json): " + d["sha"]], size=9)
     spacer(doc, 4)
     bullets(doc, [
         "**재현성 검증:** `selftest.py`는 본시험을 임시 복사본에서 두 번 실행해 요약·시행·출력·사건 파일이 같은지 확인하고, 예비시험 5개 파일을 바이트 단위로 재현한다.".replace("`", ""),
@@ -581,6 +706,7 @@ def build_docx(d, date):
     rows = [[s, cnt[s], f"{cnt[s] / 152 * 100:.1f}%", note[s]] for s in STATUS_ORDER] + [["합계", 152, "100%", ""]]
     table(doc, ["상태", "행 수", "비율", "의미"], rows, [4.4, 1.7, 1.7, 9.2], 9, ["l", "c", "c", "l"], bold_first=True, hl={6: "FBE9EB"})
     caption(doc, "표 2. 152개 결과 행은 조건 × 지표 단위이며, 합격 판정이 없는 기록(57행)은 합격 건수에 포함하지 않는다.")
+    add_figure(doc, FIG2, "그림 2. 152개 시험 결과 행의 판정 분포(좌: 4개 구분, 우: 7개 상태). 판정 충족 88건 = 목표 충족 49 + 일치 27 + 전 시행 기준 충족 12", 15.5)
 
     h2(doc, "3.3 TC-01~16 종합 판정")
     rows = []
@@ -614,6 +740,7 @@ def build_docx(d, date):
     table(doc, ["온도", "보정 없음 k/n", "상한95", "판정", "보정 있음 k/n", "상한95", "판정"], rows, [1.7, 2.6, 1.8, 3.3, 2.6, 1.8, 3.2], 8.5,
           ["c", "c", "c", "c", "c", "c", "c"], hl={2: "FBE9EB"})
     caption(doc, "표 4. 낮은 화물 R0(5 cm) 오검출률(목표 ≤ 5%). 빈 좌석·R2의 미검출·오검출·미확정은 전 조합 0/300으로 목표 충족.")
+    add_figure(doc, FIG3, "그림 3. TC-11 낮은 화물 R0 오검출률: 50 °C에서 보정 미적용 100%(300/300) → 보정 적용 0%(0/300), 점선은 합격 기준 5%", 14.0)
     h2(doc, "4.2 원인: 음속 변화에 의한 거리 환산 오차")
     body(doc, f"음속 모델은 c(T) = 331.4 + 0.6·T 이므로 50 °C에서 **{C50:.1f} m/s** 이지만, 보정이 없으면 거리 환산에 고정 음속 **340 m/s** 를 쓴다. "
               f"실제 ToF가 짧아지므로 환산 거리는 {C_FIX:g}/{C50:.1f} = {SCALE:.4f} 배로 짧아진다.")
@@ -652,6 +779,10 @@ def build_docx(d, date):
         "**한계:** 단일 거리 센서로는 같은 높이의 화물과 사람을 구분할 수 없으며, 고온에서는 온도 보정이 필요하다.",
         "**후속(TBR):** 실물 대상 치수 확보와 착좌 위치 분포, 초기 공석 d_empty 캘리브레이션, 시동-센서 전원 연동, 다중 특징량(시간 변동 등) 확장.",
     ])
+    spacer(doc, 4)
+    callout(doc, "핵심 결론", [
+        "• 통계 기준·재현성·SR↔TC 추적성을 갖춘 SIL 검증 체계를 구축했고, 한계(불합격 3건·미실행 4건)는 기준을 바꾸지 않고 원인과 함께 기록했다.",
+        "• SR-09는 부분 커버이며 전체 충족 선언은 보류한다(D3)."], size=9.5)
     h2(doc, "5.2 GitHub 형상 관리 증빙")
     table(doc, ["단계", "커밋", "유형", "내용"], [[a, b, c, e] for a, b, c, e in COMMITS], [1.2, 2.2, 3.4, 10.2], 9, ["c", "c", "l", "l"])
     caption(doc, "표 6. 5단계 생명주기 커밋(이후 CLAUDE.md, 제출물 추가 커밋이 이어짐). 기준선 확정 커밋에 주석 태그 v1.0-baseline 을 부여했다.")
@@ -813,9 +944,19 @@ def base_slide(prs, title, n, total=9):
     rect(s, 0, 0, 13.333, 0.12, NAVY)
     tbox(s, 0.6, 0.32, 12.1, 0.8, title, 28, NAVY, True, anchor=MSO_ANCHOR.MIDDLE)
     rect(s, 0.65, 1.12, 1.4, 0.05, SLATE)
-    tbox(s, 0.6, 7.02, 9, 0.3, "후석 탑승자 감지 SIL 검증  |  v1.0-baseline  |  ISO/IEC/IEEE 29119-3", 10, "8A94A6")
-    tbox(s, 11.7, 7.02, 1.1, 0.3, f"{n} / {total}", 10, "8A94A6", False, PP_ALIGN.RIGHT)
+    rect(s, 0, 7.1, 13.333, 0.4, NAVY)                         # 하단 슬라이드 번호 바
+    rect(s, 0, 7.1, 13.333 * n / total, 0.05, "7F9CCB")         # 진행 표시
+    tbox(s, 0.6, 7.14, 9.5, 0.34, "후석 탑승자 감지 SIL 검증  |  v1.0-baseline  |  ISO/IEC/IEEE 29119-3", 10, "C9D5E8", anchor=MSO_ANCHOR.MIDDLE)
+    tbox(s, 11.3, 7.14, 1.5, 0.34, f"{n} / {total}", 12, "FFFFFF", True, PP_ALIGN.RIGHT, MSO_ANCHOR.MIDDLE)
     return s
+
+
+def place_pic(slide, path, x, y, w, h):
+    """w×h 칸 안에 비율을 유지해 가운데 배치."""
+    iw, ih = fig_ratio(path)
+    r = iw / ih
+    pw, ph = (w, w / r) if w / h <= r else (h * r, h)
+    slide.shapes.add_picture(str(path), Inches(x + (w - pw) / 2), Inches(y + (h - ph) / 2), Inches(pw), Inches(ph))
 
 
 def notes(slide, text):
@@ -831,62 +972,60 @@ def build_pptx(d, date):
     # ---------------- Slide 1 표지
     s = prs.slides.add_slide(prs.slide_layouts[6])
     rect(s, 0, 0, 13.333, 7.5, NAVY)
-    rect(s, 0.9, 2.05, 1.6, 0.07, "7F9CCB")
-    tbox(s, 0.9, 1.2, 11, 0.5, "Software-in-the-Loop Verification  ·  ISO/IEC/IEEE 29119-3", 15, "AEC1E0")
-    tbox(s, 0.9, 2.3, 11.6, 1.9, "초음파 센서 기반 후석 탑승자 감지 시스템\nSIL 검증 결과", 40, "FFFFFF", True, line=1.1)
-    tbox(s, 0.9, 4.2, 11.6, 0.6, SUBTITLE, 20, "D6E0F0")
-    rect(s, 0.9, 5.15, 11.5, 1.5, "27487A", shape=MSO_SHAPE.ROUNDED_RECTANGLE, radius=0.06)
-    tbox(s, 1.15, 5.25, 11.0, 1.35, [
+    tbox(s, 0.9, 0.75, 11, 0.5, "Software-in-the-Loop Verification  ·  ISO/IEC/IEEE 29119-3", 15, "AEC1E0")
+    rect(s, 0.9, 1.5, 1.6, 0.07, "7F9CCB")
+    tbox(s, 0.9, 1.7, 11.6, 1.8, "초음파 센서 기반 후석 탑승자 감지 시스템\nSIL 검증 결과", 38, "FFFFFF", True, line=1.08)
+    tbox(s, 0.9, 3.6, 11.6, 0.6, SUBTITLE, 19, "D6E0F0")
+    for i, (v, lab) in enumerate([("152", "시험 결과 행 (조건×지표)"), ("87 / 87", "기준선↔코드 상수 100% 일치"), ("9,855", "CRC32 시드 전부 재현")]):
+        x = 0.9 + i * 3.925
+        rect(s, x, 4.4, 3.65, 1.1, "27487A", shape=MSO_SHAPE.ROUNDED_RECTANGLE, radius=0.1)
+        tbox(s, x + 0.15, 4.45, 3.35, 0.6, v, 28, "FFFFFF", True, PP_ALIGN.LEFT, MSO_ANCHOR.MIDDLE)
+        tbox(s, x + 0.15, 5.03, 3.35, 0.4, lab, 12, "D6E0F0")
+    rect(s, 0.9, 5.75, 11.5, 1.3, "1F4170", shape=MSO_SHAPE.ROUNDED_RECTANGLE, radius=0.06)
+    tbox(s, 1.15, 5.82, 11.0, 1.2, [
         ("발표자:  학번 / 성명  ______________ / ______________     (GitHub: yooksoo828-prog)", {"size": 15, "color": "FFFFFF"}),
-        (f"GitHub:  {REPO}", {"size": 13, "color": "D6E0F0"}),
-        (f"기준선:  v1.0-baseline   |   SHA-256 {d['sha'][:16]}…{d['sha'][-8:]}   |   {date}", {"size": 13, "color": "D6E0F0"}),
-    ], 15, space=6)
+        (f"GitHub:  {REPO}", {"size": 12.5, "color": "D6E0F0"}),
+        (f"기준선:  v1.0-baseline   |   SHA-256 {d['sha'][:16]}…{d['sha'][-8:]}   |   {date}", {"size": 12.5, "color": "D6E0F0"}),
+    ], 15, space=5)
     notes(s, "안녕하세요. 초음파 센서 기반 후석 탑승자 감지 소프트웨어를 SIL, 즉 소프트웨어 인 더 루프 방식으로 검증한 결과를 발표하겠습니다. "
              "이 프로젝트는 ISO/IEC/IEEE 29119-3 시험 문서 체계와 GitHub 기반 형상 관리를 적용했고, 검증 기준선은 v1.0-baseline 태그와 SHA-256 해시로 고정되어 있습니다. "
              "발표는 문제 정의, 시스템 구조, 통계 설계, 결과, 두 가지 심층 분석, 형상 관리, 결론 순서로 진행하겠습니다.")
 
     # ---------------- Slide 2 문제 정의
     s = base_slide(prs, "문제 정의 및 목표", 2)
-    rect(s, 0.65, 1.55, 5.7, 4.95, PALE, shape=MSO_SHAPE.ROUNDED_RECTANGLE, radius=0.03)
-    tbox(s, 0.9, 1.7, 5.3, 0.5, "문제", 20, SLATE, True)
-    tbox(s, 0.9, 2.3, 5.2, 4.0, [
+    rect(s, 0.65, 1.5, 5.9, 3.8, PALE, shape=MSO_SHAPE.ROUNDED_RECTANGLE, radius=0.04)
+    tbox(s, 0.9, 1.6, 5.4, 0.5, "문제", 20, SLATE, True)
+    tbox(s, 0.9, 2.2, 5.4, 3.0, [
         ("후석 점유 판단을 **단일 초음파 거리 센서**로 수행", {"bullet": True}),
-        ("실차 없이 **SIL**로 성능·이상 입력 대응을 확인해야 함", {"bullet": True}),
-        ("“돌아가는 코드”만으로는 **결과를 신뢰·재현·추적**할 수 없음", {"bullet": True}),
-    ], 18, space=20, line=1.25)
-    rect(s, 6.75, 1.55, 5.95, 4.95, NAVY, shape=MSO_SHAPE.ROUNDED_RECTANGLE, radius=0.03)
-    tbox(s, 7.05, 1.7, 5.4, 0.5, "목표: 인증 심사급 SIL 검증 체계", 20, "FFFFFF", True)
-    tbox(s, 7.05, 2.3, 5.4, 4.0, [
-        ("**신뢰성** — 단측 95% 정확 이항 상한으로 통계적 판정", {"bullet": True, "color": "FFFFFF"}),
+        ("실차 없이 **SIL**로 성능·이상 입력 대응을 확인", {"bullet": True}),
+        ("“돌아가는 코드”만으로는 **신뢰·재현·추적**을 보일 수 없음", {"bullet": True}),
+    ], 16, space=14, line=1.2)
+    rect(s, 6.8, 1.5, 5.9, 3.8, NAVY, shape=MSO_SHAPE.ROUNDED_RECTANGLE, radius=0.04)
+    tbox(s, 7.05, 1.6, 5.4, 0.5, "목표: 인증 심사급 SIL 검증 체계", 20, "FFFFFF", True)
+    tbox(s, 7.05, 2.2, 5.4, 3.0, [
+        ("**신뢰성** — 단측 95% 정확 이항 상한 판정", {"bullet": True, "color": "FFFFFF"}),
         ("**재현성** — 해시 고정·상수 대조·결정론적 시드", {"bullet": True, "color": "FFFFFF"}),
-        ("**표준 추적성** — ISO 29119-3, SR↔TC↔결과 연결", {"bullet": True, "color": "FFFFFF"}),
+        ("**표준 추적성** — ISO 29119-3, SR↔TC↔결과", {"bullet": True, "color": "FFFFFF"}),
         ("한계는 **숨기지 않고 투명하게 기록**", {"bullet": True, "color": "FFFFFF"}),
-    ], 18, "FFFFFF", space=20, line=1.25)
+    ], 16, "FFFFFF", space=12, line=1.2)
+    card(s, 0.65, 5.5, 3.85, 1.4, "152", "시험 결과 행 (조건 × 지표)", vsize=32, lsize=12)
+    card(s, 4.74, 5.5, 3.85, 1.4, "SR 14 ↔ TC 16", "요구사항–시험 추적", vsize=26, lsize=12)
+    card(s, 8.83, 5.5, 3.85, 1.4, "ISO 29119-3", "시험 문서 표준 적용", vsize=26, lsize=12)
     notes(s, "문제는 단순합니다. 센서 한 개로 후석에 사람이 있는지 판단하는 소프트웨어를 실차 없이 검증해야 합니다. "
              "그런데 코드가 돌아간다는 것만으로는 결과를 믿을 수 있는지, 다시 만들 수 있는지, 요구사항과 연결되는지를 보일 수 없습니다. "
              "그래서 이번 프로젝트의 목표를 신뢰성, 재현성, 표준 추적성을 갖춘 심사 가능한 검증 체계로 잡았습니다. "
              "그리고 잘 안 되는 부분도 숨기지 않고 한계로 기록하는 것을 원칙으로 했습니다.")
 
-    # ---------------- Slide 3 구조·무결성
+    # ---------------- Slide 3 구조·무결성 (그림 1)
     s = base_slide(prs, "SIL 시스템 구조 및 기준선 무결성", 3)
-    boxes = [("① 센서 물리·환경 모델", ["초음파 ToF, 음속 c(T)", "잡음·손실·편향·온도", "sil/sensor_model.py 외"]),
-             ("② 신호처리·판정 로직", ["중앙값 필터, 히스테리시스", "디바운스, UNKNOWN 처리", "sil/detector.py"]),
-             ("③ 독립 검증 하네스", ["TC-01~16, 정답 신호", "통계 판정, 기준선 대조", "main_lib/, run_main.py"])]
-    xs = [0.65, 4.95, 9.25]
-    for (h, ls), x in zip(boxes, xs):
-        rect(s, x, 1.5, 3.45, 0.55, NAVY, shape=MSO_SHAPE.ROUNDED_RECTANGLE, radius=0.12)
-        tbox(s, x, 1.5, 3.45, 0.55, h, 15, "FFFFFF", True, PP_ALIGN.CENTER, MSO_ANCHOR.MIDDLE)
-        rect(s, x, 2.1, 3.45, 1.5, LIGHT, shape=MSO_SHAPE.ROUNDED_RECTANGLE, radius=0.06)
-        tbox(s, x + 0.1, 2.18, 3.25, 1.35, [(l, {"bullet": True}) for l in ls], 13, space=4, anchor=MSO_ANCHOR.MIDDLE)
-    for x in (4.2, 8.5):
-        a = s.shapes.add_shape(MSO_SHAPE.RIGHT_ARROW, Inches(x), Inches(1.6), Inches(0.7), Inches(0.35))
-        a.fill.solid()
-        a.fill.fore_color.rgb = prgb(SLATE)
-        a.line.fill.background()
-    tbox(s, 0.65, 3.75, 12.0, 0.4, "무결성 3계층", 18, NAVY, True)
-    card(s, 0.65, 4.25, 3.9, 2.4, "SHA-256", "기준선 파일 해시 고정\n태그 v1.0-baseline", vsize=30)
-    card(s, 4.72, 4.25, 3.9, 2.4, "87 / 87", "기준선 ↔ 코드 상수\n자동 대조 일치(불일치 시 중단)", vsize=34)
-    card(s, 8.79, 4.25, 3.9, 2.4, "9,855", "CRC32 기반 시행 시드\n전부 재계산 일치", vsize=34)
+    place_pic(s, FIG1, 0.65, 1.45, 8.95, 3.75)
+    card(s, 9.85, 1.5, 2.85, 1.15, "87 / 87", "기준선↔코드 상수 일치", vsize=26, lsize=11)
+    card(s, 9.85, 2.8, 2.85, 1.15, "9,855", "CRC32 시드 재현", vsize=26, lsize=11)
+    card(s, 9.85, 4.1, 2.85, 1.15, "SHA-256", "기준선 해시 고정", vsize=22, lsize=11)
+    tbox(s, 0.65, 5.5, 12.0, 1.4, [
+        ("판정 SW(②)와 검증 코드(③)를 **분리**해 검증의 독립성 확보", {"bullet": True}),
+        ("실행 전 기준선 상수를 **자동 대조**, 하나라도 다르면 **중단**", {"bullet": True}),
+    ], 16, space=10, line=1.2)
     notes(s, "시스템은 세 단계입니다. 첫째, 센서 물리와 환경 모델이 초음파 비행 시간, 온도에 따른 음속, 잡음과 손실을 만듭니다. "
              "둘째, 판정 로직이 중앙값 필터와 히스테리시스, 디바운스를 거쳐 점유, 비점유, 미확정 세 값을 출력합니다. "
              "셋째, 이 둘과 분리된 독립 검증 하네스가 TC-01부터 16까지를 실행하고 통계로 판정합니다. "
@@ -919,49 +1058,33 @@ def build_pptx(d, date):
              "오른쪽은 요구사항 추적성입니다. 요구사항 SR-01부터 14까지가 시험 TC-01부터 16과 연결되고, 각 연결마다 결과 상태가 집계됩니다. "
              "전체 행렬은 저장소의 감사 보고서에 있습니다.")
 
-    # ---------------- Slide 5 종합 결과
-    s = base_slide(prs, "152개 조건 종합 검증 결과", 5)
-    cards = [("49", "목표 충족\n(통계 확인)", GREEN), ("27", "결정적 시험\n일치", GREEN), ("12", "전 시행\n기준 충족", GREEN),
-             ("3", "불합격\n(INC-01~03)", RED), ("4", "미실행\n(문서화)", AMBER)]
-    for i, (v, l, c) in enumerate(cards):
-        card(s, 0.65 + i * 2.4625, 1.5, 2.2, 1.8, v, l, vcolor=c, vsize=36, lsize=12)
-    note = {"목표 충족(통계 확인)": "비율 지표, 상한 ≤ 목표", "일치": "결정적 시험", "기준 충족(전 시행)": "모든 시행 만족",
-            "기록(합격 판정 없음)": "참고 기록", "가정 기반 민감도 기록": "비율 10 + 전 시행 3", "미실행": "O-A·B·C 원 조건, TC-12",
-            "불합격": "정지 화물 2, 50 °C 보정 無 1"}
-    rows = [[SHORT_L(k), cnt[k], f"{cnt[k] / 152 * 100:.1f}%", note[k]] for k in STATUS_ORDER] + [["합계", 152, "100%", ""]]
-    ptable(s, 0.65, 3.55, 7.6, [2.6, 0.9, 1.0, 3.1], rows, ["판정 상태", "행", "비율", "비고"], 11, 0.33, hl={6: "FBE9EB"},
-           align=[PP_ALIGN.LEFT, PP_ALIGN.CENTER, PP_ALIGN.CENTER, PP_ALIGN.LEFT])
-    tbox(s, 8.5, 3.55, 4.3, 3.2, [
-        ("판정 행: **88건 충족, 3건 불합격**", {"bullet": True}),
-        ("기록 57행(참고·민감도)은 합격 건수에 **미포함**", {"bullet": True}),
-        ("‘관측 충족(통계 미확인)’ 행: **0건**", {"bullet": True}),
-        ("SR-09는 **부분 커버**, 전체 충족 선언 보류(D3)", {"bullet": True}),
-    ], 12, space=8, line=1.2)
-    notes(s, "전체 결과입니다. 152개 결과 행 가운데 통계적으로 목표를 확인한 것이 49개, 결정적 시험에서 기대와 실제가 일치한 것이 27개, 모든 시행이 기준을 만족한 것이 12개입니다. "
+    # ---------------- Slide 5 종합 결과 (그림 2)
+    s = base_slide(prs, "152개 시험 결과 종합", 5)
+    card(s, 0.65, 1.5, 3.95, 1.25, "152", "시험 결과 행 (조건 × 지표)", vsize=32, lsize=12)
+    card(s, 0.65, 2.9, 1.9, 1.35, "88", "판정 충족\n(49·27·12)", vcolor=GREEN, vsize=30, lsize=11)
+    card(s, 2.7, 2.9, 1.9, 1.35, "3", "불합격\n(INC-01~03)", vcolor=RED, vsize=30, lsize=11)
+    card(s, 0.65, 4.4, 1.9, 1.35, "57", "기록·민감도\n(판정 없음)", vcolor=GRAY, vsize=30, lsize=11)
+    card(s, 2.7, 4.4, 1.9, 1.35, "4", "미실행\n(문서화)", vcolor=AMBER, vsize=30, lsize=11)
+    place_pic(s, FIG2, 4.9, 1.45, 7.8, 4.3)
+    tbox(s, 0.65, 5.95, 12.0, 1.0, [
+        ("판정 없는 기록 57행은 합격 건수에 **포함하지 않음**  ·  ‘관측 충족(통계 미확인)’ 행 **0건**", {"bullet": True}),
+        ("**SR-09는 부분 커버** → 전체 충족 선언 보류(D3)", {"bullet": True}),
+    ], 14, space=6, line=1.15)
+    notes(s, "전체 결과입니다. 152개 결과 행 가운데 통계적으로 목표를 확인한 것이 49개, 결정적 시험에서 기대와 실제가 일치한 것이 27개, 모든 시행이 기준을 만족한 것이 12개로 판정 충족이 88개입니다. "
              "불합격은 3건이고 미실행은 4건입니다. 합격 판정 없이 기록만 한 57행은 합격 건수에 넣지 않았습니다. "
              "관측 충족이지만 통계는 미확인인 행은 없었고, SR-09는 시험 범위가 부분적이라 전체 충족 선언을 보류했습니다.")
 
-    # ---------------- Slide 6 온도 보정
-    s = base_slide(prs, "심층 분석 1 — 고온 환경 온도 보정 효과 (TC-11)", 6)
-    tbox(s, 0.65, 1.4, 6.0, 0.4, "50 °C · 낮은 화물 R0 오검출률 (목표 ≤ 5%)", 16, NAVY, True)
-    card(s, 0.65, 1.95, 2.9, 2.0, "300/300", "보정 미적용\n오검출 100% → 불합격", vcolor=RED, vsize=30)
-    card(s, 3.75, 1.95, 2.9, 2.0, "0/300", "보정 적용\n상한 0.994% → 목표 충족", vcolor=GREEN, vsize=30)
-    tbox(s, 0.65, 4.2, 6.0, 2.4, [
-        ("0·20 °C에서는 **보정 없이도 0/300**", {"bullet": True}),
-        ("빈 좌석·R2는 전 온도·구성에서 **0/300**", {"bullet": True}),
-        ("보정 채택은 본시험 후 결정(D3) → **SR-09 전체 충족 선언 보류**", {"bullet": True}),
-    ], 14, space=8, line=1.2)
-    tbox(s, 7.1, 1.4, 5.7, 0.4, "원인: 음속 변화 → 거리 환산 오차", 16, NAVY, True)
-    steps = [("음속", f"340 m/s (고정)  →  {C50:.1f} m/s (50 °C)"), ("환산 배율", f"340 / {C50:.1f} = {SCALE:.4f}"),
-             ("R0 거리", f"{D_R0:g} cm  →  {D_APP:.2f} cm"), ("Δ (d_empty 100)", f"{DELTA_R0:.2f} cm  ≥  Δ_on 10 cm")]
-    for i, (a, b) in enumerate(steps):
-        y = 1.95 + i * 1.05
-        last = i == len(steps) - 1
-        rect(s, 7.1, y, 1.75, 0.85, RED if last else NAVY, shape=MSO_SHAPE.ROUNDED_RECTANGLE, radius=0.1)
-        tbox(s, 7.1, y, 1.75, 0.85, a, 13, "FFFFFF", True, PP_ALIGN.CENTER, MSO_ANCHOR.MIDDLE)
-        rect(s, 8.9, y, 3.85, 0.85, "FBE9EB" if last else LIGHT, shape=MSO_SHAPE.ROUNDED_RECTANGLE, radius=0.1)
-        tbox(s, 8.95, y, 3.75, 0.85, b, 13, RED if last else "1F2937", last, PP_ALIGN.CENTER, MSO_ANCHOR.MIDDLE)
-    tbox(s, 7.1, 6.2, 5.7, 0.7, f"→ OCCUPIED로 오판. 빈 좌석 Δ는 {DELTA_EMPTY:.2f} cm로 임계값 미만이라 영향 없음.", 12, GRAY)
+    # ---------------- Slide 6 온도 보정 (그림 3)
+    s = base_slide(prs, "심층 분석 1 — 고온 온도 보정 효과 (TC-11)", 6)
+    card(s, 0.65, 1.5, 4.5, 1.8, "100% → 0%", "50 °C R0 오검출\n300/300 → 0/300", vcolor=RED, vsize=30, lsize=12)
+    card(s, 0.65, 3.45, 4.5, 1.35, "0.994%", "보정 적용 시 단측 95% 상한 (≤ 5%)", vcolor=GREEN, vsize=28, lsize=11)
+    tbox(s, 0.65, 5.0, 4.5, 1.95, [
+        ("음속 340 → **361.4 m/s** (50 °C)", {"bullet": True}),
+        ("R0 거리 95 → **89.37 cm**", {"bullet": True}),
+        ("Δ **10.63 cm ≥ 10 cm** → 오검출", {"bullet": True}),
+    ], 14, space=7, line=1.15)
+    place_pic(s, FIG3, 5.4, 1.45, 7.3, 4.45)
+    tbox(s, 5.4, 6.0, 7.3, 0.95, "보정 채택은 본시험 후 결정(D3) → **SR-09 전체 충족 선언 보류**", 14, "1F2937")
     notes(s, "첫 번째 심층 분석은 고온에서의 온도 보정 효과입니다. TC-11에서 50도, 보정 없이, 높이 5센티미터의 낮은 화물 R0는 300번 모두 점유로 오판했습니다. "
              "원인은 음속입니다. 50도에서 음속은 361.4미터 매초인데 보정이 없으면 340으로 계산하므로 거리가 0.9408배로 짧게 나옵니다. "
              "R0까지 실제 95센티미터가 89.4센티미터로 계산되어 기준 100센티미터와의 차이가 10.63센티미터, 임계값 10을 넘습니다. "
@@ -974,20 +1097,23 @@ def build_pptx(d, date):
         ["INC-02", "TC-04b-2  정지 화물(R1) 대 움직이는 점유 대상(±1 cm, 0.25 Hz)", "300/300 오검출", "목표 ≤ 5%"],
     ], ["ID", "조건", "결과", "목표"], 12, 0.5, hl={0: "FBE9EB", 1: "FBE9EB"},
            align=[PP_ALIGN.CENTER, PP_ALIGN.LEFT, PP_ALIGN.CENTER, PP_ALIGN.CENTER])
-    rect(s, 0.65, 3.45, 5.9, 3.3, PALE, shape=MSO_SHAPE.ROUNDED_RECTANGLE, radius=0.03)
-    tbox(s, 0.85, 3.55, 5.5, 0.45, "왜 버그가 아닌가", 20, SLATE, True)
-    tbox(s, 0.85, 4.15, 5.5, 2.5, [
-        ("화물과 사람의 **거리 이력이 동일**(입력·출력 동일 300/300)", {"bullet": True}),
-        ("센서는 **한 점의 거리**만 측정, 판정은 거리만 사용", {"bullet": True}),
-        ("움직임을 줘도 알고리즘은 **시간 변동을 쓰지 않음**(출력 차이 0/300)", {"bullet": True}),
-    ], 16, space=12, line=1.2)
-    rect(s, 6.8, 3.45, 5.9, 3.3, NAVY, shape=MSO_SHAPE.ROUNDED_RECTANGLE, radius=0.03)
-    tbox(s, 7.0, 3.55, 5.5, 0.45, "투명하게 기록한 이유", 20, "FFFFFF", True)
-    tbox(s, 7.0, 4.15, 5.5, 2.5, [
+    card(s, 0.65, 3.2, 3.85, 1.15, "300/300", "INC-01 오검출", vcolor=RED, vsize=26, lsize=11)
+    card(s, 4.74, 3.2, 3.85, 1.15, "300/300", "INC-02 오검출", vcolor=RED, vsize=26, lsize=11)
+    card(s, 8.83, 3.2, 3.85, 1.15, "≤ 5%", "합격 기준 (사후 완화 없음)", vcolor=NAVY, vsize=26, lsize=11)
+    rect(s, 0.65, 4.55, 5.9, 2.4, PALE, shape=MSO_SHAPE.ROUNDED_RECTANGLE, radius=0.04)
+    tbox(s, 0.85, 4.62, 5.5, 0.45, "왜 버그가 아닌가", 18, SLATE, True)
+    tbox(s, 0.85, 5.1, 5.5, 1.8, [
+        ("화물·사람의 **거리 이력이 동일**(입력·출력 300/300)", {"bullet": True}),
+        ("센서는 **한 점의 거리**만 측정·사용", {"bullet": True}),
+        ("움직임도 알고리즘이 **쓰지 않음**(차이 0/300)", {"bullet": True}),
+    ], 14, space=7, line=1.15)
+    rect(s, 6.8, 4.55, 5.9, 2.4, NAVY, shape=MSO_SHAPE.ROUNDED_RECTANGLE, radius=0.04)
+    tbox(s, 7.0, 4.62, 5.5, 0.45, "투명하게 기록한 이유", 18, "FFFFFF", True)
+    tbox(s, 7.0, 5.1, 5.5, 1.8, [
         ("합격선(5%)을 **사후에 완화하지 않음**(D6, D7)", {"bullet": True, "color": "FFFFFF"}),
-        ("코드를 시험에 맞춰 고치지 않고 **한계로 공식 기록**", {"bullet": True, "color": "FFFFFF"}),
-        ("개선은 **새 기준선 버전**으로만 가능 → Issue #1로 추적", {"bullet": True, "color": "FFFFFF"}),
-    ], 16, "FFFFFF", space=12, line=1.2)
+        ("코드를 시험에 맞추지 않고 **한계로 공식 기록**", {"bullet": True, "color": "FFFFFF"}),
+        ("개선은 **새 기준선 버전**으로만 가능 → Issue #1", {"bullet": True, "color": "FFFFFF"}),
+    ], 14, "FFFFFF", space=7, line=1.15)
     notes(s, "두 번째 분석은 단일 센서의 한계입니다. 정지한 화물의 윗면이 사람과 같은 높이 20센티미터이면 300번 모두 점유로 오판합니다. "
              "이것은 소프트웨어 버그가 아닙니다. 두 경우의 거리 이력이 완전히 같아서 입력과 출력이 300번 모두 동일했고, 센서는 바로 아래 한 점의 거리만 보기 때문입니다. "
              "사람에게 1센티미터 움직임을 줘도 현재 알고리즘은 시간 변동을 쓰지 않아 출력이 달라지지 않았습니다. "
@@ -998,11 +1124,10 @@ def build_pptx(d, date):
     tbox(s, 0.65, 1.4, 7.0, 0.4, "5단계 생명주기 커밋 + 태그", 16, NAVY, True)
     ptable(s, 0.65, 1.85, 7.0, [0.9, 1.5, 4.6], [[a, b, e] for a, b, c, e in COMMITS], ["단계", "커밋", "내용"], 11, 0.4,
            align=[PP_ALIGN.CENTER, PP_ALIGN.CENTER, PP_ALIGN.LEFT])
-    tbox(s, 0.65, 4.4, 7.0, 2.4, [
-        ("**태그 v1.0-baseline** — 기준선 확정 커밋에 주석 태그(해시 기록)", {"bullet": True}),
-        ("**GitHub Actions `verify.yml`** — push·PR마다 selftest.py 자동 실행, 최근 두 커밋(af7424d, bb2b906) **success**".replace("`", ""), {"bullet": True}),
-        ("**Issues 4건** — #1·#2 이상 보고, #3·#4 후속 조치(TBR)", {"bullet": True}),
-    ], 13, space=8, line=1.2)
+    card(s, 0.65, 4.65, 2.2, 1.6, "5", "생명주기 커밋", vsize=34, lsize=12)
+    card(s, 3.05, 4.65, 2.2, 1.6, "2 / 2", "CI(verify) 성공", vcolor=GREEN, vsize=30, lsize=12)
+    card(s, 5.45, 4.65, 2.2, 1.6, "4", "GitHub Issues\n(Open)", vsize=34, lsize=12)
+    tbox(s, 0.65, 6.4, 7.0, 0.6, "태그 **v1.0-baseline** = 기준선 확정 커밋  ·  push·PR마다 selftest 자동 실행", 12, GRAY)
     ph = rect(s, 8.0, 1.45, 4.7, 5.3, "F3F6FB", line=SLATE, shape=MSO_SHAPE.ROUNDED_RECTANGLE, radius=0.03)
     ph.line.dash_style = MSO_LINE.DASH
     tbox(s, 8.1, 3.2, 4.5, 1.6, [
@@ -1016,23 +1141,27 @@ def build_pptx(d, date):
 
     # ---------------- Slide 9 결론
     s = base_slide(prs, "결론 및 향후 고도화 방향", 9)
-    rect(s, 0.65, 1.5, 5.9, 5.2, PALE, shape=MSO_SHAPE.ROUNDED_RECTANGLE, radius=0.03)
-    tbox(s, 0.85, 1.6, 5.5, 0.45, "프로젝트 성과", 20, SLATE, True)
-    tbox(s, 0.85, 2.2, 5.5, 4.4, [
-        ("**통계 기준**으로 판정 — 49건 목표 충족, 상한 0.994%", {"bullet": True}),
-        ("**재현성** — 87개 상수 대조, 9,855개 시드 재현", {"bullet": True}),
-        ("**추적성** — SR-01~14 ↔ TC-01~16 ↔ 결과", {"bullet": True}),
-        ("**한계의 투명한 기록** — 불합격 3건, 미실행 4건", {"bullet": True}),
-        ("결과는 SIL 모델 범위이며 실제 센서 성능의 입증은 아님", {"bullet": True, "color": GRAY}),
-    ], 17, space=16, line=1.2)
-    rect(s, 6.8, 1.5, 5.9, 5.2, NAVY, shape=MSO_SHAPE.ROUNDED_RECTANGLE, radius=0.03)
-    tbox(s, 7.0, 1.6, 5.5, 0.45, "향후 과제 (TBR)", 20, "FFFFFF", True)
-    tbox(s, 7.0, 2.2, 5.5, 4.4, [
-        ("**실물 치수 확보** — O-A/B/C/S, 착좌 위치 분포, TC-12 실행 (#3)", {"bullet": True, "color": "FFFFFF"}),
-        ("**초기 공석 캘리브레이션** — d_empty 실측, 시동-센서 전원 연동 (#4)", {"bullet": True, "color": "FFFFFF"}),
+    rect(s, 0.65, 1.5, 5.9, 3.7, PALE, shape=MSO_SHAPE.ROUNDED_RECTANGLE, radius=0.04)
+    tbox(s, 0.85, 1.58, 5.5, 0.45, "프로젝트 성과", 19, SLATE, True)
+    tbox(s, 0.85, 2.1, 5.5, 3.0, [
+        ("**통계 기준** 판정 — 상한 0.994%", {"bullet": True}),
+        ("**재현성** — 87개 상수·9,855개 시드", {"bullet": True}),
+        ("**추적성** — SR-01~14 ↔ TC-01~16", {"bullet": True}),
+        ("**한계의 투명한 기록** — 불합격 3, 미실행 4", {"bullet": True}),
+        ("결과는 SIL 모델 범위(실제 센서 성능 입증 아님)", {"bullet": True, "color": GRAY, "size": 12}),
+    ], 15, space=8, line=1.15)
+    rect(s, 6.8, 1.5, 5.9, 3.7, NAVY, shape=MSO_SHAPE.ROUNDED_RECTANGLE, radius=0.04)
+    tbox(s, 7.0, 1.58, 5.5, 0.45, "향후 과제 (TBR)", 19, "FFFFFF", True)
+    tbox(s, 7.0, 2.1, 5.5, 3.0, [
+        ("**실물 치수 확보** — O-A/B/C/S, 착좌 위치, TC-12 (#3)", {"bullet": True, "color": "FFFFFF"}),
+        ("**초기 공석 캘리브레이션** — d_empty, 시동-전원 연동 (#4)", {"bullet": True, "color": "FFFFFF"}),
         ("**다중 특징량 확장** — 시간 변동 등으로 화물/사람 구분 (#1)", {"bullet": True, "color": "FFFFFF"}),
-        ("**온도 보정 채택** 결정과 SR-09 시험 범위 확장 (#2)", {"bullet": True, "color": "FFFFFF"}),
-    ], 17, "FFFFFF", space=16, line=1.2)
+        ("**온도 보정 채택** 결정, SR-09 범위 확장 (#2)", {"bullet": True, "color": "FFFFFF"}),
+    ], 15, "FFFFFF", space=8, line=1.15)
+    card(s, 0.65, 5.4, 2.85, 1.5, "88", "판정 충족\n(49·27·12)", vcolor=GREEN, vsize=30, lsize=11)
+    card(s, 3.7, 5.4, 2.85, 1.5, "3", "불합격\n(INC-01~03)", vcolor=RED, vsize=30, lsize=11)
+    card(s, 6.8, 5.4, 2.85, 1.5, "4", "미실행\n(후속 과제)", vcolor=AMBER, vsize=30, lsize=11)
+    card(s, 9.85, 5.4, 2.85, 1.5, "87 / 87", "상수 100% 일치", vsize=28, lsize=11)
     notes(s, "정리하겠습니다. 이번 프로젝트는 통계 기준으로 판정하고, 상수 87개와 시드 9,855개로 재현성을 보이며, 요구사항과 시험을 추적하는 검증 체계를 만들었습니다. "
              "그리고 불합격 3건과 미실행 4건을 숨기지 않고 원인과 함께 기록했습니다. 다만 결과는 SIL 모델 범위이고 실제 센서 성능을 입증한 것은 아닙니다. "
              "향후에는 실물 대상 치수와 착좌 위치 분포 확보, 초기 공석 캘리브레이션과 시동·전원 연동, 시간 변동 같은 다중 특징량 확장, 온도 보정 채택 결정이 필요합니다. "
@@ -1057,6 +1186,7 @@ def main(argv):
             raise SystemExit(__doc__)
     d = load()
     HERE.mkdir(exist_ok=True)
+    make_figures(d)
     build_docx(d, date)
     build_pptx(d, date)
     print("작성:", DOCX_OUT)
