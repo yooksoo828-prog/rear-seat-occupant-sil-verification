@@ -59,6 +59,11 @@ def validate(rows):
             for col in ("reviewer", "review_date", "approval_ref"):
                 if not r[col].strip():
                     errors.append(f"{r['id']}: '충족'인데 {col} 이 비어 있음")
+    for r in rows:
+        if r.get("ai_review", "") not in ("", "통과", "지적 있음"):
+            errors.append(f"{r['id']}: 알 수 없는 ai_review '{r['ai_review']}'")
+        if r.get("ai_review", "") and not (r.get("ai_review_date", "").strip() and r.get("ai_review_note", "").strip()):
+            errors.append(f"{r['id']}: ai_review 에 날짜 또는 메모가 없음")
     total = sum(n for _, n in PROCESSES.values())
     if len(rows) != total:
         errors.append(f"전체 {len(rows)}개 (원문 {total}개)")
@@ -80,6 +85,20 @@ def render(rows):
             out.append(
                 f"| {cell(r['id'])} | {cell(r['outcome'])} | {cell(r['evidence'])} | {cell(status)} | {cell(r['remaining'])} |"
             )
+        out.append("")
+    reviewed = [r for r in rows if r.get("ai_review", "")]
+    if reviewed:
+        ok = sum(1 for r in reviewed if r["ai_review"] == "통과")
+        out.append("## AI 검토 기록")
+        out.append("")
+        out.append(f"AI(Claude)가 증거 문서를 문구·수치·실제 결과 파일과 대조한 결과임. 검토 {len(reviewed)}건 중 통과 {ok}건, 지적 있음 {len(reviewed) - ok}건. "
+                   "**AI 검토는 '충족' 판정이 아니며** 상태는 바꾸지 않았음(하향 권고는 메모에 적음). 충족은 팀원 승인(approval_ref)이 있어야 함. "
+                   "작성과 검토를 같은 AI가 하므로 독립성이 약하다는 점은 선언문 2절에 공개되어 있음.")
+        out.append("")
+        out.append("| ID | 결과 | 검토일 | 메모 |")
+        out.append("| --- | --- | --- | --- |")
+        for r in reviewed:
+            out.append(f"| {cell(r['id'])} | {r['ai_review']} | {r['ai_review_date']} | {cell(r['ai_review_note'])} |")
         out.append("")
     out.append("## 현재 집계")
     out.append("")
