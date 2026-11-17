@@ -17,6 +17,7 @@ import datetime
 import hashlib
 import json
 import math
+import re
 import sys
 import zlib
 from pathlib import Path
@@ -350,7 +351,7 @@ def build_incidents(d):
             f"(온도 입력 오차 U(−{cfg['environment']['temp_input_err_C']:g}, +{cfg['environment']['temp_input_err_C']:g}) °C는 가정.)",
         ],
         "policy": "D3: 50 °C R0 오검출도 그대로 기록함. 보정 채택 여부는 본시험 이후 결정하며, 이 결과만으로 SR-09 전체 충족을 선언하지 않음.",
-        "followup": "온도 보정의 요구사항 채택은 2026-11-13 김윤수 결정으로 v1.1 기본 구성에 채택됨(Notion TP-01 PR-2 참조; 다른 팀원의 동의는 김윤수가 전달한 기록이며 원본 미첨부). v1.0 기준선과 결과는 바뀌지 않으며, v1.1에서 보정을 반영해 다시 확인하기 전까지 SR-09 전체 충족 선언 보류. GitHub Issue 로 추적.",
+        "followup": "온도 보정의 요구사항 채택은 2026-11-13 김*수 결정으로 v1.1 기본 구성에 채택됨(Notion TP-01 PR-2 참조; 다른 팀원의 동의는 김*수가 전달한 기록이며 원본 미첨부). v1.0 기준선과 결과는 바뀌지 않으며, v1.1에서 보정을 반영해 다시 확인하기 전까지 SR-09 전체 충족 선언 보류. GitHub Issue 로 추적.",
     })
     return inc
 
@@ -379,11 +380,14 @@ def build_report(d, checks, inc, report_date, selftest_result):
     w("")
     w("## Document Control Block (문서 관리 정보)")
     w("")
-    dec = cfg["decided"]
+    dec = dict(cfg["decided"])
+    # 기준선 파일(baseline_v1.0.json)은 SHA-256으로 고정되어 있어 고칠 수 없으므로, 보고서에 옮길 때만 이름 가운데 글자를 가린다.
+    dec["by"] = re.sub(r"\(([가-힣])([가-힣]+)([가-힣])\)", lambda m: "(" + m.group(1) + "*" * len(m.group(2)) + m.group(3) + ")", dec["by"])
     w(table(["항목", "내용"], [
         ["Document ID", code(DOC_ID)],
         ["문서명", "뒷좌석 승객 감지(Rear-Seat Occupant Detection) SIL 본시험 — Test Documentation (Test Plan · Test Design/Procedure · Test Execution Log/Incident Report · Test Completion Report)"],
-        ["적용 표준", "ISO/IEC/IEEE 29119-3 (Test Documentation)"],
+        ["적용 표준", "ISO/IEC/IEEE 29119-3 (Test Documentation) 문서 구성을 적용함. **표준 적합성(conformance)은 아직 주장하지 않음** — 선언·outcome 체크리스트·점검표는 팀 검토·합의 전이다."],
+        ["29119 적합성 문서", "`docs/29119/` — `00_conformance_declaration.md`(29119-2 프로세스 선언), `02_conformance_declaration_29119-3.md`(문서 선언), `01_outcome_checklist.md`(41개 outcome), `03_29119-3_conformance_check.md`(Annex A 점검표), 산출물 TP-01~IR-03"],
         ["시험 수준", "SIL (Software-in-the-Loop), 시험 케이스 TC-01 ~ TC-16"],
         ["기준선 파일", code("sil_main/baseline/baseline_v1.0.json") + f" (version {cfg['version']}, confirmed = {str(cfg['confirmed']).lower()})"],
         ["기준선 SHA-256", code(sha_file)],
@@ -453,7 +457,7 @@ def build_report(d, checks, inc, report_date, selftest_result):
       "같은 거리 이력을 갖는 화물과 사람은 거리 입력만으로 구분할 수 없음(INC-01·INC-02).")
     w("4. **d_empty 고정 (D4)**: 100 cm 고정이며 초기 빈 좌석 실측 보정은 모델에 없음.")
     w("5. **전원·시동 (D8)**: TC-08은 t = 0 전원 인가 SIL 모델이며 차량 시동과 센서 전원의 관계는 모델에 없음.")
-    w("6. **온도 보정 (D3)**: 보정의 요구사항 채택은 본시험 이후 결정으로 기준선에 기록함(2026-11-11). 이후 2026-11-13 김윤수 결정(Notion TP-01 PR-2 참조)으로 v1.1 기본 구성에 채택함. 이 결정은 v1.0 기준선·결과를 바꾸지 않음. TC-11은 빈 좌석·R2·R0, 0·20·50 °C, 보정 유·무만 다루며 SR-09 전체 충족 선언은 하지 않음(4.3절).")
+    w("6. **온도 보정 (D3)**: 보정의 요구사항 채택은 본시험 이후 결정으로 기준선에 기록함(2026-11-11). 이후 2026-11-13 김*수 결정(Notion TP-01 PR-2 참조)으로 v1.1 기본 구성에 채택함. 이 결정은 v1.0 기준선·결과를 바꾸지 않음. TC-11은 빈 좌석·R2·R0, 0·20·50 °C, 보정 유·무만 다루며 SR-09 전체 충족 선언은 하지 않음(4.3절).")
     w("7. **가정 의존 값**: 온도 입력 오차 ±2 °C, TC-04b-2 움직임(1.0 cm, 0.25 Hz, D7), 05a·05b 동일 입력 모델(D7)은 근거 없는 가정이며 별도 검증으로 집계하지 않음.")
     w("8. SIL 결과는 사용한 **모델과 입력 분포에 대한 결과**이며 실제 센서 성능을 입증하지 않음.")
     w("")
@@ -713,7 +717,7 @@ def build_report(d, checks, inc, report_date, selftest_result):
     w("**SR-09 전체 충족(0–50 °C에서 SR-01~04·14 충족) 선언을 하지 않는다.** 근거:")
     w("")
     w("- TC-11은 **빈 좌석·R2·R0**, **0·20·50 °C**, **보정 무·유** 18개 조합(각 300회)만 다룸(아래 커버 조건표). 다른 대상·온도·조합은 다루지 않음.")
-    w("- 50 °C·보정 없음에서 R0 오검출이 **300/300**이므로 보정 없는 구성은 SR-09 를 충족하지 못했음(INC-03). 보정 있음은 같은 조건에서 0/300임. 보정의 요구사항 채택은 기준선 시점(2026-11-11)에는 미결이었으며 2026-11-13 김윤수 결정(Notion TP-01 PR-2 참조)으로 v1.1 기본 구성에 채택됨(D3, 후속 검토 1번). v1.1에서 다시 확인하기 전까지 SR-09 전체 충족 선언은 보류함.")
+    w("- 50 °C·보정 없음에서 R0 오검출이 **300/300**이므로 보정 없는 구성은 SR-09 를 충족하지 못했음(INC-03). 보정 있음은 같은 조건에서 0/300임. 보정의 요구사항 채택은 기준선 시점(2026-11-11)에는 미결이었으며 2026-11-13 김*수 결정(Notion TP-01 PR-2 참조)으로 v1.1 기본 구성에 채택됨(D3, 후속 검토 1번). v1.1에서 다시 확인하기 전까지 SR-09 전체 충족 선언은 보류함.")
     w("- 결정 D3: \"TC-11 커버 조건 표시, SR-09 전체 충족 선언 금지\".")
     w("")
     w("**TC-11 커버 조건 (`coverage_TC11.csv`)**")
@@ -734,7 +738,7 @@ def build_report(d, checks, inc, report_date, selftest_result):
     w("### 4.5 Follow-up Items (후속 검토 5건, `baseline_v1.0.json`의 `follow_up_items`)")
     w("")
     fmap = {
-        "온도 보정의 요구사항 채택": "D3 / INC-03 (2026-11-13 김윤수 결정으로 v1.1 채택, TP-01 PR-2 참조)",
+        "온도 보정의 요구사항 채택": "D3 / INC-03 (2026-11-13 김*수 결정으로 v1.1 채택, TP-01 PR-2 참조)",
         "초기 빈 좌석 실측 보정(d_empty)": "D4",
         "O-A/O-B/O-C/O-S 대상 치수 확보": "D1 (TC-12 미실행 포함)",
         "차량 시동과 센서 전원의 관계": "D8 (TC-08)",

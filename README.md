@@ -6,16 +6,18 @@
 | 구분 | 내용 |
 |---|---|
 | Document ID | `ISO29119-SIL-RSPD-v1.0` |
-| 확정 기준선 | `v1.0` — 2026-11-11 김윤수 확정, 결정 D1~D8 |
+| 확정 기준선 | `v1.0` — 2026-11-11 김*수 확정, 결정 D1~D8 |
 | 기준선 SHA-256 | `79f21ce910853ee7358d97c031a7553258a9fb2151bdcdaca17db3c1ea205f6d` |
 | Git 태그 | `v1.0-baseline` (기준선 확정 커밋) |
 | 시험 범위 | 본시험 TC-01 ~ TC-16, 결과 152행 |
+| 표준 적합성 | **아직 주장하지 않음.** 29119-2 프로세스 선언·41개 outcome 체크리스트·29119-3 점검표는 [docs/29119/](docs/29119/README.md)에 있으며 팀 검토·합의 전(충족 인정 0개) |
 
 ## 1. 핵심 문서 바로가기
 
 | 문서 | 설명 |
 |---|---|
 | [ISO29119_Audit_Report.md](sil_main/results_main/ISO29119_Audit_Report.md) | **통합 감사 보고서** (Test Plan · Test Design/Procedure/Traceability · Execution Log/Incident Report · Completion Report · 부록 152행) |
+| [docs/29119/](docs/29119/README.md) | **29119 적합성 문서 일체**: 적합성 선언(29119-2·-3), outcome 체크리스트(41개), 29119-3 Annex A 점검표, 계획·상태·완료 보고서, 시험 모델·케이스·절차, 환경·데이터, 결과·로그, 사건 보고서(IR-01~03) |
 | [baseline_v1.0.json](sil_main/baseline/baseline_v1.0.json) | 확정 기준선(D1~D8 기록 포함) |
 | [trace_SR_TC_result.csv](sil_main/results_main/trace_SR_TC_result.csv) | 요구사항(SR) → 시험(TC) → 결과 추적성 |
 | [baseline_verification.csv](sil_main/results_main/baseline_verification.csv) | 실행 전 기준선↔코드 값 비교 87개 항목 |
@@ -55,7 +57,7 @@
 |---|---|---|---|
 | INC-01 | TC-04 / 04b-1 — 점유 대상과 같은 높이(R1 = 20 cm)의 정지 화물 | 300/300 오검출 (목표 ≤ 5 %) | 단일점 거리 센서의 구조적 한계 |
 | INC-02 | TC-04 / 04b-2 — 정지 화물(R1) 대 움직이는 점유 대상(±1.0 cm, 0.25 Hz) | 300/300 오검출 (목표 ≤ 5 %) | 위와 같은 원인. 목표·합격선을 사후에 바꾸지 않고 기록(D6, D7) |
-| INC-03 | TC-11 / 11a-T50-nocomp/TC-04a — 50 °C, 보정 없음, 낮은 화물 R0(5 cm) | 300/300 오검출. 보정 있음(11b-T50-comp)은 0/300(상한 0.994 %) | 음속 변화에 의한 ToF 단축. 보정 채택은 기준선 이후 결정(D3): 2026-11-13 김윤수 결정으로 v1.1 기본 구성에 채택(Notion TP-01 PR-2 참조), v1.0 결과는 그대로 |
+| INC-03 | TC-11 / 11a-T50-nocomp/TC-04a — 50 °C, 보정 없음, 낮은 화물 R0(5 cm) | 300/300 오검출. 보정 있음(11b-T50-comp)은 0/300(상한 0.994 %) | 음속 변화에 의한 ToF 단축. 보정 채택은 기준선 이후 결정(D3): 2026-11-13 김*수 결정으로 v1.1 기본 구성에 채택(Notion TP-01 PR-2 참조), v1.0 결과는 그대로 |
 
 ### 한계와 주의
 
