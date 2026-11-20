@@ -16,6 +16,11 @@ jobs:
         with:
           python-version: "3.11"
 
+      # 29119 outcome 체크리스트: CSV 검증(outcome 41개, 상태 값, '충족'의 검토자·승인 기록)과 md 일치 확인.
+      # 표준 라이브러리만 사용하므로 의존성 설치 전에 실행함.
+      - name: Check 29119 outcome checklist
+        run: python3 docs/29119/render_checklist.py --check
+
       - name: Install dependencies
         run: python -m pip install numpy
 

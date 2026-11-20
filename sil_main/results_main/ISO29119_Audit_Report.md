@@ -8,17 +8,18 @@
 |---|---|
 | Document ID | `ISO29119-SIL-RSPD-v1.0` |
 | 문서명 | 뒷좌석 승객 감지(Rear-Seat Occupant Detection) SIL 본시험 — Test Documentation (Test Plan · Test Design/Procedure · Test Execution Log/Incident Report · Test Completion Report) |
-| 적용 표준 | ISO/IEC/IEEE 29119-3 (Test Documentation) |
+| 적용 표준 | ISO/IEC/IEEE 29119-3 (Test Documentation) 문서 구성을 적용함. **표준 적합성(conformance)은 아직 주장하지 않음** — 선언·outcome 체크리스트·점검표는 팀 검토·합의 전이다. |
+| 29119 적합성 문서 | `docs/29119/` — `00_conformance_declaration.md`(29119-2 프로세스 선언), `02_conformance_declaration_29119-3.md`(문서 선언), `01_outcome_checklist.md`(41개 outcome), `03_29119-3_conformance_check.md`(Annex A 점검표), 산출물 TP-01~IR-03 |
 | 시험 수준 | SIL (Software-in-the-Loop), 시험 케이스 TC-01 ~ TC-16 |
 | 기준선 파일 | `sil_main/baseline/baseline_v1.0.json` (version v1.0, confirmed = true) |
 | 기준선 SHA-256 | `79f21ce910853ee7358d97c031a7553258a9fb2151bdcdaca17db3c1ea205f6d` |
 | SHA-256 대조 | 확정값 `79f21ce910853ee7358d97c031a7553258a9fb2151bdcdaca17db3c1ea205f6d` 와 일치; `results_main/config.json`·`results_main/baseline_v1.0.json` 사본과도 대조함(3.1절) |
-| 확정일 / 승인자 | 2026-11-11 / 사용자(김윤수) (결정 D1~D8, 1.5절) |
+| 확정일 / 승인자 | 2026-11-11 / 사용자(김*수) (결정 D1~D8, 1.5절) |
 | 실행 환경 (config.json 기록) | Python 3.13.18, NumPy 2.5.3 |
 | 난수 생성기 (RNG) | numpy.random.PCG64 via SeedSequence(seed).spawn |
 | 시드 규칙 | `seed = base_seed * 2**64 + crc32('<접두>/<TC>/<조건>') * 2**20 + 시행 번호`, base_seed = 20261111 |
 | 명령 | `python3 run_main.py main` |
-| 본 보고서 생성일 | 2026-11-16 |
+| 본 보고서 생성일 | 2026-11-17 |
 | 생성 스크립트 | `sil_main/build_iso29119_report.py` (표준 라이브러리만 사용) |
 | 집계에서 제외한 결과 폴더 | `results_precheck/`(기준선 확정 전 사전점검, 판정 아님), `results_p08r0/`(추가 시험 P-08-R0, 판정 없음), `results_status_before_baseline/`(기준선 확정 전 상태 기록, 모든 TC 미실행·보존용) — **이 보고서의 어떤 수치에도 포함하지 않음** |
 | 불변 규칙 | `sil_prelim/` 및 `sil_main/results_*` 결과 파일은 수정하지 않음. 본시험을 다시 실행하거나 합격선·목표를 바꾸지 않음. |
@@ -94,7 +95,7 @@
 3. **단일점 높이 센서 한계**: 센서 바로 아래 **한 점의 높이만** 모델링함. 착석 위치 분포(off-axis)는 모델에 없음(기준선 `seating_position_distribution`: "없음: 센서 바로 아래 한 점의 높이만 모델링함(착석 위치 분포는 SIL 모델에 없음, 후속 검토)"). 같은 거리 이력을 갖는 화물과 사람은 거리 입력만으로 구분할 수 없음(INC-01·INC-02).
 4. **d_empty 고정 (D4)**: 100 cm 고정이며 초기 빈 좌석 실측 보정은 모델에 없음.
 5. **전원·시동 (D8)**: TC-08은 t = 0 전원 인가 SIL 모델이며 차량 시동과 센서 전원의 관계는 모델에 없음.
-6. **온도 보정 (D3)**: 보정의 요구사항 채택은 본시험 이후 결정. TC-11은 빈 좌석·R2·R0, 0·20·50 °C, 보정 유·무만 다루며 SR-09 전체 충족 선언은 하지 않음(4.3절).
+6. **온도 보정 (D3)**: 보정의 요구사항 채택은 본시험 이후 결정으로 기준선에 기록함(2026-11-11). 이후 2026-11-13 김*수 결정(Notion TP-01 PR-2 참조)으로 v1.1 기본 구성에 채택함. 이 결정은 v1.0 기준선·결과를 바꾸지 않음. TC-11은 빈 좌석·R2·R0, 0·20·50 °C, 보정 유·무만 다루며 SR-09 전체 충족 선언은 하지 않음(4.3절).
 7. **가정 의존 값**: 온도 입력 오차 ±2 °C, TC-04b-2 움직임(1.0 cm, 0.25 Hz, D7), 05a·05b 동일 입력 모델(D7)은 근거 없는 가정이며 별도 검증으로 집계하지 않음.
 8. SIL 결과는 사용한 **모델과 입력 분포에 대한 결과**이며 실제 센서 성능을 입증하지 않음.
 
@@ -154,7 +155,7 @@
 
 ### 1.5 Baseline Decisions D1–D8 (기준선 결정 항목)
 
-확정일 2026-11-11, 확정자 사용자(김윤수). 원문 요지는 `baseline_v1.0.json` 의 `decisions` 를 그대로 옮김.
+확정일 2026-11-11, 확정자 사용자(김*수). 원문 요지는 `baseline_v1.0.json` 의 `decisions` 를 그대로 옮김.
 
 | ID | 결정 내용 |
 |---|---|
@@ -178,7 +179,7 @@
 | 1 | `python3 run_main.py status` | `results_status_before_baseline/` | 기준선 확정 전 상태 기록(모든 TC 미실행). 판정 아님 |
 | 2 | `python3 run_main.py precheck` / `python3 run_main.py additional` | `results_precheck/`(T_db 비교 등), `results_p08r0/`(P-08-R0) | 사전점검·추가 시험. **판정 아님, 본시험 집계 제외** |
 | 3 | `python3 selftest.py` | 콘솔 출력 | 통계 수치(9.4절), 예비시험 5개 파일 바이트 재현, 사전점검·본시험 2회 실행 동일성, 집계 재계산, 기준선 SHA-256·87항목 확인(복사본에서 실행, `results_main/` 불변) |
-| 4 | 기준선 확정(D1~D8) | `baseline/baseline_v1.0.json` | 2026-11-11 사용자(김윤수) 확정. SHA-256 `79f21ce910853ee7…` |
+| 4 | 기준선 확정(D1~D8) | `baseline/baseline_v1.0.json` | 2026-11-11 사용자(김*수) 확정. SHA-256 `79f21ce910853ee7…` |
 | 5 | 실행 시작 시 기준선·코드 값 비교 | `results_main/baseline_verification.csv` | 87개 항목 비교, 하나라도 다르면 실행 중단. 결과: 87/87 일치 |
 | 6 | `python3 run_main.py main` | `results_main/` (`summary.csv`, `trials.csv`, `trial_samples.csv.gz`, `output_log.csv`, `events.csv` 등) | 본시험. 실행 순서: 결정적 시험(TC-07, 13, 14, 15, 08) → 무작위 시험(TC-01~06, 07c, 09, 10, 11, 12) → TC-16(로그 간격은 앞선 로그 사용) |
 | 7 | 집계·추적성 | `summary.csv`, `trace_SR_TC_result.csv`, `tc11_side_by_side.csv`, `coverage_TC11.csv`, `report.md` | 결과를 본 뒤 반복 횟수·합격 기준을 바꾸지 않음 |
@@ -297,7 +298,7 @@ base_seed = 20261111   (본시험 접두 없음, 사전점검 접두 'PRE/')
 | 추적성 표의 TC별 결과 행 수가 summary.csv 와 같음 | 통과 | 전부 일치 |
 | tc11_side_by_side.csv 18행의 k/n이 summary.csv 와 같음 | 통과 | 전부 일치 |
 
-- `selftest.py` 실행 기록: 통과 (python selftest.py, 2026-11-16, 전체: 통과).
+- `selftest.py` 실행 기록: 통과 (python selftest.py, 2026-11-17, 전체: 통과).
 
 ### 3.2 Test Execution Log — Raw Log Manifest (원시 로그 목록)
 
@@ -404,7 +405,7 @@ base_seed = 20261111   (본시험 접두 없음, 사전점검 접두 'PRE/')
 | 원시 기록 | `trials.csv` (tc = TC-11, cond = 11a-T50-nocomp/TC-04a), `summary.csv` 데이터 행 119 |
 | 기준선 정책 | D3: 50 °C R0 오검출도 그대로 기록함. 보정 채택 여부는 본시험 이후 결정하며, 이 결과만으로 SR-09 전체 충족을 선언하지 않음. |
 | 상태 | Open — 후속 조치 필요 |
-| 후속 조치 | 온도 보정의 요구사항 채택 여부 결정(시스템 수준). 채택 전까지 SR-09 전체 충족 선언 보류. GitHub Issue 로 추적. |
+| 후속 조치 | 온도 보정의 요구사항 채택은 2026-11-13 김*수 결정으로 v1.1 기본 구성에 채택됨(Notion TP-01 PR-2 참조; 다른 팀원의 동의는 김*수가 전달한 기록이며 원본 미첨부). v1.0 기준선과 결과는 바뀌지 않으며, v1.1에서 보정을 반영해 다시 확인하기 전까지 SR-09 전체 충족 선언 보류. GitHub Issue 로 추적. |
 
 **원인 분석**
 
@@ -477,7 +478,7 @@ O-A·O-B·O-C 원 조건은 가상 반사면 대체 조건(TC-02a=R1, TC-02b=R2,
 **SR-09 전체 충족(0–50 °C에서 SR-01~04·14 충족) 선언을 하지 않는다.** 근거:
 
 - TC-11은 **빈 좌석·R2·R0**, **0·20·50 °C**, **보정 무·유** 18개 조합(각 300회)만 다룸(아래 커버 조건표). 다른 대상·온도·조합은 다루지 않음.
-- 50 °C·보정 없음에서 R0 오검출이 **300/300**이므로 보정 없는 구성은 SR-09 를 충족하지 못했음(INC-03). 보정 있음은 같은 조건에서 0/300이나 보정의 요구사항 채택은 결정되지 않음(D3, 후속 검토 1번).
+- 50 °C·보정 없음에서 R0 오검출이 **300/300**이므로 보정 없는 구성은 SR-09 를 충족하지 못했음(INC-03). 보정 있음은 같은 조건에서 0/300임. 보정의 요구사항 채택은 기준선 시점(2026-11-11)에는 미결이었으며 2026-11-13 김*수 결정(Notion TP-01 PR-2 참조)으로 v1.1 기본 구성에 채택됨(D3, 후속 검토 1번). v1.1에서 다시 확인하기 전까지 SR-09 전체 충족 선언은 보류함.
 - 결정 D3: "TC-11 커버 조건 표시, SR-09 전체 충족 선언 금지".
 
 **TC-11 커버 조건 (`coverage_TC11.csv`)**
@@ -532,7 +533,7 @@ O-A·O-B·O-C 원 조건은 가상 반사면 대체 조건(TC-02a=R1, TC-02b=R2,
 
 | # | 후속 검토 항목 | 관련 결정/이상 |
 |---|---|---|
-| 1 | 온도 보정의 요구사항 채택 | D3 / INC-03 |
+| 1 | 온도 보정의 요구사항 채택 | D3 / INC-03 (2026-11-13 김*수 결정으로 v1.1 채택, TP-01 PR-2 참조) |
 | 2 | 초기 빈 좌석 실측 보정(d_empty) | D4 |
 | 3 | O-A/O-B/O-C/O-S 대상 치수 확보 | D1 (TC-12 미실행 포함) |
 | 4 | 차량 시동과 센서 전원의 관계 | D8 (TC-08) |
