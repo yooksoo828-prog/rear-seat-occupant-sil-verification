@@ -21,7 +21,7 @@ Notion에서 2026-11-17에 이 저장소로 이전했다. 팀원 실명은 마�
 | --- | --- | --- |
 | [plan/](plan/TP-01.md) | TP-01 시험 계획서 | 7.2 |
 | [status/](status/TS-01.md) | TS-01 시험 상태 보고서 #1 · [TS-02](status/TS-02.md) #2(2026-11-21 신규) | 7.3 |
-| [completion/](completion/TCR-01.md) | TCR-01 시험 완료 보고서(중간본) | 7.4 |
+| [completion/](completion/TCR-01.md) | TCR-01 시험 완료 보고서(중간본) · [TCR-02](completion/TCR-02.md) 최종본(2026-11-21 신규, 승인 전) | 7.4 |
 | [design/](design/TM-01-05.md) | TM-01~05 시험 모델·커버리지 항목 | 8.2 |
 | [design/](design/TCS-01.md) | TCS-01 시험 케이스 명세 | 8.3 |
 | [design/](design/TPS-01.md) | TPS-01 시험 절차 명세 | 8.4 |
