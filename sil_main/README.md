@@ -22,6 +22,8 @@
 | `run_main.py` | 실행기 |
 | `selftest.py` | 코드 자체 점검 |
 | `results_main/` | 본시험 결과(기준선 v1.0) |
+| `baseline/baseline_v1.1.json`, `results_v1.1/` | 기준선 v1.1(온도 보정 기본 on, 2026-11-21 확정)과 그 본시험 결과. v1.0 결과는 덮어쓰지 않음 |
+| `compare_baselines.py` | v1.0과 v1.1 결과 비교 문서(`docs/29119/results/V1.0-vs-V1.1.md`) 생성 |
 | `results_status_before_baseline/` | 기준선 확정 전 상태 기록(보존용) |
 | `results_precheck/` | 사전점검 결과 |
 | `results_p08r0/` | 추가 시험 P-08-R0 결과 |
@@ -39,6 +41,8 @@ python3 run_main.py additional           # 추가 시험 P-08-R0 → results_p08
 python3 run_main.py all                  # 위 셋
 python3 selftest.py                      # 통계 수치·예비시험 재현·재현성·집계 점검
 python3 run_main.py main                 # 본시험. baseline/baseline_v1.0.json이 확정되어야 실행
+python3 run_main.py main baseline/baseline_v1.1.json results_v1.1   # 기준선 v1.1 본시험(출력 폴더를 지정하면 results_main을 건드리지 않음)
+python3 compare_baselines.py results_main results_v1.1 ../docs/29119/results/V1.0-vs-V1.1.md   # v1.0 대 v1.1 비교
 ```
 
 본시험 실행 순서: 결정적 시험(TC-07, 13, 14, 15, 08) → 무작위 시험(TC-01~06, 07c, 09, 10, 11, 12) → TC-16(로그 간격은 앞선 로그 사용). `main`은 `results_main/`을 지우고 다시 만듦. 결과를 본 뒤 반복 횟수나 합격 기준을 바꾸지 않음. 설정·구현을 바꿔야 하면 변경 사유와 전후를 기록하고 baseline 버전을 올림.

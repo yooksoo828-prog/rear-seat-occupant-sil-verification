@@ -55,3 +55,13 @@
 
 - EL-09 결과: 파일 12개, summary.csv 152행, 기준선 비교 87개 일치.
 - 기대와 다른 결과 3건은 사건 보고 IR-01~IR-03으로 기록함.
+
+## 추가 기록 (2026-11-21) — v1.1 실행 (EL-15~EL-17)
+
+EL-16은 실행 중에 시각을 기록했다.
+
+| ID | 일시(KST) | 설명 | 영향 |
+| --- | --- | --- | --- |
+| EL-15 | 2026-11-21 (정확한 시각 미기록) | `run_main.py` 수정 후 v1.0 회귀 검사: 임시 복사본에서 `python run_main.py main` 실행 | `config.json`의 Python·numpy 버전 문자열 외 v1.0 결과와 같음(줄바꿈 제외) |
+| EL-16 | 2026-11-21 12:39:54 ~ 12:40:21 | **v1.1 본시험**: `python run_main.py main baseline/baseline_v1.1.json results_v1.1` (27초). 기준선·코드 값 87개 일치, 결과 행 152개 | v1.1 본시험 결과(`results_v1.1/`) |
+| EL-17 | 2026-11-21 (정확한 시각 미기록) | `compare_baselines.py`로 `docs/29119/results/V1.0-vs-V1.1.md` 생성 | 판정이 달라진 행 0개 |
