@@ -8,7 +8,7 @@
 |---|---|
 | Document ID | `ISO29119-SIL-RSPD-v1.0` |
 | 문서명 | 뒷좌석 승객 감지(Rear-Seat Occupant Detection) SIL 본시험 — Test Documentation (Test Plan · Test Design/Procedure · Test Execution Log/Incident Report · Test Completion Report) |
-| 적용 표준 | ISO/IEC/IEEE 29119-3 (Test Documentation) 문서 구성을 적용함. **표준 적합성(conformance)은 아직 주장하지 않음** — 선언·outcome 체크리스트·점검표는 2026-11-20 팀원 2명이 PR #5에서 승인했으나, 충족으로 인정된 outcome은 41개 중 2개이고 전체 적합성은 주장하지 않는다. |
+| 적용 표준 | ISO/IEC/IEEE 29119-3 (Test Documentation) 문서 구성을 적용함. **표준 적합성(conformance)은 아직 주장하지 않음** — 선언·outcome 체크리스트·점검표는 2026-11-20·21 팀원 2명이 PR #5·#7에서 승인했으나, 충족으로 인정된 outcome은 41개 중 10개이고 전체 적합성은 주장하지 않는다. |
 | 29119 적합성 문서 | `docs/29119/` — `00_conformance_declaration.md`(29119-2 프로세스 선언), `02_conformance_declaration_29119-3.md`(문서 선언), `01_outcome_checklist.md`(41개 outcome), `03_29119-3_conformance_check.md`(Annex A 점검표), 산출물 TP-01~IR-03 |
 | 시험 수준 | SIL (Software-in-the-Loop), 시험 케이스 TC-01 ~ TC-16 |
 | 기준선 파일 | `sil_main/baseline/baseline_v1.0.json` (version v1.0, confirmed = true) |
