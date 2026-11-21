@@ -4,7 +4,7 @@
   python3 run_main.py status                 기준선 확정 전 상태(확인표·결정 항목·TC별 미실행 사유)를 results_status_before_baseline/에 기록
   python3 run_main.py precheck               소규모 사전점검(판정 아님) → results_precheck/
   python3 run_main.py additional             추가 시험 P-08-R0(판정 없음)   → results_p08r0/
-  python3 run_main.py main [baseline.json]   본시험. baseline_v1.0.json이 확정(confirmed=true)이고 빈 값이 없을 때만 실행 → results_main/
+  python3 run_main.py main [baseline.json] [출력폴더]   본시험. baseline_v1.0.json이 확정(confirmed=true)이고 빈 값이 없을 때만 실행 → results_main/
   python3 run_main.py all                    status + precheck + additional
 
 본시험은 baseline/baseline_v1.0.json이 확정되기 전에는 실행하지 않으며, 그 경우 모든 TC를 '미실행'과 사유로 기록함.
@@ -256,7 +256,7 @@ def write_report(out, b, sha, summary, ver_rows):
     by = OrderedDict()
     for r in summary:
         by.setdefault(r["tc"], []).append(r)
-    L = ["# 본시험 결과 요약 (기준선 v1.0)", "", f"- 기준선 파일: baseline/baseline_v1.0.json (sha256 {sha})",
+    L = [f"# 본시험 결과 요약 (기준선 {b.get('version', 'v1.0')})", "", f"- 기준선 파일: baseline/{b.get('_baseline_file', 'baseline_v1.0.json')} (sha256 {sha})",
          f"- 기준선·코드 값 확인: {len(ver_rows)}개 항목 모두 일치(baseline_verification.csv)", "- 판정 규칙: 단측 95% 정확 이항 상한(시험 설계 9.4절). 목표 충족(통계 확인) / 관측 충족(통계 미확인) / 불합격",
          "- 사전점검(results_precheck)과 P-08-R0(results_p08r0)은 이 집계에 포함하지 않음", ""]
     cnt = Counter(r["status"] for r in summary)
@@ -271,7 +271,7 @@ def write_report(out, b, sha, summary, ver_rows):
     open(os.path.join(out, "report.md"), "w", encoding="utf-8").write("\n".join(L))
 
 
-def do_main(out, path):
+def do_main(out, path, out_arg=None):
     path = path or V1
     if not os.path.exists(path):
         print(f"[본시험 미실행] {path} 없음 → 기준선 미확정. results_main에 TC별 '미실행'과 사유를 기록함")
@@ -308,10 +308,10 @@ def do_main(out, path):
     E.tc01(R); E.tc02(R); E.tc03(R); E.tc04(R, mot); E.tc05(R, lv); E.tc06(R, lv); E.tc07c(R, lv, None)
     E.tc09(R); E.tc10(R); E.tc11(R); E.tc12(R); E.tc16(R)
     write_common(out, "main", {**b, "_baseline_file": os.path.basename(path), "_baseline_sha256": sha,
-                               "_command": "python3 run_main.py main"}, R)
+                               "_command": "python3 run_main.py main" + (f" baseline/{os.path.basename(path)} {out_arg}" if (path != V1 or out_arg) else "")}, R)
     write_trace(out, R.summary)
     tc11_tables(out, R.summary)
-    write_report(out, b, sha, R.summary, ver)
+    write_report(out, {**b, "_baseline_file": os.path.basename(path)}, sha, R.summary, ver)
     print(f"본시험 완료: 결과 행 {len(R.summary)}개 → {out}")
     return 0
 
@@ -382,7 +382,8 @@ if __name__ == "__main__":
     elif mode == "additional":
         do_additional(arg or os.path.join(HERE, "results_p08r0"))
     elif mode == "main":
-        sys.exit(do_main(os.path.join(HERE, "results_main"), arg))
+        out_arg = sys.argv[3] if len(sys.argv) > 3 else None
+        sys.exit(do_main(os.path.join(HERE, out_arg) if out_arg else os.path.join(HERE, "results_main"), arg, out_arg))
     elif mode == "all":
         do_status(os.path.join(HERE, "results_status_before_baseline")); do_precheck(os.path.join(HERE, "results_precheck")); do_additional(os.path.join(HERE, "results_p08r0"))
     else:

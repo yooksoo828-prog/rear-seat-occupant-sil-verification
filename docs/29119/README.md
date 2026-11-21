@@ -20,7 +20,7 @@ Notion에서 2026-11-17에 이 저장소로 이전했다. 팀원 실명은 마�
 | 폴더 | 문서 | 29119-3 |
 | --- | --- | --- |
 | [plan/](plan/TP-01.md) | TP-01 시험 계획서 | 7.2 |
-| [status/](status/TS-01.md) | TS-01 시험 상태 보고서 #1 | 7.3 |
+| [status/](status/TS-01.md) | TS-01 시험 상태 보고서 #1 · [TS-02](status/TS-02.md) #2(2026-11-21 신규) | 7.3 |
 | [completion/](completion/TCR-01.md) | TCR-01 시험 완료 보고서(중간본) | 7.4 |
 | [design/](design/TM-01-05.md) | TM-01~05 시험 모델·커버리지 항목 | 8.2 |
 | [design/](design/TCS-01.md) | TCS-01 시험 케이스 명세 | 8.3 |
@@ -28,6 +28,7 @@ Notion에서 2026-11-17에 이 저장소로 이전했다. 팀원 실명은 마�
 | [environment/](environment/TER-01.md) | TER-01 시험 데이터·환경 요구사항 | 8.5, 8.6 |
 | [environment/](environment/TRR-01.md) | TRR-01 데이터·환경 준비 상태 보고서 | 8.7, 8.8 |
 | [results/](results/TRS-01.md) | TRS-01 실제 결과와 시험 결과 | 8.9 |
+| [results/](results/V1.0-vs-V1.1.md) | v1.0 대 v1.1 결과 비교(자동 생성) | 8.9 보조 |
 | [results/](results/TEL-01.md) | TEL-01 시험 실행 로그 | 8.10 |
 | [incidents/](incidents/IR-01.md) | IR-01 · [IR-02](incidents/IR-02.md) · [IR-03](incidents/IR-03.md) 사건 보고서 | 8.11 |
 
