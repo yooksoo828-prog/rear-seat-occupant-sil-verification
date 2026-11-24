@@ -18,6 +18,7 @@
 |---|---|
 | [ISO29119_Audit_Report.md](sil_main/results_main/ISO29119_Audit_Report.md) | **통합 감사 보고서** (Test Plan · Test Design/Procedure/Traceability · Execution Log/Incident Report · Completion Report · 부록 152행) |
 | [docs/29119/](docs/29119/README.md) | **29119 적합성 문서 일체**: 적합성 선언(29119-2·-3), outcome 체크리스트(41개), 29119-3 Annex A 점검표, 계획·상태·완료 보고서, 시험 모델·케이스·절차, 환경·데이터, 결과·로그, 사건 보고서(IR-01~03) |
+| [docs/ai_usage.md](docs/ai_usage.md) | **AI 활용 방안**: AI와 사람의 역할 분담, 통제 장치, AI가 하지 않는 것, 실제 정정 사례, 앞으로의 사용 방침 |
 | [docs/references/](docs/references/README.md) | **문헌·근거 출처 지도**: 문서 13개별 근거 출처 42건과 Notion 문서 15개 본문(시험 설계, 요구사항 설계, 문헌조사 등). 논문 그림은 저작권 때문에 제외 |
 | [baseline_v1.0.json](sil_main/baseline/baseline_v1.0.json) | 확정 기준선(D1~D8 기록 포함) |
 | [trace_SR_TC_result.csv](sil_main/results_main/trace_SR_TC_result.csv) | 요구사항(SR) → 시험(TC) → 결과 추적성 |
