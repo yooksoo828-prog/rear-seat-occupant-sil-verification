@@ -1,0 +1,105 @@
+v_order,document,stage,status,last_modified,source
+10,프로젝트 선정 이유,1 프로젝트 선정 이유,검토 완료,2026년 11월 11일 오후 1:29,NHTSA SCI — Comprehensive Study of 2019 U.S. Pediatric Vehicular Hyperthermia Fatalities (DOT HS 813 360)
+10,프로젝트 선정 이유,1 프로젝트 선정 이유,검토 완료,2026년 11월 11일 오후 1:29,"Federal Register 88 FR 65149–65150 (FMVSS, Docket NHTSA-2022-0097)"
+10,프로젝트 선정 이유,1 프로젝트 선정 이유,검토 완료,2026년 11월 11일 오후 1:29,"Federal Register 90 FR 390 — FMVSS; Occupant Crash Protection, Seat Belt Reminder Systems (최종규칙)"
+10,프로젝트 선정 이유,1 프로젝트 선정 이유,검토 완료,2026년 11월 11일 오후 1:29,Euro NCAP — Safe Driving Occupant Monitoring Protocol
+10,프로젝트 선정 이유,1 프로젝트 선정 이유,검토 완료,2026년 11월 11일 오후 1:29,기아 2026 타스만 취급설명서 — 후석 승객 알림 시스템 작동 방법
+20,검증의 중요성,2 검증의 중요성,검토 완료,2026년 11월 11일 오후 1:28,"Nissan North America — Part 573 Defect Information Report, Recall 14V-138"
+20,검증의 중요성,2 검증의 중요성,검토 완료,2026년 11월 11일 오후 1:28,NHTSA ODI — Recall Query RQ15-001 Investigation Resume (Nissan 14V-138 후속)
+20,검증의 중요성,2 검증의 중요성,검토 완료,2026년 11월 11일 오후 1:28,Ariane 5 Flight 501 Failure: Report by the Inquiry Board
+20,검증의 중요성,2 검증의 중요성,검토 완료,2026년 11월 11일 오후 1:28,NASA — Mars Climate Orbiter Mishap Investigation Board Phase I Report
+20,검증의 중요성,2 검증의 중요성,검토 완료,2026년 11월 11일 오후 1:28,NIST Planning Report 02-3 (RTI) — The Economic Impacts of Inadequate Infrastructure for Software Testing
+20,검증의 중요성,2 검증의 중요성,검토 완료,2026년 11월 11일 오후 1:28,NHTSA — 2025 Annual Report (Annual Recalls Report)
+20,검증의 중요성,2 검증의 중요성,검토 완료,2026년 11월 11일 오후 1:28,"Federal Register 90 FR 390 — FMVSS; Occupant Crash Protection, Seat Belt Reminder Systems (최종규칙)"
+20,검증의 중요성,2 검증의 중요성,검토 완료,2026년 11월 11일 오후 1:28,Federal Register 91 FR 17144 — Seat Belt Reminder Systems (중간최종규칙)
+20,검증의 중요성,2 검증의 중요성,검토 완료,2026년 11월 11일 오후 1:28,Euro NCAP — Safe Driving Occupant Monitoring Protocol
+20,검증의 중요성,2 검증의 중요성,검토 완료,2026년 11월 11일 오후 1:28,기아 2026 타스만 취급설명서 — 후석 승객 알림 시스템 작동 방법
+20,검증의 중요성,2 검증의 중요성,검토 완료,2026년 11월 11일 오후 1:28,"NASA — Systems Engineering Handbook, 5.3 Product Verification"
+30,센서 사양·사전지식,3 센서·사전지식,검토 완료,2026년 11월 11일 오후 1:29,HC-SR04 Ultrasonic Ranging Module 데이터시트 (ElecFreaks)
+30,센서 사양·사전지식,3 센서·사전지식,검토 완료,2026년 11월 11일 오후 1:29,Rudyk 외 (2025) Influence of environmental factors on the accuracy of the ultrasonic rangefinder
+30,센서 사양·사전지식,3 센서·사전지식,검토 완료,2026년 11월 11일 오후 1:29,Arunglabi 외 (2026) HC-SR04 온도 변화 영향 분석 (Tinkercad 시뮬레이션)
+30,센서 사양·사전지식,3 센서·사전지식,검토 완료,2026년 11월 11일 오후 1:29,Haq 외 (2026) Accuracy of HC-SR04 Ultrasonic Servo in Servo-Scanned 2D Ranging
+30,센서 사양·사전지식,3 센서·사전지식,검토 완료,2026년 11월 11일 오후 1:29,NHTSA (2006) Vehicle Backover Avoidance Technology Study
+30,센서 사양·사전지식,3 센서·사전지식,검토 완료,2026년 11월 11일 오후 1:29,Chua 외 (2018) Development of an automatic vehicular heatstroke detection system
+30,센서 사양·사전지식,3 센서·사전지식,검토 완료,2026년 11월 11일 오후 1:29,Smaili 외 (2021) Errors in Distance and Angle Measurements of Ultrasonic Sensor HC-SR04
+30,센서 사양·사전지식,3 센서·사전지식,검토 완료,2026년 11월 11일 오후 1:29,ElecFreaks — HC-SR04 User Guide
+30,센서 사양·사전지식,3 센서·사전지식,검토 완료,2026년 11월 11일 오후 1:29,Toa & Whitehead (2021) — Ultrasonic Sensing Basics (TI SLAA907D)
+40,SIL,4 검증 방법론,검토 완료,2026년 11월 11일 오후 1:29,"Shylla et al. (2023) Model in loop (MIL), software in loop (SIL) and hardware in loop (HIL) testing in MBD"
+40,SIL,4 검증 방법론,검토 완료,2026년 11월 11일 오후 1:29,ISO 26262-6:2018 Product development at the software level (ISO 카탈로그 페이지)
+40,SIL,4 검증 방법론,검토 완료,2026년 11월 11일 오후 1:29,Zhu 외(2025) High-Fidelity Ultrasonic Radar In-the-Loop Accelerated Test for Automatic Parking Systems
+40,SIL,4 검증 방법론,검토 완료,2026년 11월 11일 오후 1:29,"Kim, D.-J., Kim, Y.-C., Jung, D.-H., & Kim, M.-S. (2024). 차량용 3D 초음파 센서 평가를 위한 SILS에 관한 연구"
+40,SIL,4 검증 방법론,검토 완료,2026년 11월 11일 오후 1:29,"Fei, Z., Andersson, M., & Tingberg, A. (2024). Correlation of software-in-the-loop simulation with physical testing for autonomous driving"
+40,SIL,4 검증 방법론,검토 완료,2026년 11월 11일 오후 1:29,"Won, J., Seok, J., Lee, S., & Yoo, J. (2025). 자율주행 차량 시스템 개발을 위한 Software-in-the-Loop Simulation 구현 방법론"
+40,SIL,4 검증 방법론,검토 완료,2026년 11월 11일 오후 1:29,"Kim, J., & Choi, Y. (2024). SIL검증과 HIL검증 비교를 통한 SIL검증 유효성 증대 방안 연구 (Study on how to increase SIL test effectiveness by comparing SIL test to HIL test)"
+40,SIL,4 검증 방법론,검토 완료,2026년 11월 11일 오후 1:29,"Jeong, S., Kwak, Y., & Lee, W. J. (2016). Software-in-the-loop simulation for early-stage testing of AUTOSAR software component"
+40,SIL,4 검증 방법론,검토 완료,2026년 11월 11일 오후 1:29,"Arsie, I., Betta, G., Capriglione, D., Pietrosanto, A., & Sommella, P. (2014). Functional testing of measurement-based control systems: An application to automotive"
+41,HIL,4 검증 방법론,검토 완료,2026년 11월 11일 오후 1:28,Short & Pont (2005) Hardware in the loop simulation of embedded automotive control systems
+41,HIL,4 검증 방법론,검토 완료,2026년 11월 11일 오후 1:28,"Isermann, Schaffnit & Sinsel (1998) Hardware-in-the-loop simulation for the design and testing of engine-control systems"
+41,HIL,4 검증 방법론,검토 완료,2026년 11월 11일 오후 1:28,Bullock et al. (2004) Hardware-in-the-loop simulation
+41,HIL,4 검증 방법론,검토 완료,2026년 11월 11일 오후 1:28,"Nguyen et al. (2020) Hardware-in-the-loop assessment methods (European Guide to Power System Testing, ch. 4)"
+41,HIL,4 검증 방법론,검토 완료,2026년 11월 11일 오후 1:28,"Lee, Huang & Lan (2018) HIL test case specification for verification of software safety requirements in the context of ISO 26262"
+41,HIL,4 검증 방법론,검토 완료,2026년 11월 11일 오후 1:28,ISO 26262-4:2018 Product development at the system level (ISO 카탈로그 페이지)
+41,HIL,4 검증 방법론,검토 완료,2026년 11월 11일 오후 1:28,ISO 26262-6:2018 Product development at the software level (ISO 카탈로그 페이지)
+41,HIL,4 검증 방법론,검토 완료,2026년 11월 11일 오후 1:28,Zhu 외(2025) High-Fidelity Ultrasonic Radar In-the-Loop Accelerated Test for Automatic Parking Systems
+41,HIL,4 검증 방법론,검토 완료,2026년 11월 11일 오후 1:28,Ma et al. (2023) Research on the autonomous parking strategy based on the ultrasonic echo simulator
+42,검증 방법 비교표 (실물·HIL·SIL),4 검증 방법론,초안,2026년 11월 11일 오후 1:29,Short & Pont (2005) Hardware in the loop simulation of embedded automotive control systems
+42,검증 방법 비교표 (실물·HIL·SIL),4 검증 방법론,초안,2026년 11월 11일 오후 1:29,"Isermann, Schaffnit & Sinsel (1998) Hardware-in-the-loop simulation for the design and testing of engine-control systems"
+42,검증 방법 비교표 (실물·HIL·SIL),4 검증 방법론,초안,2026년 11월 11일 오후 1:29,Bullock et al. (2004) Hardware-in-the-loop simulation
+42,검증 방법 비교표 (실물·HIL·SIL),4 검증 방법론,초안,2026년 11월 11일 오후 1:29,"Nguyen et al. (2020) Hardware-in-the-loop assessment methods (European Guide to Power System Testing, ch. 4)"
+42,검증 방법 비교표 (실물·HIL·SIL),4 검증 방법론,초안,2026년 11월 11일 오후 1:29,ISO 26262-4:2018 Product development at the system level (ISO 카탈로그 페이지)
+42,검증 방법 비교표 (실물·HIL·SIL),4 검증 방법론,초안,2026년 11월 11일 오후 1:29,ISO 26262-6:2018 Product development at the software level (ISO 카탈로그 페이지)
+42,검증 방법 비교표 (실물·HIL·SIL),4 검증 방법론,초안,2026년 11월 11일 오후 1:29,Zhu 외(2025) High-Fidelity Ultrasonic Radar In-the-Loop Accelerated Test for Automatic Parking Systems
+42,검증 방법 비교표 (실물·HIL·SIL),4 검증 방법론,초안,2026년 11월 11일 오후 1:29,Ma et al. (2023) Research on the autonomous parking strategy based on the ultrasonic echo simulator
+42,검증 방법 비교표 (실물·HIL·SIL),4 검증 방법론,초안,2026년 11월 11일 오후 1:29,"Shylla et al. (2023) Model in loop (MIL), software in loop (SIL) and hardware in loop (HIL) testing in MBD"
+42,검증 방법 비교표 (실물·HIL·SIL),4 검증 방법론,초안,2026년 11월 11일 오후 1:29,"Kim, D.-J., Kim, Y.-C., Jung, D.-H., & Kim, M.-S. (2024). 차량용 3D 초음파 센서 평가를 위한 SILS에 관한 연구"
+42,검증 방법 비교표 (실물·HIL·SIL),4 검증 방법론,초안,2026년 11월 11일 오후 1:29,"Fei, Z., Andersson, M., & Tingberg, A. (2024). Correlation of software-in-the-loop simulation with physical testing for autonomous driving"
+42,검증 방법 비교표 (실물·HIL·SIL),4 검증 방법론,초안,2026년 11월 11일 오후 1:29,"Won, J., Seok, J., Lee, S., & Yoo, J. (2025). 자율주행 차량 시스템 개발을 위한 Software-in-the-Loop Simulation 구현 방법론"
+42,검증 방법 비교표 (실물·HIL·SIL),4 검증 방법론,초안,2026년 11월 11일 오후 1:29,"Kim, J., & Choi, Y. (2024). SIL검증과 HIL검증 비교를 통한 SIL검증 유효성 증대 방안 연구 (Study on how to increase SIL test effectiveness by comparing SIL test to HIL test)"
+42,검증 방법 비교표 (실물·HIL·SIL),4 검증 방법론,초안,2026년 11월 11일 오후 1:29,"Jeong, S., Kwak, Y., & Lee, W. J. (2016). Software-in-the-loop simulation for early-stage testing of AUTOSAR software component"
+50,요구사항 설계,5 요구사항·시험 설계,검토 완료,2026년 11월 11일 오후 3:03,NASA — Appendix D: Requirements Verification Matrix
+50,요구사항 설계,5 요구사항·시험 설계,검토 완료,2026년 11월 11일 오후 3:03,NASA — Appendix C: How to Write a Good Requirement
+50,요구사항 설계,5 요구사항·시험 설계,검토 완료,2026년 11월 11일 오후 3:03,Toa & Whitehead (2021) — Ultrasonic Sensing Basics (TI SLAA907D)
+50,요구사항 설계,5 요구사항·시험 설계,검토 완료,2026년 11월 11일 오후 3:03,Smaili 외 (2021) Errors in Distance and Angle Measurements of Ultrasonic Sensor HC-SR04
+50,요구사항 설계,5 요구사항·시험 설계,검토 완료,2026년 11월 11일 오후 3:03,Arunglabi 외 (2026) HC-SR04 온도 변화 영향 분석 (Tinkercad 시뮬레이션)
+50,요구사항 설계,5 요구사항·시험 설계,검토 완료,2026년 11월 11일 오후 3:03,HC-SR04 Ultrasonic Ranging Module 데이터시트 (ElecFreaks)
+50,요구사항 설계,5 요구사항·시험 설계,검토 완료,2026년 11월 11일 오후 3:03,Rudyk 외 (2025) Influence of environmental factors on the accuracy of the ultrasonic rangefinder
+50,요구사항 설계,5 요구사항·시험 설계,검토 완료,2026년 11월 11일 오후 3:03,Chua 외 (2018) Development of an automatic vehicular heatstroke detection system
+50,요구사항 설계,5 요구사항·시험 설계,검토 완료,2026년 11월 11일 오후 3:03,Euro NCAP — Test and Assessment Protocol: Child Presence Detection
+50,요구사항 설계,5 요구사항·시험 설계,검토 완료,2026년 11월 11일 오후 3:03,"Federal Register 90 FR 390 — FMVSS; Occupant Crash Protection, Seat Belt Reminder Systems (최종규칙)"
+50,요구사항 설계,5 요구사항·시험 설계,검토 완료,2026년 11월 11일 오후 3:03,Federal Register 91 FR 17144 — Seat Belt Reminder Systems (중간최종규칙)
+60,시험 설계,5 요구사항·시험 설계,검토 완료,2026년 11월 11일 오후 1:29,"Federal Register 90 FR 390 — FMVSS; Occupant Crash Protection, Seat Belt Reminder Systems (최종규칙)"
+60,시험 설계,5 요구사항·시험 설계,검토 완료,2026년 11월 11일 오후 1:29,Federal Register 91 FR 17144 — Seat Belt Reminder Systems (중간최종규칙)
+60,시험 설계,5 요구사항·시험 설계,검토 완료,2026년 11월 11일 오후 1:29,Euro NCAP — Test and Assessment Protocol: Child Presence Detection
+60,시험 설계,5 요구사항·시험 설계,검토 완료,2026년 11월 11일 오후 1:29,HC-SR04 Ultrasonic Ranging Module 데이터시트 (ElecFreaks)
+60,시험 설계,5 요구사항·시험 설계,검토 완료,2026년 11월 11일 오후 1:29,Smaili 외 (2021) Errors in Distance and Angle Measurements of Ultrasonic Sensor HC-SR04
+60,시험 설계,5 요구사항·시험 설계,검토 완료,2026년 11월 11일 오후 1:29,Haq 외 (2026) Accuracy of HC-SR04 Ultrasonic Servo in Servo-Scanned 2D Ranging
+60,시험 설계,5 요구사항·시험 설계,검토 완료,2026년 11월 11일 오후 1:29,Arunglabi 외 (2026) HC-SR04 온도 변화 영향 분석 (Tinkercad 시뮬레이션)
+60,시험 설계,5 요구사항·시험 설계,검토 완료,2026년 11월 11일 오후 1:29,Rudyk 외 (2025) Influence of environmental factors on the accuracy of the ultrasonic rangefinder
+60,시험 설계,5 요구사항·시험 설계,검토 완료,2026년 11월 11일 오후 1:29,Chua 외 (2018) Development of an automatic vehicular heatstroke detection system
+60,시험 설계,5 요구사항·시험 설계,검토 완료,2026년 11월 11일 오후 1:29,Toa & Whitehead (2021) — Ultrasonic Sensing Basics (TI SLAA907D)
+60,시험 설계,5 요구사항·시험 설계,검토 완료,2026년 11월 11일 오후 1:29,ISO 26262-4:2018 Product development at the system level (ISO 카탈로그 페이지)
+60,시험 설계,5 요구사항·시험 설계,검토 완료,2026년 11월 11일 오후 1:29,ISO 26262-6:2018 Product development at the software level (ISO 카탈로그 페이지)
+60,시험 설계,5 요구사항·시험 설계,검토 완료,2026년 11월 11일 오후 1:29,"Lee, Huang & Lan (2018) HIL test case specification for verification of software safety requirements in the context of ISO 26262"
+60,시험 설계,5 요구사항·시험 설계,검토 완료,2026년 11월 11일 오후 1:29,NASA — Appendix C: How to Write a Good Requirement
+60,시험 설계,5 요구사항·시험 설계,검토 완료,2026년 11월 11일 오후 1:29,NASA — Appendix D: Requirements Verification Matrix
+60,시험 설계,5 요구사항·시험 설계,검토 완료,2026년 11월 11일 오후 1:29,NIST/SEMATECH e-Handbook 7.2.4.1 Confidence intervals
+70,SIL 설계·결과,6 SIL 구축·실행,초안,2026년 11월 11일 오후 2:27,
+80,SIL의 한계,7 SIL의 한계,조사 전,2026년 11월 11일 오후 1:29,
+90,업계 동향·결론,8 업계 동향·결론,조사 전,2026년 11월 11일 오후 1:29,
+100,최종 보고서,9 최종 보고서,조사 전,2026년 11월 11일 오후 1:29,
+990,요구사항·시험 설계 통합본 v0.4.1 (보관),0 관리,검토 완료,2026년 11월 11일 오후 1:28,"Federal Register 90 FR 390 — FMVSS; Occupant Crash Protection, Seat Belt Reminder Systems (최종규칙)"
+990,요구사항·시험 설계 통합본 v0.4.1 (보관),0 관리,검토 완료,2026년 11월 11일 오후 1:28,Federal Register 91 FR 17144 — Seat Belt Reminder Systems (중간최종규칙)
+990,요구사항·시험 설계 통합본 v0.4.1 (보관),0 관리,검토 완료,2026년 11월 11일 오후 1:28,Euro NCAP — Test and Assessment Protocol: Child Presence Detection
+990,요구사항·시험 설계 통합본 v0.4.1 (보관),0 관리,검토 완료,2026년 11월 11일 오후 1:28,HC-SR04 Ultrasonic Ranging Module 데이터시트 (ElecFreaks)
+990,요구사항·시험 설계 통합본 v0.4.1 (보관),0 관리,검토 완료,2026년 11월 11일 오후 1:28,Smaili 외 (2021) Errors in Distance and Angle Measurements of Ultrasonic Sensor HC-SR04
+990,요구사항·시험 설계 통합본 v0.4.1 (보관),0 관리,검토 완료,2026년 11월 11일 오후 1:28,Haq 외 (2026) Accuracy of HC-SR04 Ultrasonic Servo in Servo-Scanned 2D Ranging
+990,요구사항·시험 설계 통합본 v0.4.1 (보관),0 관리,검토 완료,2026년 11월 11일 오후 1:28,Arunglabi 외 (2026) HC-SR04 온도 변화 영향 분석 (Tinkercad 시뮬레이션)
+990,요구사항·시험 설계 통합본 v0.4.1 (보관),0 관리,검토 완료,2026년 11월 11일 오후 1:28,Rudyk 외 (2025) Influence of environmental factors on the accuracy of the ultrasonic rangefinder
+990,요구사항·시험 설계 통합본 v0.4.1 (보관),0 관리,검토 완료,2026년 11월 11일 오후 1:28,Chua 외 (2018) Development of an automatic vehicular heatstroke detection system
+990,요구사항·시험 설계 통합본 v0.4.1 (보관),0 관리,검토 완료,2026년 11월 11일 오후 1:28,Toa & Whitehead (2021) — Ultrasonic Sensing Basics (TI SLAA907D)
+990,요구사항·시험 설계 통합본 v0.4.1 (보관),0 관리,검토 완료,2026년 11월 11일 오후 1:28,ISO 26262-4:2018 Product development at the system level (ISO 카탈로그 페이지)
+990,요구사항·시험 설계 통합본 v0.4.1 (보관),0 관리,검토 완료,2026년 11월 11일 오후 1:28,ISO 26262-6:2018 Product development at the software level (ISO 카탈로그 페이지)
+990,요구사항·시험 설계 통합본 v0.4.1 (보관),0 관리,검토 완료,2026년 11월 11일 오후 1:28,"Lee, Huang & Lan (2018) HIL test case specification for verification of software safety requirements in the context of ISO 26262"
+990,요구사항·시험 설계 통합본 v0.4.1 (보관),0 관리,검토 완료,2026년 11월 11일 오후 1:28,NASA — Appendix C: How to Write a Good Requirement
+990,요구사항·시험 설계 통합본 v0.4.1 (보관),0 관리,검토 완료,2026년 11월 11일 오후 1:28,NASA — Appendix D: Requirements Verification Matrix
+990,요구사항·시험 설계 통합본 v0.4.1 (보관),0 관리,검토 완료,2026년 11월 11일 오후 1:28,NIST/SEMATECH e-Handbook 7.2.4.1 Confidence intervals

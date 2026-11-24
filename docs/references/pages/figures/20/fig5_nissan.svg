@@ -1,0 +1,70 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="656.1pt" height="274.96pt" viewBox="0 0 656.1 274.96" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<defs>
+<style type="text/css">text{font-family:'Malgun Gothic','Apple SD Gothic Neo','Noto Sans CJK KR',sans-serif}*{stroke-linejoin: round; stroke-linecap: butt}</style>
+</defs>
+<g id="figure_1">
+<g id="patch_1">
+<path d="M 0 274.96 L 656.1 274.96 L 656.1 0 L 0 0 z" style="fill: #ffffff"/>
+</g>
+<g id="axes_1">
+<g id="patch_2">
+<path d="M 21.70 148.34 L 148.93 148.34 Q 152.28 148.34 152.28 145.08 L 152.28 70.17 Q 152.28 66.91 148.93 66.91 L 21.70 66.91 Q 18.36 66.91 18.36 70.17 L 18.36 145.08 Q 18.36 148.34 21.70 148.34 z" style="fill: #e8f0f8; stroke: #2f5d8c; stroke-width: 1.4; stroke-linejoin: miter"/>
+</g>
+<g id="patch_3">
+<path d="M 183.52 148.34 L 321.91 148.34 Q 325.26 148.34 325.26 145.08 L 325.26 70.17 Q 325.26 66.91 321.91 66.91 L 183.52 66.91 Q 180.18 66.91 180.18 70.17 L 180.18 145.08 Q 180.18 148.34 183.52 148.34 z" style="fill: #fbeae6; stroke: #b4432f; stroke-width: 1.4; stroke-linejoin: miter"/>
+</g>
+<g id="patch_4">
+<path d="M 356.50 148.34 L 483.73 148.34 Q 487.08 148.34 487.08 145.08 L 487.08 70.17 Q 487.08 66.91 483.73 66.91 L 356.50 66.91 Q 353.16 66.91 353.16 70.17 L 353.16 145.08 Q 353.16 148.34 356.50 148.34 z" style="fill: #fbeae6; stroke: #b4432f; stroke-width: 1.4; stroke-linejoin: miter"/>
+</g>
+<g id="patch_5">
+<path d="M 518.32 148.34 L 634.39 148.34 Q 637.74 148.34 637.74 145.08 L 637.74 70.17 Q 637.74 66.91 634.39 66.91 L 518.32 66.91 Q 514.98 66.91 514.98 70.17 L 514.98 145.08 Q 514.98 148.34 518.32 148.34 z" style="fill: #fbeae6; stroke: #b4432f; stroke-width: 1.4; stroke-linejoin: miter"/>
+</g>
+<g id="patch_6">
+<path d="M 157.07 107.62 Q 166.23 107.62 173.60 107.62" style="fill: none; stroke: #6b7280; stroke-width: 1.6; stroke-linecap: round"/>
+<path d="M 168.00 104.82 L 173.60 107.62 L 168.00 110.42 z" style="fill: #6b7280; stroke: #6b7280; stroke-width: 1.6; stroke-linecap: round"/>
+</g>
+<g id="patch_7">
+<path d="M 330.05 107.62 Q 339.21 107.62 346.58 107.62" style="fill: none; stroke: #6b7280; stroke-width: 1.6; stroke-linecap: round"/>
+<path d="M 340.98 104.82 L 346.58 107.62 L 340.98 110.42 z" style="fill: #6b7280; stroke: #6b7280; stroke-width: 1.6; stroke-linecap: round"/>
+</g>
+<g id="patch_8">
+<path d="M 491.87 107.62 Q 501.03 107.62 508.40 107.62" style="fill: none; stroke: #6b7280; stroke-width: 1.6; stroke-linecap: round"/>
+<path d="M 502.80 104.82 L 508.40 107.62 L 502.80 110.42 z" style="fill: #6b7280; stroke: #6b7280; stroke-width: 1.6; stroke-linecap: round"/>
+</g>
+<g id="patch_9">
+<path d="M 21.70 246.05 L 634.39 246.05 Q 637.74 246.05 637.74 242.79 L 637.74 184.16 Q 637.74 180.91 634.39 180.91 L 21.70 180.91 Q 18.36 180.91 18.36 184.16 L 18.36 242.79 Q 18.36 246.05 21.70 246.05 z" style="fill: #f3f4f6; stroke: #6b7280; stroke-width: 1.4; stroke-linejoin: miter"/>
+</g>
+<g id="text_1">
+<text style="font-weight: 700; font-size: 15px; text-anchor: start; fill: #1f2a44" x="18.36" y="25.82">Nissan 승객 분류 시스템(OCS) 리콜 14V-138</text>
+</g>
+<g id="text_2">
+<text style="font-size: 10.5px; text-anchor: start; fill: #6b7280" x="18.36" y="44.66">센서 기반 승객 판정이 특정 조건에서 오판할 수 있는 사례 (앞좌석)</text>
+</g>
+<g id="text_3">
+<text style="font-size: 10px; fill: #1f2a44" transform="translate(65.79 96.37)">특정 조건</text>
+<text style="font-size: 10px; fill: #1f2a44" transform="translate(39.43 111.36)">엔진 아이들 시 큰 진동</text>
+<text style="font-size: 10px; fill: #1f2a44" transform="translate(50.87 126.38)">특이한 착석 자세</text>
+</g>
+<g id="text_4">
+<text style="font-size: 10px; fill: #1f2a44" transform="translate(214.25 96.36)">OCS 소프트웨어가</text>
+<text style="font-size: 10px; fill: #1f2a44" transform="translate(223.99 111.37)">앞좌석 성인을</text>
+<text style="font-size: 10px; fill: #1f2a44" transform="translate(197.63 126.41)">빈 좌석으로 분류할 수 있음</text>
+</g>
+<g id="text_5">
+<text style="font-size: 10px; fill: #1f2a44" transform="translate(391.39 103.86)">조수석 에어백</text>
+<text style="font-size: 10px; fill: #1f2a44" transform="translate(410.92 118.86)">억제</text>
+</g>
+<g id="text_6">
+<text style="font-size: 10px; fill: #1f2a44" transform="translate(561.43 103.87)">충돌 시</text>
+<text style="font-size: 10px; fill: #1f2a44" transform="translate(531.59 118.86)">전개되지 않을 수 있음</text>
+</g>
+<g id="text_7">
+<text style="font-size: 9.8px; fill: #1f2a44" transform="translate(221.21 209.25)">대상 약 989,701대 (2014-03-24 제조사 결함 보고서)</text>
+<text style="font-size: 9.8px; fill: #1f2a44" transform="translate(56.01 223.94)">후속 조사 RQ15-001(2015-03-18 개시): 리콜 수리 등을 받은 뒤에도 문제를 제기한 불만 124건, 문서상 충돌·화재·부상·사망 보고 없음</text>
+</g>
+<g id="text_8">
+<text style="font-size: 9px; text-anchor: start; fill: #6b7280" x="18.36" y="266.00">자료: Nissan North America (2014), NHTSA ODI (2015). 두 문서는 시험·검증의 적절성을 직접 언급하지 않음</text>
+</g>
+</g>
+</g>
+</svg>

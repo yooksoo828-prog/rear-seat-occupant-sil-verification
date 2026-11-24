@@ -21,6 +21,10 @@ jobs:
       - name: Check 29119 outcome checklist
         run: python3 docs/29119/render_checklist.py --check
 
+      # 문헌 근거 지도가 CSV와 같은지 확인.
+      - name: Check reference map
+        run: python3 docs/references/build_source_map.py --check
+
       - name: Install dependencies
         run: python -m pip install numpy
 

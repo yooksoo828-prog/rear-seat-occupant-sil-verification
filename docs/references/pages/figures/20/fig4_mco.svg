@@ -1,0 +1,62 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="656.1pt" height="291.6pt" viewBox="0 0 656.1 291.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<defs>
+<style type="text/css">text{font-family:'Malgun Gothic','Apple SD Gothic Neo','Noto Sans CJK KR',sans-serif}*{stroke-linejoin: round; stroke-linecap: butt}</style>
+</defs>
+<g id="figure_1">
+<g id="patch_1">
+<path d="M 0 291.6 L 656.1 291.6 L 656.1 0 L 0 0 z" style="fill: #ffffff"/>
+</g>
+<g id="axes_1">
+<g id="patch_2">
+<path d="M 21.70 124.47 L 182.41 124.47 Q 185.76 124.47 185.76 121.27 L 185.76 53.04 Q 185.76 49.84 182.41 49.84 L 21.70 49.84 Q 18.36 49.84 18.36 53.04 L 18.36 121.27 Q 18.36 124.47 21.70 124.47 z" style="fill: #e8f0f8; stroke: #2f5d8c; stroke-width: 1.4; stroke-linejoin: miter"/>
+</g>
+<g id="patch_3">
+<path d="M 250.48 124.47 L 411.19 124.47 Q 414.54 124.47 414.54 121.27 L 414.54 53.04 Q 414.54 49.84 411.19 49.84 L 250.48 49.84 Q 247.14 49.84 247.14 53.04 L 247.14 121.27 Q 247.14 124.47 250.48 124.47 z" style="fill: #fbeae6; stroke: #b4432f; stroke-width: 1.4; stroke-linejoin: miter"/>
+</g>
+<g id="patch_4">
+<path d="M 479.26 124.47 L 634.39 124.47 Q 637.74 124.47 637.74 121.27 L 637.74 53.04 Q 637.74 49.84 634.39 49.84 L 479.26 49.84 Q 475.92 49.84 475.92 53.04 L 475.92 121.27 Q 475.92 124.47 479.26 124.47 z" style="fill: #fbeae6; stroke: #b4432f; stroke-width: 1.4; stroke-linejoin: miter"/>
+</g>
+<g id="patch_5">
+<path d="M 190.54 87.16 Q 216.44 87.16 240.56 87.16" style="fill: none; stroke: #6b7280; stroke-width: 1.6; stroke-linecap: round"/>
+<path d="M 234.96 84.36 L 240.56 87.16 L 234.96 89.96 z" style="fill: #6b7280; stroke: #6b7280; stroke-width: 1.6; stroke-linecap: round"/>
+</g>
+<g id="patch_6">
+<path d="M 419.32 87.16 Q 445.22 87.16 469.34 87.16" style="fill: none; stroke: #6b7280; stroke-width: 1.6; stroke-linecap: round"/>
+<path d="M 463.74 84.36 L 469.34 87.16 L 463.74 89.96 z" style="fill: #6b7280; stroke: #6b7280; stroke-width: 1.6; stroke-linecap: round"/>
+</g>
+<g id="patch_7">
+<path d="M 21.70 252.41 L 634.39 252.41 Q 637.74 252.41 637.74 249.21 L 637.74 175.65 Q 637.74 172.45 634.39 172.45 L 21.70 172.45 Q 18.36 172.45 18.36 175.65 L 18.36 249.21 Q 18.36 252.41 21.70 252.41 z" style="fill: #f3f4f6; stroke: #6b7280; stroke-width: 1.4; stroke-linejoin: miter"/>
+</g>
+<g id="text_1">
+<text style="font-weight: 700; font-size: 15px; text-anchor: start; fill: #1f2a44" x="18.36" y="25.73">Mars Climate Orbiter: 단위 불일치</text>
+</g>
+<g id="text_2">
+<text style="font-size: 10.5px; text-anchor: start; fill: #6b7280" x="18.36" y="44.16">조사위원회 1단계 보고서가 직접 원인으로 본 내용</text>
+</g>
+<g id="text_3">
+<text style="font-size: 10.5px; fill: #1f2a44" transform="translate(41.74 83.21)">소프트웨어 인터페이스 사양</text>
+<text style="font-size: 10.5px; fill: #1f2a44" transform="translate(54.32 98.37)">출력은 뉴턴초(N·s)로</text>
+</g>
+<g id="text_4">
+<text style="font-size: 10.5px; fill: #1f2a44" transform="translate(258.51 83.23)">지상 소프트웨어 파일의 실제 출력</text>
+<text style="font-size: 10.5px; fill: #1f2a44" transform="translate(296.24 98.34)">파운드초(lbf·s)</text>
+</g>
+<g id="text_5">
+<text style="font-size: 10.5px; fill: #1f2a44" transform="translate(521.84 75.37)">항법 소프트웨어</text>
+<text style="font-size: 10.5px; fill: #1f2a44" transform="translate(511.00 91.12)">궤적에 미치는 영향을</text>
+<text style="font-size: 10.5px; fill: #1f2a44" transform="translate(520.12 106.84)">4.45배 낮게 계산</text>
+</g>
+<g id="text_6">
+<text style="font-size: 9.5px; text-anchor: middle; fill: #b4432f" x="216.45" y="68.50">사양과 다름</text>
+</g>
+<g id="text_7">
+<text style="font-size: 9.8px; fill: #1f2a44" transform="translate(231.30 201.40)">검증 측면에서 보고서가 기여 원인으로 제시한 것</text>
+<text style="font-size: 9.8px; fill: #1f2a44" transform="translate(119.49 216.13)">인터페이스 사양이 제대로 쓰이지 않음 · 해당 지상 소프트웨어의 종단 간 시험이 끝나지 않은 것으로 보임</text>
+<text style="font-size: 9.8px; fill: #1f2a44" transform="translate(107.07 230.80)">독립 검증 수행 여부가 불분명 · 인터페이스 통제와 지상 시스템 인터페이스 검증이 불완전하거나 엄밀하지 못함</text>
+</g>
+<g id="text_8">
+<text style="font-size: 9px; text-anchor: start; fill: #6b7280" x="18.36" y="282.15">자료: Mars Climate Orbiter Mishap Investigation Board (1999), Phase I report 발췌본</text>
+</g>
+</g>
+</g>
+</svg>
