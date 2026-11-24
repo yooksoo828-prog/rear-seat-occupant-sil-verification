@@ -1,0 +1,69 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="656.1pt" height="413.56pt" viewBox="0 0 656.1 413.56" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<defs>
+<style type="text/css">text{font-family:'Malgun Gothic','Apple SD Gothic Neo','Noto Sans CJK KR',sans-serif}*{stroke-linejoin: round; stroke-linecap: butt}</style>
+</defs>
+<g id="figure_1">
+<g id="patch_1">
+<path d="M 0 413.56 L 656.1 413.56 L 656.1 0 L 0 0 z" style="fill: #ffffff"/>
+</g>
+<g id="axes_1">
+<g id="patch_2">
+<path d="M 177.94 238.29 L 394.45 238.29 Q 397.8 238.29 397.8 235.14 L 397.8 115.39 Q 397.8 112.24 394.45 112.24 L 177.94 112.24 Q 174.6 112.24 174.6 115.39 L 174.6 235.14 Q 174.6 238.29 177.94 238.29 z" style="fill: #e6f4ee; stroke: #2f7d5b; stroke-width: 1.4; stroke-linejoin: miter"/>
+</g>
+<g id="patch_3">
+<path d="M 412.30 238.29 L 628.81 238.29 Q 632.16 238.29 632.16 235.14 L 632.16 115.39 Q 632.16 112.24 628.81 112.24 L 412.30 112.24 Q 408.96 112.24 408.96 115.39 L 408.96 235.14 Q 408.96 238.29 412.30 238.29 z" style="fill: #fbeae6; stroke: #b4432f; stroke-width: 1.4; stroke-linejoin: miter"/>
+</g>
+<g id="patch_4">
+<path d="M 177.94 374.85 L 394.45 374.85 Q 397.8 374.85 397.8 371.70 L 397.8 251.95 Q 397.8 248.80 394.45 248.80 L 177.94 248.80 Q 174.6 248.80 174.6 251.95 L 174.6 371.70 Q 174.6 374.85 177.94 374.85 z" style="fill: #fbeae6; stroke: #b4432f; stroke-width: 1.4; stroke-linejoin: miter"/>
+</g>
+<g id="patch_5">
+<path d="M 412.30 374.85 L 628.81 374.85 Q 632.16 374.85 632.16 371.70 L 632.16 251.95 Q 632.16 248.80 628.81 248.80 L 412.30 248.80 Q 408.96 248.80 408.96 251.95 L 408.96 371.70 Q 408.96 374.85 412.30 374.85 z" style="fill: #e6f4ee; stroke: #2f7d5b; stroke-width: 1.4; stroke-linejoin: miter"/>
+</g>
+<g id="text_1">
+<text style="font-weight: 700; font-size: 15px; text-anchor: start; fill: #1f2a44" x="18.36" y="30.90">감지 기능이 틀리는 두 방향</text>
+</g>
+<g id="text_2">
+<text style="font-size: 10.5px; text-anchor: start; fill: #6b7280" x="18.36" y="49.00">상용 시스템과 규제 문서가 밝힌 조건 (본 프로젝트가 시험 조건을 설계할 때의 출발점)</text>
+</g>
+<g id="text_3">
+<text style="font-weight: 700; font-size: 11.5px; text-anchor: middle; fill: #1f2a44" x="269.46" y="93.86">시스템이 감지함</text>
+</g>
+<g id="text_4">
+<text style="font-weight: 700; font-size: 11.5px; text-anchor: middle; fill: #1f2a44" x="503.82" y="93.86">시스템이 감지하지 못함</text>
+</g>
+<g id="text_5">
+<text style="font-weight: 700; font-size: 11.5px; fill: #1f2a44" transform="translate(23.94 182.03)">실제로</text>
+<text style="font-weight: 700; font-size: 11.5px; fill: #1f2a44" transform="translate(23.94 198.12)">탑승자 있음</text>
+</g>
+<g id="text_6">
+<text style="font-weight: 700; font-size: 11.5px; fill: #1f2a44" transform="translate(23.94 313.34)">실제로</text>
+<text style="font-weight: 700; font-size: 11.5px; fill: #1f2a44" transform="translate(23.94 329.43)">빈 좌석</text>
+</g>
+<g id="text_7">
+<text style="font-weight: 700; font-size: 11.5px; text-anchor: middle; fill: #1f2a44" x="286.2" y="179.57">정상 감지</text>
+</g>
+<g id="text_8">
+<text style="font-weight: 700; font-size: 12px; text-anchor: middle; fill: #b4432f" x="520.56" y="140.43">미감지</text>
+</g>
+<g id="text_9">
+<text style="font-size: 10px; fill: #1f2a44" transform="translate(475.79 178.76)">움직임이 거의 없을 때</text>
+<text style="font-size: 10px; fill: #1f2a44" transform="translate(456.27 194.76)">물건이나 담요가 센서를 가릴 때</text>
+<text style="font-size: 10px; fill: #1f2a44" transform="translate(457.49 210.18)">외부 전자파 간섭 (기아 매뉴얼)</text>
+</g>
+<g id="text_10">
+<text style="font-weight: 700; font-size: 12px; text-anchor: middle; fill: #b4432f" x="286.2" y="276.99">오경보</text>
+</g>
+<g id="text_11">
+<text style="font-size: 10px; fill: #1f2a44" transform="translate(224.83 315.34)">열린 창으로 들어온 바람·벌레</text>
+<text style="font-size: 10px; fill: #1f2a44" transform="translate(217.14 330.74)">앞좌석 움직임, 진동 (기아 매뉴얼)</text>
+<text style="font-size: 10px; fill: #1f2a44" transform="translate(235.24 346.74)">화물·반려동물 (NHTSA)</text>
+</g>
+<g id="text_12">
+<text style="font-weight: 700; font-size: 11.5px; text-anchor: middle; fill: #1f2a44" x="520.56" y="315.48">정상 (경고 없음)</text>
+</g>
+<g id="text_13">
+<text style="font-size: 9px; text-anchor: start; fill: #6b7280" x="18.36" y="404.60">자료: Kia (n.d.), 후석 승객 알림 시스템 작동 방법 / NHTSA (2025), 90 FR 390</text>
+</g>
+</g>
+</g>
+</svg>

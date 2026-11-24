@@ -1,0 +1,107 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="792pt" height="331.2pt" viewBox="0 0 792 331.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<defs>
+<style type="text/css">text{font-family:'Malgun Gothic','Apple SD Gothic Neo','Noto Sans CJK KR',sans-serif}*{stroke-linejoin: round; stroke-linecap: butt}</style>
+</defs>
+<g id="figure_1">
+<g id="patch_1">
+<path d="M 0 331.2 L 792 331.2 L 792 0 L 0 0 z
+" style="fill: #ffffff"/>
+</g>
+<g id="axes_1">
+<g id="patch_2">
+<path d="M 10.8 292.15 L 390.6 292.15 L 390.6 94.78 L 10.8 94.78 z
+" style="fill: #ffffff"/>
+</g>
+<g id="patch_3">
+<path d="M 28.06 292.15 L 150.57 292.15 L 150.57 124.89 L 28.06 124.89 z
+" style="fill: #2f5d8c"/>
+</g>
+<g id="patch_4">
+<path d="M 250.82 292.15 L 373.33 292.15 L 373.33 229.78 L 250.82 229.78 z
+" style="fill: #8fb3d6"/>
+</g>
+<g id="matplotlib.axis_1">
+<g id="xtick_1">
+<g id="line2d_1"/>
+<g id="text_1">
+<text style="font-size: 11.5px; text-anchor: middle; fill: #1f2a44" x="89.32" y="305.77">결함 리콜</text>
+</g>
+</g>
+<g id="xtick_2">
+<g id="line2d_2"/>
+<g id="text_2">
+<text style="font-size: 11.5px; text-anchor: middle; fill: #1f2a44" x="312.07" y="305.77">규정 준수 리콜</text>
+</g>
+</g>
+</g>
+<g id="matplotlib.axis_2"/>
+<g id="patch_5">
+<path d="M 10.8 292.15 L 390.6 292.15 
+" style="fill: none; stroke: #d1d5db; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+</g>
+<g id="text_3">
+<text style="font-size: 10.5px; text-anchor: start; fill: #6b7280" x="10.8" y="86.88">합계 891건</text>
+</g>
+<g id="text_4">
+<text style="font-weight: 700; font-size: 12px; text-anchor: middle; fill: #1f2a44" x="89.32" y="120.10">649건</text>
+</g>
+<g id="text_5">
+<text style="font-weight: 700; font-size: 12px; text-anchor: middle; fill: #1f2a44" x="312.07" y="224.99">242건</text>
+</g>
+<g id="text_6">
+<text style="font-weight: 700; font-size: 12.5px; text-anchor: start; fill: #1f2a44" x="10.8" y="70.78">리콜 건수</text>
+</g>
+</g>
+<g id="axes_2">
+<g id="patch_6">
+<path d="M 401.4 292.15 L 781.2 292.15 L 781.2 94.78 L 401.4 94.78 z
+" style="fill: #ffffff"/>
+</g>
+<g id="patch_7">
+<path d="M 418.66 292.15 L 541.17 292.15 L 541.17 124.89 L 418.66 124.89 z
+" style="fill: #2f5d8c"/>
+</g>
+<g id="patch_8">
+<path d="M 641.42 292.15 L 763.93 292.15 L 763.93 234.53 L 641.42 234.53 z
+" style="fill: #8fb3d6"/>
+</g>
+<g id="matplotlib.axis_3">
+<g id="xtick_3">
+<g id="line2d_3"/>
+<g id="text_7">
+<text style="font-size: 11.5px; text-anchor: middle; fill: #1f2a44" x="479.92" y="305.77">결함 리콜</text>
+</g>
+</g>
+<g id="xtick_4">
+<g id="line2d_4"/>
+<g id="text_8">
+<text style="font-size: 11.5px; text-anchor: middle; fill: #1f2a44" x="702.67" y="305.77">규정 준수 리콜</text>
+</g>
+</g>
+</g>
+<g id="matplotlib.axis_4"/>
+<g id="patch_9">
+<path d="M 401.4 292.15 L 781.2 292.15 
+" style="fill: none; stroke: #d1d5db; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+</g>
+<g id="text_9">
+<text style="font-size: 10.5px; text-anchor: start; fill: #6b7280" x="401.4" y="86.88">합계 29.26백만 대 (29,262,623대)</text>
+</g>
+<g id="text_10">
+<text style="font-weight: 700; font-size: 12px; text-anchor: middle; fill: #1f2a44" x="479.92" y="120.10">21.77</text>
+</g>
+<g id="text_11">
+<text style="font-weight: 700; font-size: 12px; text-anchor: middle; fill: #1f2a44" x="702.67" y="229.75">7.50</text>
+</g>
+<g id="text_12">
+<text style="font-weight: 700; font-size: 12.5px; text-anchor: start; fill: #1f2a44" x="401.4" y="70.78">대상 차량 수 (백만 대)</text>
+</g>
+</g>
+<g id="text_13">
+<text style="font-weight: 700; font-size: 15px; text-anchor: start; fill: #1f2a44" x="15.84" y="19.82">2025년 미국 차량 리콜</text>
+</g>
+<g id="text_14">
+<text style="font-size: 9px; text-anchor: start; fill: #6b7280" x="15.84" y="327.88">자료: NHTSA (2026b), 2025 Annual Report, "Vehicle Recall Summary by Year" 표 (Vehicle only)</text>
+</g>
+</g>
+</svg>
